@@ -32,8 +32,7 @@ A typical project includes:
 
 ## 🛠️ Tech Stack
 The prototypes in this repository may use a mix of:
-- **Languages**: Python, 
-- **Frameworks**: Django 
+- **Languages**: Python, JSON, BASH
 - **Tools**: GitHub Actions, OpenAI  
 
 ---
