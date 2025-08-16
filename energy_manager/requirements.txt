@@ -1,0 +1,7 @@
+OpenAIChatCompletion
+semantic_kernel
+
+# requirements.txt
+semantic-kernel
+openai
+asyncio
