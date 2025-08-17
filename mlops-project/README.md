@@ -1,67 +1,66 @@
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Status](https://img.shields.io/badge/Status-Active-success)
-![Last Commit](https://img.shields.io/github/last-commit/Iam4syT/mlops-project)
-![Issues](https://img.shields.io/github/issues/Iam4syT/mlops-project)
-![Pull Requests](https://img.shields.io/github/issues-pr/Iam4syT/mlops-project)
+![Last Commit](https://img.shields.io/github/last-commit/Iam4syT/thinkbox)
+![Issues](https://img.shields.io/github/issues/Iam4syT/thinkbox)
+![Pull Requests](https://img.shields.io/github/issues-pr/Iam4syT/thinkbox)
 
 ---
 
-# 🧠⚙️🚀 MLOps Project
+# ⚙️ MLOps Project
 
-The **MLOps Project** is a Python-based solution for automating and streamlining the machine learning lifecycle.  
-It addresses challenges such as **model versioning**,  and **CI/CD for ML workflows**, helping teams deploy, monitor, and enhance ML models reliably.
+The **MLOps Project** is a Python-based framework for automating and streamlining the machine learning lifecycle.  
+It solves challenges like **model versioning**, **CI/CD for ML workflows**, and **production monitoring**—helping teams deploy, monitor, and improve ML models reliably.
 
 ---
 
-# 💡 Backstory
-After being reached out for a MLOps role, I felt confident and excited about the role, leveraging my training in backend development, DevOps and AI Engineering. I set out to take a MLOps fundamentals tutorial, fork the tutorial's repository, and practice the teaching.
-The project is inspired by the complexity and manual effort involved in deploying machine learning models to production. This project was born out of the need for a more effective model training and deployment, using an automated pipeline.  
+## 💡 Background
 
+Inspired by the complexity and manual effort of deploying machine learning models to production, this project was born out of the need for a seamless, automated, and production-grade ML workflow.  
+The author’s journey combines backend, DevOps, and AI engineering skills to deliver a practical, scalable MLOps solution.
 
---
+---
 
 ## 🚀 Features
 
-- 📊 **Automated Data Ingestion & Validation**: Effortlessly bring in and check datasets for quality.
-- 📈 **Scalable Model Training & Experiment Tracking**: Run reproducible ML experiments and track metrics.
-- 📦 **Continuous Integration/Continuous Delivery (CI/CD) for ML Models**: Automate model builds, tests, and deployments.
-- 🧪 **Model Versioning & Registry**: Manage multiple model versions and store metadata.
-- ⚙️ **Automated Model Deployment**: Push models to production environments with minimal effort.
-- 🚨 **Model Monitoring & Alerting**: Detect performance degradation and data drift in real time.
-- 🔍 **Explainability Integrations**: Integrate XAI tools for model transparency.
-- 🌐 **Cloud-Agnostic Deployments**: Supports AWS, Azure, GCP, and on-premise setups.
+- **Automated Data Ingestion & Validation**: Seamlessly bring in and validate datasets for quality.
+- **Scalable Model Training & Experiment Tracking**: Run reproducible experiments and track metrics.
+- **Continuous Integration/Delivery (CI/CD)**: Automate model builds, tests, and deployments.
+- **Model Versioning & Registry**: Manage multiple model versions and metadata.
+- **Automated Model Deployment**: Push models to production with minimal manual effort.
+- **Model Monitoring & Alerting**: Detect performance degradation and data drift in real time.
+- **Explainability Integrations**: Integrate XAI tools for model transparency.
+- **Cloud-Agnostic Deployments**: Supports AWS, Azure, GCP, and on-premise.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Languages**: Python 
-- **ML Frameworks**: ZenML, MLFlow, Scikit-learn
-- **Data Orchestration**:  MLflow
-- **Containerization**: Docker
-- **Experiment Tracking & Registry**: MLflow, DVC
-- **CI/CD**: GitHub Actions,
-- **Other Tools**: DVC,
+- **Languages:** Python
+- **ML Frameworks:** ZenML, MLflow, Scikit-learn
+- **Data Orchestration & Experiment Tracking:** MLflow, DVC
+- **Containerization:** Docker
+- **CI/CD:** GitHub Actions
+- **Other Tools:** DVC
 
 ---
 
 ## 📦 Installation
 
-1. **Clone the repository**
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/Iam4syT/thinkbox.git
    cd mlops-project
    ```
 
-2. **Create a virtual environment (recommended)**
+2. **Create a virtual environment (recommended):**
    ```bash
    python -m venv venv
-   source venv/bin/activate   # On macOS/Linux
-   venv\Scripts\activate      # On Windows
+   source venv/bin/activate   # macOS/Linux
+   venv\Scripts\activate      # Windows
    ```
 
-3. **Install dependencies**
+3. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
@@ -97,14 +96,14 @@ Typical pipeline commands:
 
 ## 📊 Example
 
-A simple training pipeline run example:
+A simple training pipeline with ZenML:
+
 ```python
 from zenml.config import DockerSettings
 from zenml.integrations.constants import MLFLOW
 from zenml.pipelines import pipeline
 
 docker_settings = DockerSettings(required_integrations=[MLFLOW])
-
 
 @pipeline(enable_cache=False, settings={"docker": docker_settings})
 def train_pipeline(ingest_data, clean_data, model_train, evaluation):
@@ -122,14 +121,13 @@ def train_pipeline(ingest_data, clean_data, model_train, evaluation):
     x_train, x_test, y_train, y_test = clean_data(df)
     model = model_train(x_train, x_test, y_train, y_test)
     mse, rmse = evaluation(model, x_test, y_test)
-
 ```
 
 ---
 
 ## 🔮 Roadmap
 
-- [ ] Add advanced data versioning (DVC for large datasets)
+- [ ] Advanced data versioning (DVC for large datasets)
 - [ ] Integrate drift detection for data and predictions
 - [ ] Improve explainability dashboards
 - [ ] Expand multi-cloud deployment options
@@ -154,11 +152,11 @@ This project is licensed under the **MIT License** – free to use and modify.
 
 ## 👨‍💻 Author
 
-Developed by Ayush Singh,the Data Scientist at Replayed, Founder - SecondBrainLabs, and your guide on this journey. I've led several products in the creators' economy and worked as an MLOps engineer on one of the fastest-growing MLOps frameworks, ZenML. With experience as a Data Scientist at Artifact and building large-scale NLP products even before GPT was launched, I bring to the table a wealth of knowledge and practical insights that will enrich your learning experience.
+Developed by Ayush Singh (Data Scientist at Replayed, Founder – SecondBrainLabs).  
+Currently maintained by **Bunamin Adams (4syT Labs)**
 
-Currently used and improved by **Bunamin Adams (4syT Labs)**
-🔗 [LinkedIn](https://linkedin.com/in/bunaminadams) | [GitHub](https://github.com/Iam4syT)
-🌐 [think4syt.com](https://think4syt.com)
+🔗 [LinkedIn](https://linkedin.com/in/bunaminadams) | [GitHub](https://github.com/Iam4syT)  
+🌐 [think4syt.com](https://think4syt.com)  
 ✉️ bunamin@think4syt.com
 
 ---
