@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)  
 ![License](https://img.shields.io/badge/License-MIT-green.svg)  
 ![Status](https://img.shields.io/badge/Status-Active-success)  
