@@ -23,7 +23,7 @@ A typical project includes:
 ---
 
 ## 🚀 Current Projects
-- 📱 **[Project 1: Energy Manager](https://github.com/Iam4syT/thinkbox/blob/main/energy_manager)** – A lightweight prototype exploring seamless Home Energy Managment.  
+- 📱 **[Project 1: Energy Manager](./energy_manager)** – A lightweight prototype exploring seamless Home Energy Managment.  
 - 🔒 **[Project 2: SecureMic](./SecureMic)** – A proof-of-concept to prevent unauthorized microphone access and protect user privacy. (in-view) 
 
 *(Projects will be updated as new ideas are added.)*
@@ -32,8 +32,7 @@ A typical project includes:
 
 ## 🛠️ Tech Stack
 The prototypes in this repository may use a mix of:
-- **Languages**: Python, 
-- **Frameworks**: Django 
+- **Languages**: Python, JSON, BASH
 - **Tools**: GitHub Actions, OpenAI  
 
 ---
