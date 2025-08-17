@@ -10,14 +10,14 @@
 # 🧠⚙️🚀 MLOps Project
 
 The **MLOps Project** is a Python-based solution for automating and streamlining the machine learning lifecycle.  
-It addresses challenges such as **model versioning**, **data drift detection**, and **CI/CD for ML workflows**, helping teams deploy, monitor, and enhance ML models reliably.
+It addresses challenges such as **model versioning**,  and **CI/CD for ML workflows**, helping teams deploy, monitor, and enhance ML models reliably.
 
 ---
 
 # 💡 Backstory
+After being reached out for a MLOps role, I felt confident and excited about the role, leveraging my training in backend development, DevOps and AI Engineering. I set out to take a MLOps fundamentals tutorial, fork the tutorial's repository, and practice the teaching.
+The project is inspired by the complexity and manual effort involved in deploying machine learning models to production. This project was born out of the need for a more effective model training and deployment, using an automated pipeline.  
 
-Inspired by the complexity and manual effort involved in deploying machine learning models to production, this project was born out of the need for a more robust, automated pipeline.  
-After being reached out for an MLOps role, considering my training in DevOps and AI Engineering.I set out to take a fundamentals tutorial, fork the repository, and practice the concept.
 
 --
 
