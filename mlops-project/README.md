@@ -97,26 +97,32 @@ Typical pipeline commands:
 
 ## 📊 Example
 
-A simple training run example:
+A simple training pipeline run example:
 ```python
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
-import mlflow
+from zenml.config import DockerSettings
+from zenml.integrations.constants import MLFLOW
+from zenml.pipelines import pipeline
 
-# Load data
-data = pd.read_csv("data/processed/clean_data.csv")
-X = data.drop("target", axis=1)
-y = data["target"]
+docker_settings = DockerSettings(required_integrations=[MLFLOW])
 
-# Split data
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-with mlflow.start_run():
-    model = LogisticRegression()
-    model.fit(X_train, y_train)
-    mlflow.sklearn.log_model(model, "logistic_regression_model")
-    print("Model trained and logged to MLflow.")
+@pipeline(enable_cache=False, settings={"docker": docker_settings})
+def train_pipeline(ingest_data, clean_data, model_train, evaluation):
+    """
+    Args:
+        ingest_data: DataClass
+        clean_data: DataClass
+        model_train: DataClass
+        evaluation: DataClass
+    Returns:
+        mse: float
+        rmse: float
+    """
+    df = ingest_data()
+    x_train, x_test, y_train, y_test = clean_data(df)
+    model = model_train(x_train, x_test, y_train, y_test)
+    mse, rmse = evaluation(model, x_test, y_test)
+
 ```
 
 ---
