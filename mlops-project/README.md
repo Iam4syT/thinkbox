@@ -17,7 +17,7 @@ It solves challenges like **model versioning**, **CI/CD for ML workflows**, and 
 ## 💡 Background
 
 Inspired by the complexity and manual effort of deploying machine learning models to production, this project was born out of the need for a seamless, automated, and production-grade ML workflow.  
-The author’s journey combines backend, DevOps, and AI engineering skills to deliver a practical, scalable MLOps solution.
+My MLOps journey combines my backend development, DevOps, and AI engineering skills to deliver a practical, scalable MLOps solution.
 
 ---
 
@@ -29,15 +29,13 @@ The author’s journey combines backend, DevOps, and AI engineering skills to de
 - **Model Versioning & Registry**: Manage multiple model versions and metadata.
 - **Automated Model Deployment**: Push models to production with minimal manual effort.
 - **Model Monitoring & Alerting**: Detect performance degradation and data drift in real time.
-- **Explainability Integrations**: Integrate XAI tools for model transparency.
-- **Cloud-Agnostic Deployments**: Supports AWS, Azure, GCP, and on-premise.
 
 ---
 
 ## 🛠️ Tech Stack
 
 - **Languages:** Python
-- **ML Frameworks:** ZenML, MLflow, Scikit-learn
+- **ML Frameworks:** ZenML, MLflow
 - **Data Orchestration & Experiment Tracking:** MLflow, DVC
 - **Containerization:** Docker
 - **CI/CD:** GitHub Actions
