@@ -45,10 +45,10 @@ My MLOps journey combines my backend development, DevOps, and AI engineering ski
 
 ## 📦 Installation
 
-1. **Clone the repository:**
+1. **Clone the repository and navigate to the MLOps project:**
    ```bash
    git clone https://github.com/Iam4syT/thinkbox.git
-   cd mlops-project
+   cd thinkbox/mlops-project
    ```
 
 2. **Create a virtual environment (recommended):**
@@ -71,12 +71,12 @@ Typical pipeline commands:
 
 - **Run data ingestion:**
   ```bash
-  python scripts/data_ingestion.py
+  python steps/ingest_data.py
   ```
 
 - **Train a model and log experiments:**
   ```bash
-  mlflow run . -e train_model
+  mlflow run . -e model_train.py
   ```
 
 - **Deploy the model via Docker:**
@@ -90,6 +90,9 @@ Typical pipeline commands:
   curl -X POST "http://localhost:8000/predict" -H "Content-Type: application/json" -d '{"features": [1, 2, 3]}'
   ```
 
+---
+
+*For more details, explore the `steps` folder and other project directories for specific scripts and pipeline configurations.*
 ---
 
 ## 📊 Example
