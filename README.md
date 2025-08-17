@@ -24,8 +24,7 @@ A typical project includes:
 
 ## 🚀 Current Projects
 - 📱 **[Project 1: Energy Manager](./energy_manager)** – A lightweight prototype exploring seamless Home Energy Managment.  
-- 🔒 **[Project 2: SecureMic](./SecureMic)** – A proof-of-concept to prevent unauthorized microphone access and protect user privacy. (in-view) 
-
+- ⚙️ **[Project 2: MLOps Project](./mlops-project)** – A proof-of-concept to demonstrate MLOps Practice.
 *(Projects will be updated as new ideas are added.)*
 
 ---
