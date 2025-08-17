@@ -14,7 +14,7 @@ It solves challenges like **model versioning**, **CI/CD for ML workflows**, and 
 
 ---
 
-## 💡 Background Story
+## 💡 Backstory
 
 Inspired by the complexity and manual effort of deploying machine learning models to production, this project was born out of the need for a seamless, automated, and production-grade ML workflow.  
 My MLOps journey combines my backend development, DevOps, and AI engineering skills to deliver a practical, scalable MLOps solution.
