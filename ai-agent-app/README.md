@@ -1,6 +1,6 @@
 # AI Agent App
 
-A portfolio website with AI agents powered by Groq LLM that can answer questions about projects, skills, and provide research information.
+A portfolio website with AI agents powered by OpenAI LLM that can answer questions about projects, skills, and provide research information.
 
 ![AI Agent App](/img/ai-agent-app-home.png 'AI Agent App')
 
@@ -9,14 +9,14 @@ A portfolio website with AI agents powered by Groq LLM that can answer questions
 - Multiple specialized AI agents (Welcome, Project, Career, Client, Research)
 - React frontend with a modern chat interface
 - Flask backend API
-- Powered by Groq's LLama 3 model
+- Powered by OpenAI model
 
 ## Prerequisites
 
 - Node.js (v16+)
 - Python (v3.8+)
 - npm or yarn
-- A Groq API key
+- An OpenAI API key
 
 ## Installation
 
@@ -29,13 +29,11 @@ cd ai-agent-app
 
 ### 2. Set up environment variables
 
-Create a `.env` file in the `backend` directory with your Groq API key:
+Create a `.env` file in the `backend` directory with your OpenAI API key:
 
 ```shell
-GROQ_API_KEY="your_api_key_here"
+OPENAI_API_KEY="your_api_key_here"
 ```
-
-You can get a Groq API key by signing up at [GroqCloud](https://console.groq.com/home).
 
 ### 3. Set up the backend
 
