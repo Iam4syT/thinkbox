@@ -16,8 +16,8 @@ A portfolio website that exposes multiple specialized AI agents powered by OpenA
 ---
 
 ## 💡 Backstory
-
-This app started as a way to make a developer portfolio more interactive and useful than a static site. Instead of only listing projects and skills, the idea was to create conversational agents that can:
+For a while now, I have been thinking of creating a website portfolio for the numerous saved labs on my PC, and then I chanced upon an ai agent portfolio app article by Andrew Baisden. 
+His solution was better because it makes a developer's portfolio more interactive and useful than a static site. Instead of only listing projects and skills, the idea was to create conversational agents that can:
 - welcome visitors,
 - explain projects in context,
 - discuss career history and skills,
@@ -173,5 +173,11 @@ This project is distributed under the MIT License.
 
 Originally developed by Andrew Baisden  
 (Repository: https://github.com/andrewbaisden/ai-agent-app)
+
+Currently maintained by Bunamin Adams (4syT Labs)
+
+🔗 LinkedIn | GitHub
+🌐 think4syt.com
+✉️ bunamin@think4syt.com
 
 ---
