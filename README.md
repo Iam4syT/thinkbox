@@ -25,7 +25,7 @@ A typical project includes:
 ## 🚀 Current Projects
 - 📱 **[Project 1: Energy Manager](./energy_manager)** – A lightweight prototype exploring seamless Home Energy Managment.  
 - ⚙️ **[Project 2: MLOps Project](./mlops-project)** – A proof-of-concept to demonstrate MLOps Practice.
-- ⚙️ **[Project 3: PORTFOLIO INTEGRATED WITH AI AGENT](./ai-agent-app)** – A proof-of-concept to demonstrate MLOps Practice.
+- 🤖 **[Project 3: portfolio website powered by OpenAI LLMs](./ai-agent-app)** – A portfolio website that exposes multiple specialized AI agents powered by OpenAI LLMs.
 *(Projects will be updated as new ideas are added.)*
 
 ---
