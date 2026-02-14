@@ -33,42 +33,9 @@ What started as a personal quest to help my family became the foundation for thi
 - 🔹 **Summarize total energy cost** of all devices  
 - 🔹 Get **AI-generated recommendations** on energy efficiency  
 - 🔹 Simple **command-line interface (CLI)** for easy interaction  
-=======
-# App Ideas – Proof of Concept Collection
-
-This repository is a curated collection of **proof-of-concept prototypes** exploring different app ideas.  
-Each project serves as a lightweight demonstration of an idea’s core functionality, built to test feasibility, design direction, or unique features before moving into full-scale development.
-
----
-
-## 📂 Repository Structure
-Each folder in this repository represents a separate proof-of-concept project.  
-A typical project includes:
-- **README.md** – Project overview and purpose  
-- **Source Code** – Core implementation of the idea  
-- **Demo / Mockups** – Screenshots, wireframes, or video demos (where applicable)  
-
----
-
-## 🎯 Goals of This Repository
-- Document and experiment with new **app concepts**  
-- Validate **technical feasibility** of ideas  
-- Explore **user experience (UX) directions**  
-- Provide a foundation for future **production-ready apps**  
-
----
-
-## 🚀 Current Projects
-- 📱 **[Project 1: Energy Manager](./Energy_Manager)** – A lightweight prototype exploring seamless Home Energy Managment.  
-- 🔒 **[Project 2: SecureMic](./SecureMic)** – A proof-of-concept to prevent unauthorized microphone access and protect user privacy. (in-view) 
-
-*(Projects will be updated as new ideas are added.)*
->>>>>>> ab227d6460920b207824794c7194fa0a34f6605d
-
 ---
 
 ## 🛠️ Tech Stack
-<<<<<<< HEAD
 - **Python 3.9+**
 - [Semantic Kernel](https://github.com/microsoft/semantic-kernel) – AI integration
 - OpenAI API (GPT models)
@@ -156,24 +123,16 @@ Using Refrigerator costs $ 0.0000416667 per second.
 * [ ] Data **visualizations with charts**
 * [ ] Cloud sync for energy data
 * [ ] Mobile app (Flutter/React Native frontend)
-=======
-The prototypes in this repository may use a mix of:
-- **Languages**: Python, 
-- **Frameworks**: Django 
-- **Tools**: GitHub Actions, OpenAI  
 
 ---
 
 ## 📜 License
 This repository is licensed under the **MIT License** – you are free to use, modify, and build upon these concepts, provided proper attribution is given.  
 *(You may update the license type if you prefer more restrictive terms.)*
->>>>>>> ab227d6460920b207824794c7194fa0a34f6605d
 
 ---
 
 ## 🤝 Contributing
-<<<<<<< HEAD
-
 Contributions are welcome! Please fork the repo and submit a pull request.
 
 ---
@@ -191,27 +150,7 @@ Developed by **\[4syT Labs]**
 
 ---
 
-```
-
----
-
-This version is **professional, structured, and employer-ready**:  
-- Explains features clearly.  
-- Provides installation & usage instructions.  
-- Shows an example run.  
-- Adds roadmap for future improvements.  
-- Includes license & author section.  
-
-Do you want me to also **add badges** (Python version, license, last commit, etc.) at the top so it looks even more polished on GitHub?
-```
-=======
-This is primarily an experimental playground, but suggestions, feedback, or pull requests are welcome.  
-If you’d like to collaborate on evolving a proof-of-concept into a production-ready app, feel free to open an issue or contact me.  
-
----
-
 ## 📧 Contact
 Created and maintained by **Bunamin Adams (4syt Integrated Solution)**  
 - 🌐 [think4syt.com](https://think4syt.com)  
 - ✉️ [bunamin@think4syt.com] 
->>>>>>> ab227d6460920b207824794c7194fa0a34f6605d
