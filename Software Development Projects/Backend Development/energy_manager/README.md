@@ -57,26 +57,26 @@ What started as a personal quest to help my family became the foundation for thi
    python -m venv venv
    source venv/bin/activate   # On macOS/Linux
    venv\Scripts\activate      # On Windows
-   ```
+   ````
 
 3. **Install dependencies**
 
    ```bash
    pip install -r requirements.txt
-   ```
+   ````
 
 4. **Set your OpenAI API key**
    In `energy_manager.py`, replace:
 
    ```python
    api_key = "your_openai_api_key"
-   ```
+   ````
 
    with your actual key, or load it from environment variables for security:
 
    ```bash
    export OPENAI_API_KEY="your_api_key_here"
-   ```
+   ````
 
 ---
 
@@ -86,7 +86,7 @@ Run the application:
 
 ```bash
 python main.py
-```
+````
 
 You’ll see an interactive menu:
 
@@ -98,7 +98,7 @@ You’ll see an interactive menu:
 4. Calculate total cost of all devices
 5. Get AI-generated feedback on consumption
 0. Exit
-```
+````
 
 ---
 
@@ -112,7 +112,7 @@ Enter your currency: $
 Enter electricity cost per kWh: 0.15
 
 Using Refrigerator costs $ 0.0000416667 per second.
-```
+````
 
 ---
 
