@@ -17,7 +17,7 @@ The AI integration is built on Microsft's Semantic Kernel chat completion functi
 ---
 # 💡 Backstory
 
-One evening, I watched my family grapple with the high cost of electricity. Despite their best efforts—turning off lights and appliances, and using devices only during off-peak hours—the bills remained stubbornly high. It became clear that, much like with money, it's the small, continuous expenses that silently add up.
+One evening, while reviewing the mounting energy bills for our family home and small business. Despite turning off lights, shifting usage to off-peak hours, and installing basic monitoring, costs kept climbing. It became clear that, much like with money, it's the small, continuous expenses that silently add up.
 
 This realization sparked an idea: to measure and analyze energy consumption on a granular, second-by-second basis. This wouldn't just be about tracking usage; it would be about finding and highlighting those "little expenses" that were draining our wallets.
 
