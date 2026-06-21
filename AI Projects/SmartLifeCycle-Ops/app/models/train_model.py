@@ -57,7 +57,7 @@ def execute_model_training():
     recall = recall_score(y_test, predictions)
     precision = precision_score(y_test, predictions)
     f1 = f1_score(y_test, predictions)
-    print(f"[+] Model Training Finished Successfully. Test Accuracy Baseline: {accuracy * 100:.2f}% | Recall: {recall:.2f} | Precision: {precision:.2f} | F1 Score: {f1:.2f}")
+    print(f"[+] Model Training Finished Successfully. | Test Accuracy Baseline: {accuracy * 100:.2f}% | Recall: {recall:.2f} | Precision: {precision:.2f} | F1 Score: {f1:.2f}")
     
     # 6. Serialize and Persist Model Output
     model_path = os.path.join(data_dir, 'predictive_refresh_model.pkl')
