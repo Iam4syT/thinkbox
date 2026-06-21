@@ -29,9 +29,9 @@ $$\text{Tenant Scan} \longrightarrow \text{Information Barrier Mapping} \longrig
 
 ---
 
-## 3. Softcat Competency Alignment
+## 3. Competency Alignment
 
-This technical repository mirrors real-world delivery standards across four core business competencies required by Softcat Engineering:
+This technical repository mirrors real-world delivery standards across four core business competencies required by Modern Workplace Engineering:
 
 * **Copilot Custom Agent Design:** Implements structural data protection logic mimicking a Microsoft 365 Copilot architecture.
 * **Information Security Governance:** Provides automated tenant security audits that align with Zero-Trust access control frameworks.
