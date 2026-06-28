@@ -1,0 +1,35 @@
+NEWS SUMMARY - June 28, 2026
+==============================
+Generated from: news.txt
+
+A snapshot of today's top global stories across disaster, climate, politics,
+aviation, and sports.
+
+DISASTERS & HUMANITARIAN
+- Earthquakes in Venezuela have caused deaths and displaced thousands. Canada
+  is sending humanitarian aid.
+
+CLIMATE & WEATHER
+- Utah's "Cottonwood Fire" is one of the worst wildfires in the state's history,
+  forcing evacuations.
+- Kentucky declared a state of emergency due to severe flooding; residents told
+  to stay home.
+- A European heat dome is driving temperatures past 40°C, prompting health
+  warnings across the continent.
+
+U.S. POLITICS & LAW
+- Texas faces legal battles over a mandate requiring Bible study in all public
+  school grade levels.
+- Michigan police are investigating a "swatting" attack targeting former
+  Transportation Secretary Pete Buttigieg.
+
+AVIATION
+- The FAA is investigating a near-collision incident on the tarmac at Miami
+  International Airport.
+
+CANADA
+- PM Justin Trudeau is attending the Toronto Pride Parade today.
+
+SPORTS
+- Wimbledon begins Monday, June 29, 2026.
+- World Cup enthusiasm is surging across the United States.
