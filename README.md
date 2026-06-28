@@ -23,10 +23,23 @@ A typical project includes:
 ---
 
 ## 🚀 Current Projects
-- 📱 **[Project 1: Energy Manager](./energy_manager)** – A lightweight prototype exploring seamless Home Energy Managment.  
-- ⚙️ **[Project 2: MLOps Project](./mlops-project)** – A Python-based framework for automating and streamlining machine learning lifecycle.
-- 🤖 **[Project 3: Portfolio Website powered by OpenAI LLMs](./ai-agent-app)** – A portfolio website that exposes multiple specialized AI agents powered by OpenAI LLMs.
-  
+This repository groups projects into top-level categories. Browse the folders below (click a link to open the project folder):
+
+- **Software_Development**
+  - [energy_manager](./Software_Development/energy_manager) — Home energy management prototype.
+  - [GridManager](./Software_Development/GridManager) — Grid management tools and demos.
+  - [4syT Integrated Solutions Website](./Software_Development/4syT%20Integrated%20Solutions_Website) — Company website and site assets (contains the "4syt Website" HTML and assets).
+
+- **AI Projects**
+  - [ai-agent-app](./AI%20Projects/ai-agent-app) — Portfolio website powered by specialized AI agents.
+  - [MLOps](./AI%20Projects/MLOps) — Tools and examples for automating the ML lifecycle.
+  - [SmartLifeCycle-Ops](./AI%20Projects/SmartLifeCycle-Ops)
+  - [kaggle](./AI%20Projects/kaggle)
+
+- **Modern Workplace Solutions**
+  - [Enterprise-Copilot-Governance-Ops](./Mordern%20Workplace%20Solutions/Enterprise-Copilot-Governance-Ops)
+  - [Enterprise-Ops-Telemetry-Engine](./Mordern%20Workplace%20Solutions/Enterprise-Ops-Telemetry-Engine)
+
 *(Projects will be updated as new ideas are added.)*
 
 ---
@@ -53,4 +66,4 @@ If you’d like to collaborate on evolving a proof-of-concept into a production-
 ## 📧 Contact
 Created and maintained by **Bunamin Adams (4syt Integrated Solution)**  
 - 🌐 [think4syt.com](https://think4syt.com)  
-- ✉️ [bunamin@think4syt.com] 
+- ✉️ [bunamin@think4syt.com](mailto:bunamin@think4syt.com)
