@@ -1,7 +1,7 @@
-# Architecture Deep Dive: Aurora Workspace Governance Engine
+# Architecture Deep Dive: Workspace Governance Engine
 
 ## 1. Executive Summary
-The **Aurora Workspace Governance Engine** is an architecture-as-code automation platform built to govern Microsoft 365 services (SharePoint Online, MS Teams, M365 Groups) in a secure, non-interactive, passwordless environment. 
+The **Workspace Governance Engine** is an architecture-as-code automation platform built to govern Microsoft 365 services (SharePoint Online, MS Teams, M365 Groups) in a secure, non-interactive, passwordless environment. 
 
 By utilizing **Azure Active Directory (Entra ID) App Registrations** authenticated via a **Self-Signed Client Certificate**, the engine runs automated scheduled actions (using GitHub Actions) to enforce data classifications, sweep for inactive or orphaned collaborative spaces, and minimize the risk of data sprawl.
 

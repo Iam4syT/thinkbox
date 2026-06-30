@@ -1,4 +1,4 @@
-# Aurora Workspace Governance Engine
+# Workspace Governance Engine
 
 An automated, architecture-as-code solution that manages governance, eliminates infrastructure data sprawl, and programmatically enforces Microsoft Purview classification models across enterprise Microsoft 365 workspaces.
 
