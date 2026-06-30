@@ -229,15 +229,10 @@ Edit CSS variables in `css/main.css` (lines 6-13):
 
 ### RAG Widget Configuration
 
-In `js/main.js`, update the RAG API endpoint:
-```javascript
-const response = await fetch('/api/rag', {
-  // Update '/api/rag' to your actual endpoint
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({ query })
-});
-```
+The RAG Assistant in `js/main.js` is programmed to connect to a server backend `/api/rag` for live AI completions. 
+
+*   **Python Flask Backend**: We have provided a full-stack backend in the `backend/` directory that handles live requests by connecting to Groq/OpenAI APIs.
+*   **Client-Side Local Fallback (RAG Mock)**: If no server backend is running (e.g., when running on static hosts like Netlify/Vercel), the chat widget automatically falls back to an **interactive local knowledge base search engine** that provides quick-replies, typing indicators, and markdown rendering. No configuration is required to test the assistant statically!
 
 ## 🔧 API Integration Points
 
