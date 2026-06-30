@@ -40,6 +40,7 @@ This repository groups projects into top-level categories. Browse the folders be
   - [Enterprise-Copilot-Governance-Ops](./Modern%20Workplace%20Solutions/Enterprise-Copilot-Governance-Ops) — Microsoft Copilot readiness, access governance, and semantic data index compliance pipeline.
   - [Enterprise-Ops-Telemetry-Engine](./Modern%20Workplace%20Solutions/Enterprise-Ops-Telemetry-Engine) — Automated tenant onboarding setups and Azure Monitor anomaly detection using Isolation Forest.
   - [tenant-guard](./Modern%20Workplace%20Solutions/tenant-guard) — Infrastructure as Code (IaC) compliance framework for automated identity governance, Intune monitoring, and Microsoft Graph.
+  - [aurora-workspace-governance-engine](./Modern%20Workplace%20Solutions/aurora-workspace-governance-engine) — Programmatic architecture-as-code solution to automate M365 tenant compliance and security alerting using Microsoft Graph.
 
 *(Projects will be updated as new ideas are added.)*
 

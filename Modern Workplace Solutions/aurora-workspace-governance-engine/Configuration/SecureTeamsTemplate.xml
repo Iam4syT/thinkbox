@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template Name="SecureAnalyticsWorkspace">
+    <SecuritySettings>
+        <AllowGuestUsers>false</AllowGuestUsers>
+        <AllowCustomAppEmbedding>false</AllowCustomAppEmbedding>
+        <RequiresPurviewLabel>true</RequiresPurviewLabel>
+    </SecuritySettings>
+    <Channels>
+        <Channel Name="General" IsPrivate="false">
+            <Description>General announcements and high-level alignment.</Description>
+        </Channel>
+        <Channel Name="Data-Ingestion-Pipeline" IsPrivate="true">
+            <Description>Restricted channel for secure data connection setups.</Description>
+        </Channel>
+        <Channel Name="Model-Evaluation" IsPrivate="true">
+            <Description>Restricted channel for core algorithmic reviews.</Description>
+        </Channel>
+    </Channels>
+</Template>

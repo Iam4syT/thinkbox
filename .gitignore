@@ -79,6 +79,9 @@ logs/
 credentials.yml.enc
 *.pem
 *.key
+*.pfx
+*.cer
+*.p12
 
 # Coverage reports
 coverage/

@@ -1,0 +1,48 @@
+name: M365 Tenant Compliance & Optimization Scan
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Executes nightly at midnight UTC
+  workflow_dispatch: # Allows manual execution trigger from the GitHub UI
+
+jobs:
+  governance-run:
+    runs-on: windows-latest
+
+    env:
+      CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+      TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+      CERT_THUMBPRINT: ${{ secrets.AZURE_CERT_THUMBPRINT }}
+
+    steps:
+    - name: Check out Repository Source Code
+      uses: actions/checkout@v4
+
+    - name: Configure Microsoft Graph Module Dependencies Cache
+      uses: actions/cache@v3
+      with:
+        path: Documents\PowerShell\Modules
+        key: ${{ runner.os }}-msgraph
+
+    - name: Install Microsoft Graph PowerShell SDK
+      shell: powershell
+      run: |
+        Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
+        Install-Module Microsoft.Graph.Authentication -Scope CurrentUser -Force
+        Install-Module Microsoft.Graph.Sites -Scope CurrentUser -Force
+        Install-Module Microsoft.Graph.Groups -Scope CurrentUser -Force
+
+    - name: Run Secure Authentication Module
+      shell: powershell
+      run: |
+        ./Scripts/Connect-AuroraGraph.ps1 -TenantId ${{ env.TENANT_ID }} -ClientId ${{ env.CLIENT_ID }} -CertificateThumbprint ${{ env.CERT_THUMBPRINT }}
+
+    - name: Execute Unused Data Sprawl Audit
+      shell: powershell
+      run: |
+        ./Scripts/Audit-UnusedSharePointSites.ps1 -ConfigFilepath ./Configuration/TenantSettings.json
+
+    - name: Enforce Programmatic Purview Label Classifications
+      shell: powershell
+      run: |
+        ./Scripts/Enforce-PurviewLabels.ps1 -ConfigFilepath ./Configuration/TenantSettings.json

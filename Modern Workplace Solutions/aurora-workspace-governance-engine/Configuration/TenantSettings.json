@@ -1,0 +1,11 @@
+{
+    "TenantSettings": {
+        "InactivityThresholdDays": 90,
+        "ArchiveStoragePath": "https://yourtenant.sharepoint.com/sites/ArchiveVault",
+        "AlertRecipient": "compliance-alerts@yourcompany.com",
+        "ClassificationLabels": {
+            "HighCompliance": "e305282a-e374-4b55-bb55-ec91cf549c69",
+            "General": "b345221a-d234-4b22-aa11-cc82cf549d44"
+        }
+    }
+}
