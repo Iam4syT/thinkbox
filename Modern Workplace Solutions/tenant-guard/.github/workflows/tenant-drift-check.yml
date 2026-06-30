@@ -1,0 +1,37 @@
+name: Microsoft M365 Governance Fleet Audit
+
+# This dictates when our automation pipeline triggers
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 * * * *' # Run automatically every hour of every day
+
+jobs:
+  governance-audit:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Securely pull down the repository code into the runner container
+    - name: Checkout Repository Source
+      uses: actions/checkout@v4
+
+    # Step 2: Initialize PowerShell execution engine inside the Linux runner container
+    - name: Run Entra ID Identity Safety Verification
+      shell: pwsh
+      run: |
+        ./scripts/Run-EntraIdentityAudit.ps1
+
+    # Step 3: Run Intune Device Fleet Compliance Match Engine
+    - name: Run Intune Compliance Mapping Enforcement
+      shell: pwsh
+      run: |
+        ./scripts/Sync-IntuneDevicePolicies.ps1
+
+    # Step 4: Run AI Readiness Data Visibility Auditing Framework
+    - name: Run Copilot Strategic Boundary Data Scan
+      shell: pwsh
+      run: |
+        ./scripts/Test-CopilotReadiness.ps1

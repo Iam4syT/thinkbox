@@ -1,0 +1,9 @@
+# Enterprise-Copilot-Governance-Ops gitignore
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS files
+.DS_Store

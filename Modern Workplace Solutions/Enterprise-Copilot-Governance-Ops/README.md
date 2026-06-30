@@ -14,6 +14,11 @@ When enterprise organizations rush to adopt Microsoft Copilot, they face a massi
 
 This project acts as an automated **"Readiness Orchestrator."** It crawls simulated corporate data structures, audits active permissions, flags governance anomalies, and uses a mock semantic parser to prove how secure data governance directly protects profit margins and ensures compliance before Copilot agents are turned on.
 
+### Key Business Benefits:
+- **Risk Mitigation:** Prevents catastrophic data leaks by identifying permission leaks (e.g. "All-Employees" access on highly confidential files) before Copilot ingestion.
+- **Regulatory Compliance:** Aligns with Zero-Trust frameworks and Microsoft Purview classification rules to enforce compliance.
+- **Executive Visibility:** Translates technical access controls into an executive-ready readiness score (KPI) to support strategic decision making.
+
 ---
 
 ## 2. End-to-End Technical Architecture
@@ -29,9 +34,9 @@ $$\text{Tenant Scan} \longrightarrow \text{Information Barrier Mapping} \longrig
 
 ---
 
-## 3. Competency Alignment
+## 3. Softcat Competency Alignment
 
-This technical repository mirrors real-world delivery standards across four core business competencies required by Modern Workplace Engineering:
+This technical repository mirrors real-world delivery standards across four core business competencies required by Softcat Engineering:
 
 * **Copilot Custom Agent Design:** Implements structural data protection logic mimicking a Microsoft 365 Copilot architecture.
 * **Information Security Governance:** Provides automated tenant security audits that align with Zero-Trust access control frameworks.
@@ -45,3 +50,11 @@ This technical repository mirrors real-world delivery standards across four core
 1. **Install Dependencies:**
    ```bash
    pip install -r requirements.txt
+   ```
+
+2. **Execute Engine Pipeline:**
+   ```bash
+   python main.py
+   ```
+
+3. **Review Output:** Check the console for execution telemetry and open `copilot_readiness_telemetry.png` to view the generated executive risk asset.

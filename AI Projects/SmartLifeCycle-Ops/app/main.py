@@ -6,6 +6,7 @@ import os
 import pickle
 import datetime
 import uvicorn
+import pandas as pd
 from fastapi import FastAPI, HTTPException, status
 from pydantic import BaseModel, Field, EmailStr
 
@@ -96,13 +97,13 @@ def predict_device_lifecycle(payload: TelemetryPayload):
     if hardware_model is None:
         raise HTTPException(status_code=500, detail="Predictive model engine context is not initialized.")
         
-    # Build array structured identical to the model training configuration layout
-    input_vector = [[
-        payload.battery_cycle_count,
-        payload.average_cpu_temp_c,
-        payload.disk_read_error_rate,
-        payload.device_age_months
-    ]]
+    # Build dataframe structured identical to the model training configuration layout
+    input_vector = pd.DataFrame([{
+        'battery_cycle_count': payload.battery_cycle_count,
+        'average_cpu_temp_c': payload.average_cpu_temp_c,
+        'disk_read_error_rate': payload.disk_read_error_rate,
+        'device_age_months': payload.device_age_months
+    }])
     
     # Predict class (0 = Healthy, 1 = Immediate Replacement Required)
     prediction = int(hardware_model.predict(input_vector)[0])

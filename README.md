@@ -31,23 +31,26 @@ This repository groups projects into top-level categories. Browse the folders be
   - [4syT Integrated Solutions Website](./Software_Development/4syT%20Integrated%20Solutions_Website) — Company website and site assets (contains the "4syt Website" HTML and assets).
 
 - **AI Projects**
-  - [ai-agent-app](./AI%20Projects/ai-agent-app) — Portfolio website powered by specialized AI agents.
-  - [MLOps](./AI%20Projects/MLOps) — Tools and examples for automating the ML lifecycle.
-  - [SmartLifeCycle-Ops](./AI%20Projects/SmartLifeCycle-Ops)
-  - [kaggle](./AI%20Projects/kaggle)
+  - [ai-agent-app](./AI%20Projects/ai-agent-app) — Multi-agent interactive portfolio website powered by React, Flask, and OpenAI LLMs.
+  - [MLOps](./AI%20Projects/MLOps) — Automated data validation, version control, and ML model deployment lifecycle using MLflow and ZenML.
+  - [SmartLifeCycle-Ops](./AI%20Projects/SmartLifeCycle-Ops) — IT Asset Management & Modern Workplace automation predicting hardware failures and onboarding/offboarding employees.
+  - [kaggle](./AI%20Projects/kaggle) — Research papers, agent skills/interoperability studies, and custom CLI projects (e.g., BigQuery Release Notes Viewer).
 
 - **Modern Workplace Solutions**
-  - [Enterprise-Copilot-Governance-Ops](./Mordern%20Workplace%20Solutions/Enterprise-Copilot-Governance-Ops)
-  - [Enterprise-Ops-Telemetry-Engine](./Mordern%20Workplace%20Solutions/Enterprise-Ops-Telemetry-Engine)
+  - [Enterprise-Copilot-Governance-Ops](./Modern%20Workplace%20Solutions/Enterprise-Copilot-Governance-Ops) — Microsoft Copilot readiness, access governance, and semantic data index compliance pipeline.
+  - [Enterprise-Ops-Telemetry-Engine](./Modern%20Workplace%20Solutions/Enterprise-Ops-Telemetry-Engine) — Automated tenant onboarding setups and Azure Monitor anomaly detection using Isolation Forest.
+  - [tenant-guard](./Modern%20Workplace%20Solutions/tenant-guard) — Infrastructure as Code (IaC) compliance framework for automated identity governance, Intune monitoring, and Microsoft Graph.
 
 *(Projects will be updated as new ideas are added.)*
 
 ---
 
 ## 🛠️ Tech Stack
-The prototypes in this repository may use a mix of:
-- **Languages**: Python, JSON, BASH
-- **Tools**: GitHub Actions, OpenAI  
+The prototypes in this repository leverage a rich modern tech stack:
+- **Languages**: Python, PowerShell, JavaScript/React, HTML5/CSS3, XML (Atom Feeds), BASH
+- **Frameworks & Libraries**: FastAPI, Flask, React (Vite), ZenML, MLflow
+- **Machine Learning**: Scikit-Learn (Random Forest, Isolation Forest)
+- **Infrastructure & APIs**: Microsoft Graph API, Microsoft Intune, JAMF Pro, Docker, GitHub Actions, OpenAI API  
 
 ---
 
