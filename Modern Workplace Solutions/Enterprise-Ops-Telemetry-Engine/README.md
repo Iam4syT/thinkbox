@@ -23,5 +23,16 @@ Automating the client onboarding process **reduces engineering setup times by ov
 
 1. **Clone the project repository:**
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/Enterprise-Ops-Telemetry-Engine.git](https://github.com/YOUR_USERNAME/Enterprise-Ops-Telemetry-Engine.git)
-   cd Enterprise-Ops-Telemetry-Engine
+   git clone https://github.com/Iam4syT/thinkbox.git
+   cd "Modern Workplace Solutions/Enterprise-Ops-Telemetry-Engine"
+   ```
+
+2. **Run the telemetry creation and data science processing models:**
+   ```bash
+   pip install pandas scikit-learn
+   python src/Analytics/LogParser.py
+   python src/Analytics/anomalous_noise_detector.py
+   ```
+
+3. **Open Visualizations:** 
+   Open Power BI Desktop, import the generated data from `src/Analytics/data/telemetry_anomaly_insights.csv`, and build the visualization dashboard as outlined in `src/Dashboards/README.md`.

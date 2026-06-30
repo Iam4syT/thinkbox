@@ -1,9 +1,9 @@
-# aurora-tenant-guard
+# tenant-guard
 
 Automated Identity Governance, Endpoint Compliance Monitoring, and AI Integration Framework for Modern Enterprises via Microsoft Graph and PowerShell CI/CD.
 
 ## Business Value & Core Concept
-Manual administration across international cloud environments exposes businesses to compliance drifts, unmapped administrative access, and data over-sharing. **aurora-tenant-guard** implements **Infrastructure as Code (IaC)** principles across Microsoft 365 architecture. 
+Manual administration across international cloud environments exposes businesses to compliance drifts, unmapped administrative access, and data over-sharing. **tenant-guard** implements **Infrastructure as Code (IaC)** principles across Microsoft 365 architecture. 
 
 By tracking architectural standards inside a structured version-controlled repository, any changes to live configurations are caught, flagged, and audited systematically.
 
@@ -18,8 +18,8 @@ To run this laboratory simulation framework manually on your local system for te
 
 ```powershell
 # 1. Clone your repository workspace
-git clone https://github.com/YOUR_GITHUB_USERNAME/aurora-tenant-guard.git
-cd aurora-tenant-guard
+git clone https://github.com/YOUR_GITHUB_USERNAME/tenant-guard.git
+cd tenant-guard
 
 # 2. Execute Identity Access Review Script
 ./scripts/Run-EntraIdentityAudit.ps1

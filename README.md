@@ -25,10 +25,10 @@ A typical project includes:
 ## 🚀 Current Projects
 This repository groups projects into top-level categories. Browse the folders below (click a link to open the project folder):
 
-- **Software_Development**
-  - [energy_manager](./Software_Development/energy_manager) — Home energy management prototype.
-  - [GridManager](./Software_Development/GridManager) — Grid management tools and demos.
-  - [4syT Integrated Solutions Website](./Software_Development/4syT%20Integrated%20Solutions_Website) — Company website and site assets (contains the "4syt Website" HTML and assets).
+- **Software Development**
+  - [energy_manager](./Software%20Development/energy_manager) — Home energy management prototype.
+  - [GridManager](./Software%20Development/GridManager) — Grid management tools and demos.
+  - [4syT Integrated Solutions Website](./Software%20Development/4syT%20Integrated%20Solutions_Website) — Company website and site assets (contains the "4syt Website" HTML and assets).
 
 - **AI Projects**
   - [ai-agent-app](./AI%20Projects/ai-agent-app) — Multi-agent interactive portfolio website powered by React, Flask, and OpenAI LLMs.
