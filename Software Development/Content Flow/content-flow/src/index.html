@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ContentFlow — AI-powered content repurposing dashboard. Transform brain dumps into platform-optimized posts." />
+  <meta name="keywords" content="content, AI, repurposing, LinkedIn, Instagram, YouTube, dashboard" />
+  <meta name="author" content="ContentFlow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ContentFlow — AI Content Repurposing" />
+  <meta property="og:description" content="Transform raw ideas into platform-optimized content with AI." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.png" />
+
+  <title>ContentFlow — AI Content Studio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app" class="app-layout">
+
+    <!-- ═══════════════ SIDEBAR ═══════════════ -->
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar__brand">
+        <span class="sidebar__logo">⚡</span>
+        <h1 class="sidebar__title">ContentFlow</h1>
+      </div>
+
+      <nav id="main-nav" class="sidebar__nav" aria-label="Main navigation">
+        <a href="#dashboard" class="nav-item active" data-view="dashboard" id="nav-dashboard">
+          <span class="nav-item__icon">📊</span>
+          <span class="nav-item__label">Dashboard</span>
+        </a>
+        <a href="#create" class="nav-item" data-view="create" id="nav-create">
+          <span class="nav-item__icon">🧠</span>
+          <span class="nav-item__label">Create</span>
+        </a>
+        <a href="#queue" class="nav-item" data-view="queue" id="nav-queue">
+          <span class="nav-item__icon">📤</span>
+          <span class="nav-item__label">Queue</span>
+        </a>
+        <a href="#analytics" class="nav-item" data-view="analytics" id="nav-analytics">
+          <span class="nav-item__icon">📈</span>
+          <span class="nav-item__label">Analytics</span>
+        </a>
+        <a href="#okr" class="nav-item" data-view="okr" id="nav-okr">
+          <span class="nav-item__icon">🎯</span>
+          <span class="nav-item__label">OKR</span>
+        </a>
+        <a href="#settings" class="nav-item" data-view="settings" id="nav-settings">
+          <span class="nav-item__icon">⚙️</span>
+          <span class="nav-item__label">Settings</span>
+        </a>
+      </nav>
+
+      <div class="sidebar__footer">
+        <div class="sidebar__user">
+          <div class="avatar" id="user-avatar">CF</div>
+          <div class="sidebar__user-info">
+            <span class="sidebar__user-name">Content Creator</span>
+            <span class="sidebar__user-plan">Pro Plan</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ═══════════════ MAIN CONTENT ═══════════════ -->
+    <main id="main-content" class="main-content">
+
+      <!-- Top Bar -->
+      <header id="top-bar" class="top-bar">
+        <div class="top-bar__left">
+          <button id="sidebar-toggle" class="btn-icon sidebar-toggle" aria-label="Toggle sidebar">☰</button>
+          <h2 id="view-title" class="top-bar__title">Dashboard</h2>
+        </div>
+        <div class="top-bar__right">
+          <button id="btn-new-content" class="btn btn--primary btn--glow">
+            <span>✨</span> New Content
+          </button>
+          <button id="btn-export" class="btn btn--ghost">
+            <span>📥</span> Export
+          </button>
+        </div>
+      </header>
+
+      <!-- View Container -->
+      <div id="view-container" class="view-container">
+
+        <!-- Dashboard View -->
+        <section id="view-dashboard" class="view view--active" data-view="dashboard">
+          <div id="mount-analytics-dashboard" class="mount-point"></div>
+          <div class="dashboard-grid">
+            <div id="mount-evolution-dashboard" class="mount-point"></div>
+            <div id="mount-audience-insights" class="mount-point"></div>
+          </div>
+        </section>
+
+        <!-- Create View -->
+        <section id="view-create" class="view" data-view="create">
+          <div id="mount-pipeline-progress" class="mount-point"></div>
+          <div class="create-layout">
+            <div class="create-layout__editor">
+              <div id="mount-brain-dump" class="mount-point"></div>
+              <div id="mount-refined-draft" class="mount-point"></div>
+            </div>
+            <div class="create-layout__sidebar">
+              <div id="mount-suggestion-panel" class="mount-point"></div>
+              <div id="mount-engagement-score" class="mount-point"></div>
+              <div id="mount-feedback-widget" class="mount-point"></div>
+            </div>
+          </div>
+          <div id="mount-platform-selector" class="mount-point"></div>
+          <div id="mount-adaptation-preview" class="mount-point"></div>
+        </section>
+
+        <!-- Queue View -->
+        <section id="view-queue" class="view" data-view="queue">
+          <div class="queue-layout">
+            <div id="mount-queue-manager" class="mount-point"></div>
+            <div id="mount-schedule-calendar" class="mount-point"></div>
+          </div>
+          <div id="mount-journey-timeline" class="mount-point"></div>
+        </section>
+
+        <!-- Analytics View -->
+        <section id="view-analytics" class="view" data-view="analytics">
+          <div id="mount-analytics-full" class="mount-point"></div>
+          <div id="mount-evolution-full" class="mount-point"></div>
+          <div id="mount-audience-full" class="mount-point"></div>
+        </section>
+
+        <!-- OKR View -->
+        <section id="view-okr" class="view" data-view="okr">
+          <div id="mount-okr-tracker" class="mount-point"></div>
+        </section>
+
+        <!-- Settings View -->
+        <section id="view-settings" class="view" data-view="settings">
+          <div id="mount-export-panel" class="mount-point"></div>
+          <div class="settings-grid">
+            <div class="glass-card">
+              <h3>🎨 Appearance</h3>
+              <div class="form-group">
+                <label class="form-label" for="theme-select">Theme</label>
+                <select id="theme-select" class="form-select">
+                  <option value="dark">Dark Mode</option>
+                  <option value="light">Light Mode</option>
+                </select>
+              </div>
+            </div>
+            <div class="glass-card">
+              <h3>🔗 Integrations</h3>
+              <p class="text-muted">Connect your social platforms for direct publishing.</p>
+              <div class="integration-list">
+                <div class="integration-item">
+                  <span class="platform-badge platform-badge--linkedin">in</span>
+                  <span>LinkedIn</span>
+                  <button class="btn btn--sm btn--outline">Connect</button>
+                </div>
+                <div class="integration-item">
+                  <span class="platform-badge platform-badge--instagram">📷</span>
+                  <span>Instagram</span>
+                  <button class="btn btn--sm btn--outline">Connect</button>
+                </div>
+                <div class="integration-item">
+                  <span class="platform-badge platform-badge--youtube">▶</span>
+                  <span>YouTube</span>
+                  <button class="btn btn--sm btn--outline">Connect</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- ═══════════════ OVERLAYS ═══════════════ -->
+    <div id="modal-overlay" class="modal-overlay" hidden>
+      <div id="modal-content" class="modal-content glass-card"></div>
+    </div>
+
+    <div id="toast-container" class="toast-container"></div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
