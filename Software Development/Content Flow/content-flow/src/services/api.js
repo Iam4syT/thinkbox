@@ -55,11 +55,9 @@ export function createContent(payload) {
   return request('/content', { method: 'POST', body: payload });
 }
 
-export function getContent(id) {
-  return request(`/content/${id}`);
-}
-
-export function listContent(params) {
+/** Get single content by ID */
+export function getContent(params) {
+  if (typeof params === 'string') return request(`/content/${params}`);
   return request('/content', { params });
 }
 
@@ -128,11 +126,15 @@ export function deleteQueueItem(id) {
 }
 
 export function reorderQueue(orderedIds) {
-  return request('/queue/reorder', { method: 'POST', body: { order: orderedIds } });
+  return request('/queue/reorder', { method: 'PUT', body: { order: orderedIds } });
 }
 
-export function autoSchedule() {
-  return request('/queue/auto-schedule', { method: 'POST' });
+export function autoSchedule(payload = {}) {
+  return request('/queue/auto-schedule', { method: 'POST', body: payload });
+}
+
+export function scheduleQueueItem(id, payload) {
+  return request(`/queue/${id}/schedule`, { method: 'POST', body: payload });
 }
 
 export function pauseQueueItem(id) {
@@ -167,7 +169,8 @@ export function getAnalyticsOverview(params) {
   return request('/analytics/overview', { params });
 }
 
-export function getEngagementTrend(params) {
+export function getEngagementTrend(daysOrParams) {
+  const params = typeof daysOrParams === 'number' ? { days: daysOrParams } : (daysOrParams || {});
   return request('/analytics/engagement-trend', { params });
 }
 
@@ -207,6 +210,10 @@ export function deleteObjective(id) {
 
 export function getKeyResults(objectiveId) {
   return request(`/okr/objectives/${objectiveId}/key-results`);
+}
+
+export function addKeyResult(objectiveId, payload) {
+  return request(`/okr/objectives/${objectiveId}/key-results`, { method: 'POST', body: payload });
 }
 
 export function updateKeyResult(objectiveId, krId, payload) {

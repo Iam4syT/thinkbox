@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "node server/index.js",
     "dev:frontend": "vite",
+    "dev:all": "node server/index.js & vite",
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest run",
@@ -13,7 +14,7 @@
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.0",
-    "better-sqlite3": "^11.0.0",
+    "better-sqlite3": "^12.11.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
@@ -23,5 +24,9 @@
   "devDependencies": {
     "vite": "^6.0.0",
     "vitest": "^3.0.0"
+  },
+  "allowScripts": {
+    "better-sqlite3@12.11.1": true,
+    "esbuild@0.25.12": true
   }
 }
