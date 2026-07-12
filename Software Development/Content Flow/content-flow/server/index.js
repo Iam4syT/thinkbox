@@ -57,11 +57,11 @@ const db = getDatabase();
 console.log('[ContentFlow] Database initialized');
 
 // AI Provider
-const aiProvider = AIProviderFactory.create('gemini');
+const aiProvider = AIProviderFactory.create('openai');
 if (!config.hasValidApiKey) {
-  console.warn('[ContentFlow] ⚠️  No GEMINI_API_KEY set — AI features will return mock responses');
+  console.warn('[ContentFlow] ⚠️  No OPENAI_API_KEY set — AI features will return mock responses');
 } else {
-  console.log(`[ContentFlow] ✅ Gemini AI connected (model: ${config.geminiModel})`);
+  console.log(`[ContentFlow] ✅ OpenAI connected (model: ${config.openaiModel})`);
 }
 
 // Platform Registry (auto-registers LinkedIn, Instagram, YouTube)
@@ -147,6 +147,119 @@ app.use('/api', okrRoutes);
 app.use('/api', journeyRoutes);
 
 // ─── Utility endpoints ─────────────────────────────────────────
+
+/** GET / — Landing page */
+app.get('/', (_req, res) => {
+  res.send(`<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ContentFlow API</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:#0f0f13;color:#e2e8f0;min-height:100vh;padding:2rem}
+    header{text-align:center;padding:3rem 1rem 2rem}
+    header h1{font-size:2.4rem;font-weight:700;background:linear-gradient(135deg,#6ee7b7,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    header p{color:#94a3b8;margin-top:.5rem;font-size:1rem}
+    .badge{display:inline-flex;align-items:center;gap:.4rem;background:#1e293b;border:1px solid #334155;border-radius:999px;padding:.3rem .9rem;font-size:.8rem;color:#6ee7b7;margin-top:1rem}
+    .badge span{width:8px;height:8px;border-radius:50%;background:#6ee7b7;animation:pulse 1.5s infinite}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.2rem;max-width:1100px;margin:0 auto 3rem}
+    .card{background:#1a1a24;border:1px solid #2d2d3d;border-radius:12px;padding:1.4rem;transition:border-color .2s,transform .2s}
+    .card:hover{border-color:#3b82f6;transform:translateY(-2px)}
+    .card h2{font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:#64748b;margin-bottom:1rem}
+    .route{display:flex;align-items:center;gap:.6rem;padding:.45rem 0;border-bottom:1px solid #1e293b;font-size:.85rem}
+    .route:last-child{border-bottom:none}
+    .method{font-size:.7rem;font-weight:700;padding:.2rem .5rem;border-radius:4px;min-width:46px;text-align:center;letter-spacing:.04em}
+    .GET{background:#0f3a2a;color:#6ee7b7}.POST{background:#1a2a4a;color:#60a5fa}
+    .PUT{background:#2a2a10;color:#facc15}.DELETE{background:#3a1010;color:#f87171}
+    .path{color:#cbd5e1;font-family:'Courier New',monospace}
+    .ai-tag{font-size:.65rem;background:#2d1b4e;color:#a78bfa;border-radius:4px;padding:.1rem .4rem;margin-left:auto;white-space:nowrap}
+    footer{text-align:center;color:#475569;font-size:.8rem;padding:1rem}
+  </style>
+</head>
+<body>
+<header>
+  <h1>⚡ ContentFlow API</h1>
+  <p>AI-Powered Cross-Platform Content Repurposing Engine</p>
+  <div class="badge"><span></span> OpenAI connected &nbsp;·&nbsp; model: ${config.openaiModel} &nbsp;·&nbsp; port ${config.port}</div>
+</header>
+<div class="grid">
+
+  <div class="card">
+    <h2>🔧 Utility</h2>
+    <div class="route"><span class="method GET">GET</span><span class="path">/api/health</span></div>
+    <div class="route"><span class="method GET">GET</span><span class="path">/api/platforms</span></div>
+  </div>
+
+  <div class="card">
+    <h2>📝 Content</h2>
+    <div class="route"><span class="method POST">POST</span><span class="path">/api/content</span></div>
+    <div class="route"><span class="method GET">GET</span><span class="path">/api/content</span></div>
+    <div class="route"><span class="method GET">GET</span><span class="path">/api/content/:id</span></div>
+    <div class="route"><span class="method PUT">PUT</span><span class="path">/api/content/:id</span></div>
+    <div class="route"><span class="method DELETE">DELETE</span><span class="path">/api/content/:id</span></div>
+    <div class="route"><span class="method POST">POST</span><span class="path">/api/content/:id/refine</span><span class="ai-tag">✦ AI</span></div>
+    <div class="route"><span class="method POST">POST</span><span class="path">/api/content/:id/adapt</span><span class="ai-tag">✦ AI</span></div>
+    <div class="route"><span class="method GET">GET</span><span class="path">/api/content/:id/adaptations</span></div>
+    <div class="route"><span class="method POST">POST</span><span class="path">/api/content/:id/suggestions</span><span class="ai-tag">✦ AI</span></div>
+    <div class="route"><span class="method POST">POST</span><span class="path">/api/content/:id/feedback</span></div>
+    <div class="route"><span class="method GET">GET</span><span class="path">/api/content/:id/feedback</span></div>
+    <div class="route"><span class="method POST">POST</span><span class="path">/api/content/:id/score</span><span class="ai-tag">✦ AI</span></div>
+  </div>
+
+  <div class="card">
+    <h2>📊 Analytics</h2>
+    <div class="route"><span class="method GET">GET</span><span class="path">/api/analytics/overview</span></div>
+    <div class="route"><span class="method GET">GET</span><span class="path">/api/analytics/engagement-trend</span></div>
+    <div class="route"><span class="method GET">GET</span><span class="path">/api/analytics/platform-comparison</span></div>
+    <div class="route"><span class="method GET">GET</span><span class="path">/api/analytics/recent-performance</span></div>
+    <div class="route"><span class="method GET">GET</span><span class="path">/api/analytics/evolution</span></div>
+    <div class="route"><span class="method GET">GET</span><span class="path">/api/analytics/audience</span></div>
+    <div class="route"><span class="method POST">POST</span><span class="path">/api/analytics/metrics</span></div>
+  </div>
+
+  <div class="card">
+    <h2>📅 Queue</h2>
+    <div class="route"><span class="method GET">GET</span><span class="path">/api/queue</span></div>
+    <div class="route"><span class="method POST">POST</span><span class="path">/api/queue</span></div>
+    <div class="route"><span class="method PUT">PUT</span><span class="path">/api/queue/reorder</span></div>
+    <div class="route"><span class="method POST">POST</span><span class="path">/api/queue/auto-schedule</span><span class="ai-tag">✦ AI</span></div>
+    <div class="route"><span class="method GET">GET</span><span class="path">/api/queue/:id</span></div>
+    <div class="route"><span class="method PUT">PUT</span><span class="path">/api/queue/:id</span></div>
+    <div class="route"><span class="method DELETE">DELETE</span><span class="path">/api/queue/:id</span></div>
+    <div class="route"><span class="method POST">POST</span><span class="path">/api/queue/:id/pause</span></div>
+    <div class="route"><span class="method POST">POST</span><span class="path">/api/queue/:id/resume</span></div>
+    <div class="route"><span class="method POST">POST</span><span class="path">/api/queue/:id/schedule</span></div>
+  </div>
+
+  <div class="card">
+    <h2>🗺️ Journeys</h2>
+    <div class="route"><span class="method GET">GET</span><span class="path">/api/journeys</span></div>
+    <div class="route"><span class="method POST">POST</span><span class="path">/api/journeys</span></div>
+    <div class="route"><span class="method GET">GET</span><span class="path">/api/journeys/:id</span></div>
+    <div class="route"><span class="method DELETE">DELETE</span><span class="path">/api/journeys/:id</span></div>
+    <div class="route"><span class="method POST">POST</span><span class="path">/api/journeys/:id/analyze-gaps</span><span class="ai-tag">✦ AI</span></div>
+  </div>
+
+  <div class="card">
+    <h2>🎯 OKRs</h2>
+    <div class="route"><span class="method GET">GET</span><span class="path">/api/okr/objectives</span></div>
+    <div class="route"><span class="method POST">POST</span><span class="path">/api/okr/objectives</span></div>
+    <div class="route"><span class="method PUT">PUT</span><span class="path">/api/okr/objectives/:id</span></div>
+    <div class="route"><span class="method DELETE">DELETE</span><span class="path">/api/okr/objectives/:id</span></div>
+    <div class="route"><span class="method GET">GET</span><span class="path">/api/okr/objectives/:id/key-results</span></div>
+    <div class="route"><span class="method POST">POST</span><span class="path">/api/okr/objectives/:id/key-results</span></div>
+    <div class="route"><span class="method PUT">PUT</span><span class="path">/api/okr/objectives/:objectiveId/key-results/:krId</span></div>
+    <div class="route"><span class="method GET">GET</span><span class="path">/api/okr/recommendations</span></div>
+  </div>
+
+</div>
+<footer>ContentFlow v1.0.0 &nbsp;·&nbsp; <a href="/api/health" style="color:#3b82f6">health check</a></footer>
+</body>
+</html>`);
+});
 
 /** GET /api/health */
 app.get('/api/health', (_req, res) => {

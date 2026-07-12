@@ -19,8 +19,8 @@ dotenv.config({ path: path.join(ROOT_DIR, '.env') });
  * @property {number} port - HTTP server port
  * @property {string} nodeEnv - Current environment (development | production | test)
  * @property {string} dbPath - Path to the SQLite database file
- * @property {string} geminiApiKey - Google Gemini API key
- * @property {string} geminiModel - Gemini model identifier
+ * @property {string} openaiApiKey - OpenAI API key
+ * @property {string} openaiModel - OpenAI model identifier
  * @property {string} rootDir - Absolute path to project root
  * @property {Object} cors - CORS configuration
  * @property {Object} rateLimit - Rate limiting configuration
@@ -30,8 +30,8 @@ const config = Object.freeze({
   port: parseInt(process.env.PORT, 10) || 3001,
   nodeEnv: process.env.NODE_ENV || 'development',
   dbPath: path.resolve(ROOT_DIR, process.env.DB_PATH || './data/contentflow.db'),
-  geminiApiKey: process.env.GEMINI_API_KEY || '',
-  geminiModel: process.env.GEMINI_MODEL || 'gemini-2.0-flash',
+  openaiApiKey: process.env.OPENAI_API_KEY || '',
+  openaiModel: process.env.OPENAI_MODEL || 'gpt-4o',
   rootDir: ROOT_DIR,
 
   cors: {
@@ -50,11 +50,11 @@ const config = Object.freeze({
     supportedPlatforms: ['linkedin', 'instagram', 'youtube'],
   },
 
-  /** @returns {boolean} Whether a valid Gemini API key is configured */
+  /** @returns {boolean} Whether a valid OpenAI API key is configured */
   get hasValidApiKey() {
     return (
-      this.geminiApiKey.length > 0 &&
-      this.geminiApiKey !== 'your_gemini_api_key_here'
+      this.openaiApiKey.length > 0 &&
+      this.openaiApiKey !== 'your_openai_api_key_here'
     );
   },
 

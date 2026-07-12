@@ -1,0 +1,14 @@
+# Docker build exclusions — keeps the container image lean and clean
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.git/
+.gitignore
+*.md
+docs/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

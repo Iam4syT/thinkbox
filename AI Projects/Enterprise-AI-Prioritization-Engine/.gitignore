@@ -1,0 +1,28 @@
+# Enterprise-AI-Prioritization-Engine — .gitignore
+
+# ── Python ───────────────────────────────────────────────────────────────────
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# ── Streamlit Cache ───────────────────────────────────────────────────────────
+.streamlit/
+
+# ── Environment & Secrets ────────────────────────────────────────────────────
+.env
+*.env
+
+# ── OS Files ─────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── IDE & Editor ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
