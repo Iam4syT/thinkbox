@@ -26,21 +26,24 @@ A typical project includes:
 This repository groups projects into top-level categories. Browse the folders below (click a link to open the project folder):
 
 - **Software Development**
-  - [energy_manager](./Software%20Development/energy_manager) — Home energy management prototype.
-  - [GridManager](./Software%20Development/GridManager) — Grid management tools and demos.
-  - [4syT Integrated Solutions Website](./Software%20Development/4syT%20Integrated%20Solutions_Website) — Company website and site assets (contains the "4syt Website" HTML and assets).
+  - [4syT Integrated Solutions](./Software%20Development/4syT%20Integrated%20Solutions) — Company website and site assets.
+  - [Content Flow](./Software%20Development/Content%20Flow) — Content management and publishing proof-of-concept.
+  - [Grid Manager](./Software%20Development/Grid%20Manager) — Grid management tools and demos.
+  - [Smart Home Energy Manager](./Software%20Development/Smart%20Home%20Energy%20Manager) — Home energy management prototype.
 
 - **AI Projects**
   - [ai-agent-app](./AI%20Projects/ai-agent-app) — Multi-agent interactive portfolio website powered by React, Flask, and OpenAI LLMs.
+  - [Agentic-Compliance-Auditor](./AI%20Projects/Agentic-Compliance-Auditor) — Autonomous compliance auditing agents and workflows.
+  - [Enterprise-AI-Prioritization-Engine](./AI%20Projects/Enterprise-AI-Prioritization-Engine) — Prioritization engine for AI initiatives.
   - [MLOps](./AI%20Projects/MLOps) — Automated data validation, version control, and ML model deployment lifecycle using MLflow and ZenML.
-  - [SmartLifeCycle-Ops](./AI%20Projects/SmartLifeCycle-Ops) — IT Asset Management & Modern Workplace automation predicting hardware failures and onboarding/offboarding employees.
-  - [kaggle](./AI%20Projects/kaggle) — Research papers, agent skills/interoperability studies, and custom CLI projects (e.g., BigQuery Release Notes Viewer).
+  - [SmartLifeCycle-Ops](./AI%20Projects/SmartLifeCycle-Ops) — IT Asset Management & Modern Workplace automation.
+  - [kaggle](./AI%20Projects/kaggle) — Research papers, agent studies, and custom CLI projects.
 
 - **Modern Workplace Solutions**
-  - [Enterprise-Copilot-Governance-Ops](./Modern%20Workplace%20Solutions/Enterprise-Copilot-Governance-Ops) — Microsoft Copilot readiness, access governance, and semantic data index compliance pipeline.
-  - [Enterprise-Ops-Telemetry-Engine](./Modern%20Workplace%20Solutions/Enterprise-Ops-Telemetry-Engine) — Automated tenant onboarding setups and Azure Monitor anomaly detection using Isolation Forest.
-  - [tenant-guard](./Modern%20Workplace%20Solutions/tenant-guard) — Infrastructure as Code (IaC) compliance framework for automated identity governance, Intune monitoring, and Microsoft Graph.
-  - [aurora-workspace-governance-engine](./Modern%20Workplace%20Solutions/aurora-workspace-governance-engine) — Programmatic architecture-as-code solution to automate M365 tenant compliance and security alerting using Microsoft Graph.
+  - [Enterprise-Copilot-Governance-Ops](./Modern%20Workplace%20Solutions/Enterprise-Copilot-Governance-Ops) — Microsoft Copilot readiness and governance tooling.
+  - [Enterprise-Ops-Telemetry-Engine](./Modern%20Workplace%20Solutions/Enterprise-Ops-Telemetry-Engine) — Tenant onboarding automation and anomaly detection.
+  - [Tenant-Guard](./Modern%20Workplace%20Solutions/Tenant-Guard) — IaC compliance framework for identity governance and monitoring.
+  - [Workspace-Governance-Engine](./Modern%20Workplace%20Solutions/Workspace-Governance-Engine) — M365 workspace governance and alerting automation.
 
 *(Projects will be updated as new ideas are added.)*
 
