@@ -11,7 +11,7 @@ import GridManagerCore.sources.EnergySource;
 @DisplayName("Energy Source Strategy Tests")
 public class StrategyTest {
 
-    private final EnergySourceFactory factory = new EnergySourceFactory();
+    private final EnergySourceFactory factory = EnergySourceFactory.withDefaultStrategies();
 
     /** Convenience builder to reduce repetition in tests. */
     private GridManagerConfig build(double demand, double wind, double solar, double cost, String time) {

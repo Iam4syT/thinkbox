@@ -1,4 +1,3 @@
-import asyncio
 from energy_manager import (
     cost_of_power_consumption,
     append_to_json,
@@ -6,11 +5,14 @@ from energy_manager import (
     get_float_input,
     ask_kernel,
     ask_kernel_with_data,
+    ask_kernel_for_solar_mitigation,
 )
+from solar_prediction import SolarIntelligenceEngine, PhysicalGhiPredictionStrategy
 
 def main():
     cost = None
     consumption_per_hour = None
+    solar_engine = SolarIntelligenceEngine(PhysicalGhiPredictionStrategy(drop_threshold_ratio=0.20))
 
     while True:
         print("\n===== Energy Manager Menu =====")
@@ -19,6 +21,7 @@ def main():
         print("3. Show consumption per month")
         print("4. Calculate total cost of all devices")
         print("5. Get AI-generated feedback on consumption")
+        print("6. Predict 30-Min Ahead Solar Irradiance Drop & PV Output")
         print("0. Exit")
 
         choice = input("Choose an option: ")
@@ -68,6 +71,28 @@ def main():
             answer = asyncio.run(ask_kernel(question))
             insight = asyncio.run(ask_kernel_with_data(question))
             print(f"As your trusted Energy Management Consultant: {answer, insight}")
+
+        elif choice == '6':
+            print("\n--- 30-Minute Ahead Solar Irradiance & PV Drop Predictor ---")
+            current_ghi = get_float_input("Enter current Global Horizontal Irradiance GHI in W/m² (e.g. 700): ")
+            area = get_float_input("Enter solar array total surface area in m² (e.g. 30): ")
+            eff = get_float_input("Enter solar panel efficiency ratio (e.g. 0.20 for 20%): ")
+            trend = input("Enter cloud cover trend (stable / increasing / severe): ")
+
+            forecast = solar_engine.evaluate_forecast(
+                current_ghi_w_m2=current_ghi,
+                panel_area_sqm=area,
+                panel_efficiency=eff,
+                cloud_cover_trend=trend,
+                location_name="Rooftop PV System"
+            )
+
+            if forecast.is_drop_warning:
+                try:
+                    ai_advice = asyncio.run(ask_kernel_for_solar_mitigation(forecast.warning_message))
+                    print(f"\n🤖 [AI PROACTIVE MITIGATION ADVICE]\n{ai_advice}")
+                except Exception as err:
+                    print(f"\n💡 [PROACTIVE MITIGATION ADVICE]\n1. Pre-charge home battery storage before the 30-min window.\n2. Delay EV charging or clothes dryer cycles.\n3. Enable automated grid backup transition.")
 
         elif choice == '0':
             print("Exiting Energy Manager. Goodbye!")

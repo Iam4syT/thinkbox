@@ -31,8 +31,9 @@ What started as a personal quest to help my family became the foundation for thi
 - 🔹 Calculate **cost per second, per hour, and per month** for any device  
 - 🔹 Save and load device usage history in **JSON format**  
 - 🔹 **Summarize total energy cost** of all devices  
-- 🔹 Get **AI-generated recommendations** on energy efficiency  
-- 🔹 Simple **command-line interface (CLI)** for easy interaction  
+- 🔹 **Predict 30-minute ahead Solar Irradiance (GHI) & PV Output drops** with automated load-shedding alerts  
+- 🔹 Get **AI-generated recommendations** on energy efficiency and proactive solar drop mitigation  
+- 🔹 Simple **command-line interface (CLI)** and automated demo runner (`demo_solar_prediction.py`)  
 ---
 
 ## 🛠️ Tech Stack

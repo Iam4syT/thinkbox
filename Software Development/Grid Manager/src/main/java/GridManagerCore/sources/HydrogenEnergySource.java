@@ -7,5 +7,11 @@ public class HydrogenEnergySource implements EnergySource {
     }
     @Override
     public String getName() { return "Hydrogen"; }
+
+    @Override
+    public double getCostPerKwh() { return 0.08; }
+
+    @Override
+    public double getCo2PerKwh() { return 0.002; }
 }
 

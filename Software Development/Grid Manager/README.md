@@ -31,6 +31,7 @@ decision is logged, costed, and reported.
 | Feature | Description |
 |---------|-------------|
 | 🔹 **Sensor Integration** | Ingests wind speed, solar irradiance, industrial demand, electricity cost, and time of day |
+| 🔹 **30-Min Solar Drop Alert** | Predicts 30-minute ahead GHI and PV power output; triggers proactive supply dispatch notifications |
 | 🔹 **Intelligent Switching** | Strategy Pattern evaluates all available sources and picks the best one |
 | 🔹 **Automated Execution** | Calls `switchTo()` on the selected energy source automatically |
 | 🔹 **Persistent Logging** | Every switch is saved to SQLite (`energy.db`) with timestamp and demand level |

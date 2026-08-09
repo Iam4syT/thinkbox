@@ -123,6 +123,20 @@ async def ask_kernel_with_data(user_request: str, filename: str = "energy_data.j
         return f"Error preparing request: {e}"
 
 
+async def ask_kernel_for_solar_mitigation(forecast_summary: str) -> str:
+    """
+    Query the AI Kernel to provide proactive load-shedding and battery management
+    recommendations based on a 30-minute ahead solar irradiance drop prediction.
+    """
+    prompt = (
+        f"30-Minute Ahead Solar Irradiance Drop Forecast Summary:\n{forecast_summary}\n\n"
+        "As an AI Energy Management Consultant, provide 3 concise, actionable steps "
+        "the homeowner should take within the 30-minute window before the solar drop occurs "
+        "(e.g., battery pre-charging, load shedding heavy appliances, grid peak tariff avoidance)."
+    )
+    return await ask_kernel(prompt)
+
+
 # -----------------------------
 # Energy Calculation Functions
 # -----------------------------

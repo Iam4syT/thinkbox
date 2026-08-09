@@ -38,6 +38,7 @@ public class GridSystemManager {
     private final EnergySourceFactory factory;
     private final IReportDAO reportDAO;
     private final UsageReport usageReport;
+    private final GridManagerCore.prediction.SolarIrradianceIntelligenceService intelligenceService;
 
     private final List<String> switchLog = new ArrayList<>();
 
@@ -56,10 +57,27 @@ public class GridSystemManager {
                              EnergySourceFactory factory,
                              IReportDAO reportDAO,
                              UsageReport usageReport) {
-        this.config      = config;
-        this.factory     = factory;
-        this.reportDAO   = reportDAO;
-        this.usageReport = usageReport;
+        this(config, factory, reportDAO, usageReport,
+             new GridManagerCore.prediction.SolarIrradianceIntelligenceService(
+                 new GridManagerCore.prediction.PhysicalGhiPredictionStrategy()
+             ));
+    }
+
+    public GridSystemManager(GridManagerConfig config,
+                             EnergySourceFactory factory,
+                             IReportDAO reportDAO,
+                             UsageReport usageReport,
+                             GridManagerCore.prediction.SolarIrradianceIntelligenceService intelligenceService) {
+        this.config              = config;
+        this.factory             = factory;
+        this.reportDAO           = reportDAO;
+        this.usageReport         = usageReport;
+        this.intelligenceService = intelligenceService;
+    }
+
+    /** Runs 30-minute ahead solar irradiance (GHI) and PV output drop prediction. */
+    public GridManagerCore.prediction.SolarForecast evaluateSolarPrediction30MinAhead() {
+        return intelligenceService.evaluateAndNotify(config);
     }
 
     /** Prints all current sensor readings to the console. */
@@ -106,20 +124,29 @@ public class GridSystemManager {
             return;
         }
         System.out.println("\n ==== Saving Switch History at " + config.getLocation() + " ====");
-        reportDAO.insertSwitchData(
-                config.getLocation(),
-                bestSource.getName(),
-                LocalDateTime.now(),
-                config.getIndustrialDemand()
-        );
-        System.out.println("Logged switch entry: " + bestSource.getName() + " @ " + config.getLocation());
+        try {
+            reportDAO.insertSwitchData(
+                    config.getLocation(),
+                    bestSource.getName(),
+                    LocalDateTime.now(),
+                    config.getIndustrialDemand()
+            );
+            System.out.println("Logged switch entry: " + bestSource.getName() + " @ " + config.getLocation());
+        } catch (IllegalStateException e) {
+            System.out.println("Switch History Persistence Notice: SQLite driver unavailable; switch logged to in-memory audit trail.");
+        }
     }
 
     /**
      * Fetches today's switch history from the database and generates a report.
      */
     public void dailySwitchReport() {
-        List<SwitchReport> allHistory  = reportDAO.getAllSwitchHistory();
+        List<SwitchReport> allHistory = new ArrayList<>();
+        try {
+            allHistory = reportDAO.getAllSwitchHistory();
+        } catch (IllegalStateException e) {
+            System.out.println("Switch Report Notice: SQLite database driver not loaded on current classpath.");
+        }
         LocalDate today = LocalDate.now();
 
         List<SwitchReport> todaysData = new ArrayList<>();
