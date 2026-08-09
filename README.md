@@ -43,7 +43,7 @@ This repository groups projects into top-level categories. Browse the folders be
 - **Modern Workplace Solutions**
   - [Enterprise-Copilot-Governance-Ops](./Modern%20Workplace%20Solutions/Enterprise-Copilot-Governance-Ops) — Microsoft Copilot readiness and governance tooling.
   - [Enterprise-Ops-Telemetry-Engine](./Modern%20Workplace%20Solutions/Enterprise-Ops-Telemetry-Engine) — Tenant onboarding automation and anomaly detection.
-  - [Tenant-Guard](./Modern%20Workplace%20Solutions/Tenant-Guard) — IaC compliance framework for identity governance and monitoring.
+  - [Tenant-Guard](./Modern%20Workplace%20Solutions/tenant-guard) — IaC compliance framework for identity governance and monitoring.
   - [Workspace-Governance-Engine](./Modern%20Workplace%20Solutions/Workspace-Governance-Engine) — M365 workspace governance and alerting automation.
 
 *(Projects will be updated as new ideas are added.)*

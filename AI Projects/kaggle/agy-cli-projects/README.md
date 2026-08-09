@@ -4,7 +4,7 @@
 [![Flask](https://img.shields.io/badge/Framework-Flask-000000?style=flat-square&logo=flask)](https://flask.palletsprojects.com/)
 [![Google Cloud](https://img.shields.io/badge/Cloud-Google%20BigQuery-4285F4?style=flat-square&logo=googlecloud)](https://cloud.google.com/bigquery)
 [![Google Drive API](https://img.shields.io/badge/API-Google%20Drive%20v3-34A853?style=flat-square&logo=googledrive)](https://developers.google.com/drive)
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](#)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](#6-license)
 
 > **An automated cloud telemetry, news summarization, and Google Drive publishing workflow powered by the Antigravity CLI (agy) ecosystem.**
 
@@ -49,7 +49,7 @@ The **AGY CLI Automation Engine** brings together automated feed parsing, conten
 │  Automated Summarization       │  Generates structured digests (news_summary.txt)
 │  & Drive Sync                  │  and uploads automatically to Google Drive
 │  (upload_to_drive.py)          │  via Google Drive v3 API
-└────────────────────────────────┘
+└───────────────┬────────────────┘
 ```
 
 ---
@@ -68,6 +68,7 @@ agy-cli-projects/
 ├── automate_pipeline.py      # End-to-end automated fetch, summarize & sync orchestrator
 ├── news.txt                  # Raw news telemetry feed sample
 ├── news_summary.txt          # Processed news summary digest
+├── latest_release_summary.txt# Generated latest BigQuery release notes summary
 ├── .env.example              # Secret & API configuration template
 ├── .gitignore                # Git ignore rules
 └── README.md                 # Primary project documentation
