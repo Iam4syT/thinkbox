@@ -26,7 +26,6 @@ A typical project includes:
 This repository groups projects into top-level categories. Browse the folders below (click a link to open the project folder):
 
 - **Software Development**
-  - [4syT Integrated Solutions](./Software%20Development/4syT%20Integrated%20Solutions) — Company website and site assets.
   - [Content Flow](./Software%20Development/Content%20Flow) — Content management and publishing proof-of-concept.
   - [Grid Manager](./Software%20Development/Grid%20Manager) — Grid management tools and demos.
   - [Smart Home Energy Manager](./Software%20Development/Smart%20Home%20Energy%20Manager) — Home energy management prototype.
