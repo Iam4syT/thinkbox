@@ -7,7 +7,7 @@
 
 ---
 
-# ⚙️ MLOps Project
+# MLOps Engine
 
 The **MLOps Project** is a Python-based framework for automating and streamlining the machine learning lifecycle.  
 It solves challenges like **model versioning**, **CI/CD for ML workflows**, and **production monitoring**—helping teams deploy, monitor, and improve ML models reliably.

@@ -1,4 +1,4 @@
-# Agentic-Compliance-Auditor
+# Agentic Compliance Auditor Agent
 
 [![FastAPI](https://img.shields.io/badge/Framework-FastAPI-009688?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
 [![OpenAI](https://img.shields.io/badge/AI-OpenAI%20%7C%20Azure%20OpenAI-412991?style=flat-square&logo=openai)](https://platform.openai.com/)

@@ -1,13 +1,23 @@
-# Tenant Guard Agent — .gitignore
+# MLOps Engine — .gitignore
+
+# ── Python & Virtual Environment ─────────────────────────────────────────────
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── ZenML & MLflow Data ──────────────────────────────────────────────────────
+.zen/
+mlruns/
 
 # ── Environment & Secrets ────────────────────────────────────────────────────
 .env
 *.env
-
-# ── PowerShell & Output Logs ─────────────────────────────────────────────────
-*.log
-output/
-reports/*.csv
 
 # ── IDE & Editor ─────────────────────────────────────────────────────────────
 .vscode/

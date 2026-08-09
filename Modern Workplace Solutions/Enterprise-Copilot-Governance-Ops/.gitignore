@@ -1,9 +1,26 @@
-# Enterprise-Copilot-Governance-Ops gitignore
+# Enterprise Copilot Governance Ops Agent — .gitignore
+
+# ── Python & Virtual Environment ─────────────────────────────────────────────
 venv/
 .venv/
 __pycache__/
 *.py[cod]
 *$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
 
-# OS files
+# ── Environment & Secrets ────────────────────────────────────────────────────
+.env
+*.env
+
+# ── IDE & Editor ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── OS Files ─────────────────────────────────────────────────────────────────
 .DS_Store
+Thumbs.db

@@ -1,8 +1,10 @@
-# Tenant Guard Agent — .gitignore
+# Workspace Governance Engine — .gitignore
 
 # ── Environment & Secrets ────────────────────────────────────────────────────
 .env
 *.env
+*.pfx
+*.pem
 
 # ── PowerShell & Output Logs ─────────────────────────────────────────────────
 *.log

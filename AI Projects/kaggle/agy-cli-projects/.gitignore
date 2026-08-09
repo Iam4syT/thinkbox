@@ -1,4 +1,4 @@
-# Smart Lifecycle Ops Agent — .gitignore
+# AGY CLI Automation Engine — .gitignore
 
 # ── Python & Virtual Environment ─────────────────────────────────────────────
 venv/
@@ -11,9 +11,15 @@ dist/
 build/
 .eggs/
 
-# ── Environment & Secrets ────────────────────────────────────────────────────
+# ── Secrets & OAuth Tokens ───────────────────────────────────────────────────
+credentials.json
+token.json
 .env
 *.env
+
+# ── Output Logs & Summaries ──────────────────────────────────────────────────
+*.log
+latest_release_summary.txt
 
 # ── IDE & Editor ─────────────────────────────────────────────────────────────
 .vscode/

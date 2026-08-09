@@ -1,4 +1,4 @@
-# Enterprise-AI-Prioritization-Engine
+# Enterprise AI Prioritization Engine
 
 [![Streamlit](https://img.shields.io/badge/Framework-Streamlit-FF4B4B?style=flat-square&logo=streamlit)](https://streamlit.io/)
 [![Python](https://img.shields.io/badge/Language-Python%203.9+-3776AB?style=flat-square&logo=python)](https://www.python.org/)

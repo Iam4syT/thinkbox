@@ -4,7 +4,7 @@ from dashboard.analytics_app import generate_powerbi_mock_data
 
 if __name__ == "__main__":
     print("==========================================================================")
-    print("STARTING: ENTERPRISE COPILOT GOVERNANCE & READINESS COMPLIANCE PIPELINE")
+    print("STARTING: ENTERPRISE COPILOT GOVERNANCE OPS AGENT PIPELINE")
     print("==========================================================================")
     
     # 1. Run infrastructure discovery scan

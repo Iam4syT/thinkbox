@@ -1,13 +1,18 @@
-# Enterprise-Ops-Telemetry-Engine 🚀
+# Enterprise Ops Telemetry Engine
 
-**Tagline:** Automating Secure Modern Workplace Landings and Mining Azure Log Telemetry for Proactive Trend Analysis.
+[![Python](https://img.shields.io/badge/Language-Python%203.10+-3776AB?style=flat-square&logo=python)](https://www.python.org/)
+[![Azure Monitor](https://img.shields.io/badge/Telemetry-Azure%20Log%20Analytics-0078D4?style=flat-square&logo=microsoftazure)](https://azure.microsoft.com/)
+[![Scikit-Learn](https://img.shields.io/badge/ML-Isolation%20Forest-F7931E?style=flat-square&logo=scikitlearn)](https://scikit-learn.org/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](#)
+
+> **Automating Secure Modern Workplace Landings and Mining Azure Log Telemetry for Proactive Trend Analysis and Machine Learning Anomaly Detection.**
 
 ---
 
-## 💼 Executive Business Case
+## 1. Business Value & Executive Business Case
 
 ### The Operational Challenge
-As a Managed Service Provider (MSP) scales, manual configuration errors increase, resource sprawl creates hidden costs (**FinOps drift**), and recurring ticket noise exhausts engineers. 
+As a Managed Service Provider (MSP) or enterprise IT team scales, manual configuration errors increase, resource sprawl creates hidden costs (**FinOps drift**), and recurring ticket noise exhausts engineers. 
 
 ### The Solution Provided
 1. **Project Delivery Block:** Fully automated PowerShell workflows run secure tenant onboarding setups (Conditional Access, Intune profiles, Defender isolation) to eliminate setup errors.
@@ -19,20 +24,86 @@ Automating the client onboarding process **reduces engineering setup times by ov
 
 ---
 
-## 🚀 How to Run the Lab Engine
+## 2. Technical Architecture & Workflow
 
-1. **Clone the project repository:**
+```
+┌────────────────────────┐
+│  Log Parser Module     │  Generates & parses synthetic Azure Monitor
+│  (src/Analytics/       │  workspace telemetry logs
+│   LogParser.py)        │
+└───────────┬────────────┘
+            │
+            ▼
+┌────────────────────────┐
+│  ML Anomaly Detector   │  Runs Isolation Forest model (scikit-learn)
+│  (src/Analytics/       │  to identify FinOps spikes & operational drift
+│   anomalous_noise_... )│
+└───────────┬────────────┘
+            │
+            ▼
+┌────────────────────────┐
+│  Power BI Analytics    │  Consumes telemetry_anomaly_insights.csv
+│  (src/Dashboards/)     │  for executive cost & health dashboards
+└────────────────────────┘
+```
+
+---
+
+## 3. Project Structure
+
+```
+Enterprise-Ops-Telemetry-Engine/
+├── src/
+│   ├── Analytics/
+│   │   ├── LogParser.py                   # Azure log telemetry generation & parser module
+│   │   └── anomalous_noise_detector.py    # Isolation Forest machine learning anomaly detector
+│   ├── Dashboards/                        # Power BI report definitions & documentation
+│   └── Runbooks/                          # Automated PowerShell tenant onboarding runbooks
+├── main.py                                # End-to-end execution script
+├── requirements.txt                       # Project Python dependencies
+├── .env.example                           # Environment configuration template
+├── .gitignore                             # Git ignore rules
+└── README.md                              # Technical documentation
+```
+
+---
+
+## 4. Setup and Installation
+
+### Prerequisites
+- Python 3.10 or higher
+
+### Quickstart
+
+1. **Navigate to the project directory:**
    ```bash
-   git clone https://github.com/Iam4syT/thinkbox.git
-   cd "Modern Workplace Solutions/Enterprise-Ops-Telemetry-Engine"
+   cd "/Users/4syt/Documents/thinkbox/Modern Workplace Solutions/Enterprise-Ops-Telemetry-Engine"
    ```
 
-2. **Run the telemetry creation and data science processing models:**
+2. **Create and activate virtual environment:**
    ```bash
-   pip install pandas scikit-learn
-   python src/Analytics/LogParser.py
-   python src/Analytics/anomalous_noise_detector.py
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
-3. **Open Visualizations:** 
-   Open Power BI Desktop, import the generated data from `src/Analytics/data/telemetry_anomaly_insights.csv`, and build the visualization dashboard as outlined in `src/Dashboards/README.md`.
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Run the telemetry creation & machine learning pipeline:**
+   ```bash
+   python main.py
+   ```
+
+---
+
+## 5. Visualizations & Dashboards
+
+After executing `python main.py`, open Power BI Desktop, import the generated insights CSV file from `src/Analytics/data/telemetry_anomaly_insights.csv`, and construct visualization dashboards as detailed in `src/Dashboards/README.md`.
+
+---
+
+## 6. License
+
+Distributed under the **MIT License**.

@@ -1,20 +1,15 @@
 # Workspace Governance Engine
 
-An automated, architecture-as-code solution that manages governance, eliminates infrastructure data sprawl, and programmatically enforces Microsoft Purview classification models across enterprise Microsoft 365 workspaces.
+[![PowerShell](https://img.shields.io/badge/Language-PowerShell-5391FE?style=flat-square&logo=powershell)](https://learn.microsoft.com/powershell/)
+[![Microsoft Graph](https://img.shields.io/badge/API-Microsoft%20Graph-0078D4?style=flat-square&logo=microsoft)](https://learn.microsoft.com/graph/)
+[![Purview](https://img.shields.io/badge/Security-Microsoft%20Purview-00a4ef?style=flat-square)](#)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](#)
+
+> **An automated, architecture-as-code solution that manages governance, eliminates infrastructure data sprawl, and programmatically enforces Microsoft Purview classification models across enterprise Microsoft 365 workspaces.**
 
 ---
 
-## Technical Architecture Overview
-
-The solution operates as a hands-off operational lifecycle management loop:
-1. **GitHub Actions Workflow Execution Engine** triggers nightly or via manual control inputs.
-2. Authenticates safely without credentials via **Certificate-Based Credentials** linked to an **Azure Entra ID App Identity**.
-3. Queries **Microsoft Graph APIs** to compile operational data analytics across the tenant surface.
-4. Identifies structural compliance gaps and remediates platform configurations automatically based on `TenantSettings.json` definitions.
-
----
-
-## Business & Financial Realities
+## 1. Business & Financial Realities
 
 ### 📉 Quantifiable Operational Cost Optimization
 Unmanaged workspace proliferation directly increases data storage costs. By automating the extraction and flagging of inactive, stale SharePoint environments, this solution reduces data storage waste, saving significant monthly operational capital expenditure (CapEx) costs.
@@ -27,7 +22,57 @@ By shifting architectural setups directly to programmatic workflows (`SecureTeam
 
 ---
 
-## Deployment & Setup Blueprint
+## 2. Technical Architecture Overview
+
+```
+┌────────────────────────────────┐
+│  GitHub Actions Workflow       │  Triggers nightly or via manual control inputs
+└───────────────┬────────────────┘
+                │
+                ▼
+┌────────────────────────────────┐
+│  Entra ID App Authentication   │  Authenticates safely without credentials via
+│  (Certificate Credentials)     │  Certificate-Based Credentials & App Identity
+└───────────────┬────────────────┘
+                │
+                ▼
+┌────────────────────────────────┐
+│  Microsoft Graph Query Engine  │  Queries Graph APIs to compile analytics across
+│  (Scripts/Connect-Graph.ps1)   │  the tenant surface
+└───────────────┬────────────────┘
+                │
+                ▼
+┌────────────────────────────────┐
+│  Automated Remediation         │  Identifies structural compliance gaps and
+│  (Scripts/Audit & Enforce)     │  remediates based on TenantSettings.json
+└────────────────────────────────┘
+```
+
+---
+
+## 3. Project Structure
+
+```
+Workspace-Governance-Engine/
+├── Scripts/
+│   ├── Audit-UnusedSharePointSites.ps1  # Scans and flags inactive SharePoint sites
+│   ├── Connect-AuroraGraph.ps1          # Graph API authentication wrapper
+│   └── Enforce-PurviewLabels.ps1        # Automated Microsoft Purview label enforcer
+├── Configuration/
+│   ├── SecureTeamsTemplate.xml          # Teams architecture-as-code template
+│   └── TenantSettings.json              # Central tenant governance settings
+├── Dashboards/                          # Reporting assets & dashboard models
+├── Documentation/                       # Deployment guides & architectural schemas
+├── .github/                             # GitHub Actions CI/CD workflows
+├── .env.example                         # Secret configuration template
+├── .gitignore                           # Git ignore rules
+├── LICENSE                              # MIT License
+└── README.md                            # Technical documentation
+```
+
+---
+
+## 4. Deployment & Setup Blueprint
 
 ### 1. Configure Cloud Secrets Matrix
 Configure your targeted repository deployment variables within **GitHub Settings > Secrets and variables > Actions**:
@@ -37,12 +82,18 @@ Configure your targeted repository deployment variables within **GitHub Settings
 | `AZURE_TENANT_ID` | Directory ID reference value found in Entra ID |
 | `AZURE_CLIENT_ID` | Application registration string identifier |
 
-### 2. Run Local Evaluation Exercises
+---
+
+## 5. Local Execution & Remediation
+
 To test structural logic paths locally from an authenticated admin console:
 ```powershell
+cd "/Users/4syt/Documents/thinkbox/Modern Workplace Solutions/Workspace-Governance-Engine"
 ./Scripts/Audit-UnusedSharePointSites.ps1 -ConfigFilepath ./Configuration/TenantSettings.json
 ```
 
-## Licensing Info
+---
+
+## 6. Licensing Info
 
 Distributed under the **MIT License**. Check out `LICENSE` for configuration details.

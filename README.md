@@ -34,6 +34,7 @@ This repository groups projects into top-level categories. Browse the folders be
 - **AI Projects**
   - [ai-agent-app](./AI%20Projects/ai-agent-app) — Multi-agent interactive portfolio website powered by React, Flask, and OpenAI LLMs.
   - [Agentic-Compliance-Auditor](./AI%20Projects/Agentic-Compliance-Auditor) — Autonomous compliance auditing agents and workflows.
+  - [Business Opportunity Scouting Agent](./AI%20Projects/Business%20Opportuniity%20Scouting%20Agent) — Autonomous RAG AI agent scouting business opportunities and generating OKRs into Excel.
   - [Enterprise-AI-Prioritization-Engine](./AI%20Projects/Enterprise-AI-Prioritization-Engine) — Prioritization engine for AI initiatives.
   - [MLOps](./AI%20Projects/MLOps) — Automated data validation, version control, and ML model deployment lifecycle using MLflow and ZenML.
   - [SmartLifeCycle-Ops](./AI%20Projects/SmartLifeCycle-Ops) — IT Asset Management & Modern Workplace automation.

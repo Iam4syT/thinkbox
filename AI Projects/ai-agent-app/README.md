@@ -1,4 +1,4 @@
-# AI Agent App
+# AI Agent Platform
 
 ![JavaScript](https://img.shields.io/badge/Frontend-React-orange?logo=react)  
 ![Python](https://img.shields.io/badge/Backend-Flask-blue?logo=python)  
@@ -7,7 +7,7 @@
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
 ---
-# 🤖 AI Agent App
+# 🤖 AI Agent Platform
 
 A portfolio website that exposes multiple specialized AI agents powered by OpenAI LLMs. Each agent helps visitors learn about projects, skills, services, and research topics via a modern chat interface. The project is split into a React frontend (chat UI) and a Flask backend (API + OpenAI integration).
 

@@ -1,13 +1,19 @@
-# Tenant Guard Agent — .gitignore
+# Business Opportunity Scouting Agent — .gitignore
+
+# ── Python & Virtual Environment ─────────────────────────────────────────────
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
 
 # ── Environment & Secrets ────────────────────────────────────────────────────
 .env
 *.env
-
-# ── PowerShell & Output Logs ─────────────────────────────────────────────────
-*.log
-output/
-reports/*.csv
 
 # ── IDE & Editor ─────────────────────────────────────────────────────────────
 .vscode/
