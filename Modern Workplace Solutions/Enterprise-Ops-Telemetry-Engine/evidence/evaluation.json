@@ -1,0 +1,25 @@
+{
+  "dataset": "Deterministic synthetic fixture; 2% injected high-metric anomalies",
+  "seed": 42,
+  "train_size": 600,
+  "test_size": 400,
+  "isolation_forest": {
+    "true_positive": 8,
+    "false_positive": 8,
+    "false_negative": 0,
+    "true_negative": 384,
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1": 0.6666666666666666
+  },
+  "threshold_baseline": {
+    "true_positive": 8,
+    "false_positive": 0,
+    "false_negative": 0,
+    "true_negative": 392,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "limitations": "Threshold exploits the known fixture gap. No live Azure ingestion, self-healing, incident reduction or business savings measured."
+}

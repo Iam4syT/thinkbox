@@ -15,7 +15,7 @@ from solar_prediction import SolarIntelligenceEngine, PhysicalGhiPredictionStrat
 
 def run_demo():
     print("================================================================================")
-    print(" ☀️ SMART HOME ENERGY MANAGER — 30-MINUTE AHEAD SOLAR PREDICTION DEMO")
+    print(" ☀️ SMART HOME ENERGY MANAGER — HYPOTHETICAL SOLAR SCENARIO DEMO (NO LIVE WEATHER)")
     print("================================================================================\n")
 
     engine = SolarIntelligenceEngine(PhysicalGhiPredictionStrategy(drop_threshold_ratio=0.20))
@@ -60,12 +60,12 @@ def run_demo():
         )
 
         if forecast.is_drop_warning:
-            print("\n 💡 [RECOMMENDED AUTOMATED PROACTIVE ACTION]")
+            print("\n 💡 [ILLUSTRATIVE OPTIONS FOR OPERATOR REVIEW; NO ACTION PERFORMED]")
             print("   1. Pre-charge home battery storage (BESS) at current peak solar rates.")
             print("   2. Defer heavy HVAC and EV charging loads beyond the 30-minute window.")
             print("   3. Arm seamless transition to grid / hybrid fallback.\n")
         else:
-            print("\n   [ACTION] No load shedding required. Excess solar available for battery storage.\n")
+            print("\n   [SCENARIO] Below the warning threshold; no actual operating decision has been made.\n")
 
 
 if __name__ == "__main__":

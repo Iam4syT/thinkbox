@@ -15,6 +15,8 @@ class BaseAgent:
 
     def get_response(self, query, stream=False):
 
+        if not self.api_key:
+            return "AI chat is not configured. The Projects and Career pages provide the checked portfolio without a key."
         try:
             headers = {
                 "Authorization": f"Bearer {self.api_key}",
@@ -22,7 +24,7 @@ class BaseAgent:
             }
 
             data = {
-                "model": "llama3-8b-8192",
+                "model": os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile"),
                 "messages": [
                     {"role": "system", "content": f"You are {self.name}, {self.description}. Respond in a helpful, concise, and professional manner."},
                     {"role": "user", "content": query}
@@ -35,7 +37,7 @@ class BaseAgent:
             response = requests.post(
                 "https://api.groq.com/openai/v1/chat/completions",
                 headers=headers,
-                json=data
+                json=data, timeout=30
             )
 
             if response.status_code == 200:

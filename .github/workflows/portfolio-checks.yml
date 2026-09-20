@@ -1,0 +1,79 @@
+name: Portfolio checks
+on:
+  push:
+    paths: ['AI Projects/**', 'Modern Workplace Solutions/**', 'Software Development/**', 'docs/**', 'scripts/**', 'README.md', 'requirements-ci.txt', '.github/workflows/**']
+  pull_request:
+    paths: ['AI Projects/**', 'Modern Workplace Solutions/**', 'Software Development/**', 'docs/**', 'scripts/**', 'README.md', 'requirements-ci.txt', '.github/workflows/**']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: requirements-ci.txt
+      - run: python -m pip install -r requirements-ci.txt
+      - run: python scripts/check_repository.py
+      - run: python scripts/run_python_checks.py
+        env:
+          MPLBACKEND: Agg
+          MPLCONFIGDIR: /tmp/thinkbox-matplotlib
+  powershell:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fixture and syntax checks only
+        run: |
+          $ErrorActionPreference = 'Stop'
+          Get-ChildItem 'Modern Workplace Solutions' -Filter *.ps1 -Recurse | ForEach-Object {
+            $tokens = $null; $errors = $null
+            [System.Management.Automation.Language.Parser]::ParseFile($_.FullName, [ref]$tokens, [ref]$errors) | Out-Null
+            if ($errors.Count) { throw ($errors | Out-String) }
+          }
+          & './Modern Workplace Solutions/Workspace-Governance-Engine/tests/Test-Fixtures.ps1'
+          & './Modern Workplace Solutions/Workspace-Governance-Engine/tests/Test-ChangeGuards.ps1'
+          & './Modern Workplace Solutions/tenant-guard/tests/Test-Fixtures.ps1'
+  java:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Software Development/Grid Manager
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '24'
+          cache: maven
+          cache-dependency-path: Software Development/Grid Manager/pom.xml
+      - run: mvn -B test
+      - run: bash run.sh
+  javascript:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        project: ['Software Development/Content Flow/content-flow', 'AI Projects/ai-agent-app/frontend']
+    defaults:
+      run:
+        working-directory: ${{ matrix.project }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: ${{ matrix.project }}/package-lock.json
+      - run: npm ci
+      - run: npm test
+        if: matrix.project == 'Software Development/Content Flow/content-flow'
+      - run: npm run build
+      - run: npm run lint
+        if: matrix.project == 'AI Projects/ai-agent-app/frontend'

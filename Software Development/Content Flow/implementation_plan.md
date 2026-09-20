@@ -1,3 +1,5 @@
+> Historical product plan, retained as design context. It is not an implementation or outcome record. The current local demo prepares drafts for manual review; live social publishing, measured engagement improvements and live AI quality have not been verified. See README.md and EVALUATION.md for current capabilities.
+
 # ContentFlow — AI-Powered Cross-Platform Content Repurposing Engine
 
 ## Problem Statement

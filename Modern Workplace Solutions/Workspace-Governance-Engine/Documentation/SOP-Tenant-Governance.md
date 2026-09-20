@@ -1,41 +1,13 @@
-# SOP: Microsoft 365 Workspace Governance Engine Execution & Drift Remediation
+# Governance runbook
 
-## 1. Purpose & Objective
-This Standard Operating Procedure (SOP) defines the operational, automated framework for monitoring workspace compliance drift, managing lifecycle optimizations, and enforcing data classification controls across our enterprise tenant.
+The supported local lab uses fixture files and never connects to a tenant. Run the tests and inspect the plan before considering live operation.
 
-## 2. Scope
-Applies universally across all provisioned Microsoft 365 Groups, Microsoft Teams workspaces, and corporate SharePoint Online environments.
+For a separately authorised live read, install the Graph modules and authenticate for the required scope. Certificate authentication in Connect-AuroraGraph.ps1 is suitable only for supported application-permission reads; a hosted runner would need the actual installed certificate, not just its thumbprint. Root CI contains no certificate or tenant jobs.
 
-## 3. Roles and Responsibilities
-* **Cloud Infrastructure Engineering Team**: Accountable for updating core scripts, provisioning configurations, and maintaining GitHub Actions pipeline status.
-* **Information Security & Governance Team**: Responsible for defining data classification targets and auditing alert reports.
+Sensitivity-label updates require delegated Graph access and a supported administrator role, not application-only credentials. See [Microsoft group update documentation](https://learn.microsoft.com/en-us/graph/api/group-update?view=graph-rest-1.0), checked 13 September 2026. Confirm exact permissions, licensing and label policy in your test tenant.
 
-## 4. Step-by-Step Production Execution
-### Manual Execution Path
-If unexpected system drift or alert events occur outside scheduled midnight runs:
-1. Log into the enterprise GitHub Control Panel.
-2. Navigate to **Actions** > Select **M365 Tenant Compliance & Optimization Scan**.
-3. Select **Run workflow** dropdown menu and confirm by clicking the button.
+Use Enforce-PurviewLabels.ps1 with -Live and explicit -GroupIds to plan. Review output. -Apply is required for writes and supports -WhatIf/confirmation. Existing labels are retained unless -ReplaceExisting is explicitly requested. A pre-change backup is written before each mutation and the script refuses a detected concurrent label change. Live behaviour has not been tenant-tested here.
 
-### Certificate Rotation Routine (Annual Requirement)
-1. Run `New-SelfSignedCertificate` via administrative PowerShell to produce a updated `.cer`/`.pfx` block.
-2. Upload the updated public key to the Entra ID Enterprise App Registration dashboard.
-3. Update `${{ secrets.AZURE_CERT_THUMBPRINT }}` environment flags inside the GitHub Repository secret variables workspace.
+Restore-PurviewLabels.ps1 reads one backup, checks tenant identity and expected current labels, and plans a restore. -Apply is required to perform it. Inspect current state when verification is delayed or a write fails; preserve backups. Keep all live artifacts private. No recurring tenant mutation schedule is included.
 
-## 5. Troubleshooting & Error Mitigation Paths
-* **Error Code: `Authentication Failed / Token Expired`**
-    * *Root Cause*: Expired Client Certificate configuration or wrong Thumbprint match.
-    * *Remediation*: Verify local/runner thumbprints match the thumbprint registered in Azure Entra ID.
-* **Error Code: `Insufficient Privileges / 403 Forbidden`**
-    * *Root Cause*: Administrator consent was missing for added Microsoft Graph API permissions.
-    * *Remediation*: Navigate to Azure Portal > Entra ID > App Registrations > API Permissions, and re-apply **Grant Admin Consent**.
-
-## 6. Emergency Rollback Procedures
-If an automation update causes widespread unintended modifications:
-1. Navigate to the GitHub main repository code tree.
-2. Revert the last merge request or commit via Git:
-   ```bash
-   git revert HEAD
-   git push origin main
-   ```
-3. If immediate lockdown is needed, temporarily remove the Entra ID application registration's API permissions to pause all system writes.
+SharePoint lastModifiedDateTime is an inactivity clue, not a last-access measurement or compliance verdict. Review candidates with owners and usage evidence before archiving anything.

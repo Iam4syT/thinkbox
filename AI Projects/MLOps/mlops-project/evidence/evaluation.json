@@ -1,0 +1,18 @@
+{
+  "dataset": "Existing attributed Olist-derived repository fixture; see data/README.md",
+  "seed": 42,
+  "train_rows": 92566,
+  "test_rows": 23043,
+  "split": "grouped by order_id; median imputation fitted only on training rows",
+  "results": {
+    "mean_baseline": {
+      "mae": 1.087440168460178,
+      "rmse": 1.3833636781635417
+    },
+    "ridge": {
+      "mae": 1.0864584273891202,
+      "rmse": 1.3731122964574065
+    }
+  },
+  "limitations": "One random group holdout; not temporal validation, causal impact or production serving evidence."
+}

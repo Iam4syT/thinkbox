@@ -66,7 +66,7 @@ export class QueueRepository {
       params.push(filters.platform);
     }
 
-    sql += ' ORDER BY priority DESC, scheduled_time ASC, created_at ASC';
+    sql += ' ORDER BY priority DESC, datetime(scheduled_time) ASC, created_at ASC';
 
     if (filters.limit) {
       sql += ' LIMIT ?';
@@ -85,8 +85,8 @@ export class QueueRepository {
       .prepare(`
         SELECT * FROM queue
         WHERE status = 'scheduled'
-          AND scheduled_time <= datetime('now')
-        ORDER BY priority DESC, scheduled_time ASC
+          AND datetime(scheduled_time) <= datetime('now')
+        ORDER BY priority DESC, datetime(scheduled_time) ASC
       `)
       .all()
       .map(this._deserialize);

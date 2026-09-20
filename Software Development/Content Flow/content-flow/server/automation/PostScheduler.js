@@ -1,6 +1,6 @@
 /**
  * @module PostScheduler
- * @description Cron-based scheduler for automated post publishing.
+ * @description Scheduler for preparing posts for manual publication. No platform publisher is implemented.
  */
 import cron from 'node-cron';
 
@@ -31,8 +31,8 @@ export class PostScheduler {
    * Stop the scheduler.
    */
   stop() {
-    if (this._mainJob) this._mainJob.stop();
-    this._jobs.forEach(j => j.stop());
+    if (this._mainJob) { this._mainJob.stop(); this._mainJob.destroy?.(); this._mainJob = null; }
+    this._jobs.forEach(j => { j.stop(); j.destroy?.(); });
     this._jobs.clear();
     this._started = false;
   }
@@ -58,16 +58,15 @@ export class PostScheduler {
   }
 
   /**
-   * Simulate publishing a post (Phase 4 will call real APIs).
+   * Mark due content ready for manual review. No publisher is called.
    * @param {Object} queueItem
    */
   _publishPost(queueItem) {
     try {
-      console.log(`[PostScheduler] Publishing post ${queueItem.id} to ${queueItem.platform}`);
-      this.queueManager.markPosted(queueItem.id);
-      console.log(`[PostScheduler] ✅ Post ${queueItem.id} marked as posted`);
+      this.queueManager.markReadyForReview(queueItem.id);
+      console.log(`[PostScheduler] Post ${queueItem.id} ready for manual review; nothing published`);
     } catch (err) {
-      console.error(`[PostScheduler] Failed to publish ${queueItem.id}:`, err.message);
+      console.error(`[PostScheduler] Failed to prepare ${queueItem.id}:`, err.message);
     }
   }
 }

@@ -1,42 +1,26 @@
-import os
-import json
-import pandas as pd
-from datetime import datetime, timedelta
+"""Deterministic synthetic telemetry with known injected labels."""
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
 import random
+import pandas as pd
+DATA = Path(__file__).resolve().parent / "data"
 
-def generate_mock_telemetry(num_records=1000):
-    """Generates synthetic Azure Log Analytics workspace telemetry."""
-    categories = ['Authentication', 'VirtualMachines', 'FinOps_Cost', 'Intune_Enrollment']
-    severities = ['Informational', 'Warning', 'Critical']
-    
-    start_time = datetime.now() - timedelta(days=7)
-    data = []
-    
+def generate_mock_telemetry(num_records=1000, seed=42, output_dir=None):
+    if isinstance(num_records, bool) or not isinstance(num_records, int) or num_records < 20:
+        raise ValueError("Use at least 20 synthetic records")
+    rng = random.Random(seed)
+    start = datetime(2026, 1, 1, tzinfo=timezone.utc)
+    rows = []
     for i in range(num_records):
-        timestamp = start_time + timedelta(minutes=random.randint(1, 10080))
-        category = random.choices(categories, weights=[0.4, 0.3, 0.2, 0.1])[0]
-        severity = random.choices(severities, weights=[0.7, 0.2, 0.1])[0]
-        
-        # Simulate a standard message or inject an operational anomaly
-        if category == 'FinOps_Cost' and random.random() > 0.95:
-            message = "Unmapped Resource Cost Spike: Discovered orphaned premium storage tier."
-            metric_val = random.uniform(500.0, 1500.0) # Anomaly
-        else:
-            message = f"Standard telemetry ping for operational category: {category}"
-            metric_val = random.uniform(5.0, 50.0)
-            
-        data.append({
-            "Timestamp": timestamp.isoformat(),
-            "Category": category,
-            "Severity": severity,
-            "Message": message,
-            "MetricValue": round(metric_val, 2)
-        })
-        
-    df = pd.DataFrame(data)
-    os.makedirs('src/Analytics/data', exist_ok=True)
-    df.to_csv('src/Analytics/data/azure_telemetry_raw.csv', index=False)
-    print("✅ Synthetic Azure Monitor log telemetry generated and saved to src/Analytics/data/azure_telemetry_raw.csv")
+        category = rng.choice(["Authentication", "VirtualMachines", "FinOps_Cost", "Intune_Enrollment"])
+        anomalous = i % 50 == 0
+        rows.append({"Timestamp": (start + timedelta(minutes=i)).isoformat(), "Category": category,
+                     "MetricValue": round(rng.uniform(500, 1500) if anomalous else rng.uniform(5, 50), 2),
+                     "KnownAnomaly": int(anomalous), "Source": "synthetic"})
+    frame = pd.DataFrame(rows)
+    out = Path(output_dir or DATA); out.mkdir(parents=True, exist_ok=True)
+    frame.to_csv(out / "azure_telemetry_raw.csv", index=False)
+    return frame
 
 if __name__ == "__main__":
-    generate_mock_telemetry()
+    print("Synthetic rows generated:", len(generate_mock_telemetry()))

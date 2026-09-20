@@ -1,31 +1,25 @@
+"""Bounded public-page text extraction. Error states are not source content."""
+from urllib.parse import urlsplit
 import requests
 from bs4 import BeautifulSoup
 
-def fetch_page_content(url: str, max_chars: int = 4000) -> str:
-    """
-    Fetches the webpage URL and returns clean text up to max_chars.
-    
-    Args:
-        url (str): The target webpage URL to extract content from.
-        max_chars (int): Maximum character limit for returned text.
-        
-    Returns:
-        str: Extracted textual content or error message starting with ERROR_FETCHING_URL.
-    """
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Business-Opportunity-Scouting-Agent/1.0"
-    }
+def fetch_page_content(url, max_chars=4000):
+    if not isinstance(url, str) or urlsplit(url).scheme not in {"http", "https"} or not urlsplit(url).hostname:
+        return "ERROR_FETCHING_URL: valid HTTP(S) URL required"
+    if not isinstance(max_chars, int) or not 1 <= max_chars <= 8000: raise ValueError("max_chars must be 1–8000")
     try:
-        response = requests.get(url, headers=headers, timeout=10)
-        response.raise_for_status()
-        
-        soup = BeautifulSoup(response.text, "html.parser")
-        
-        # Remove scripts, styles, and navigation elements
-        for element in soup(["script", "style", "nav", "footer"]):
-            element.decompose()
-            
-        text = soup.get_text(separator=" ", strip=True)
-        return text[:max_chars]
-    except Exception as error:
-        return f"ERROR_FETCHING_URL: {str(error)}"
+        with requests.get(url, headers={"User-Agent":"Thinkbox-Learning-Demo/1.1"}, timeout=10, stream=True) as response:
+            response.raise_for_status()
+            content_type = response.headers.get("Content-Type", "").lower()
+            if not any(t in content_type for t in ["text/html", "text/plain", "application/xhtml"]):
+                return "ERROR_FETCHING_URL: unsupported content type"
+            body = bytearray()
+            for chunk in response.iter_content(8192):
+                body.extend(chunk)
+                if len(body) > 2_000_000: return "ERROR_FETCHING_URL: page too large"
+            soup = BeautifulSoup(bytes(body), "html.parser")
+            for item in soup(["script", "style", "nav", "footer"]): item.decompose()
+            text = soup.get_text(" ", strip=True)
+            return text[:max_chars] if text else "ERROR_FETCHING_URL: empty page"
+    except requests.RequestException as exc:
+        return "ERROR_FETCHING_URL: " + type(exc).__name__

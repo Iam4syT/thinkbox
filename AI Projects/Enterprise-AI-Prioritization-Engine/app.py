@@ -83,7 +83,7 @@ st.markdown("""
 st.markdown("""
 <div class="main-header">
     <h1>🤖 Enterprise AI Prioritization &amp; Sustainability Engine</h1>
-    <p>Stop chasing AI hype. Calculate ROI, Feasibility, and Carbon Footprint before you build.</p>
+    <p>Stop chasing AI hype. Explore priority and resource assumptions before you build.</p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -126,11 +126,11 @@ with col1:
     )
 
     st.write("---")
-    st.subheader("🌿 Green AI Sustainability Inputs")
+    st.subheader("Illustrative Resource Scenarios")
     model_tier = st.selectbox(
-        "Expected AI Model Tier",
+        "Scenario coefficients",
         options=get_model_options(),
-        help="Model tier determines both cloud cost and carbon footprint.",
+        help="Hypothetical teaching coefficients; no provider price or emissions measurement.",
     )
     monthly_volume = st.number_input(
         "Estimated Monthly Inference Volume (Total Tokens)",
@@ -167,25 +167,25 @@ with col2:
 
         # ── Sustainability Metrics ─────────────────────────────────────────────
         st.write("---")
-        st.subheader("🌱 Projected Environmental & Cloud Cost Overhead")
+        st.subheader("Illustrative cost and carbon arithmetic")
 
         s1, s2 = st.columns(2)
         with s1:
             st.metric(
-                label="☁️ Estimated Azure Token Cost / Mo",
+                label="Scenario token cost / month (USD)",
                 value=f"${est_cost:,.2f}",
                 delta=f"~${est_cost * 12:,.0f} annually",
                 delta_color="off",
             )
         with s2:
             st.metric(
-                label="🌍 Estimated CO2e Emissions / Mo",
+                label="Scenario CO2e / month (kg)",
                 value=f"{est_co2} kg",
                 delta=f"~{round(est_co2 * 12, 2)} kg annually",
                 delta_color="off",
             )
 
-        st.info(f"**Sustainability Rating:** {sustainability_rating}")
+        st.info(f"**Interpretation:** {sustainability_rating}")
 
         # ── Consulting Recommendation ──────────────────────────────────────────
         st.write("---")
@@ -193,14 +193,13 @@ with col2:
         st.success(
             f"**Use Case:** *{use_case_name}* has been scored **{final_score}/100** and "
             f"classified as a **{quadrant.split('—')[0].strip()}** initiative. "
-            f"At {est_co2} kg CO2e/month, verify alignment with your organisation's "
-            f"Net-Zero roadmap before committing to build. "
-            f"Estimated 12-month cloud spend: **${est_cost * 12:,.0f}**."
+            f"These subjective scores and hypothetical coefficients need validation. "
+            f"Illustrative 12-month token arithmetic: **${est_cost * 12:,.0f}**; this is not a cloud quote."
         )
 
         # ── Comparison Table ───────────────────────────────────────────────────
         st.write("---")
-        st.subheader("📋 Model Tier Comparison")
+        st.subheader("Scenario comparison")
         comparison_data = {
             "Model Tier": get_model_options(),
             "Cost / Mo (USD)": [],
@@ -215,7 +214,7 @@ with col2:
 
         st.dataframe(
             pd.DataFrame(comparison_data),
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
         )
 
@@ -226,6 +225,6 @@ with col2:
 st.write("---")
 st.caption(
     "Enterprise AI Prioritization Engine v1.0 · "
-    "Pricing approximated from Azure OpenAI public rate cards · "
-    "Carbon metrics based on standard regional data centre emission averages."
+    "Illustrative coefficients, reviewed 13 September 2026 · "
+    "No measured carbon data or vendor rate source. See docs/assumptions.md."
 )

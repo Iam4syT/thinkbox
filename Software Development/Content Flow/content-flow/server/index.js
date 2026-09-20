@@ -61,7 +61,7 @@ const aiProvider = AIProviderFactory.create('openai');
 if (!config.hasValidApiKey) {
   console.warn('[ContentFlow] ⚠️  No OPENAI_API_KEY set — AI features will return mock responses');
 } else {
-  console.log(`[ContentFlow] ✅ OpenAI connected (model: ${config.openaiModel})`);
+  console.log(`[ContentFlow] ✅ OpenAI configured, connection unverified (model: ${config.openaiModel})`);
 }
 
 // Platform Registry (auto-registers LinkedIn, Instagram, YouTube)
@@ -183,7 +183,7 @@ app.get('/', (_req, res) => {
 <header>
   <h1>⚡ ContentFlow API</h1>
   <p>AI-Powered Cross-Platform Content Repurposing Engine</p>
-  <div class="badge"><span></span> OpenAI connected &nbsp;·&nbsp; model: ${config.openaiModel} &nbsp;·&nbsp; port ${config.port}</div>
+  <div class="badge"><span></span> ${config.hasValidApiKey ? 'OpenAI configured (unverified)' : 'Mock mode (no provider call)'} &nbsp;·&nbsp; model: ${config.openaiModel} &nbsp;·&nbsp; port ${config.port}</div>
 </header>
 <div class="grid">
 
@@ -266,7 +266,7 @@ app.get('/api/health', (_req, res) => {
   res.json({
     status: 'ok',
     version: '1.0.0',
-    ai: config.hasValidApiKey ? 'connected' : 'mock mode',
+    ai: config.hasValidApiKey ? 'configured; connection unverified' : 'mock mode',
     platforms: platformRegistry.list(),
     timestamp: new Date().toISOString(),
   });
@@ -296,7 +296,7 @@ app.use((err, _req, res, _next) => {
 // START
 // ═══════════════════════════════════════════════════════════════
 
-app.listen(config.port, () => {
+app.listen(config.port, '127.0.0.1', () => {
   console.log(`\n🚀 ContentFlow API running at http://localhost:${config.port}`);
   console.log(`   Health: http://localhost:${config.port}/api/health`);
   console.log(`   Platforms: http://localhost:${config.port}/api/platforms\n`);

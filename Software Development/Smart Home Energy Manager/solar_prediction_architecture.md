@@ -1,3 +1,7 @@
+# Design proposal: unvalidated operating assumptions
+
+This document describes possible future integration. It is not a deployed control system or an evaluated forecast. Times, thresholds and operating effects below require independent measurement and engineering validation. No hardware is controlled by this portfolio demo.
+
 # Solar Irradiance & PV Drop Prediction Engine — Architecture & Integration Blueprint
 
 [![Java](https://img.shields.io/badge/Language-Java%2024-orange?style=flat-square&logo=openjdk)](https://www.oracle.com/java/)
@@ -79,7 +83,7 @@ This architecture introduces an **Intelligent Predictive Layer** that forecasts 
 - **Grid Ramping & Frequency Control**: Solar output drops exceeding 50% in short timeframes can destabilize local grid frequency. A 30-minute notification allows operators (e.g. CAISO, National Grid, TenneT) to ramp up hydro or gas spinning reserves in advance.
 
 ### 2. Commercial & Industrial (C&I) Microgrids
-- **Generator Warm-Up Synchronization**: Diesel/gas generators require 5–15 minutes of warm-up before taking load. The 30-minute lead time guarantees zero-downtime transition.
+- **Generator Warm-Up Synchronization**: Diesel/gas generators require 5–15 minutes of warm-up before taking load. A proposed 30-minute lead time needs validation against actual startup delays, forecast error and operating constraints; zero downtime is not established.
 
 ### 3. Smart Residential Homes & BESS
 - **Peak Rate Avoidance**: Under dynamic electricity tariffs, smart energy hubs can pre-charge home battery storage (BESS) or defer heavy appliance loads (EV charging, heat pumps) before solar drops force expensive grid electricity consumption.
@@ -89,18 +93,18 @@ This architecture introduces an **Intelligent Predictive Layer** that forecasts 
 ## 5. File References & Source Mapping
 
 - **Grid Manager (Java)**:
-  - Strategy Interface: [`GhiPredictionStrategy.java`](file:///Users/4syt/Documents/thinkbox/Software%20Development/Grid%20Manager/src/main/java/GridManagerCore/prediction/GhiPredictionStrategy.java)
-  - Physical Strategy: [`PhysicalGhiPredictionStrategy.java`](file:///Users/4syt/Documents/thinkbox/Software%20Development/Grid%20Manager/src/main/java/GridManagerCore/prediction/PhysicalGhiPredictionStrategy.java)
-  - Forecast Data Model: [`SolarForecast.java`](file:///Users/4syt/Documents/thinkbox/Software%20Development/Grid%20Manager/src/main/java/GridManagerCore/prediction/SolarForecast.java)
-  - Observer Interface: [`PredictionListener.java`](file:///Users/4syt/Documents/thinkbox/Software%20Development/Grid%20Manager/src/main/java/GridManagerCore/prediction/PredictionListener.java)
-  - Intelligence Service: [`SolarIrradianceIntelligenceService.java`](file:///Users/4syt/Documents/thinkbox/Software%20Development/Grid%20Manager/src/main/java/GridManagerCore/prediction/SolarIrradianceIntelligenceService.java)
-  - CLI Demo Entry: [`GridSystem.java`](file:///Users/4syt/Documents/thinkbox/Software%20Development/Grid%20Manager/src/main/java/GridManagerCore/main/GridSystem.java)
+  - Strategy Interface: [`GhiPredictionStrategy.java`](../Grid%20Manager/src/main/java/GridManagerCore/prediction/GhiPredictionStrategy.java)
+  - Physical Strategy: [`PhysicalGhiPredictionStrategy.java`](../Grid%20Manager/src/main/java/GridManagerCore/prediction/PhysicalGhiPredictionStrategy.java)
+  - Forecast Data Model: [`SolarForecast.java`](../Grid%20Manager/src/main/java/GridManagerCore/prediction/SolarForecast.java)
+  - Observer Interface: [`PredictionListener.java`](../Grid%20Manager/src/main/java/GridManagerCore/prediction/PredictionListener.java)
+  - Intelligence Service: [`SolarIrradianceIntelligenceService.java`](../Grid%20Manager/src/main/java/GridManagerCore/prediction/SolarIrradianceIntelligenceService.java)
+  - CLI Demo Entry: [`GridSystem.java`](../Grid%20Manager/src/main/java/GridManagerCore/main/GridSystem.java)
 
 - **Smart Home Energy Manager (Python)**:
-  - Prediction Engine Module: [`src/solar_prediction.py`](file:///Users/4syt/Documents/thinkbox/Software%20Development/Smart%20Home%20Energy%20Manager/src/solar_prediction.py)
-  - AI Mitigation Integration: [`src/energy_manager.py`](file:///Users/4syt/Documents/thinkbox/Software%20Development/Smart%20Home%20Energy%20Manager/src/energy_manager.py)
-  - CLI Menu Integration: [`src/main.py`](file:///Users/4syt/Documents/thinkbox/Software%20Development/Smart%20Home%20Energy%20Manager/src/main.py)
-  - Automated Demo Runner: [`demo_solar_prediction.py`](file:///Users/4syt/Documents/thinkbox/Software%20Development/Smart%20Home%20Energy%20Manager/demo_solar_prediction.py)
+  - Prediction Engine Module: [`src/solar_prediction.py`](src/solar_prediction.py)
+  - AI Mitigation Integration: [`src/energy_manager.py`](src/energy_manager.py)
+  - CLI Menu Integration: [`src/main.py`](src/main.py)
+  - Automated Demo Runner: [`demo_solar_prediction.py`](demo_solar_prediction.py)
 
 ---
 

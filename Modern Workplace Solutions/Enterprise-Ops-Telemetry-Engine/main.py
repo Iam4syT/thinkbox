@@ -19,7 +19,7 @@ def main():
     detect_systemic_anomalies()
     
     print("\n==========================================================================")
-    print("SUCCESS: Telemetry processing complete. Insights ready for Power BI.")
+    print("SUCCESS: Telemetry processing complete. Local CSV ready for manual analysis.")
     print("==========================================================================")
 
 if __name__ == "__main__":

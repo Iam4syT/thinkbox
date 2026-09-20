@@ -1,0 +1,61 @@
+{
+  "dataset": "10 hand-labelled synthetic cases, policy version 1; not real tenant data",
+  "sample_size": 10,
+  "false_positives": 0,
+  "false_negatives": 0,
+  "manual_review": 3,
+  "policy_mismatches": 0,
+  "baseline": "Explicit non-AI metadata rules; no claim of AI uplift",
+  "cases": [
+    {
+      "case": "private HR",
+      "expected": "allowed",
+      "actual": "allowed"
+    },
+    {
+      "case": "broad HR",
+      "expected": "exposed",
+      "actual": "exposed"
+    },
+    {
+      "case": "broad confidential",
+      "expected": "exposed",
+      "actual": "exposed"
+    },
+    {
+      "case": "internal employees",
+      "expected": "allowed",
+      "actual": "allowed"
+    },
+    {
+      "case": "internal anonymous",
+      "expected": "exposed",
+      "actual": "exposed"
+    },
+    {
+      "case": "public catalogue",
+      "expected": "allowed",
+      "actual": "allowed"
+    },
+    {
+      "case": "unknown group",
+      "expected": "review",
+      "actual": "review"
+    },
+    {
+      "case": "missing class",
+      "expected": "review",
+      "actual": "review"
+    },
+    {
+      "case": "missing access",
+      "expected": "review",
+      "actual": "review"
+    },
+    {
+      "case": "mixed groups",
+      "expected": "exposed",
+      "actual": "exposed"
+    }
+  ]
+}

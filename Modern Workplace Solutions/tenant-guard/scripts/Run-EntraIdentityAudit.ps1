@@ -2,7 +2,7 @@
 .SYNOPSIS
     Audits Microsoft Entra ID for administrative roles and flags accounts without MFA.
 .DESCRIPTION
-    Queries the Graph API to count highly privileged Global Admins and verify settings.
+    Uses synthetic administrative-role fixtures; does not query Graph.
 #>
 
 # 1. Load the Configuration Baseline
@@ -18,12 +18,12 @@ Write-Host "[INFO] Simulating secure authentication token acquisition..." -Foreg
 # 3. Simulate Querying Entra ID for Global Admins
 # We mimic real API output structures to allow local running without breaking pipelines
 $ActiveGlobalAdmins = @(
-    @{ UserPrincipalName = "admin.bunamin@tenant.com"; Role = "Global Administrator"; MFAStatus = "Enabled" },
-    @{ UserPrincipalName = "service_account_backup@tenant.com"; Role = "Global Administrator"; MFAStatus = "Disabled" },
-    @{ UserPrincipalName = "vendor_temp@tenant.com"; Role = "Global Administrator"; MFAStatus = "Disabled" }
+    @{ UserPrincipalName = "admin@example.invalid"; Role = "Global Administrator"; MFAStatus = "Enabled" },
+    @{ UserPrincipalName = "backup@example.invalid"; Role = "Global Administrator"; MFAStatus = "Disabled" },
+    @{ UserPrincipalName = "vendor@example.invalid"; Role = "Global Administrator"; MFAStatus = "Disabled" }
 )
 
-Write-Host "[INFO] Successfully retrieved active administrative assignments via Microsoft Graph." -ForegroundColor Green
+Write-Host "[INFO] Loaded synthetic administrative assignments; no Microsoft Graph request made." -ForegroundColor Green
 
 # 4. Process and Cross-Reference with Baseline
 $AdminCount = $ActiveGlobalAdmins.Count
@@ -50,6 +50,6 @@ if ($VulnerableAccounts) {
     # Exit with code 1 to notify the GitHub automation action that a high-risk drift exists
     Exit 1
 } else {
-    Write-Host "[PASS] Zero structural privilege identity risks identified." -ForegroundColor Green
+    Write-Host "[PASS] No finding in the checked fixture; this is not a complete identity assessment." -ForegroundColor Green
     Exit 0
 }

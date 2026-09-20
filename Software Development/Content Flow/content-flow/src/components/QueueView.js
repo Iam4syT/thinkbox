@@ -8,6 +8,7 @@ import * as api from '../services/api.js';
 const STATUS_CONFIG = {
   pending: { label: 'Pending', color: '#6b6890', icon: '⏳' },
   scheduled: { label: 'Scheduled', color: '#7c3aed', icon: '📅' },
+  ready_for_review: { label: 'Ready for manual review', color: '#b7791f', icon: '📝' },
   published: { label: 'Published', color: '#22c55e', icon: '✅' },
   failed: { label: 'Failed', color: '#ef4444', icon: '❌' },
   paused: { label: 'Paused', color: '#eab308', icon: '⏸' },
@@ -68,7 +69,7 @@ export class QueueView {
 
         <!-- Filters -->
         <div class="queue-filters">
-          ${['all', 'pending', 'scheduled', 'published'].map(f => `
+          ${['all', 'pending', 'scheduled', 'ready_for_review', 'published'].map(f => `
             <button class="filter-tab ${f === this._filter ? 'active' : ''}" data-filter="${f}">
               ${f.charAt(0).toUpperCase() + f.slice(1)}
             </button>

@@ -50,7 +50,7 @@ const config = Object.freeze({
     supportedPlatforms: ['linkedin', 'instagram', 'youtube'],
   },
 
-  /** @returns {boolean} Whether a valid OpenAI API key is configured */
+  /** @returns {boolean} Whether a non-placeholder OpenAI API key is configured; connectivity is untested */
   get hasValidApiKey() {
     return (
       this.openaiApiKey.length > 0 &&

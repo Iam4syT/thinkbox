@@ -1,0 +1,5 @@
+[
+ {"Id":"fixture-unlabelled","DisplayName":"Synthetic unlabelled team","GroupTypes":["Unified"],"AssignedLabels":[]},
+ {"Id":"fixture-existing","DisplayName":"Synthetic existing label","GroupTypes":["Unified"],"AssignedLabels":[{"LabelId":"b345221a-d234-4b22-aa11-cc82cf549d44"}]},
+ {"Id":"fixture-target","DisplayName":"Synthetic target label","GroupTypes":["Unified"],"AssignedLabels":[{"LabelId":"e305282a-e374-4b55-bb55-ec91cf549c69"}]}
+]

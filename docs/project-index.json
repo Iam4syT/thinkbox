@@ -1,0 +1,167 @@
+{
+  "projects": [
+    {
+      "path": "Modern Workplace Solutions/Enterprise-Copilot-Governance-Ops",
+      "title": "Copilot governance lab",
+      "problem": "Identify broadly accessible sensitive information before discussing wider AI access.",
+      "cap": "Explicit metadata rules, synthetic tenant fixture and matplotlib report",
+      "source": "core_engine/policy.py",
+      "limit": "No live Microsoft tenant, semantic query evaluation, permission changes or Power BI integration.",
+      "run": "python main.py\npython evaluate.py\npython -m unittest discover -s tests -v",
+      "deps": "pandas==2.3.3\nmatplotlib==3.10.8",
+      "proof": "evidence/evaluation.json",
+      "note": "Ten labelled policy cases; uncertainty is a review state. Compare with explicit rules before adding an AI model."
+    },
+    {
+      "path": "Modern Workplace Solutions/Enterprise-Ops-Telemetry-Engine",
+      "title": "Operations telemetry lab",
+      "problem": "Help an operator judge whether unusual telemetry deserves investigation.",
+      "cap": "Deterministic synthetic telemetry, held-out Isolation Forest and threshold comparison",
+      "source": "src/Analytics/anomalous_noise_detector.py",
+      "limit": "PowerShell runbooks produce plans only. Power BI is a manual CSV-import blueprint. No measured setup-time reduction, self-healing or cost saving.",
+      "run": "python main.py\npython -m unittest discover -s tests -v",
+      "deps": "pandas==2.3.3\nnumpy==2.2.6\nscikit-learn==1.8.0",
+      "proof": "evidence/evaluation.json",
+      "note": "1,000 synthetic records; 600 training and 400 held-out rows. The simple threshold is a required baseline, not an inferior alternative by assumption."
+    },
+    {
+      "path": "Modern Workplace Solutions/Workspace-Governance-Engine",
+      "title": "Workspace governance plans and runbooks",
+      "problem": "Review inactivity candidates and plan sensitivity labels without overwriting unrelated settings.",
+      "cap": "Offline fixtures, explicit live scope, delegated label-change guard, backups and verified rollback path",
+      "source": "Scripts/Enforce-PurviewLabels.ps1",
+      "limit": "Live Graph operations are implemented but have not been tenant-tested. Fixtures do not establish tenant security or regulatory compliance.",
+      "kind": "ps",
+      "run": "pwsh -NoProfile -File tests/Test-Fixtures.ps1\npwsh -NoProfile -File Scripts/Enforce-PurviewLabels.ps1\npwsh -NoProfile -File Scripts/Audit-UnusedSharePointSites.ps1",
+      "note": "Default mode uses fixtures. Existing labels require review; replacement is a separate explicit option. Live writes require delegated access, selected group IDs and -Apply."
+    },
+    {
+      "path": "Modern Workplace Solutions/tenant-guard",
+      "title": "Tenant Guard \u2014 drift fixtures",
+      "problem": "Show how identity, endpoint and sharing checks report configuration drift.",
+      "cap": "Three deterministic PowerShell demonstrations and expected-exit verification",
+      "source": "scripts/Run-EntraIdentityAudit.ps1",
+      "limit": "No Microsoft Graph connection or automated remediation. Exit 1 is expected for the supplied non-compliant fixtures.",
+      "kind": "ps",
+      "run": "pwsh -NoProfile -File tests/Test-Fixtures.ps1",
+      "note": "The harness succeeds only when all three intentionally bad fixtures report drift. A clean script exit is not a live tenant assessment."
+    },
+    {
+      "path": "AI Projects/SmartLifeCycle-Ops",
+      "title": "SmartLifeCycle Ops \u2014 endpoint and ML lab",
+      "problem": "Explore device onboarding plans and compare a classifier with a simple refresh rule.",
+      "cap": "FastAPI simulation and deterministic synthetic Random Forest training",
+      "source": "app/main.py",
+      "limit": "No Intune, JAMF or directory changes. The class probability describes synthetic labels; it is not real device-failure risk.",
+      "run": "python app/models/train_model.py\npython app/scripts/validate_api.py",
+      "deps": "fastapi==0.141.1\nuvicorn==0.52.4\npydantic==2.13.5\nhttpx==0.28.1\nemail-validator==2.3.0\npandas==2.3.3\nnumpy==2.2.6\nscikit-learn==1.8.0",
+      "proof": "evidence/evaluation.json",
+      "note": "2,500 synthetic records; 2,000 training and 500 test rows. The generating rule is the baseline. A fresh small model is built in memory; no committed pickle is loaded."
+    },
+    {
+      "path": "AI Projects/Enterprise-AI-Prioritization-Engine",
+      "title": "AI prioritisation and scenario explorer",
+      "problem": "Make subjective impact, feasibility and resource assumptions visible before deciding what to build.",
+      "cap": "Validated 60/40 scoring, quadrant logic and illustrative resource arithmetic",
+      "source": "core_engine/scoring_engine.py",
+      "limit": "No achieved ROI, vendor quotation, measured carbon footprint or net-zero assessment. Coefficients are hypothetical teaching inputs.",
+      "run": "python -m unittest discover -s tests -v\nstreamlit run app.py",
+      "deps": "streamlit==1.63.0\npandas==2.3.3",
+      "note": "Core tests cover bounds, non-finite values, booleans and negative usage. Read docs/assumptions.md before interpreting the scenarios."
+    },
+    {
+      "path": "AI Projects/Agentic-Compliance-Auditor",
+      "title": "Draft policy-assessment lab",
+      "problem": "Explore a structured model suggestion against a small set of sample communication policies.",
+      "cap": "FastAPI contract, static policy context, strict output validation and mandatory human-review state",
+      "source": "main.py",
+      "limit": "No legal/regulatory certification or automatic approval. Local tests mock the provider; live model false-approval and false-rejection rates remain unmeasured.",
+      "run": "python -m unittest discover -s tests -v\nuvicorn main:app --host 127.0.0.1 --port 8000",
+      "deps": "fastapi==0.141.1\nuvicorn==0.52.4\npydantic==2.13.5\nhttpx==0.28.1\nopenai==2.54.0\npython-dotenv==1.2.3",
+      "note": "Health and mocked contract tests need no key. A real audit request needs configured OpenAI/Azure access and may incur costs; it is outside the offline lab. Evaluation cases live in docs/evaluation-cases.json."
+    },
+    {
+      "path": "AI Projects/Business Opportuniity Scouting Agent",
+      "title": "Document-to-initiative analysis demo",
+      "problem": "Turn a permitted source page into a reviewable draft initiative assessment.",
+      "cap": "Bounded page extraction, LLM prompt and validated JSON-to-workbook fields",
+      "source": "analyzer.py",
+      "limit": "Fetch-and-prompt workflow, not indexed RAG or an autonomous strategy engine. Proposed objectives and targets are drafts, not achieved business results.",
+      "run": "python -m unittest discover -s tests -v",
+      "deps": "pandas==2.3.3\nopenpyxl==3.1.5\nrequests==2.32.5\nbeautifulsoup4==4.15.0\npython-dotenv==1.2.3\nopenai==2.54.0",
+      "note": "Tests cover malformed results, missing pages and separation of hostile page text from trusted instructions. They do not establish immunity to prompt injection. Live workbook processing requires permitted URLs and a model key."
+    },
+    {
+      "path": "AI Projects/ai-agent-app",
+      "title": "Thinkbox portfolio assistant",
+      "problem": "Let a visitor find real project evidence without depending on an LLM conversation.",
+      "cap": "React project/career pages and Flask catalogue backed by the same portfolio.json",
+      "source": "portfolio.json",
+      "limit": "Optional chat needs provider access. The previous fictional employment/project examples have been removed from the portfolio routes; no template proficiency ratings are treated as facts.",
+      "kind": "fullstack",
+      "run": "python -m unittest discover -s tests -v",
+      "deps": "flask==3.1.3\nflask-cors==6.0.5\nrequests==2.32.5\npython-dotenv==1.2.3",
+      "note": "Adapted from Andrew Baisden\u2019s ai-agent-app. Original attribution is retained in CONTRIBUTIONS.md. Static project evidence is the default route."
+    },
+    {
+      "path": "AI Projects/MLOps",
+      "title": "Customer-satisfaction pipeline learning",
+      "problem": "Compare a review-score predictor with a simple baseline while separating preprocessing and evaluation.",
+      "cap": "Local group-split benchmark with training-only imputation, mean baseline and Ridge model",
+      "source": "mlops-project/demo.py",
+      "limit": "One local holdout does not validate production serving, temporal performance, drift monitoring or causal business effects. Earlier ZenML code is retained as legacy study material.",
+      "sub": "mlops-project",
+      "run": "python demo.py",
+      "deps": "pandas==2.3.3\nnumpy==2.2.6\nscikit-learn==1.8.0",
+      "proof": "mlops-project/evidence/evaluation.json",
+      "note": "Starting point credits Ayush Singh. The duplicated inner directory was flattened; see mlops-project/MIGRATION.md and data provenance. Historical dependency pins are in requirements-legacy.txt."
+    },
+    {
+      "path": "AI Projects/kaggle",
+      "title": "Learning notes and small experiments",
+      "problem": "Record learning and show a small, inspectable feed-parsing experiment.",
+      "cap": "A local Atom-feed fixture and the existing Flask release-notes viewer",
+      "source": "agy-cli-projects/bq-releases-notes/app.py",
+      "limit": "This is a learning area. Reference PDFs are third-party material, not authored portfolio applications. Google Drive/AGY automation is separate and unvalidated here.",
+      "sub": "agy-cli-projects/bq-releases-notes",
+      "run": "python demo.py",
+      "deps": "flask==3.1.3\nflask-cors==6.0.5\nrequests==2.32.5",
+      "note": "The supported demo parses a synthetic Atom document without network access. The optional /api/releases endpoint fetches the official BigQuery feed; it is not run by the offline test."
+    },
+    {
+      "path": "Software Development/Content Flow",
+      "title": "Content Flow \u2014 writing workflow application",
+      "problem": "Organise drafts, adaptations and review steps while preserving publication truth.",
+      "cap": "Node application, SQLite storage, provider adapters and a queue that stops at manual review",
+      "source": "content-flow/server/automation/PostScheduler.js",
+      "limit": "No social-platform publishing adapter is implemented. Mock provider outputs are demonstrations. A queue state or simulated engagement score does not prove a published post or audience result.",
+      "kind": "node",
+      "sub": "content-flow",
+      "run": "npm ci\nnpm test\nnpm run build",
+      "note": "A due item becomes ready_for_review. A published state requires a verified receipt with URL and time; no live post is created by the demo."
+    },
+    {
+      "path": "Software Development/Grid Manager",
+      "title": "Grid Manager \u2014 Java design and scenario reporting",
+      "problem": "Explain source-selection decisions through modular software and a repeatable scenario.",
+      "cap": "Builder/Factory/Strategy design, SQLite history, cost-calculation service and JUnit tests",
+      "source": "src/main/java/GridManagerCore/calculator/CostCalculationService.java",
+      "limit": "Inputs and source switching are software scenarios. No physical grid or live sensor integration. Cost/carbon coefficients and demand-to-energy conversion are assumptions, not validated savings.",
+      "kind": "java",
+      "run": "mvn test\n./run.sh",
+      "note": "Java 24+ and Maven 3.9+ required. run.sh uses Maven from the project directory; ./run.sh gui is optional. Tests target the current CostCalculationService, not removed SwitchReport methods."
+    },
+    {
+      "path": "Software Development/Smart Home Energy Manager",
+      "title": "Smart Home energy and solar scenarios",
+      "problem": "Explain appliance cost calculations and test a simple solar attenuation scenario against persistence.",
+      "cap": "Local Python calculations, solar scenario classes, optional AI explanation and a small evaluation",
+      "source": "src/solar_prediction.py",
+      "limit": "Fixed attenuation factors are not a validated weather forecast. Evaluation uses hand-authored synthetic cases; no physical device actions or realised savings.",
+      "run": "python -m unittest discover -s tests -v\npython demo_solar_prediction.py\npython evaluate_solar.py",
+      "deps": "python-dotenv==1.2.3\nopenai==2.54.0",
+      "proof": "evidence/solar-evaluation.json",
+      "note": "Local calculations, menu and solar demo work without an API key. python src/main.py opens the menu; optional AI explanation requires a configured key."
+    }
+  ]
+}

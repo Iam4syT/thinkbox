@@ -39,11 +39,13 @@ class GhiPredictionStrategy(ABC):
 
 class PhysicalGhiPredictionStrategy(GhiPredictionStrategy):
     """
-    Concrete Strategy implementing physics-based GHI drop prediction
+    Concrete Strategy implementing illustrative GHI attenuation scenario
     and PV output conversion.
     Formula: P_PV = Area (m²) * Efficiency * (GHI / 1000) * (1 - Loss)
     """
     def __init__(self, drop_threshold_ratio: float = 0.20):
+        if not math.isfinite(drop_threshold_ratio) or not 0 <= drop_threshold_ratio <= 1:
+            raise ValueError("drop_threshold_ratio must be between 0 and 1")
         self.drop_threshold_ratio = drop_threshold_ratio
 
     def predict_30min_ahead(
@@ -54,7 +56,13 @@ class PhysicalGhiPredictionStrategy(GhiPredictionStrategy):
         cloud_cover_trend: str = "increasing",
         location_name: str = "Home Solar Array"
     ) -> SolarForecast:
-        # Determine cloud attenuation factor based on trend
+        if not all(isinstance(v, (int, float)) and not isinstance(v, bool) and math.isfinite(v) for v in [current_ghi_w_m2, panel_area_sqm, panel_efficiency]):
+            raise ValueError("Inputs must be finite numbers")
+        if current_ghi_w_m2 < 0 or panel_area_sqm <= 0 or not 0 < panel_efficiency <= 1:
+            raise ValueError("GHI must be non-negative; area positive; efficiency in (0, 1]")
+        if not isinstance(cloud_cover_trend, str) or cloud_cover_trend.lower() not in {"rapid_clouds", "severe", "increasing", "moderate", "stable", "clear"}:
+            raise ValueError("Unknown scenario trend")
+        # Illustrative attenuation assumptions, not fitted weather forecasts.
         if cloud_cover_trend.lower() == "rapid_clouds" or cloud_cover_trend.lower() == "severe":
             attenuation_factor = 0.40  # 60% drop in GHI
         elif cloud_cover_trend.lower() == "increasing" or cloud_cover_trend.lower() == "moderate":
@@ -75,10 +83,10 @@ class PhysicalGhiPredictionStrategy(GhiPredictionStrategy):
         is_warning = pv_drop_percentage >= (self.drop_threshold_ratio * 100.0)
 
         warning_msg = (
-            f"ALERT: PV Output expected to drop by {pv_drop_percentage:.1f}% in 30 minutes "
-            f"(from {current_pv_kw:.2f} kW down to {predicted_pv_kw:.2f} kW). Proactive load shedding or grid backup recommended."
+            f"SCENARIO: PV output would drop by {pv_drop_percentage:.1f}% in 30 minutes "
+            f"(from {current_pv_kw:.2f} kW down to {predicted_pv_kw:.2f} kW). Review assumptions before planning any physical action."
             if is_warning
-            else "Solar output remains stable for the next 30 minutes."
+            else "Scenario remains below the selected warning threshold; future weather is unknown."
         )
 
         return SolarForecast(
@@ -118,7 +126,7 @@ class ConsolePredictionObserver(PredictionObserver):
             print(" ⚠️  ALERT: 30-MINUTE AHEAD PV OUTPUT DROP WARNING!")
             print(f" Details : {forecast.warning_message}")
         else:
-            print(" ✅  STATUS: Solar output stable for the next 30 minutes.")
+            print(" STATUS: scenario below warning threshold; no actual weather forecast.")
 
 
 class SolarIntelligenceEngine:

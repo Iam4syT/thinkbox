@@ -68,6 +68,10 @@ router.put('/queue/:id', (req, res, next) => {
   try {
     const item = req.queueRepo.findById(req.params.id);
     if (!item) return res.status(404).json({ error: 'Queue item not found' });
+    const allowed = new Set(['priority', 'metadata', 'scheduled_time', 'status']);
+    if (Object.keys(req.body).some(key => !allowed.has(key))) return res.status(400).json({ error: 'Unsupported queue field' });
+    if (req.body.status && !['pending', 'scheduled', 'paused', 'ready_for_review', 'failed'].includes(req.body.status)) return res.status(400).json({ error: 'Publication requires a verified receipt; this demo has no publisher' });
+    if (req.body.scheduled_time && !Number.isFinite(Date.parse(req.body.scheduled_time))) return res.status(400).json({ error: 'Invalid scheduled_time' });
     const updated = req.queueRepo.update(req.params.id, req.body);
     res.json({ data: updated });
   } catch (err) { next(err); }
@@ -104,7 +108,7 @@ router.post('/queue/:id/resume', (req, res, next) => {
 router.post('/queue/:id/schedule', (req, res, next) => {
   try {
     const { scheduled_time } = req.body;
-    if (!scheduled_time) return res.status(400).json({ error: 'scheduled_time is required' });
+    if (typeof scheduled_time !== 'string' || !Number.isFinite(Date.parse(scheduled_time))) return res.status(400).json({ error: 'A valid scheduled_time is required' });
     const updated = req.queueRepo.update(req.params.id, { scheduled_time, status: 'scheduled' });
     if (!updated) return res.status(404).json({ error: 'Queue item not found' });
     res.json({ data: updated });

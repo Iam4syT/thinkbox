@@ -38,7 +38,13 @@ export function getDatabase() {
   instance.pragma('busy_timeout = 5000');
 
   // Run migrations
-  runMigrations(instance);
+  try {
+    runMigrations(instance);
+  } catch (error) {
+    instance.close();
+    instance = null;
+    throw error;
+  }
 
   return instance;
 }
@@ -59,13 +65,14 @@ function runMigrations(db) {
   `);
 
   const migrationsDir = path.join(__dirname, 'migrations');
-  if (!fs.existsSync(migrationsDir)) return;
+  if (!fs.existsSync(migrationsDir)) throw new Error('Database migrations missing from checkout');
 
   // Read and sort migration files
   const files = fs
     .readdirSync(migrationsDir)
     .filter((f) => f.endsWith('.sql'))
     .sort();
+  if (files.length === 0) throw new Error('Database migration files missing from checkout');
 
   const applied = new Set(
     db

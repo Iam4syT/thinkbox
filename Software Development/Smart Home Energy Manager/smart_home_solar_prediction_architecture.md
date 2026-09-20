@@ -78,20 +78,20 @@ The **30-Minute Ahead Solar Irradiance Drop Prediction Engine** integrates into 
 
 ## 4. Codebase Architecture & File Mapping
 
-- **[`src/solar_prediction.py`](file:///Users/4syt/Documents/thinkbox/Software%20Development/Smart%20Home%20Energy%20Manager/src/solar_prediction.py)**:
+- **[`src/solar_prediction.py`](src/solar_prediction.py)**:
   - `SolarForecast`: Dataclass storing current GHI, 30-min forecast GHI, current/future PV kW output, drop percentage, and warning flags.
   - `GhiPredictionStrategy`: Abstract Base Class (Strategy pattern).
   - `PhysicalGhiPredictionStrategy`: Physical prediction model calculating $P_{\text{PV}} = \text{Area} \times \text{Efficiency} \times \text{GHI} \times (1 - \text{Loss})$.
   - `PredictionObserver` & `ConsolePredictionObserver`: Observer pattern interface and terminal subscriber.
   - `SolarIntelligenceEngine`: Engine orchestrator.
 
-- **[`src/energy_manager.py`](file:///Users/4syt/Documents/thinkbox/Software%20Development/Smart%20Home%20Energy%20Manager/src/energy_manager.py)**:
+- **[`src/energy_manager.py`](src/energy_manager.py)**:
   - `ask_kernel_for_solar_mitigation`: Interacts with Semantic Kernel / OpenAI API to provide 3-step proactive home battery and load-shedding recommendations when a drop alert is triggered.
 
-- **[`src/main.py`](file:///Users/4syt/Documents/thinkbox/Software%20Development/Smart%20Home%20Energy%20Manager/src/main.py)**:
+- **[`src/main.py`](src/main.py)**:
   - Added Interactive CLI Menu **Option 6**: `Predict 30-Min Ahead Solar Irradiance Drop & PV Output`.
 
-- **[`demo_solar_prediction.py`](file:///Users/4syt/Documents/thinkbox/Software%20Development/Smart%20Home%20Energy%20Manager/demo_solar_prediction.py)**:
+- **[`demo_solar_prediction.py`](demo_solar_prediction.py)**:
   - Standalone multi-scenario test runner demonstrating clear solar conditions, approaching cloud fronts, and severe storm drop warnings.
 
 ---
@@ -101,14 +101,14 @@ The **30-Minute Ahead Solar Irradiance Drop Prediction Engine** integrates into 
 ### Standalone Automated Demo
 Run the multi-scenario demonstration script:
 ```bash
-cd "/Users/4syt/Documents/thinkbox/Software Development/Smart Home Energy Manager"
+cd "thinkbox/Software Development/Smart Home Energy Manager"
 python3 demo_solar_prediction.py
 ```
 
 ### Interactive CLI Menu
 Launch the main application and select **Option 6**:
 ```bash
-cd "/Users/4syt/Documents/thinkbox/Software Development/Smart Home Energy Manager"
+cd "thinkbox/Software Development/Smart Home Energy Manager"
 python3 src/main.py
 ```
 

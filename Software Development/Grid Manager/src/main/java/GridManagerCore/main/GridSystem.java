@@ -47,7 +47,7 @@ public class GridSystem {
         facadeSeattle.initialize();
 
         System.out.println("\n================================================================================");
-        System.out.println(" ✅ DEMO COMPLETE: 30-Minute Ahead Prediction & Facade Integration Verified");
+        System.out.println(" ✅ DEMO COMPLETE: synthetic scenarios calculated; real forecast accuracy and equipment control remain unverified");
         System.out.println("================================================================================\n");
     }
 }

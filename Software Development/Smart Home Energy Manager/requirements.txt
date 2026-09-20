@@ -1,7 +1,2 @@
-OpenAIChatCompletion
-semantic_kernel
-
-# requirements.txt
-semantic-kernel
-openai
-asyncio
+python-dotenv==1.2.3
+openai==2.54.0

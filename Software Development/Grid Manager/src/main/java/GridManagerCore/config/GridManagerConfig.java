@@ -47,7 +47,7 @@ public class GridManagerConfig
 
         public GridManagerConfig grid() {
             // Validate all percentage values are within the 0-100 range
-            if (industrialDemand < 0 || industrialDemand > 100 || windSpeed < 0 || windSpeed > 100 || solarIrradiance < 0 || solarIrradiance > 100 || electricityCost < 0 || electricityCost > 100) {
+            if (!Double.isFinite(industrialDemand) || !Double.isFinite(windSpeed) || !Double.isFinite(solarIrradiance) || !Double.isFinite(electricityCost) || industrialDemand < 0 || industrialDemand > 100 || windSpeed < 0 || windSpeed > 100 || solarIrradiance < 0 || solarIrradiance > 100 || electricityCost < 0 || electricityCost > 100) {
                 throw new IllegalStateException("Review Values. Convert all values to Percentage (0-100)");
             } else 
                  return new GridManagerConfig(this);

@@ -1,3 +1,4 @@
+from pathlib import Path
 import pandas as pd
 from dotenv import load_dotenv
 from scraper import fetch_page_content
@@ -37,6 +38,8 @@ def run_excel_agent(file_path: str = "initiatives.xlsx") -> None:
         if content.startswith("ERROR_FETCHING_URL"):
             print(" -> Scraping failed. Marking row as Error.")
             df.at[index, "Status"] = "Error: Invalid URL or Timeout"
+            df.at[index, "Strategic Benefits"] = ""
+            df.at[index, "Actionable OKR"] = ""
             continue
             
         print(" -> Analyzing alignment against Vision & Mission...")
@@ -53,4 +56,4 @@ def run_excel_agent(file_path: str = "initiatives.xlsx") -> None:
     print("Done! Open your spreadsheet to view the generated OKRs.")
 
 if __name__ == "__main__":
-    run_excel_agent("initiatives.xlsx")
+    run_excel_agent(str(Path(__file__).resolve().parent / "initiatives.xlsx"))

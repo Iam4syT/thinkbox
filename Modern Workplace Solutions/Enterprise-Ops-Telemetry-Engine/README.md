@@ -1,109 +1,44 @@
-# Enterprise Ops Telemetry Engine
+# Operations telemetry lab
 
-[![Python](https://img.shields.io/badge/Language-Python%203.10+-3776AB?style=flat-square&logo=python)](https://www.python.org/)
-[![Azure Monitor](https://img.shields.io/badge/Telemetry-Azure%20Log%20Analytics-0078D4?style=flat-square&logo=microsoftazure)](https://azure.microsoft.com/)
-[![Scikit-Learn](https://img.shields.io/badge/ML-Isolation%20Forest-F7931E?style=flat-square&logo=scikitlearn)](https://scikit-learn.org/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](#)
+Help an operator judge whether unusual telemetry deserves investigation.
 
-> **Automating Secure Modern Workplace Landings and Mining Azure Log Telemetry for Proactive Trend Analysis and Machine Learning Anomaly Detection.**
+This is a portfolio learning project maintained by Bunamin Adams. Read [contribution and provenance](CONTRIBUTIONS.md), [the lab](LAB.md), [evaluation](EVALUATION.md) and [change record](CHANGELOG.md).
 
----
+## What works and what it means
 
-## 1. Business Value & Executive Business Case
+| Component | State | Evidence |
+|---|---|---|
+| Deterministic synthetic telemetry, held-out Isolation Forest and threshold comparison | Implemented at the scope described here | [Source](src/Analytics/anomalous_noise_detector.py); [Recorded evaluation](evidence/evaluation.json) |
+| Live/business outcome | Unestablished unless explicitly recorded | PowerShell runbooks produce plans only. Power BI is a manual CSV-import blueprint. No measured setup-time reduction, self-healing or cost saving. |
 
-### The Operational Challenge
-As a Managed Service Provider (MSP) or enterprise IT team scales, manual configuration errors increase, resource sprawl creates hidden costs (**FinOps drift**), and recurring ticket noise exhausts engineers. 
+1,000 synthetic records; 600 training and 400 held-out rows. The simple threshold is a required baseline, not an inferior alternative by assumption.
 
-### The Solution Provided
-1. **Project Delivery Block:** Fully automated PowerShell workflows run secure tenant onboarding setups (Conditional Access, Intune profiles, Defender isolation) to eliminate setup errors.
-2. **Service Intelligence Block:** A Python analytics and Machine Learning engine reads simulated Azure monitor telemetry, parses trend logs, and applies an `Isolation Forest` model to catch and flag operational anomalies before they turn into active support tickets.
-3. **Executive Dashboard:** A Power BI reporting layer transforms raw cloud logs into clear cost optimization views showing license drift and unmapped resource spending.
+## Reproduce a small example
 
-### The Profit Multiplier
-Automating the client onboarding process **reduces engineering setup times by over 60%**. Proactive self-healing alert analytics prevent unexpected incident ticket surges. This structure allows operations to scale margin profitability without a linear, expensive headcount increase.
+Commands below assume a new clone; if already inside thinkbox, navigate directly to the quoted project path. Python examples use Python 3.11. On Windows activate the environment using its Scripts/Activate.ps1 instead.
 
----
-
-## 2. Technical Architecture & Workflow
-
-```
-┌────────────────────────┐
-│  Log Parser Module     │  Generates & parses synthetic Azure Monitor
-│  (src/Analytics/       │  workspace telemetry logs
-│   LogParser.py)        │
-└───────────┬────────────┘
-            │
-            ▼
-┌────────────────────────┐
-│  ML Anomaly Detector   │  Runs Isolation Forest model (scikit-learn)
-│  (src/Analytics/       │  to identify FinOps spikes & operational drift
-│   anomalous_noise_... )│
-└───────────┬────────────┘
-            │
-            ▼
-┌────────────────────────┐
-│  Power BI Analytics    │  Consumes telemetry_anomaly_insights.csv
-│  (src/Dashboards/)     │  for executive cost & health dashboards
-└────────────────────────┘
+```sh
+git clone https://github.com/Iam4syT/thinkbox.git
+cd "thinkbox/Modern Workplace Solutions/Enterprise-Ops-Telemetry-Engine"
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python main.py
+python -m unittest discover -s tests -v
 ```
 
----
+Read [LAB.md](LAB.md) for expected results, troubleshooting and cleanup. Do not interpret an unrun live step as an integration test. Dependency downloads require internet access; offline fixtures do not need service credentials.
 
-## 3. Project Structure
+## Results, limits and next step
 
-```
-Enterprise-Ops-Telemetry-Engine/
-├── src/
-│   ├── Analytics/
-│   │   ├── LogParser.py                   # Azure log telemetry generation & parser module
-│   │   └── anomalous_noise_detector.py    # Isolation Forest machine learning anomaly detector
-│   ├── Dashboards/                        # Power BI report definitions & documentation
-│   └── Runbooks/                          # Automated PowerShell tenant onboarding runbooks
-├── main.py                                # End-to-end execution script
-├── requirements.txt                       # Project Python dependencies
-├── .env.example                           # Environment configuration template
-├── .gitignore                             # Git ignore rules
-└── README.md                              # Technical documentation
-```
+PowerShell runbooks produce plans only. Power BI is a manual CSV-import blueprint. No measured setup-time reduction, self-healing or cost saving. [Recorded evaluation](evidence/evaluation.json) describes method and observed results; a small synthetic evaluation is not proof of workplace impact. Source revision/environment are recorded in the repository verification report.
 
----
+Use [DEMO SCRIPT.md](DEMO%20SCRIPT.md) for a short walkthrough. The next useful step is the smallest evaluation that could change a decision, using permitted data and a justified baseline.
 
-## 4. Setup and Installation
+## Layout and reuse
 
-### Prerequisites
-- Python 3.10 or higher
+Keep the established source folders in place. Repository CI lives at root `.github/workflows`, with project working directories. Code licensing follows [the root licence](../../LICENSE) and any project-specific notice; third-party datasets, papers and adapted code retain their own terms.
 
-### Quickstart
+## Last local verification
 
-1. **Navigate to the project directory:**
-   ```bash
-   cd "/Users/4syt/Documents/thinkbox/Modern Workplace Solutions/Enterprise-Ops-Telemetry-Engine"
-   ```
-
-2. **Create and activate virtual environment:**
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Run the telemetry creation & machine learning pipeline:**
-   ```bash
-   python main.py
-   ```
-
----
-
-## 5. Visualizations & Dashboards
-
-After executing `python main.py`, open Power BI Desktop, import the generated insights CSV file from `src/Analytics/data/telemetry_anomaly_insights.csv`, and construct visualization dashboards as detailed in `src/Dashboards/README.md`.
-
----
-
-## 6. License
-
-Distributed under the **MIT License**.
+20 September 2026, macOS arm64. See the [verification report](../../docs/VERIFICATION.md) for the exact runtime, command, result and untested boundaries. The evidence is local or mocked at the stated scope.

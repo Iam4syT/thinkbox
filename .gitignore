@@ -103,3 +103,21 @@ lcov-report/
 *.a
 
 # End of .gitignore
+
+# Local review/build artifacts and credentials
+artifacts/
+logs/
+.venv/
+credentials.json
+token.json
+*.backup.json
+.pytest_cache/
+
+# Build outputs at every project depth
+dist/
+
+# Versioned schema required by the Content Flow clean-clone demo
+!Software Development/Content Flow/content-flow/server/db/migrations/*.sql
+
+# Also ignore dependency directories linked to an external local runtime
+node_modules

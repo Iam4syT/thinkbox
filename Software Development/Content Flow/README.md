@@ -1,80 +1,43 @@
-# ContentFlow — AI-Powered Cross-Platform Content Repurposing Engine
+# Content Flow — writing workflow application
 
-[![Node.js](https://img.shields.io/badge/Runtime-Node.js%20v18+-339933?style=flat-square&logo=nodedotjs)](https://nodejs.org/)
-[![Vite](https://img.shields.io/badge/Frontend-Vite%20%7C%20Vanilla%20JS-646CFF?style=flat-square&logo=vite)](https://vitejs.dev/)
-[![OpenAI](https://img.shields.io/badge/AI-OpenAI%20%7C%20Gemini-412991?style=flat-square&logo=openai)](https://platform.openai.com/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](#)
+Organise drafts, adaptations and review steps while preserving publication truth.
 
-> **An automated 4-stage AI content pipeline that transforms raw brain dumps into refined drafts, tailors content across social platforms (LinkedIn, Instagram, YouTube), schedules optimal posting sequences, and tracks performance against OKRs.**
+This is a portfolio learning project maintained by Bunamin Adams. Read [contribution and provenance](CONTRIBUTIONS.md), [the lab](LAB.md), [evaluation](EVALUATION.md) and [change record](CHANGELOG.md).
 
----
+## What works and what it means
 
-## 1. Core Problem & Product Vision
+| Component | State | Evidence |
+|---|---|---|
+| Node application, SQLite storage, provider adapters and a queue that stops at manual review | Implemented at the scope described here | [Source](content-flow/server/automation/PostScheduler.js); [Verification record](EVALUATION.md) |
+| Live/business outcome | Unestablished unless explicitly recorded | No social-platform publishing adapter is implemented. Mock provider outputs are demonstrations. A queue state or simulated engagement score does not prove a published post or audience result. |
 
-Content creators produce long-form content and manually rewrite, resize, and reformat it for every platform. **ContentFlow** automates this lifecycle through an intelligent multi-provider AI pipeline.
+A due item becomes ready_for_review. A published state requires a verified receipt with URL and time; no live post is created by the demo.
 
-### The 4-Stage Content Pipeline
+## Reproduce a small example
 
-```
-┌───────────────┐     AI Refines     ┌────────────────┐
-│  🧠 Brain     ├───────────────────►│  ✍️ Refined     │
-│  Dump Input   │                    │  Draft         │
-└───────────────┘                    └───────┬────────┘
-                                             │ AI Tailors
-                                             ▼
-┌───────────────┐   Automated Post   ┌────────────────┐
-│  📤 Scheduled ◄────────────────────┤  🎯 Platform   │
-│  Queue        │   & Journey Sync   │  Adaptations   │
-└───────────────┘                    └────────────────┘
+Commands below assume a new clone; if already inside thinkbox, navigate directly to the quoted project path. Python examples use Python 3.11. On Windows activate the environment using its Scripts/Activate.ps1 instead.
+
+```sh
+git clone https://github.com/Iam4syT/thinkbox.git
+cd "thinkbox/Software Development/Content Flow/content-flow"
+# Node.js 24 LTS and npm
+npm ci
+npm test
+npm run build
 ```
 
----
+Read [LAB.md](LAB.md) for expected results, troubleshooting and cleanup. Do not interpret an unrun live step as an integration test. Dependency downloads require internet access; offline fixtures do not need service credentials.
 
-## 2. Project Structure
+## Results, limits and next step
 
-```
-Content Flow/
-├── implementation_plan.md    # Detailed architecture & feature specification
-├── content-flow/
-│   ├── server/               # Express backend, SQLite DB, AI providers & routes
-│   │   ├── ai/               # Gemini & OpenAI provider adapters & prompt engineering
-│   │   ├── automation/       # Timing optimizer, journey planner, & queue engine
-│   │   ├── db/               # SQLite database & repository patterns
-│   │   └── routes/           # REST API endpoints
-│   ├── src/                  # Frontend Vite UI components & dashboards
-│   ├── package.json          # Dependencies & npm scripts
-│   ├── .env.example          # Environment variable template
-│   └── vite.config.js        # Vite bundler configuration
-└── README.md                 # Primary project documentation
-```
+No social-platform publishing adapter is implemented. Mock provider outputs are demonstrations. A queue state or simulated engagement score does not prove a published post or audience result. [Verification record](EVALUATION.md) describes method and observed results; a small synthetic evaluation is not proof of workplace impact. Source revision/environment are recorded in the repository verification report.
 
----
+Use [DEMO SCRIPT.md](DEMO%20SCRIPT.md) for a short walkthrough. The next useful step is the smallest evaluation that could change a decision, using permitted data and a justified baseline.
 
-## 3. Quickstart Guide
+## Layout and reuse
 
-1. **Navigate to the application folder:**
-   ```bash
-   cd "/Users/4syt/Documents/thinkbox/Software Development/Content Flow/content-flow"
-   ```
+Keep the established source folders in place. Repository CI lives at root `.github/workflows`, with project working directories. Code licensing follows [the root licence](../../LICENSE) and any project-specific notice; third-party datasets, papers and adapted code retain their own terms.
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+## Last local verification
 
-3. **Configure Environment:**
-   Copy `.env.example` to `.env` and set your API keys:
-   ```bash
-   cp .env.example .env
-   ```
-
-4. **Launch Development Servers:**
-   ```bash
-   npm run dev
-   ```
-
----
-
-## 4. License
-
-Distributed under the **MIT License**. Part of the Thinkbox Software Development portfolio.
+20 September 2026, macOS arm64. See the [verification report](../../docs/VERIFICATION.md) for the exact runtime, command, result and untested boundaries. The evidence is local or mocked at the stated scope.

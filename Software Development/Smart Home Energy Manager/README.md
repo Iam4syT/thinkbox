@@ -1,157 +1,45 @@
+# Smart Home energy and solar scenarios
 
-![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)  
-![License](https://img.shields.io/badge/License-MIT-green.svg)  
-![Status](https://img.shields.io/badge/Status-Active-success)  
-![Last Commit](https://img.shields.io/github/last-commit/yourusername/energy-manager)  
-![Issues](https://img.shields.io/github/issues/yourusername/energy-manager)  
-![Pull Requests](https://img.shields.io/github/issues-pr/yourusername/energy-manager)  
+Explain appliance cost calculations and test a simple solar attenuation scenario against persistence.
 
----
-# ⚡ Energy Manager App
+This is a portfolio learning project maintained by Bunamin Adams. Read [contribution and provenance](CONTRIBUTIONS.md), [the lab](LAB.md), [evaluation](EVALUATION.md) and [change record](CHANGELOG.md).
 
-The **Energy Manager App** is a Python-based tool that helps users monitor and manage home energy consumption.  
-The tool is designed to build your energy consumption profile from an atomic level, so as to provide the most accurate result and insghts.
-It calculates the cost of running household devices and provides **AI-powered insights** on how to optimize energy usage.
-The AI integration is built on Microsft's Semantic Kernel chat completion function, So, it is still crude.
+## What works and what it means
 
----
-# 💡 Backstory
+| Component | State | Evidence |
+|---|---|---|
+| Local Python calculations, solar scenario classes, optional AI explanation and a small evaluation | Implemented at the scope described here | [Source](src/solar_prediction.py); [Recorded evaluation](evidence/solar-evaluation.json) |
+| Live/business outcome | Unestablished unless explicitly recorded | Fixed attenuation factors are not a validated weather forecast. Evaluation uses hand-authored synthetic cases; no physical device actions or realised savings. |
 
-One evening, while reviewing the mounting energy bills for our family home and small business. Despite turning off lights, shifting usage to off-peak hours, and installing basic monitoring, costs kept climbing. It became clear that, much like with money, it's the small, continuous expenses that silently add up.
+Local calculations, menu and solar demo work without an API key. python src/main.py opens the menu; optional AI explanation requires a configured key.
 
-This realization sparked an idea: to measure and analyze energy consumption on a granular, second-by-second basis. This wouldn't just be about tracking usage; it would be about finding and highlighting those "little expenses" that were draining our wallets.
+## Reproduce a small example
 
-Around the same time, I completed my Microsoft AI engineering certification. I saw an opportunity to integrate what I'd learned into this project, using AI to not only collect data but also to identify patterns and suggest actionable, personalized solutions for reducing energy consumption.
+Commands below assume a new clone; if already inside thinkbox, navigate directly to the quoted project path. Python examples use Python 3.11. On Windows activate the environment using its Scripts/Activate.ps1 instead.
 
-What started as a personal quest to help my family became the foundation for this tool. I hope it helps you and your family gain control over your energy usage and, in turn, your bills.
-
----
-
-## 🚀 Features
-- 🔹 Calculate **cost per second, per hour, and per month** for any device  
-- 🔹 Save and load device usage history in **JSON format**  
-- 🔹 **Summarize total energy cost** of all devices  
-- 🔹 **Predict 30-minute ahead Solar Irradiance (GHI) & PV Output drops** with automated load-shedding alerts  
-- 🔹 Get **AI-generated recommendations** on energy efficiency and proactive solar drop mitigation  
-- 🔹 Simple **command-line interface (CLI)** and automated demo runner (`demo_solar_prediction.py`)  
----
-
-## 🛠️ Tech Stack
-- **Python 3.9+**
-- [Semantic Kernel](https://github.com/microsoft/semantic-kernel) – AI integration
-- OpenAI API (GPT models)
-- JSON for data storage
-
----
-
-## 📦 Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/energy-manager.git
-   cd energy-manager
-````
-
-2. **Create a virtual environment (recommended)**
-
-   ```bash
-   python -m venv venv
-   source venv/bin/activate   # On macOS/Linux
-   venv\Scripts\activate      # On Windows
-   ````
-
-3. **Install dependencies**
-
-   ```bash
-   pip install -r requirements.txt
-   ````
-
-4. **Set your OpenAI API key**
-   In `energy_manager.py`, replace:
-
-   ```python
-   api_key = "your_openai_api_key"
-   ````
-
-   with your actual key, or load it from environment variables for security:
-
-   ```bash
-   export OPENAI_API_KEY="your_api_key_here"
-   ````
-
----
-
-## ▶️ Usage
-
-Run the application:
-
-```bash
-python main.py
-````
-
-You’ll see an interactive menu:
-
+```sh
+git clone https://github.com/Iam4syT/thinkbox.git
+cd "thinkbox/Software Development/Smart Home Energy Manager"
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m unittest discover -s tests -v
+python demo_solar_prediction.py
+python evaluate_solar.py
 ```
-===== Energy Manager Menu =====
-1. Show consumption per second
-2. Show consumption per hour
-3. Show consumption per month
-4. Calculate total cost of all devices
-5. Get AI-generated feedback on consumption
-0. Exit
-````
 
----
+Read [LAB.md](LAB.md) for expected results, troubleshooting and cleanup. Do not interpret an unrun live step as an integration test. Dependency downloads require internet access; offline fixtures do not need service credentials.
 
-## 📊 Example
+## Results, limits and next step
 
-```
-Enter device name: Refrigerator
-Enter number of this device: 1
-Enter power rating of device in watts (W): 150
-Enter your currency: $
-Enter electricity cost per kWh: 0.15
+Fixed attenuation factors are not a validated weather forecast. Evaluation uses hand-authored synthetic cases; no physical device actions or realised savings. [Recorded evaluation](evidence/solar-evaluation.json) describes method and observed results; a small synthetic evaluation is not proof of workplace impact. Source revision/environment are recorded in the repository verification report.
 
-Using Refrigerator costs $ 0.0000416667 per second.
-````
+Use [DEMO SCRIPT.md](DEMO%20SCRIPT.md) for a short walkthrough. The next useful step is the smallest evaluation that could change a decision, using permitted data and a justified baseline.
 
----
+## Layout and reuse
 
-## 🔮 Roadmap
+Keep the established source folders in place. Repository CI lives at root `.github/workflows`, with project working directories. Code licensing follows [the root licence](../../LICENSE) and any project-specific notice; third-party datasets, papers and adapted code retain their own terms.
 
-* [ ] Add **unit tests** with `pytest`
-* [ ] Build a **GUI interface** (Tkinter / PyQt)
-* [ ] Data **visualizations with charts**
-* [ ] Cloud sync for energy data
-* [ ] Mobile app (Flutter/React Native frontend)
+## Last local verification
 
----
-
-## 📜 License
-This repository is licensed under the **MIT License** – you are free to use, modify, and build upon these concepts, provided proper attribution is given.  
-*(You may update the license type if you prefer more restrictive terms.)*
-
----
-
-## 🤝 Contributing
-Contributions are welcome! Please fork the repo and submit a pull request.
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** – free to use and modify.
-
----
-
-## 👨‍💻 Author
-
-Developed by **\[4syT Labs]**
-🔗 [LinkedIn](https://linkedin.com/in/bunaminadams) | [GitHub](https://github.com/Iam4syT)
-
----
-
-## 📧 Contact
-Created and maintained by **Bunamin Adams (4syt Integrated Solution)**  
-- 🌐 [think4syt.com](https://think4syt.com)  
-- ✉️ [bunamin@think4syt.com] 
+20 September 2026, macOS arm64. See the [verification report](../../docs/VERIFICATION.md) for the exact runtime, command, result and untested boundaries. The evidence is local or mocked at the stated scope.

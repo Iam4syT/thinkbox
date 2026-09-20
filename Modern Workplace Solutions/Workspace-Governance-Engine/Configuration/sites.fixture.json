@@ -1,0 +1,5 @@
+[
+ {"Id":"fixture-stale","DisplayName":"Synthetic older site","LastModifiedDateTime":"2025-01-01T00:00:00Z"},
+ {"Id":"fixture-recent","DisplayName":"Synthetic recent site","LastModifiedDateTime":"2026-09-01T00:00:00Z"},
+ {"Id":"fixture-unknown","DisplayName":"Synthetic missing metadata","LastModifiedDateTime":null}
+]

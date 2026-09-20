@@ -39,10 +39,16 @@ def block_default_images():
     return response
 
 
+@app.get('/api/portfolio')
+def portfolio_catalogue():
+    from agents.project_agent import DATA
+    return jsonify(DATA)
+
+
 @app.route('/api/welcome', methods=['POST'])
 def welcome_agent_endpoint():
-    data = request.json
-    message = data.get('message', '')
+    data = request.get_json(silent=True) or {}
+    message = str(data.get('message', ''))
 
     visitor_type = None
     if 'employer' in message.lower():
@@ -65,39 +71,19 @@ def welcome_agent_endpoint():
 
 @app.route('/api/project', methods=['POST'])
 def project_agent_endpoint():
-    data = request.json
-    message = data.get('message', '')
+    data = request.get_json(silent=True) or {}
+    message = str(data.get('message', ''))
 
-    project_id = None
-    if 'e-commerce' in message.lower() or 'ecommerce' in message.lower():
-        project_id = 'project1'
-    elif 'task' in message.lower() or 'management' in message.lower():
-        project_id = 'project2'
-    elif 'data' in message.lower() or 'visualization' in message.lower() or 'dashboard' in message.lower():
-        project_id = 'project3'
-
-    if project_id and ('tell me more' in message.lower() or 'details' in message.lower()):
-        response = project_agent.get_project_details(project_id)
-    elif 'list' in message.lower() or 'all projects' in message.lower():
-        response = project_agent.get_project_list()
-    elif project_id:
-
-        response = project_agent.answer_technical_question(project_id, message)
-    else:
-
-        response = project_agent.get_response(
-            f"The user asked: '{message}'. Respond as if you are a project specialist for a portfolio website. "
-            "If they're asking about a specific project, suggest they mention one of the projects: "
-            "E-commerce Platform, Task Management App, or Data Visualization Dashboard."
-        )
+    project_id = next((key for key in project_agent.projects if key in message.lower()), None)
+    response = project_agent.get_project_details(project_id) if project_id else project_agent.get_project_list()
 
     return jsonify({'response': response})
 
 
 @app.route('/api/career', methods=['POST'])
 def career_agent_endpoint():
-    data = request.json
-    message = data.get('message', '')
+    data = request.get_json(silent=True) or {}
+    message = str(data.get('message', ''))
 
     if 'skills' in message.lower():
         response = career_agent.get_skills_summary()
@@ -118,8 +104,8 @@ def career_agent_endpoint():
 
 @app.route('/api/client', methods=['POST'])
 def client_agent_endpoint():
-    data = request.json
-    message = data.get('message', '')
+    data = request.get_json(silent=True) or {}
+    message = str(data.get('message', ''))
 
     if 'services' in message.lower() or 'offerings' in message.lower():
         response = client_agent.get_services_overview()
@@ -146,8 +132,8 @@ def client_agent_endpoint():
 
 @app.route('/api/research', methods=['POST'])
 def research_agent_endpoint():
-    data = request.json
-    message = data.get('message', '')
+    data = request.get_json(silent=True) or {}
+    message = str(data.get('message', ''))
 
     if 'compare' in message.lower() and ('vs' in message.lower() or 'versus' in message.lower()):
 
@@ -176,5 +162,5 @@ if __name__ == '__main__':
         response.headers['Expires'] = '0'
         return response
 
-    app.run(host='0.0.0.0', port=5001, debug=True,
+    app.run(host='127.0.0.1', port=5001, debug=False,
             use_reloader=False, threaded=True)

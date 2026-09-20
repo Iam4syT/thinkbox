@@ -1,0 +1,42 @@
+{
+  "name": "Bunamin Adams",
+  "focus": "Modern Workplace engineering, IT operations, cloud and practical AI applications",
+  "study": "Ongoing postgraduate study in Artificial Intelligence; no awarded degree claimed here",
+  "experience_summary": "More than five years of experience, as reported by Bunamin. Specific employment dates, titles and quantified achievements are not asserted by this demo.",
+  "projects": [
+    {
+      "id": "copilot",
+      "name": "Copilot Governance Lab",
+      "stack": [
+        "Python",
+        "workplace governance concepts"
+      ],
+      "description": "Synthetic metadata access checks and a labelled evaluation; no live tenant enforcement.",
+      "path": "Modern Workplace Solutions/Enterprise-Copilot-Governance-Ops",
+      "url": "https://github.com/Iam4syT/thinkbox/tree/main/Modern%20Workplace%20Solutions/Enterprise-Copilot-Governance-Ops"
+    },
+    {
+      "id": "telemetry",
+      "name": "Operations Telemetry",
+      "stack": [
+        "Python",
+        "PowerShell"
+      ],
+      "description": "Synthetic anomaly analysis compared with a simple rule; runbooks are plans.",
+      "path": "Modern Workplace Solutions/Enterprise-Ops-Telemetry-Engine",
+      "url": "https://github.com/Iam4syT/thinkbox/tree/main/Modern%20Workplace%20Solutions/Enterprise-Ops-Telemetry-Engine"
+    },
+    {
+      "id": "lifecycle",
+      "name": "SmartLifeCycle Ops",
+      "stack": [
+        "Python",
+        "FastAPI",
+        "scikit-learn"
+      ],
+      "description": "Device workflow simulation and classifier comparison with its synthetic rule baseline.",
+      "path": "AI Projects/SmartLifeCycle-Ops",
+      "url": "https://github.com/Iam4syT/thinkbox/tree/main/AI%20Projects/SmartLifeCycle-Ops"
+    }
+  ]
+}

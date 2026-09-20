@@ -66,8 +66,26 @@ export class QueueManager {
   remove(id) { return this.repo.delete(id); }
 
   /** @param {string} id */
-  markPosted(id) {
-    return this.repo.update(id, { status: 'published' });
+  markReadyForReview(id) {
+    const item = this.repo.findById(id);
+    if (!item) throw new Error('Queue item not found');
+    return this.repo.update(id, {
+      status: 'ready_for_review',
+      metadata: { ...item.metadata, publication_mode: 'manual', external_publication_verified: false },
+    });
+  }
+
+  markPosted(id, receipt) {
+    if (!receipt || receipt.verified !== true || !receipt.url || !receipt.published_at) {
+      throw new Error('Verified publication URL and timestamp required');
+    }
+    const url = new URL(receipt.url);
+    if (url.protocol !== 'https:' || !Number.isFinite(Date.parse(receipt.published_at))) {
+      throw new Error('Invalid publication receipt');
+    }
+    const item = this.repo.findById(id);
+    if (!item) throw new Error('Queue item not found');
+    return this.repo.update(id, { status: 'published', metadata: { ...item.metadata, publication: receipt } });
   }
 
   /**

@@ -1,5 +1,7 @@
-#!/bin/bash
-JAVA_FX_PATH="/Users/4syt/Library/CloudStorage/OneDrive-4syTIntegratedSolutions/Downloads/MSc Artificial Intelligence/SWE7302/javafx-sdk-25.0.2/lib"
-java --module-path "$JAVA_FX_PATH" \
-     --add-modules javafx.controls,javafx.fxml \
-     src/main/java/GridManagerCore/ui/GridManagerDashboard.java
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")"
+if [[ "${1:-cli}" == "gui" ]]; then
+  exec mvn javafx:run
+fi
+exec mvn compile exec:java -Dexec.mainClass=GridManagerCore.main.GridSystem

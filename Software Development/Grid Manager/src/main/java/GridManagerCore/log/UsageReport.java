@@ -30,7 +30,7 @@ public class UsageReport {
     }
 
     /**
-     * Prints a formatted daily switch report with real cost and CO₂ aggregations.
+     * Prints a formatted daily switch report with illustrative cost and CO₂ arithmetic.
      *
      * @param title         Report title (e.g. "Daily Switch Report for 2026-06-28")
      * @param location      Campus or site name
@@ -64,11 +64,11 @@ public class UsageReport {
                 .map(Map.Entry::getKey)
                 .orElse("Unknown");
 
-        System.out.printf("Cost Savings        :  $%.2f (vs. all-Grid baseline)%n", totalCostSaving);
-        System.out.printf("Estimated CO\u2082 Saved : %.2f kg CO\u2082%n", totalCo2Saving);
+        System.out.printf("Scenario cost difference:  $%.2f (vs. all-Grid baseline)%n", totalCostSaving);
+        System.out.printf("Scenario CO\u2082 difference: %.2f kg CO\u2082%n", totalCo2Saving);
         System.out.println("Source Breakdown    : " + sourceCounts);
-        System.out.println("Recommendations     : Prioritise '" + recommendation
-                + "' \u2014 most efficient source today.");
+        System.out.println("Most selected source: '" + recommendation
+                + "' \u2014 selection frequency does not establish efficiency.");
     }
 
     /** Prints the switch history section header. */

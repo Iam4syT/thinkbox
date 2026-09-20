@@ -14,9 +14,8 @@ import java.util.Map;
  * OCP: Adding a new energy source only requires adding one entry to each Map.
  *      No switch statements, no if-else chains, no class modifications elsewhere.
  *
- * All cost and CO₂ figures are sourced from:
- *   - IEA World Energy Outlook 2024
- *   - IRENA Renewable Power Generation Costs 2023
+ * Coefficients are illustrative assumptions, not verified IEA/IRENA estimates.
+ * See docs/assumptions.md for units and limitations.
  */
 public class CostCalculationService {
 

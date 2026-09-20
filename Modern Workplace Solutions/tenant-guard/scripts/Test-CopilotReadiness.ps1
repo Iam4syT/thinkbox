@@ -19,15 +19,15 @@ $VulnerabilitiesFound = 0
 foreach ($Site in $SharePointSites) {
     if ($Site.AnonymousSharing -eq $true -or $Site.PublicAccess -eq "OpenToAllEmployees") {
         Write-Host "[RISK] Over-Shared Directory Exposed to Copilot Index: $($Site.SiteName)" -ForegroundColor Red
-        Write-Host "       -> High probability of unauthorized prompt exposure." -ForegroundColor Yellow
+        Write-Host "       -> Fixture indicates broad access; real membership and retrieval behaviour are untested." -ForegroundColor Yellow
         $VulnerabilitiesFound++
     }
 }
 
 if ($VulnerabilitiesFound -gt 0) {
-    Write-Host "[ALERT] Audit failed. Cloud data boundaries violate ethical AI guidelines." -ForegroundColor Red
+    Write-Host "[ALERT] Audit failed. Synthetic fixture contains the expected broad-access finding." -ForegroundColor Red
     Exit 1
 } else {
-    Write-Host "[PASS] Safe context isolation boundaries intact for deployment." -ForegroundColor Green
+    Write-Host "[PASS] No finding in the checked fixture; this is not a deployment clearance." -ForegroundColor Green
     Exit 0
 }

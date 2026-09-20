@@ -1,76 +1,52 @@
-# App Ideas – Proof of Concept Collection
+# Bunamin Adams — Modern Workplace, Cloud and Applied AI
 
-This repository is a curated collection of **proof-of-concept prototypes** exploring different app ideas.  
-Each project serves as a lightweight demonstration of an idea’s core functionality, built to test feasibility, design direction, or unique features before moving into full-scale development.
+I am interested in how workplace systems work end to end: how people get access, how devices are managed, how services are supported, and where AI can make a useful difference.
 
----
+Thinkbox is where I explore those questions through code, practical labs and solution designs. My focus is Modern Workplace engineering and consulting, supported by IT operations experience and ongoing postgraduate study in Artificial Intelligence.
 
-## 📂 Repository Structure
-Each folder in this repository represents a separate proof-of-concept project.  
-A typical project includes:
-- **README.md** – Project overview and purpose  
-- **Source Code** – Core implementation of the idea  
-- **Demo / Mockups** – Screenshots, wireframes, or video demos (where applicable)  
+## Start here
 
----
+These projects show the direction of my work. Their current scope includes simulations and design blueprints; they are not evidence of production deployments.
 
-## 🎯 Goals of This Repository
-- Document and experiment with new **app concepts**  
-- Validate **technical feasibility** of ideas  
-- Explore **user experience (UX) directions**  
-- Provide a foundation for future **production-ready apps**  
+| Project | Problem explored | Current evidence and boundary |
+|---|---|---|
+| [Copilot Governance](./Modern%20Workplace%20Solutions/Enterprise-Copilot-Governance-Ops) | How could a team identify overshared information before wider AI access? | Python policy simulation, labelled evaluation and chart; explicit sensitivity/access rules with allowed, exposed and unknown cases. No live tenant enforcement. |
+| [Operations Telemetry](./Modern%20Workplace%20Solutions/Enterprise-Ops-Telemetry-Engine) | How could operations teams inspect noisy telemetry and explain unusual activity? | Synthetic telemetry and anomaly analysis; onboarding scripts produce plans; Power BI reporting remains a manual blueprint. |
+| [SmartLifeCycle Ops](./AI%20Projects/SmartLifeCycle-Ops) | How could endpoint data support device refresh decisions? | API and synthetic classifier; provisioning is simulated and real failure prediction is not validated. |
 
----
+## Modern Workplace Solutions
 
-## 🚀 Current Projects
-This repository groups projects into top-level categories. Browse the folders below (click a link to open the project folder):
+- [Enterprise Copilot Governance Ops](./Modern%20Workplace%20Solutions/Enterprise-Copilot-Governance-Ops): governance simulation and stakeholder reporting.
+- [Enterprise Ops Telemetry Engine](./Modern%20Workplace%20Solutions/Enterprise-Ops-Telemetry-Engine): operations runbooks and telemetry experiments.
+- [Workspace Governance Engine](./Modern%20Workplace%20Solutions/Workspace-Governance-Engine): Microsoft Graph governance scripts and operational documentation.
+- [Tenant Guard](./Modern%20Workplace%20Solutions/tenant-guard): identity, endpoint and configuration-check demonstrations.
 
-- **Software Development**
-  - [Content Flow](./Software%20Development/Content%20Flow) — Content management and publishing proof-of-concept.
-  - [Grid Manager](./Software%20Development/Grid%20Manager) — Grid management tools and demos.
-  - [Smart Home Energy Manager](./Software%20Development/Smart%20Home%20Energy%20Manager) — Home energy management prototype.
+## AI Projects
 
-- **AI Projects**
-  - [ai-agent-app](./AI%20Projects/ai-agent-app) — Multi-agent interactive portfolio website powered by React, Flask, and OpenAI LLMs.
-  - [Agentic-Compliance-Auditor](./AI%20Projects/Agentic-Compliance-Auditor) — Autonomous compliance auditing agents and workflows.
-  - [Business Opportunity Scouting Agent](./AI%20Projects/Business%20Opportuniity%20Scouting%20Agent) — Autonomous RAG AI agent scouting business opportunities and generating OKRs into Excel.
-  - [Enterprise-AI-Prioritization-Engine](./AI%20Projects/Enterprise-AI-Prioritization-Engine) — Prioritization engine for AI initiatives.
-  - [MLOps](./AI%20Projects/MLOps) — Automated data validation, version control, and ML model deployment lifecycle using MLflow and ZenML.
-  - [SmartLifeCycle-Ops](./AI%20Projects/SmartLifeCycle-Ops) — IT Asset Management & Modern Workplace automation.
-  - [kaggle](./AI%20Projects/kaggle) — Research papers, agent studies, and custom CLI projects.
+- [SmartLifeCycle Ops](./AI%20Projects/SmartLifeCycle-Ops): endpoint workflow and model pipeline.
+- [Enterprise AI Prioritization Engine](./AI%20Projects/Enterprise-AI-Prioritization-Engine): explainable prioritisation and illustrative resource scenarios.
+- [Agentic Compliance Auditor](./AI%20Projects/Agentic-Compliance-Auditor): structured LLM assessment against sample policies.
+- [Business Opportunity Scouting Agent](./AI%20Projects/Business%20Opportuniity%20Scouting%20Agent): page ingestion, LLM analysis and spreadsheet output.
+- [AI Agent App](./AI%20Projects/ai-agent-app): assistant interface adapted from an attributed upstream project.
+- [MLOps](./AI%20Projects/MLOps): customer-satisfaction pipeline learning and adaptation; upstream credit in the project.
+- [Kaggle learning and experiments](./AI%20Projects/kaggle): learning materials and small experiments, with attribution to their sources.
 
-- **Modern Workplace Solutions**
-  - [Enterprise-Copilot-Governance-Ops](./Modern%20Workplace%20Solutions/Enterprise-Copilot-Governance-Ops) — Microsoft Copilot readiness and governance tooling.
-  - [Enterprise-Ops-Telemetry-Engine](./Modern%20Workplace%20Solutions/Enterprise-Ops-Telemetry-Engine) — Tenant onboarding automation and anomaly detection.
-  - [Tenant-Guard](./Modern%20Workplace%20Solutions/tenant-guard) — IaC compliance framework for identity governance and monitoring.
-  - [Workspace-Governance-Engine](./Modern%20Workplace%20Solutions/Workspace-Governance-Engine) — M365 workspace governance and alerting automation.
+## Software Development
 
-*(Projects will be updated as new ideas are added.)*
+- [Grid Manager](./Software%20Development/Grid%20Manager): Java design patterns, energy-source selection and persistence.
+- [Smart Home Energy Manager](./Software%20Development/Smart%20Home%20Energy%20Manager): Python energy and forecast modelling.
+- [Content Flow](./Software%20Development/Content%20Flow): content workflow application and AI provider integration.
 
----
+## How I want the work to be assessed
 
-## 🛠️ Tech Stack
-The prototypes in this repository leverage a rich modern tech stack:
-- **Languages**: Python, PowerShell, JavaScript/React, HTML5/CSS3, XML (Atom Feeds), BASH
-- **Frameworks & Libraries**: FastAPI, Flask, React (Vite), ZenML, MLflow
-- **Machine Learning**: Scikit-Learn (Random Forest, Isolation Forest)
-- **Infrastructure & APIs**: Microsoft Graph API, Microsoft Intune, JAMF Pro, Docker, GitHub Actions, OpenAI API  
+The useful questions are what problem the project addresses, what I contributed, what runs, what the tests show and what still needs work. A simulation can explain a design decision; it cannot establish a live operational result. Upstream work and reference materials retain their attribution.
 
----
+The collection spans Python, PowerShell, Java, JavaScript, Microsoft workplace concepts, APIs, data analysis and application design. Each project's dependency files and README describe its specific setup and limits.
 
-## 📜 License
-This repository is licensed under the **MIT License** – you are free to use, modify, and build upon these concepts, provided proper attribution is given.  
-*(You may update the license type if you prefer more restrictive terms.)*
+## Reuse and attribution
 
----
+See the repository [licence](LICENSE) and any project-specific or third-party notices before reuse. Preserve original credits in adapted projects.
 
-## 🤝 Contributing
-This is primarily an experimental playground, but suggestions, feedback, or pull requests are welcome.  
-If you’d like to collaborate on evolving a proof-of-concept into a production-ready app, feel free to open an issue or contact me.  
+## Reproducibility and contribution
 
----
-
-## 📧 Contact
-Created and maintained by **Bunamin Adams (4syt Integrated Solution)**  
-- 🌐 [think4syt.com](https://think4syt.com)  
-- ✉️ [bunamin@think4syt.com](mailto:bunamin@think4syt.com)
+Read the [verification report](docs/VERIFICATION.md) and [project standard](docs/PROJECT%20STANDARD.md). Each project has a lab, evaluation, demo script and contribution record. Repairs were implemented with Codex assistance at Bunamin’s request; upstream authors retain their credit. Root CI runs local checks and has no tenant-write or social-publishing jobs.

@@ -1,99 +1,43 @@
-# Workspace Governance Engine
+# Workspace governance plans and runbooks
 
-[![PowerShell](https://img.shields.io/badge/Language-PowerShell-5391FE?style=flat-square&logo=powershell)](https://learn.microsoft.com/powershell/)
-[![Microsoft Graph](https://img.shields.io/badge/API-Microsoft%20Graph-0078D4?style=flat-square&logo=microsoft)](https://learn.microsoft.com/graph/)
-[![Purview](https://img.shields.io/badge/Security-Microsoft%20Purview-00a4ef?style=flat-square)](#)
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](#)
+Review inactivity candidates and plan sensitivity labels without overwriting unrelated settings.
 
-> **An automated, architecture-as-code solution that manages governance, eliminates infrastructure data sprawl, and programmatically enforces Microsoft Purview classification models across enterprise Microsoft 365 workspaces.**
+This is a portfolio learning project maintained by Bunamin Adams. Read [contribution and provenance](CONTRIBUTIONS.md), [the lab](LAB.md), [evaluation](EVALUATION.md) and [change record](CHANGELOG.md).
 
----
+## What works and what it means
 
-## 1. Business & Financial Realities
+| Component | State | Evidence |
+|---|---|---|
+| Offline fixtures, explicit live scope, delegated label-change guard, backups and verified rollback path | Implemented at the scope described here | [Source](Scripts/Enforce-PurviewLabels.ps1); [Verification record](EVALUATION.md) |
+| Live/business outcome | Unestablished unless explicitly recorded | Live Graph operations are implemented but have not been tenant-tested. Fixtures do not establish tenant security or regulatory compliance. |
 
-### 📉 Quantifiable Operational Cost Optimization
-Unmanaged workspace proliferation directly increases data storage costs. By automating the extraction and flagging of inactive, stale SharePoint environments, this solution reduces data storage waste, saving significant monthly operational capital expenditure (CapEx) costs.
+Default mode uses fixtures. Existing labels require review; replacement is a separate explicit option. Live writes require delegated access, selected group IDs and -Apply.
 
-### 🔒 Elimination of Security and Data Sprawl
-Manual compliance tracking introduces human error risk. This engine automatically enforces **Microsoft Purview Data Classification Tags** across all unified collaborative workspaces. It ensures that critical intellectual property, complex data models, and enterprise source assets remain protected under corporate security boundaries.
+## Reproduce a small example
 
-### ⚡ Frictionless Deployment and Execution Experience
-By shifting architectural setups directly to programmatic workflows (`SecureTeamsTemplate.xml`), team setup requests require zero direct human operations intervention, dropping standard engineering pipeline bottlenecks to zero.
+Commands below assume a new clone; if already inside thinkbox, navigate directly to the quoted project path. Python examples use Python 3.11. On Windows activate the environment using its Scripts/Activate.ps1 instead.
 
----
-
-## 2. Technical Architecture Overview
-
-```
-┌────────────────────────────────┐
-│  GitHub Actions Workflow       │  Triggers nightly or via manual control inputs
-└───────────────┬────────────────┘
-                │
-                ▼
-┌────────────────────────────────┐
-│  Entra ID App Authentication   │  Authenticates safely without credentials via
-│  (Certificate Credentials)     │  Certificate-Based Credentials & App Identity
-└───────────────┬────────────────┘
-                │
-                ▼
-┌────────────────────────────────┐
-│  Microsoft Graph Query Engine  │  Queries Graph APIs to compile analytics across
-│  (Scripts/Connect-Graph.ps1)   │  the tenant surface
-└───────────────┬────────────────┘
-                │
-                ▼
-┌────────────────────────────────┐
-│  Automated Remediation         │  Identifies structural compliance gaps and
-│  (Scripts/Audit & Enforce)     │  remediates based on TenantSettings.json
-└────────────────────────────────┘
+```sh
+git clone https://github.com/Iam4syT/thinkbox.git
+cd "thinkbox/Modern Workplace Solutions/Workspace-Governance-Engine"
+# Install PowerShell 7 before running these fixture-only commands.
+pwsh -NoProfile -File tests/Test-Fixtures.ps1
+pwsh -NoProfile -File Scripts/Enforce-PurviewLabels.ps1
+pwsh -NoProfile -File Scripts/Audit-UnusedSharePointSites.ps1
 ```
 
----
+Read [LAB.md](LAB.md) for expected results, troubleshooting and cleanup. Do not interpret an unrun live step as an integration test. Dependency downloads require internet access; offline fixtures do not need service credentials.
 
-## 3. Project Structure
+## Results, limits and next step
 
-```
-Workspace-Governance-Engine/
-├── Scripts/
-│   ├── Audit-UnusedSharePointSites.ps1  # Scans and flags inactive SharePoint sites
-│   ├── Connect-AuroraGraph.ps1          # Graph API authentication wrapper
-│   └── Enforce-PurviewLabels.ps1        # Automated Microsoft Purview label enforcer
-├── Configuration/
-│   ├── SecureTeamsTemplate.xml          # Teams architecture-as-code template
-│   └── TenantSettings.json              # Central tenant governance settings
-├── Dashboards/                          # Reporting assets & dashboard models
-├── Documentation/                       # Deployment guides & architectural schemas
-├── .github/                             # GitHub Actions CI/CD workflows
-├── .env.example                         # Secret configuration template
-├── .gitignore                           # Git ignore rules
-├── LICENSE                              # MIT License
-└── README.md                            # Technical documentation
-```
+Live Graph operations are implemented but have not been tenant-tested. Fixtures do not establish tenant security or regulatory compliance. [Verification record](EVALUATION.md) describes method and observed results; a small synthetic evaluation is not proof of workplace impact. Source revision/environment are recorded in the repository verification report.
 
----
+Use [DEMO SCRIPT.md](DEMO%20SCRIPT.md) for a short walkthrough. The next useful step is the smallest evaluation that could change a decision, using permitted data and a justified baseline.
 
-## 4. Deployment & Setup Blueprint
+## Layout and reuse
 
-### 1. Configure Cloud Secrets Matrix
-Configure your targeted repository deployment variables within **GitHub Settings > Secrets and variables > Actions**:
+Keep the established source folders in place. Repository CI lives at root `.github/workflows`, with project working directories. Code licensing follows [the root licence](../../LICENSE) and any project-specific notice; third-party datasets, papers and adapted code retain their own terms.
 
-| Secret Identifier Name | Description Blueprint Value |
-| :--- | :--- |
-| `AZURE_TENANT_ID` | Directory ID reference value found in Entra ID |
-| `AZURE_CLIENT_ID` | Application registration string identifier |
+## Last local verification
 
----
-
-## 5. Local Execution & Remediation
-
-To test structural logic paths locally from an authenticated admin console:
-```powershell
-cd "/Users/4syt/Documents/thinkbox/Modern Workplace Solutions/Workspace-Governance-Engine"
-./Scripts/Audit-UnusedSharePointSites.ps1 -ConfigFilepath ./Configuration/TenantSettings.json
-```
-
----
-
-## 6. Licensing Info
-
-Distributed under the **MIT License**. Check out `LICENSE` for configuration details.
+20 September 2026, macOS arm64. See the [verification report](../../docs/VERIFICATION.md) for the exact runtime, command, result and untested boundaries. The evidence is local or mocked at the stated scope.

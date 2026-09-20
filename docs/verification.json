@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-20",
+  "base_revision": "3fffedc968b8eb7c4e4df0c1f6e891a124555162",
+  "source_reference": "Local checks of the repaired working tree before its containing commit. See GitHub Actions for remote-run status; a local result is not a hosted result.",
+  "environment": {
+    "os": "macOS arm64",
+    "python": "3.11.9",
+    "node": "24.19.0 (clean installs and final Node tests); earlier checks also used 26.4.0",
+    "powershell": "7.6.6",
+    "java": "Amazon Corretto 24.0.2",
+    "maven": "3.9.11",
+    "dependencies": "requirements-ci.txt plus committed project package-lock.json files",
+    "python_install_scope": "Shared pinned CI environment; not a separate fresh venv for each Python project"
+  },
+  "checks": [
+    {
+      "name": "Python projects",
+      "command": "python scripts/run_python_checks.py",
+      "result": "passed",
+      "detail": "15 isolated commands, including 20 unittest cases, API contracts and deterministic evaluations"
+    },
+    {
+      "name": "Workspace governance",
+      "command": "pwsh -NoProfile -File tests/Test-Fixtures.ps1; pwsh -NoProfile -File tests/Test-ChangeGuards.ps1",
+      "result": "passed",
+      "detail": "Fixture defaults, existing labels, unknown data, explicit scope, WhatIf, concurrency refusal, backup-before-write, deduplication, read-back verification, idempotence and guarded restoration; all Graph calls mocked"
+    },
+    {
+      "name": "Tenant Guard",
+      "command": "pwsh -NoProfile -File tests/Test-Fixtures.ps1",
+      "result": "passed",
+      "detail": "All three deliberately non-compliant fixtures return the expected drift exit code"
+    },
+    {
+      "name": "PowerShell syntax",
+      "command": "ParseFile for every project .ps1",
+      "result": "passed"
+    },
+    {
+      "name": "Grid Manager",
+      "command": "mvn -B test; bash run.sh",
+      "result": "passed",
+      "detail": "18 tests and the two-scenario CLI demonstration; JavaFX GUI not exercised"
+    },
+    {
+      "name": "Content Flow",
+      "command": "npm ci; npm test; npm run build",
+      "result": "passed",
+      "detail": "Fresh Node 24 install, 5 tests across publication, SQLite and actual local HTTP startup/CRUD/refine/adapt/queue workflow; synthetic inputs, mock AI, no publisher"
+    },
+    {
+      "name": "AI Agent frontend",
+      "command": "npm ci; npm run build; npm run lint",
+      "result": "passed",
+      "detail": "Fresh Node 24 install; Vite build and ESLint"
+    },
+    {
+      "name": "Prioritisation UI",
+      "command": "streamlit.testing.v1.AppTest.from_file(\"app.py\")",
+      "result": "passed",
+      "detail": "Blank and named use case, 0/100 slider boundaries: four runs without exceptions"
+    },
+    {
+      "name": "Smart Home",
+      "command": "python src/main.py (input 0); python demo_solar_prediction.py",
+      "result": "passed",
+      "detail": "Menu opens/exits and scenario demo runs without a model key; optional explanation provider untested"
+    },
+    {
+      "name": "JavaScript dependency audit",
+      "command": "npm ci audit for both committed locks",
+      "result": "passed",
+      "detail": "0 known vulnerabilities in each audit on 2026-09-20; not a security certification or a prediction of future advisories"
+    },
+    {
+      "name": "Repository",
+      "command": "python scripts/check_repository.py; git diff --check",
+      "result": "passed",
+      "detail": "72 Python sources parse; 236 local Markdown links resolve before this report; count may grow as verification links are added"
+    }
+  ],
+  "recovered_failures": [
+    "Old temporary checkout files were unavailable; the repair was reconstructed in a durable isolated checkout and rerun.",
+    "Java tests referenced moved methods; corrected to the current calculation service.",
+    "Missing Content Flow SQL migration restored to tracked source.",
+    "ISO queue timestamp comparison repaired and tested against due/future/paused/invalid cases.",
+    "First local HTTP test could not open a socket in the sandbox; approved local-only retry passed.",
+    "First additional mock guard test had test-scope state isolation wrong; fixed the harness and reran successfully.",
+    "Maven CLI dependency access initially failed inside the sandbox; approved download/cache access succeeded.",
+    "Outdated JavaScript dependencies were updated; final audit reported zero known vulnerabilities."
+  ],
+  "limits": [
+    "No live Microsoft tenant changes, cloud deployments, paid LLM calls, social posts or production/business outcomes were tested.",
+    "ML results are fixture-specific and do not establish model superiority, forecast accuracy or hiring success.",
+    "Local macOS checks are distinct from GitHub Linux CI; inspect the actual Actions result.",
+    "The targeted disclosure scan and inspected synthetic chart are not a comprehensive security audit.",
+    "Optional npm install-script warnings did not prevent the documented tests/builds; no unnecessary scripts were enabled."
+  ]
+}

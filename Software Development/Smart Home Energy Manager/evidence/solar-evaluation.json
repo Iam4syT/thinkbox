@@ -1,0 +1,44 @@
+{
+  "dataset": "Five hand-authored hypothetical scenarios, not measured weather",
+  "sample_size": 5,
+  "heuristic_mae_w_m2": 87.1,
+  "persistence_mae_w_m2": 142.0,
+  "limitations": "Illustrates evaluation arithmetic only. Attenuation is not a validated 30-minute forecast; no energy savings or equipment changes measured.",
+  "cases": [
+    {
+      "current_ghi": 850,
+      "trend": "stable",
+      "synthetic_future_ghi": 830,
+      "scenario_prediction": 807.5,
+      "persistence_prediction": 850
+    },
+    {
+      "current_ghi": 780,
+      "trend": "increasing",
+      "synthetic_future_ghi": 600,
+      "scenario_prediction": 507.0,
+      "persistence_prediction": 780
+    },
+    {
+      "current_ghi": 900,
+      "trend": "severe",
+      "synthetic_future_ghi": 420,
+      "scenario_prediction": 360.0,
+      "persistence_prediction": 900
+    },
+    {
+      "current_ghi": 500,
+      "trend": "stable",
+      "synthetic_future_ghi": 510,
+      "scenario_prediction": 475.0,
+      "persistence_prediction": 500
+    },
+    {
+      "current_ghi": 700,
+      "trend": "increasing",
+      "synthetic_future_ghi": 680,
+      "scenario_prediction": 455.0,
+      "persistence_prediction": 700
+    }
+  ]
+}

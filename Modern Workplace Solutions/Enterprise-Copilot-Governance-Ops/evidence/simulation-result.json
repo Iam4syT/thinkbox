@@ -1,0 +1,44 @@
+{
+  "mode": "simulation",
+  "status": "Exposure identified",
+  "exposures_identified": 1,
+  "manual_review_count": 0,
+  "records": [
+    {
+      "item_id": 101,
+      "file_name": "ledger.xlsx",
+      "decision": "allowed",
+      "reason": "No exposure under this limited metadata policy"
+    },
+    {
+      "item_id": 102,
+      "file_name": "compensation.docx",
+      "decision": "exposed",
+      "reason": "Sensitive data has organisation-wide access"
+    },
+    {
+      "item_id": 103,
+      "file_name": "design.md",
+      "decision": "allowed",
+      "reason": "No exposure under this limited metadata policy"
+    },
+    {
+      "item_id": 104,
+      "file_name": "catalogue.pdf",
+      "decision": "allowed",
+      "reason": "No exposure under this limited metadata policy"
+    },
+    {
+      "item_id": 105,
+      "file_name": "handover.docx",
+      "decision": "allowed",
+      "reason": "No exposure under this limited metadata policy"
+    }
+  ],
+  "proposed_actions": [
+    "Review access for compensation.docx"
+  ],
+  "performed_actions": [],
+  "query_evaluated": false,
+  "limitations": "User role/query are context only. No live membership resolution, semantic evaluation or tenant mutation."
+}

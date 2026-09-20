@@ -13,7 +13,7 @@ const router = Router();
 router.post('/content', (req, res, next) => {
   try {
     const { raw_content, title, content_type } = req.body;
-    if (!raw_content || raw_content.trim().length === 0) {
+    if (typeof raw_content !== 'string' || raw_content.trim().length === 0) {
       return res.status(400).json({ error: 'raw_content is required' });
     }
     const record = req.contentRepo.create({
@@ -54,6 +54,8 @@ router.put('/content/:id', (req, res, next) => {
   try {
     const content = req.contentRepo.findById(req.params.id);
     if (!content) return res.status(404).json({ error: 'Content not found' });
+    const allowed = new Set(['title', 'raw_content', 'refined_content', 'content_type', 'tags', 'metadata', 'status']);
+    if (Object.keys(req.body).some(key => !allowed.has(key))) return res.status(400).json({ error: 'Unsupported content field' });
     const updated = req.contentRepo.update(req.params.id, req.body);
     res.json({ data: updated });
   } catch (err) { next(err); }

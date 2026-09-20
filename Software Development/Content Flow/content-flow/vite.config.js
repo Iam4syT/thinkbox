@@ -3,6 +3,7 @@ import path from 'path';
 
 export default defineConfig({
   root: 'src',
+  test: { root: '.', include: ['tests/**/*.test.js'] },
   build: {
     outDir: '../dist',
     emptyOutDir: true,
