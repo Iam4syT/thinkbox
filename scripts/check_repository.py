@@ -1,12 +1,13 @@
 """Check source syntax, required project evidence files and local Markdown links."""
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
-import ast,json,re,subprocess,sys
+import ast,json,re,subprocess,sys,posixpath
 ROOT=Path(__file__).resolve().parents[1]
 
 def main():
     files=subprocess.check_output(['git','ls-files','-co','--exclude-standard','-z'],cwd=ROOT).decode().split('\0')
     files=sorted({name for name in files if name and ((ROOT/name).is_file() or (ROOT/name).is_symlink())})
+    known_paths=set(files) | {str(parent) for name in files for parent in Path(name).parents}
     errors=[];links=0;python_count=0
     for name in files:
         p=ROOT/name
@@ -26,6 +27,8 @@ def main():
                 if not target or target.startswith('#') or urlsplit(target).scheme:continue
                 decoded=unquote(target.split('#')[0])
                 resolved=(p.parent/decoded).resolve();links+=1
+                exact=posixpath.normpath(str(Path(name).parent/decoded))
+                if exact not in known_paths:errors.append(f'{name}: path not present with exact tracked casing: {target}')
                 if not resolved.is_relative_to(ROOT) or not resolved.exists():errors.append(f'{name}: broken/outside link {target}')
     index=json.loads((ROOT/'docs/project-index.json').read_text())
     for item in index['projects']:

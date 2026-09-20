@@ -9,10 +9,10 @@ permissions:
   contents: read
 jobs:
   python:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.0.0
         with:
           python-version: '3.11'
           cache: pip
@@ -24,12 +24,12 @@ jobs:
           MPLBACKEND: Agg
           MPLCONFIGDIR: /tmp/thinkbox-matplotlib
   powershell:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     defaults:
       run:
         shell: pwsh
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7.0.1
       - name: Fixture and syntax checks only
         run: |
           $ErrorActionPreference = 'Stop'
@@ -42,13 +42,13 @@ jobs:
           & './Modern Workplace Solutions/Workspace-Governance-Engine/tests/Test-ChangeGuards.ps1'
           & './Modern Workplace Solutions/tenant-guard/tests/Test-Fixtures.ps1'
   java:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     defaults:
       run:
         working-directory: Software Development/Grid Manager
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-java@v6.0.1
         with:
           distribution: temurin
           java-version: '24'
@@ -57,7 +57,7 @@ jobs:
       - run: mvn -B test
       - run: bash run.sh
   javascript:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
         project: ['Software Development/Content Flow/content-flow', 'AI Projects/ai-agent-app/frontend']
@@ -65,8 +65,8 @@ jobs:
       run:
         working-directory: ${{ matrix.project }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.0.0
         with:
           node-version: '24'
           cache: npm

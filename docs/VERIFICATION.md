@@ -40,3 +40,7 @@ The repaired examples passed the local checks below. Results describe the tested
 - Outdated JavaScript dependencies were updated; final audit reported zero known vulnerabilities.
 
 Tests use fixtures, synthetic inputs and mocked providers. No live tenant, paid model, production workload, social publishing or JavaFX GUI was exercised. Dependency audits and a targeted disclosure scan do not certify security. A successful local check does not establish a business result or Bunamin’s independent mastery; the demo walkthrough and explanation remain part of learning.
+
+## Hosted follow-up
+
+The first [Linux run](https://github.com/Iam4syT/thinkbox/actions/runs/35529256226) passed Java and both JavaScript jobs but caught nine case-sensitive Markdown paths and an expected PowerShell child exit code leaking into the runner wrapper. Links were corrected, exact tracked-case validation was added, and the harness now consumes the asserted exit code. Consult Actions for the rerun result.

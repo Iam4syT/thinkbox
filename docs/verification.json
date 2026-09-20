@@ -88,7 +88,9 @@
     "First local HTTP test could not open a socket in the sandbox; approved local-only retry passed.",
     "First additional mock guard test had test-scope state isolation wrong; fixed the harness and reran successfully.",
     "Maven CLI dependency access initially failed inside the sandbox; approved download/cache access succeeded.",
-    "Outdated JavaScript dependencies were updated; final audit reported zero known vulnerabilities."
+    "Outdated JavaScript dependencies were updated; final audit reported zero known vulnerabilities.",
+    "First hosted Python check found nine case-sensitive evaluation links hidden by the local case-insensitive filesystem; corrected links and added a tracked-case check.",
+    "First hosted PowerShell wrapper inherited the expected child drift exit code 1 despite passed assertions; the harness now resets the consumed exit code after assertions."
   ],
   "limits": [
     "No live Microsoft tenant changes, cloud deployments, paid LLM calls, social posts or production/business outcomes were tested.",

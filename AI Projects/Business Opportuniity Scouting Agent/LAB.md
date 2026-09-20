@@ -9,7 +9,7 @@ Python 3.11 and a clean thinkbox checkout. Use the exact directory `AI Projects/
 1. Read README.md and CONTRIBUTIONS.md to establish scope and the starting point. Expected result: you can identify implemented, simulated and untested components.
 2. Follow the README clone/navigation and dependency commands. Expected result: the required imports/build tools load from your environment. If dependencies fail, retain the error and runtime version; do not report a successful run.
 3. Run the commands in the README from the designated directory. Tests cover malformed results, missing pages and separation of hostile page text from trusted instructions. They do not establish immunity to prompt injection. Live workbook processing requires permitted URLs and a model key.
-4. Inspect the actual output and [verification record](evaluation.md). Compare the expected normal behaviour with a meaningful failure case: malformed/missing input, unknown metadata, unsupported platform or unavailable integration as applicable. A service-dependent step stays unrun if its prerequisites are absent.
+4. Inspect the actual output and [verification record](EVALUATION.md). Compare the expected normal behaviour with a meaningful failure case: malformed/missing input, unknown metadata, unsupported platform or unavailable integration as applicable. A service-dependent step stays unrun if its prerequisites are absent.
 5. Explain the result in plain language. Fetch-and-prompt workflow, not indexed RAG or an autonomous strategy engine. Proposed objectives and targets are drafts, not achieved business results.
 6. Record the command, date, environment, source revision, actual output and limitation in CHANGELOG.md/evidence before publishing a new result.
 
