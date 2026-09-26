@@ -4,7 +4,7 @@ This repository is a curated collection of **proof-of-concept prototypes** explo
 Each project serves as a lightweight demonstration of an idea’s core functionality, built to test feasibility, design direction, or unique features before moving into full-scale development.
 
 Thinkbox is where I explore those questions through code, practical labs, and solution designs. My focus is Modern Workplace, Cloud & Applied AI engineering and consulting.
-
+---
 ## Start here
 
 These projects show the direction of my work. Their current scope includes simulations and design blueprints; they are not evidence of production deployments.
@@ -14,14 +14,14 @@ These projects show the direction of my work. Their current scope includes simul
 | [Copilot Governance](./Modern%20Workplace%20Solutions/Enterprise-Copilot-Governance-Ops) | How could a team identify overshared information before wider AI access? | Python policy simulation, labelled evaluation and chart; explicit sensitivity/access rules with allowed, exposed and unknown cases. No live tenant enforcement. |
 | [Operations Telemetry](./Modern%20Workplace%20Solutions/Enterprise-Ops-Telemetry-Engine) | How could operations teams inspect noisy telemetry and explain unusual activity? | Synthetic telemetry and anomaly analysis; onboarding scripts produce plans; Power BI reporting remains a manual blueprint. |
 | [SmartLifeCycle Ops](./AI%20Projects/SmartLifeCycle-Ops) | How could endpoint data support device refresh decisions? | API and synthetic classifier; provisioning is simulated and real failure prediction is not validated. |
-
+---
 ## Modern Workplace Solutions
 
 - [Enterprise Copilot Governance Ops](./Modern%20Workplace%20Solutions/Enterprise-Copilot-Governance-Ops): governance simulation and stakeholder reporting.
 - [Enterprise Ops Telemetry Engine](./Modern%20Workplace%20Solutions/Enterprise-Ops-Telemetry-Engine): operations runbooks and telemetry experiments.
 - [Workspace Governance Engine](./Modern%20Workplace%20Solutions/Workspace-Governance-Engine): Microsoft Graph governance scripts and operational documentation.
 - [Tenant Guard](./Modern%20Workplace%20Solutions/tenant-guard): identity, endpoint and configuration-check demonstrations.
-
+---
 ## AI Projects
 
 - [SmartLifeCycle Ops](./AI%20Projects/SmartLifeCycle-Ops): endpoint workflow and model pipeline.
@@ -31,7 +31,7 @@ These projects show the direction of my work. Their current scope includes simul
 - [AI Agent App](./AI%20Projects/ai-agent-app): assistant interface adapted from an attributed upstream project.
 - [MLOps](./AI%20Projects/MLOps): customer-satisfaction pipeline learning and adaptation; upstream credit in the project.
 - [Kaggle learning and experiments](./AI%20Projects/kaggle): learning materials and small experiments, with attribution to their sources.
-
+---
 ## Software Development
 
 - [Grid Manager](./Software%20Development/Grid%20Manager): Java design patterns, energy-source selection and persistence.
