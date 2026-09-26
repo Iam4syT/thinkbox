@@ -17,6 +17,7 @@ These projects show the direction of my work. Their current scope includes simul
 ---
 ## Modern Workplace Solutions
 
+- [Workplace OS](./Modern%20Workplace%20Solutions/Workplace%20OS): M365 landing zone and AI-enabled workplace control plane reference implementation.
 - [Enterprise Copilot Governance Ops](./Modern%20Workplace%20Solutions/Enterprise-Copilot-Governance-Ops): governance simulation and stakeholder reporting.
 - [Enterprise Ops Telemetry Engine](./Modern%20Workplace%20Solutions/Enterprise-Ops-Telemetry-Engine): operations runbooks and telemetry experiments.
 - [Workspace Governance Engine](./Modern%20Workplace%20Solutions/Workspace-Governance-Engine): Microsoft Graph governance scripts and operational documentation.

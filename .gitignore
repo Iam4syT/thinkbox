@@ -121,3 +121,38 @@ dist/
 
 # Also ignore dependency directories linked to an external local runtime
 node_modules
+
+# Execution and task logs (kept locally, not published to remote)
+Thinkbox_Repository_Sync_Commands.docx
+Thinkbox_Task_Execution_Log.docx
+*_Execution_Log.docx
+*_Task_Execution_Log.docx
+
+# Personal and Private records (per AGENTS.md & PROJECT STANDARD.md)
+private/
+personal/
+*.personal.*
+*.private.*
+*private_notes*
+resumes/
+resume/
+cv/
+CV/
+*resume*.pdf
+*resume*.docx
+*cv*.pdf
+*cv*.docx
+recruiter/
+recruitment/
+interview_notes/
+job_applications/
+tenant_exports/
+*.tenant.json
+client_secrets*.json
+service_account*.json
+id_rsa*
+*.id_rsa*
+
+# Duplicate unzipped archive directory in MLOps
+AI Projects/MLOps/mlops-project/customer-satisfaction-mlops-main/
+
