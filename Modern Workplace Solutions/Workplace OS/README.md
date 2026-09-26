@@ -22,11 +22,11 @@
 
 ## 2. Documentation & Lab Guide
 
-The complete, unabridged project documentation and end-to-end lab guide is available in this directory:
+The comprehensive project documentation pack and step-by-step novice lab guide are maintained locally outside the public repository in accordance with project standards:
 
-* **[Afrist Modern Workplace OS End-to-End Lab and Project Documentation](./Afrist_Modern_Workplace_OS_End_to_End_Lab_and_Project_Documentation.docx)**
+* **File:** `Afrist_Modern_Workplace_OS_End_to_End_Lab_and_Project_Documentation.docx` (Retained in local workspace, excluded via `.gitignore`)
 
-### Guide Contents:
+### Guide Architecture & Syllabus:
 1. **Part I: README and Product Definition:** Business goals, persona definitions, architectural principles, and capability matrix.
 2. **Part II: Architecture & Design Decisions:** ADRs, identity boundaries, security controls, and adapter specifications.
 3. **Part III: End-to-End Novice Lab:** Step-by-step practical walk-throughs for building the M365 landing zone and control plane with repeatable verification tests.
@@ -38,8 +38,7 @@ The complete, unabridged project documentation and end-to-end lab guide is avail
 
 ```text
 Modern Workplace Solutions/Workplace OS/
-├── Afrist_Modern_Workplace_OS_End_to_End_Lab_and_Project_Documentation.docx  # Full comprehensive documentation pack & novice lab
-└── README.md                                                                # Project overview & architectural summary
+└── README.md   # Project overview, architecture summary, and lab syllabus
 ```
 
 ---

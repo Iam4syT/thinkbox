@@ -156,3 +156,8 @@ id_rsa*
 # Duplicate unzipped archive directory in MLOps
 AI Projects/MLOps/mlops-project/customer-satisfaction-mlops-main/
 
+# Private Workplace OS Documentation Pack (kept local)
+Modern Workplace Solutions/Workplace OS/Afrist_Modern_Workplace_OS_End_to_End_Lab_and_Project_Documentation.docx
+Modern Workplace Solutions/Workplace OS/*.docx
+
+
