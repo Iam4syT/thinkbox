@@ -20,8 +20,16 @@
 
 ---
 
+## 2. Documentation
 
-## 2. Repository Structure
+### Guide Architecture & Syllabus:
+1. **Part I: README and Product Definition:** Business goals, persona definitions, architectural principles, and capability matrix.
+2. **Part II: Architecture & Design Decisions:** ADRs, identity boundaries, security controls, and adapter specifications.
+3. **Part III: Operations, Governance & Runbooks:** Telemetry, drift auditing, automated compliance scanning, and tenant lifecycle maintenance.
+
+---
+
+## 3. Repository Structure
 
 ```text
 Modern Workplace Solutions/Workplace OS/
@@ -33,3 +41,58 @@ Modern Workplace Solutions/Workplace OS/
 ## 4. Governance & Safety Notice
 
 Per repository project standards, all tenant configurations, credentials, API tokens, and private client data are maintained outside this public codebase. All lab scenarios use dedicated simulation or lab tenant environments.
+---
+
+## 5. Engineering Status
+
+### Current phase
+
+Foundation — Lab 0: Project Workspace and Documentation.
+
+### Verified
+
+- GitHub project location established.
+- Initial project/product overview created.
+
+### In Progress
+
+- Repository and documentation skeleton.
+
+### Planned / Not Yet Implemented
+
+- Microsoft 365 tenant baseline
+- Entra identity foundations
+- Intune device management
+- Microsoft Graph provider adapter
+- FastAPI control plane
+- Joiner workflow
+- Mover workflow
+- Leaver workflow
+- Teams / SharePoint collaboration integration
+- Planner task integration
+- Defender operational signals
+- Purview governance
+- Drift detection and reconciliation
+- React workplace portal
+- AI assistance and approval controls
+- Automated testing
+- CI/CD
+- Hosted deployment
+- Observability and operational runbooks
+
+> A capability is not considered complete until implementation evidence and verification exist.
+
+## 6. Development Prerequisites
+
+The project will progressively use:
+
+- Git
+- VS Code
+- Python 3.12+
+- Node.js LTS
+- PowerShell 7
+- Microsoft Graph PowerShell SDK
+- Microsoft 365 / Entra / Intune lab tenant
+- Azure subscription for hosted components where required
+
+See the project documentation for the requirements of each implementation phase.

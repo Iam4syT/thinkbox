@@ -1,0 +1,54 @@
+# ---------------------------------------------------------
+# Afrist Modern Workplace OS
+# Project-level exclusions
+# ---------------------------------------------------------
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node / React
+node_modules/
+dist/
+build/
+.vite/
+coverage/
+
+# IDE / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Local logs
+*.log
+logs/
+
+# Certificates / private keys
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Local secret/config material
+secrets/
+secrets.*
+
+# Local project master documentation
+Afrist_Modern_Workplace_OS_End_to_End_Lab_and_Project_Documentation*.docx
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
