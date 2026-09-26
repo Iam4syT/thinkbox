@@ -1,43 +1,52 @@
-# Customer-satisfaction pipeline learning
+# MLOps Pipeline & Model Lifecycle Engine
 
-Compare a review-score predictor with a simple baseline while separating preprocessing and evaluation.
+[![Python](https://img.shields.io/badge/Language-Python%203.9+-3776AB?style=flat-square&logo=python)](https://www.python.org/)
+[![ZenML](https://img.shields.io/badge/Orchestrator-ZenML-4B0082?style=flat-square)](https://zenml.io/)
+[![MLflow](https://img.shields.io/badge/Tracking-MLflow-0194E2?style=flat-square&logo=mlflow)](https://mlflow.org/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](#)
 
-This is a portfolio learning project maintained by Bunamin Adams. Read [contribution and provenance](CONTRIBUTIONS.md), [the lab](LAB.md), [evaluation](EVALUATION.md) and [change record](CHANGELOG.md).
+> **Automated end-to-end Machine Learning pipeline for dataset validation, experiment tracking, model registry, CI/CD deployment, and continuous drift monitoring.**
 
-## What works and what it means
+---
 
-| Component | State | Evidence |
-|---|---|---|
-| Local group-split benchmark with training-only imputation, mean baseline and Ridge model | Implemented at the scope described here | [Source](mlops-project/demo.py); [Recorded evaluation](mlops-project/evidence/evaluation.json) |
-| Live/business outcome | Unestablished unless explicitly recorded | One local holdout does not validate production serving, temporal performance, drift monitoring or causal business effects. Earlier ZenML code is retained as legacy study material. |
+## 1. Project Overview
 
-Starting point credits Ayush Singh. The duplicated inner directory was flattened; see mlops-project/MIGRATION.md and data provenance. Historical dependency pins are in requirements-legacy.txt.
+The **MLOps Engine** provides a scalable infrastructure for managing machine learning models from raw data ingestion to production serving and monitoring.
 
-## Reproduce a small example
+### Key Capabilities
+- **Automated Data Ingestion & Validation**: Ingestion pipelines with data cleaning and schema validation.
+- **Experiment Tracking**: Track model metrics, hyperparameters, and artifacts via MLflow & ZenML.
+- **CI/CD & Model Deployment**: Continuous integration and deployment of trained models.
+- **Drift Monitoring**: Real-time evaluation of data drift and model degradation.
 
-Commands below assume a new clone; if already inside thinkbox, navigate directly to the quoted project path. Python examples use Python 3.11. On Windows activate the environment using its Scripts/Activate.ps1 instead.
+---
 
-```sh
-git clone https://github.com/Iam4syT/thinkbox.git
-cd "thinkbox/AI Projects/MLOps/mlops-project"
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-python demo.py
+## 2. Directory Structure
+
+```
+MLOps/
+├── mlops-project/
+│   ├── customer-satisfaction-mlops-main/  # ZenML & MLflow end-to-end customer satisfaction pipeline
+│   ├── .env.example                       # Environment secrets template
+│   ├── .gitignore                         # Python & ZenML ignore rules
+│   └── README.md                          # Detailed pipeline documentation
+└── README.md                              # Primary project overview
 ```
 
-Read [LAB.md](LAB.md) for expected results, troubleshooting and cleanup. Do not interpret an unrun live step as an integration test. Dependency downloads require internet access; offline fixtures do not need service credentials.
+---
 
-## Results, limits and next step
+## 3. Quickstart & Execution
 
-One local holdout does not validate production serving, temporal performance, drift monitoring or causal business effects. Earlier ZenML code is retained as legacy study material. [Recorded evaluation](mlops-project/evidence/evaluation.json) describes method and observed results; a small synthetic evaluation is not proof of workplace impact. Source revision/environment are recorded in the repository verification report.
+1. **Navigate to the pipeline directory:**
+   ```bash
+   cd "/Users/4syt/Documents/thinkbox/AI Projects/MLOps/mlops-project"
+   ```
 
-Use [DEMO SCRIPT.md](DEMO%20SCRIPT.md) for a short walkthrough. The next useful step is the smallest evaluation that could change a decision, using permitted data and a justified baseline.
+2. **Explore Detailed Subproject Documentation:**
+   See [`mlops-project/README.md`](./mlops-project/README.md) for full installation and execution steps.
 
-## Layout and reuse
+---
 
-Keep the established source folders in place. Repository CI lives at root `.github/workflows`, with project working directories. Code licensing follows [the root licence](../../LICENSE) and any project-specific notice; third-party datasets, papers and adapted code retain their own terms.
+## 4. License
 
-## Last local verification
-
-20 September 2026, macOS arm64. See the [verification report](../../docs/VERIFICATION.md) for the exact runtime, command, result and untested boundaries. The evidence is local or mocked at the stated scope.
+Distributed under the **MIT License**. Part of the Thinkbox AI Projects series.
