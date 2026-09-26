@@ -5,7 +5,7 @@ Each project serves as a lightweight demonstration of an idea’s core functiona
 
 Thinkbox is where I explore those questions through code, practical labs, and solution designs. My focus is Modern Workplace, Cloud & Applied AI engineering and consulting.
 ---
-## Start here
+## 🚀 Current Projects
 
 These projects show the direction of my work. Their current scope includes simulations and design blueprints; they are not evidence of production deployments.
 
