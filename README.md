@@ -1,8 +1,9 @@
-# Bunamin Adams — Modern Workplace, Cloud and Applied AI
+# Proof of Concept Collection — Modern Workplace, Cloud and Applied AI
 
-I am interested in how workplace systems work end to end: how people get access, how devices are managed, how services are supported, and where AI can make a useful difference.
+This repository is a curated collection of **proof-of-concept prototypes** exploring different ideas.  
+Each project serves as a lightweight demonstration of an idea’s core functionality, built to test feasibility, design direction, or unique features before moving into full-scale development.
 
-Thinkbox is where I explore those questions through code, practical labs and solution designs. My focus is Modern Workplace engineering and consulting, supported by IT operations experience and ongoing postgraduate study in Artificial Intelligence.
+Thinkbox is where I explore those questions through code, practical labs, and solution designs. My focus is Modern Workplace, Cloud & Applied AI engineering and consulting.
 
 ## Start here
 
@@ -37,16 +38,21 @@ These projects show the direction of my work. Their current scope includes simul
 - [Smart Home Energy Manager](./Software%20Development/Smart%20Home%20Energy%20Manager): Python energy and forecast modelling.
 - [Content Flow](./Software%20Development/Content%20Flow): content workflow application and AI provider integration.
 
-## How I want the work to be assessed
+---
 
-The useful questions are what problem the project addresses, what I contributed, what runs, what the tests show and what still needs work. A simulation can explain a design decision; it cannot establish a live operational result. Upstream work and reference materials retain their attribution.
+## 📜 License
+This repository is licensed under the **MIT License** – you are free to use, modify, and build upon these concepts, provided proper attribution is given.  
+*(You may update the license type if you prefer more restrictive terms.)*
 
-The collection spans Python, PowerShell, Java, JavaScript, Microsoft workplace concepts, APIs, data analysis and application design. Each project's dependency files and README describe its specific setup and limits.
+---
 
-## Reuse and attribution
+## 🤝 Contributing
+This is primarily an experimental playground, but suggestions, feedback, or pull requests are welcome.  
+If you’d like to collaborate on evolving a proof-of-concept into a production-ready app, feel free to open an issue or contact me.  
 
-See the repository [licence](LICENSE) and any project-specific or third-party notices before reuse. Preserve original credits in adapted projects.
+---
 
-## Reproducibility and contribution
-
-Read the [verification report](docs/VERIFICATION.md) and [project standard](docs/PROJECT%20STANDARD.md). Each project has a lab, evaluation, demo script and contribution record. Repairs were implemented with Codex assistance at Bunamin’s request; upstream authors retain their credit. Root CI runs local checks and has no tenant-write or social-publishing jobs.
+## 📧 Contact
+Created and maintained by **Bunamin Adams (4syt Integrated Solution)**  
+- 🌐 [think4syt.com](https://think4syt.com)  
+- ✉️ [bunamin@think4syt.com](mailto:bunamin@think4syt.com)
