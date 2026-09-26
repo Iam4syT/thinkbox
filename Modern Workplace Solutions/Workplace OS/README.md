@@ -10,7 +10,7 @@
 
 ## 1. Executive Overview
 
-**Modern Workplace OS** is an enterprise architecture reference implementation and step-by-step novice lab guide designed to establish a secure, repeatable, and scalable modern workplace foundation. It pairs an enterprise **Microsoft 365 Landing Zone** with an **AI-Enabled Workplace Control Plane**, ensuring Zero-Trust identity governance, endpoint management, and secure Copilot readiness.
+**Modern Workplace OS** is an enterprise architecture reference implementation that establishes a secure, repeatable, and scalable modern workplace foundation. It pairs an enterprise **Microsoft 365 Landing Zone** with an **AI-Enabled Workplace Control Plane**, ensuring Zero-Trust identity governance, endpoint management, and secure Copilot readiness.
 
 ### Key Objectives:
 - **Zero-Trust Identity & Access Management:** Entra ID governance, Conditional Access policies, Privileged Identity Management (PIM), and automated lifecycle workflows.
@@ -20,25 +20,12 @@
 
 ---
 
-## 2. Documentation & Lab Guide
 
-The comprehensive project documentation pack and step-by-step novice lab guide are maintained locally outside the public repository in accordance with project standards:
-
-* **File:** `Afrist_Modern_Workplace_OS_End_to_End_Lab_and_Project_Documentation.docx` (Retained in local workspace, excluded via `.gitignore`)
-
-### Guide Architecture & Syllabus:
-1. **Part I: README and Product Definition:** Business goals, persona definitions, architectural principles, and capability matrix.
-2. **Part II: Architecture & Design Decisions:** ADRs, identity boundaries, security controls, and adapter specifications.
-3. **Part III: End-to-End Novice Lab:** Step-by-step practical walk-throughs for building the M365 landing zone and control plane with repeatable verification tests.
-4. **Part IV: Operations, Governance & Runbooks:** Telemetry, drift auditing, automated compliance scanning, and tenant lifecycle maintenance.
-
----
-
-## 3. Repository Structure
+## 2. Repository Structure
 
 ```text
 Modern Workplace Solutions/Workplace OS/
-└── README.md   # Project overview, architecture summary, and lab syllabus
+└── README.md
 ```
 
 ---
