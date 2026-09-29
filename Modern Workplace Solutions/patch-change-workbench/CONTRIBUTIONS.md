@@ -1,0 +1,3 @@
+# Contribution and provenance
+
+This learning scaffold was authored and evaluated by an assistant on 30 September 2026. Bunamin Adams has not yet independently built, operated or explained it. Code and synthetic data are original to this scaffold; Microsoft documentation informed the separate optional tenant procedure. The source follows the existing tenant-guard folder convention without copying its code. Do not present the scaffold as commercial delivery, a commissioned bank project or production-ready automation. No live tenant or API was accessed. Any later learner work must be recorded with the exact change and evidence.

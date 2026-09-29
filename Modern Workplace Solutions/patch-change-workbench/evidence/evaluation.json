@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-30",
+  "executor": "assistant",
+  "candidate_independent_run": false,
+  "mode": "offline_synthetic",
+  "python_version": "3.12.14",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "source_sha256": {
+    "scripts/change_workbench.py": "895359cff9d663595522b8d91e1042b99b57c28fc432290b885e7b5654174f9d",
+    "templates/findings.json": "e1734958106b16a35dec6e45b2e462e001b130a1b97f0464fe047e5cf5506da4",
+    "tests/test_change_workbench.py": "6be2f4a80060c7280906c3a38acbade1678880e8d9760e8d24029cd8cc57784c"
+  },
+  "fixture_count": 6,
+  "behavioural_tests": 10,
+  "test_exit_code": 0,
+  "cli_exit_code": 0,
+  "cli_wall_seconds": 0.030598,
+  "malformed_cli_exit_code": 2,
+  "malformed_cli_new_output_created": false,
+  "result_states": {
+    "LAB-VULN-03": "risk_escalation",
+    "LAB-VULN-01": "needs_approval",
+    "LAB-VULN-02": "ready_for_pilot",
+    "LAB-VULN-04": "verify_again",
+    "LAB-VULN-05": "closed_verified_in_fixture",
+    "LAB-VULN-06": "rollback_review"
+  },
+  "mutation": "none",
+  "tenant_api_ai_steps": "unrun",
+  "production_business_outcomes": "unestablished",
+  "baseline": "same explicit rules applied manually; human time/error rate not measured",
+  "limitations": [
+    "small synthetic sample",
+    "not independently executed/explained by Bunamin",
+    "no actual tenant delivery or remediation",
+    "no AI integration or benefit measured"
+  ]
+}

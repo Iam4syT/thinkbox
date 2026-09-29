@@ -1,0 +1,17 @@
+$ python3 -m unittest discover -s tests -v
+test_duplicate_rejected (test_change_workbench.ChangeTests.test_duplicate_rejected) ... ok
+test_empty_is_not_success (test_change_workbench.ChangeTests.test_empty_is_not_success) ... ok
+test_external_critical_first (test_change_workbench.ChangeTests.test_external_critical_first) ... ok
+test_no_approval_cannot_close (test_change_workbench.ChangeTests.test_no_approval_cannot_close) ... ok
+test_old_version_cannot_close (test_change_workbench.ChangeTests.test_old_version_cannot_close) ... ok
+test_recheck_unknown_cannot_close (test_change_workbench.ChangeTests.test_recheck_unknown_cannot_close) ... ok
+test_semantic_numeric_version (test_change_workbench.ChangeTests.test_semantic_numeric_version) ... ok
+test_six_distinct_workflow_states (test_change_workbench.ChangeTests.test_six_distinct_workflow_states) ... ok
+test_string_approval_rejected (test_change_workbench.ChangeTests.test_string_approval_rejected) ... ok
+test_unknown_exposure_escalates (test_change_workbench.ChangeTests.test_unknown_exposure_escalates) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.001s
+
+OK
+exit_code=0

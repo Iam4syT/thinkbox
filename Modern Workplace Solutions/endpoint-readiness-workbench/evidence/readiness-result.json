@@ -1,0 +1,85 @@
+{
+  "mode": "offline_synthetic",
+  "device_count": 5,
+  "results": [
+    {
+      "id": "LAB-01",
+      "status": "ready_in_fixture",
+      "failed_scopes": [],
+      "unknown_scopes": [],
+      "evidence_codes": [],
+      "next_steps": [],
+      "mutation": "none",
+      "cause": "not established"
+    },
+    {
+      "id": "LAB-02",
+      "status": "investigate",
+      "failed_scopes": [
+        "enrolment"
+      ],
+      "unknown_scopes": [],
+      "evidence_codes": [
+        "SCOPE_MISMATCH"
+      ],
+      "next_steps": [
+        "Check test user enrolment scope and licence with an authorised administrator."
+      ],
+      "mutation": "none",
+      "cause": "hypothesis only; verify independently"
+    },
+    {
+      "id": "LAB-03",
+      "status": "investigate",
+      "failed_scopes": [
+        "configuration",
+        "compliance"
+      ],
+      "unknown_scopes": [],
+      "evidence_codes": [
+        "CONFIG_CONFLICT"
+      ],
+      "next_steps": [
+        "Compare assigned policies and setting-level conflict evidence."
+      ],
+      "mutation": "none",
+      "cause": "hypothesis only; verify independently"
+    },
+    {
+      "id": "LAB-04",
+      "status": "investigate",
+      "failed_scopes": [
+        "application",
+        "authentication/connectivity"
+      ],
+      "unknown_scopes": [],
+      "evidence_codes": [
+        "DETECTION_FAILED",
+        "DNS_FAILURE"
+      ],
+      "next_steps": [
+        "Compare detection rule with observed app version and IME logs.",
+        "Check name resolution and scope before changing network settings."
+      ],
+      "mutation": "none",
+      "cause": "hypothesis only; verify independently"
+    },
+    {
+      "id": "LAB-05",
+      "status": "needs_evidence",
+      "failed_scopes": [],
+      "unknown_scopes": [
+        "compliance",
+        "current endpoint state: sync older than 24 hours"
+      ],
+      "evidence_codes": [],
+      "next_steps": [
+        "Request fresh test-device check-in before relying on the snapshot."
+      ],
+      "mutation": "none",
+      "cause": "not established"
+    }
+  ],
+  "no_data": false,
+  "live_readiness_established": false
+}
