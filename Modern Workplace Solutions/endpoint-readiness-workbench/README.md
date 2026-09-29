@@ -1,6 +1,6 @@
 # Endpoint readiness and diagnostic evidence
 
-Status: offline synthetic slice built and evaluated; tenant validation remains pending. Maintainer: Bunamin Adams. Scaffold authored/tested by an assistant; learner independent operation is pending. See [contribution and provenance](CONTRIBUTIONS.md).
+Status: source published; offline synthetic slice evaluated; tenant validation remains pending. Maintainer: Bunamin Adams. Scaffold authored/tested by an assistant; learner independent operation is pending. See [contribution and provenance](CONTRIBUTIONS.md).
 
 ## Problem and useful outcome
 
@@ -39,3 +39,7 @@ Freshness and unknown evidence stay separate from an observed fixture failure. L
 ## Reuse
 
 [Demo script](DEMO%20SCRIPT.md), [change record](CHANGELOG.md), [MIT licence](LICENSE). Microsoft documentation is linked in the lab. Preserve attribution and keep real diagnostic logs/private application records outside this package.
+
+## Source publication
+
+[Published project](https://github.com/Iam4syT/thinkbox/tree/main/Modern%20Workplace%20Solutions/endpoint-readiness-workbench) and [verified source release](evidence/publication.json). Publication does not change the evaluation or learner/tenant limits above.
