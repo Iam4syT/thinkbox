@@ -1,0 +1,34 @@
+{
+  "as_of": "2026-09-30T09:00:00Z",
+  "findings": [
+    {
+      "code": "ADOPTION_REVIEW",
+      "detail": "Discuss the task and reporting window with the owner; activity is not productivity.",
+      "subject": "Microsoft Teams"
+    },
+    {
+      "code": "AUDIT_REVIEW",
+      "detail": "Ask the authorised security owner to validate context; no automated remediation.",
+      "subject": "Synthetic external-share change"
+    },
+    {
+      "code": "CAPACITY_REVIEW",
+      "detail": "At least 90% of declared allocation; confirm pool/manual mode and report age.",
+      "subject": "TeamSite-A"
+    },
+    {
+      "code": "OWNER_REVIEW",
+      "detail": "Identify an accountable owner before changing storage or access.",
+      "subject": "TeamSite-A"
+    },
+    {
+      "code": "SERVICE_REVIEW",
+      "detail": "Check current incident scope and the official update; do not infer a local root cause.",
+      "subject": "Exchange Online"
+    }
+  ],
+  "interpretation": "No rule findings is not proof of tenant health or security.",
+  "scope": "synthetic-read-only",
+  "service_count": 4,
+  "state": "REVIEW"
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "site": {
+    "name": "Lab-Site-A",
+    "owner": null,
+    "geo": "GBR",
+    "geo_verified": false,
+    "allocated_bytes": 1000,
+    "used_bytes": 950
+  },
+  "files": [
+    {
+      "path": "Documents/Guide.txt",
+      "size_bytes": 16,
+      "sha256": "6aa60df4196fb98b2ba9f3c9a77d98d876f46d6a00897555fe3968e7dbfdaae1",
+      "principals": [
+        "Anyone"
+      ],
+      "unique_permissions": true,
+      "metadata": {
+        "content_type": "Document",
+        "status": "Approved"
+      }
+    },
+    {
+      "path": "Documents/Checklist.txt",
+      "size_bytes": 20,
+      "sha256": "edd57a8b64e5d663fd2aaac3b08dc7845d5a6f6950c87a15a501dda96f176858",
+      "principals": [
+        "Lab-Readers",
+        "Lab-Members"
+      ],
+      "unique_permissions": false,
+      "metadata": {
+        "content_type": "Document",
+        "status": "Approved"
+      }
+    }
+  ]
+}

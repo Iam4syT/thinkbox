@@ -1,0 +1,19 @@
+test_adoption_boundary (test_review.ReviewTests.test_adoption_boundary) ... ok
+test_capacity_boundary (test_review.ReviewTests.test_capacity_boundary) ... ok
+test_complete_no_findings (test_review.ReviewTests.test_complete_no_findings) ... ok
+test_deterministic_read_only (test_review.ReviewTests.test_deterministic_read_only) ... ok
+test_duplicate_service_rejected (test_review.ReviewTests.test_duplicate_service_rejected) ... ok
+test_future_capture_rejected (test_review.ReviewTests.test_future_capture_rejected) ... ok
+test_impossible_usage_rejected (test_review.ReviewTests.test_impossible_usage_rejected) ... ok
+test_invalid_number_rejected (test_review.ReviewTests.test_invalid_number_rejected) ... ok
+test_missing_workload_is_incomplete (test_review.ReviewTests.test_missing_workload_is_incomplete) ... ok
+test_outage_does_not_imply_local_root_cause (test_review.ReviewTests.test_outage_does_not_imply_local_root_cause) ... ok
+test_stale_is_not_clean (test_review.ReviewTests.test_stale_is_not_clean) ... ok
+test_unknown_audit_collection (test_review.ReviewTests.test_unknown_audit_collection) ... ok
+test_unknown_provider_status_is_incomplete (test_review.ReviewTests.test_unknown_provider_status_is_incomplete) ... ok
+test_zero_adoption_denominator_unknown (test_review.ReviewTests.test_zero_adoption_denominator_unknown) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.001s
+
+OK

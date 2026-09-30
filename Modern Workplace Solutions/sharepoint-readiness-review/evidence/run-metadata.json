@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-30",
+  "scope": "Codex-assisted synthetic local run; Bunamin independent operation and live integration unestablished",
+  "python": "3.11.9",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "tests_exit": 0,
+  "source_sha256": "89d6c4c3396bb9535760ecbee3c6879950777847a41aab399f9583839662c244",
+  "runs": [
+    {
+      "arguments": [
+        "templates/source.json",
+        "templates/destination.json"
+      ],
+      "exit_code": 0,
+      "state": "MANIFESTS_MATCH"
+    },
+    {
+      "arguments": [
+        "templates/source-review.json",
+        "templates/destination-review.json"
+      ],
+      "exit_code": 1,
+      "state": "REVIEW_REQUIRED"
+    }
+  ],
+  "live_steps_run": false,
+  "ai_steps_run": false
+}

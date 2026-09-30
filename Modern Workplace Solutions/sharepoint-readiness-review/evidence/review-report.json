@@ -1,0 +1,54 @@
+{
+  "destination_count": 1,
+  "findings": [
+    {
+      "code": "CAPACITY_REVIEW",
+      "detail": "Declared usage is at least 90% of allocation.",
+      "subject": "source"
+    },
+    {
+      "code": "CONTENT_MISMATCH",
+      "detail": "Size/hash differs; investigate before accepting the copy.",
+      "subject": "Documents/Guide.txt"
+    },
+    {
+      "code": "GEO_UNVERIFIED",
+      "detail": "Declared geography is not evidence of Multi-Geo or residency compliance.",
+      "subject": "source"
+    },
+    {
+      "code": "METADATA_DIFFERENCE",
+      "detail": "Declared metadata differs; investigate with the content owner.",
+      "subject": "Documents/Guide.txt"
+    },
+    {
+      "code": "MISSING_CONTENT",
+      "detail": "Destination is missing a declared source item.",
+      "subject": "Documents/Checklist.txt"
+    },
+    {
+      "code": "MISSING_OWNER",
+      "detail": "Obtain owner sign-off before moving or changing content.",
+      "subject": "source"
+    },
+    {
+      "code": "PERMISSION_DIFFERENCE",
+      "detail": "Review intended group mapping and inheritance before acceptance.",
+      "subject": "Documents/Guide.txt"
+    },
+    {
+      "code": "PUBLIC_LINK_REVIEW",
+      "detail": "Confirm whether the broad link is intended; do not change it automatically.",
+      "subject": "source:Documents/Guide.txt"
+    },
+    {
+      "code": "UNIQUE_PERMISSION_REVIEW",
+      "detail": "Document broken inheritance and the intended access boundary.",
+      "subject": "source:Documents/Guide.txt"
+    }
+  ],
+  "interpretation": "Matching declarations do not prove a successful migration, effective access, version history, list fidelity or residency compliance.",
+  "scope": "synthetic-manifest-only",
+  "source_count": 2,
+  "state": "REVIEW_REQUIRED"
+}
