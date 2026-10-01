@@ -1,0 +1,12 @@
+test_apple_escalation (test_triage.TriageTests.test_apple_escalation) ... ok
+test_incomplete (test_triage.TriageTests.test_incomplete) ... ok
+test_machine_boundary (test_triage.TriageTests.test_machine_boundary) ... ok
+test_plain (test_triage.TriageTests.test_plain) ... ok
+test_security_overrides (test_triage.TriageTests.test_security_overrides) ... ok
+test_stop_urgent (test_triage.TriageTests.test_stop_urgent) ... ok
+test_unknown (test_triage.TriageTests.test_unknown) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.000s
+
+OK
