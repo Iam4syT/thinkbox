@@ -36,3 +36,16 @@ No Workplace OS application tests or live tenant tests were run.
 - Requirements, architecture decisions and acceptance criteria still need to be documented.
 
 Lab 0 remains incomplete. Technical capabilities remain planned.
+
+## Lab scope review and architecture proposal — 2026-09-26
+
+Base commit: 6dec95e3e7d13394c4af19120d04001232d19b4f
+
+- LAB.md was inspected during the assisted review.
+- It records planned scope, exclusions, acceptance criteria and
+  lab working rules. All acceptance criteria remain unchecked.
+- The earlier baseline statement that LAB.md was missing is
+  superseded by this review.
+- ADR-001 records a proposed architecture. Acceptance and
+  implementation verification remain pending.
+- No application or live tenant tests were run for this review.

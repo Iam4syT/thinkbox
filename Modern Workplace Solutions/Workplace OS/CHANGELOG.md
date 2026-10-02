@@ -14,3 +14,9 @@ The project distinguishes between planned, configured, implemented, tested, and 
 
 - Added EVALUATION.md to record the reviewed starting revision, scaffold status, repository-check result and remaining foundation work.
 - Application capabilities remain planned; tenant configuration and live integrations remain unverified.
+
+### Lab scope and architecture proposal — 2026-09-26
+
+- Added LAB.md with planned scope and acceptance criteria.
+- Added proposed ADR-001 for the control plane and provider adapters.
+- Updated EVALUATION.md with the lab-scope review result.
