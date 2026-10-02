@@ -31,3 +31,9 @@ The project distinguishes between planned, configured, implemented, tested, and 
 - Updated EVALUATION.md with the document additions and review status.
 - Retained non-production validation controls, planned capability
   labels and third-party attribution requirements.
+
+### Repository alignment — 2026-10-03
+
+- Merged shared repository updates while preserving the local
+  Workplace OS documentation commits.
+- Recorded the verified merge revision and repository-check limitations.
