@@ -1,0 +1,52 @@
+[
+  {
+    "id": "t1",
+    "missing_fields": [],
+    "action": "human-review",
+    "priority": "normal",
+    "route": "service-desk",
+    "boundary": "approved-first-line-checks-only"
+  },
+  {
+    "id": "t2",
+    "missing_fields": [],
+    "action": "human-review",
+    "priority": "urgent",
+    "route": "senior-engineer-and-production-owner",
+    "boundary": "observe-only-no-reboot-patch-scan-or-plc-change"
+  },
+  {
+    "id": "t3",
+    "missing_fields": [],
+    "action": "human-review",
+    "priority": "urgent",
+    "route": "security-and-service-manager",
+    "boundary": "report-follow-incident-procedure"
+  },
+  {
+    "id": "t4",
+    "missing_fields": [],
+    "action": "human-review",
+    "priority": "normal",
+    "route": "mdm-specialist",
+    "boundary": "confirm-enrollment-no-wipe"
+  },
+  {
+    "id": "t5",
+    "missing_fields": [],
+    "action": "human-review",
+    "priority": "normal",
+    "route": "first-line-network-check",
+    "boundary": "check-approved-office-cable-wifi-ip-dns-no-vlan-change"
+  },
+  {
+    "id": "t6",
+    "missing_fields": [
+      "checks"
+    ],
+    "action": "human-review",
+    "priority": "review",
+    "route": "clarify-with-service-manager",
+    "boundary": "approved-first-line-checks-only"
+  }
+]

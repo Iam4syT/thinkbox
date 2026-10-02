@@ -1,0 +1,17 @@
+$ python3 -m unittest discover -s tests -v
+test_duplicate_ids_fail_closed (test_readiness.ReadinessTests.test_duplicate_ids_fail_closed) ... ok
+test_empty_is_no_data (test_readiness.ReadinessTests.test_empty_is_no_data) ... ok
+test_future_sync_rejected (test_readiness.ReadinessTests.test_future_sync_rejected) ... ok
+test_log_instruction_is_inert (test_readiness.ReadinessTests.test_log_instruction_is_inert) ... ok
+test_malformed_log_rejected (test_readiness.ReadinessTests.test_malformed_log_rejected) ... ok
+test_normal_and_fault_scopes (test_readiness.ReadinessTests.test_normal_and_fault_scopes) ... ok
+test_orphan_log_rejected (test_readiness.ReadinessTests.test_orphan_log_rejected) ... ok
+test_stale_never_ready (test_readiness.ReadinessTests.test_stale_never_ready) ... ok
+test_string_boolean_rejected (test_readiness.ReadinessTests.test_string_boolean_rejected) ... ok
+test_unknown_code_cannot_establish_cause (test_readiness.ReadinessTests.test_unknown_code_cannot_establish_cause) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.001s
+
+OK
+exit_code=0

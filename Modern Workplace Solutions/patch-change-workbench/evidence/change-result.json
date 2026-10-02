@@ -1,0 +1,92 @@
+{
+  "mode": "offline_synthetic",
+  "finding_count": 6,
+  "results": [
+    {
+      "id": "LAB-VULN-03",
+      "severity": "critical",
+      "state": "risk_escalation",
+      "reasons": [
+        "Patch availability or exposure needs security-owner review; do not silently defer risk."
+      ],
+      "user_message": "The security and change owners are reviewing this finding. A safe next action has not yet been agreed.",
+      "mutation": "none",
+      "priority_key": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "LAB-VULN-01",
+      "severity": "high",
+      "state": "needs_approval",
+      "reasons": [
+        "Named change approval not recorded; no deployment proposal is authorised."
+      ],
+      "user_message": "A software update is being reviewed. No installation time has been agreed yet. We will confirm any impact before the change.",
+      "mutation": "none",
+      "priority_key": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "LAB-VULN-02",
+      "severity": "high",
+      "state": "ready_for_pilot",
+      "reasons": [
+        "Approved test change only: agree pilot users, maintenance window and recovery first."
+      ],
+      "user_message": "Your test device is included in an approved pilot. Please save your work before the agreed window. We will confirm whether a restart is needed and check the application afterwards.",
+      "mutation": "none",
+      "priority_key": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "LAB-VULN-04",
+      "severity": "high",
+      "state": "verify_again",
+      "reasons": [
+        "Do not close: version, restart, app health or security recheck is missing/unsatisfactory."
+      ],
+      "user_message": "The test update needs further checks before we can confirm it is complete. Please keep your work saved and tell the support team about any application problem.",
+      "mutation": "none",
+      "priority_key": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "LAB-VULN-05",
+      "severity": "high",
+      "state": "closed_verified_in_fixture",
+      "reasons": [
+        "All required synthetic verification fields pass; no live remediation established."
+      ],
+      "user_message": "The synthetic test update passed the recorded checks. This is a lab result, so it does not confirm the health of a real device.",
+      "mutation": "none",
+      "priority_key": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "LAB-VULN-06",
+      "severity": "high",
+      "state": "rollback_review",
+      "reasons": [
+        "Application smoke test failed: stop expansion and ask the change owner to review recovery."
+      ],
+      "user_message": "The pilot found an application problem. We have stopped wider rollout and are reviewing a safe recovery with the change owner.",
+      "mutation": "none",
+      "priority_key": [
+        1,
+        1
+      ]
+    }
+  ],
+  "no_data": false,
+  "live_remediation_established": false
+}

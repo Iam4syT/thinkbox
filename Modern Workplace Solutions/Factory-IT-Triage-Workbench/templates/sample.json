@@ -1,0 +1,86 @@
+[
+  {
+    "site": "training-factory",
+    "asset_id": "LAB-01",
+    "symptom": "Cannot access work service",
+    "impact": "one user",
+    "started": "2026-10-01",
+    "checks": [
+      "Reported symptom only"
+    ],
+    "zone": "office",
+    "asset_type": "windows",
+    "symptom_type": "account",
+    "id": "t1"
+  },
+  {
+    "site": "training-factory",
+    "asset_id": "LAB-01",
+    "symptom": "Cannot access work service",
+    "impact": "one user",
+    "started": "2026-10-01",
+    "checks": [
+      "Reported symptom only"
+    ],
+    "zone": "production",
+    "asset_type": "machine-pc",
+    "symptom_type": "account",
+    "id": "t2",
+    "production_stopped": true
+  },
+  {
+    "site": "training-factory",
+    "asset_id": "LAB-01",
+    "symptom": "Cannot access work service",
+    "impact": "one user",
+    "started": "2026-10-01",
+    "checks": [
+      "Reported symptom only"
+    ],
+    "zone": "office",
+    "asset_type": "windows",
+    "symptom_type": "account",
+    "id": "t3",
+    "security_suspected": true
+  },
+  {
+    "site": "training-factory",
+    "asset_id": "LAB-01",
+    "symptom": "Cannot access work service",
+    "impact": "one user",
+    "started": "2026-10-01",
+    "checks": [
+      "Reported symptom only"
+    ],
+    "zone": "office",
+    "asset_type": "mac",
+    "symptom_type": "account",
+    "id": "t4"
+  },
+  {
+    "site": "training-factory",
+    "asset_id": "LAB-01",
+    "symptom": "Cannot access work service",
+    "impact": "one user",
+    "started": "2026-10-01",
+    "checks": [
+      "Reported symptom only"
+    ],
+    "zone": "office",
+    "asset_type": "windows",
+    "symptom_type": "network",
+    "id": "t5"
+  },
+  {
+    "site": "training-factory",
+    "asset_id": "LAB-01",
+    "symptom": "Cannot access work service",
+    "impact": "one user",
+    "started": "2026-10-01",
+    "checks": [],
+    "zone": "office",
+    "asset_type": "windows",
+    "symptom_type": "unknown",
+    "id": "t6"
+  }
+]

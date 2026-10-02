@@ -1,0 +1,8 @@
+{
+  "destination_count": 2,
+  "findings": [],
+  "interpretation": "Matching declarations do not prove a successful migration, effective access, version history, list fidelity or residency compliance.",
+  "scope": "synthetic-manifest-only",
+  "source_count": 2,
+  "state": "MANIFESTS_MATCH"
+}

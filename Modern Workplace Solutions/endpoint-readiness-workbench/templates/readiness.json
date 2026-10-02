@@ -1,0 +1,68 @@
+{
+  "devices": [
+    {
+      "last_sync": "2026-09-30T08:00:00Z",
+      "enrolled": true,
+      "configured": true,
+      "compliant": true,
+      "app_installed": true,
+      "m365_access": true,
+      "id": "LAB-01"
+    },
+    {
+      "last_sync": "2026-09-30T08:00:00Z",
+      "enrolled": false,
+      "configured": true,
+      "compliant": true,
+      "app_installed": true,
+      "m365_access": true,
+      "id": "LAB-02"
+    },
+    {
+      "last_sync": "2026-09-30T08:00:00Z",
+      "enrolled": true,
+      "configured": false,
+      "compliant": false,
+      "app_installed": true,
+      "m365_access": true,
+      "id": "LAB-03"
+    },
+    {
+      "last_sync": "2026-09-30T08:00:00Z",
+      "enrolled": true,
+      "configured": true,
+      "compliant": true,
+      "app_installed": false,
+      "m365_access": false,
+      "id": "LAB-04"
+    },
+    {
+      "last_sync": "2026-09-27T08:00:00Z",
+      "enrolled": true,
+      "configured": true,
+      "compliant": null,
+      "app_installed": true,
+      "m365_access": true,
+      "id": "LAB-05"
+    }
+  ],
+  "logs": [
+    {
+      "device_id": "LAB-02",
+      "code": "SCOPE_MISMATCH",
+      "note": "Synthetic indication; not a real Intune error code."
+    },
+    {
+      "device_id": "LAB-03",
+      "code": "CONFIG_CONFLICT"
+    },
+    {
+      "device_id": "LAB-04",
+      "code": "DETECTION_FAILED"
+    },
+    {
+      "device_id": "LAB-04",
+      "code": "DNS_FAILURE"
+    }
+  ]
+}

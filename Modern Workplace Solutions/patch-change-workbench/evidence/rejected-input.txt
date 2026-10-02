@@ -1,0 +1,4 @@
+CLI malformed input check: string "false" in a boolean field
+Input rejected: approved must be true, false or null
+exit_code=2
+new_output_created=False

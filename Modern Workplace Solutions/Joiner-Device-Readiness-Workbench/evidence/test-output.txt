@@ -1,0 +1,12 @@
+test_duplicate (test_readiness.ReadinessTests.test_duplicate) ... ok
+test_empty (test_readiness.ReadinessTests.test_empty) ... ok
+test_leaver_retention (test_readiness.ReadinessTests.test_leaver_retention) ... ok
+test_missing_approval (test_readiness.ReadinessTests.test_missing_approval) ... ok
+test_privileged_group (test_readiness.ReadinessTests.test_privileged_group) ... ok
+test_ready_is_review_not_execute (test_readiness.ReadinessTests.test_ready_is_review_not_execute) ... ok
+test_unmanaged (test_readiness.ReadinessTests.test_unmanaged) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.000s
+
+OK

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "site": {
+    "name": "Lab-Site-B",
+    "owner": "owner-a@example.test",
+    "geo": "GBR",
+    "geo_verified": true,
+    "allocated_bytes": 1000,
+    "used_bytes": 35
+  },
+  "files": [
+    {
+      "path": "Documents/Guide.txt",
+      "size_bytes": 16,
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "principals": [
+        "Lab-Readers"
+      ],
+      "unique_permissions": false,
+      "metadata": {
+        "content_type": "Document",
+        "status": "Draft"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+[
+  {
+    "id": "j1",
+    "status": "ready-for-human-review",
+    "issues": []
+  },
+  {
+    "id": "j2",
+    "status": "review",
+    "issues": [
+      "approval-missing"
+    ]
+  },
+  {
+    "id": "j3",
+    "status": "review",
+    "issues": [
+      "unexpected-group"
+    ]
+  },
+  {
+    "id": "j4",
+    "status": "review",
+    "issues": [
+      "mfa-not-registered"
+    ]
+  },
+  {
+    "id": "j5",
+    "status": "review",
+    "issues": [
+      "mdm-not-confirmed"
+    ]
+  },
+  {
+    "id": "l1",
+    "status": "review",
+    "issues": [
+      "retention-review-missing",
+      "asset-not-returned"
+    ]
+  }
+]

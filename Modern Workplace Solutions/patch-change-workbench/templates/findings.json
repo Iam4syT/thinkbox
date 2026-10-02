@@ -1,0 +1,82 @@
+{
+  "findings": [
+    {
+      "severity": "high",
+      "exposure": "internal",
+      "patch_available": true,
+      "approved": false,
+      "installed": false,
+      "app_smoke_pass": null,
+      "reboot_pending": null,
+      "security_recheck_pass": null,
+      "target_version": "2.0.0",
+      "observed_version": "1.0.0",
+      "id": "LAB-VULN-01"
+    },
+    {
+      "severity": "high",
+      "exposure": "internal",
+      "patch_available": true,
+      "approved": true,
+      "installed": false,
+      "app_smoke_pass": null,
+      "reboot_pending": null,
+      "security_recheck_pass": null,
+      "target_version": "2.0.0",
+      "observed_version": "1.0.0",
+      "id": "LAB-VULN-02"
+    },
+    {
+      "severity": "critical",
+      "exposure": "external",
+      "patch_available": false,
+      "approved": false,
+      "installed": false,
+      "app_smoke_pass": null,
+      "reboot_pending": null,
+      "security_recheck_pass": null,
+      "target_version": "2.0.0",
+      "observed_version": "1.0.0",
+      "id": "LAB-VULN-03"
+    },
+    {
+      "severity": "high",
+      "exposure": "internal",
+      "patch_available": true,
+      "approved": true,
+      "installed": true,
+      "app_smoke_pass": true,
+      "reboot_pending": true,
+      "security_recheck_pass": true,
+      "target_version": "2.0.0",
+      "observed_version": "2.0.0",
+      "id": "LAB-VULN-04"
+    },
+    {
+      "severity": "high",
+      "exposure": "internal",
+      "patch_available": true,
+      "approved": true,
+      "installed": true,
+      "app_smoke_pass": true,
+      "reboot_pending": false,
+      "security_recheck_pass": true,
+      "target_version": "2.0.0",
+      "observed_version": "2.0.0",
+      "id": "LAB-VULN-05"
+    },
+    {
+      "severity": "high",
+      "exposure": "internal",
+      "patch_available": true,
+      "approved": true,
+      "installed": true,
+      "app_smoke_pass": false,
+      "reboot_pending": false,
+      "security_recheck_pass": true,
+      "target_version": "2.0.0",
+      "observed_version": "2.0.0",
+      "id": "LAB-VULN-06"
+    }
+  ]
+}

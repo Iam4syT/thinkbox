@@ -1,0 +1,15 @@
+{
+  "test_count": 7,
+  "tests_passed": true,
+  "fixture_count": 6,
+  "expected_routes_or_statuses_matched": true,
+  "unchanged_input": true,
+  "identical_reruns": true,
+  "malformed_json_failed_without_output": true,
+  "executed_by": "Codex",
+  "learner_reproduction": "unrun",
+  "date": "2026-10-01",
+  "runtime": "3.12.14",
+  "source_fixture_sha256": "fd002f27835f231a3e4827400abc0ec6e0b01f22be69fadcd559462ffa179b95",
+  "source_review": "Initial source files in this release; commit available in Git history"
+}

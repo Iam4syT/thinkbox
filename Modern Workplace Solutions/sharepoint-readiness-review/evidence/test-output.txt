@@ -1,0 +1,21 @@
+test_bad_hash_not_success (test_review.ManifestTests.test_bad_hash_not_success) ... ok
+test_broad_link_and_unique_scope (test_review.ManifestTests.test_broad_link_and_unique_scope) ... ok
+test_complete_matching (test_review.ManifestTests.test_complete_matching) ... ok
+test_content_hash_mismatch (test_review.ManifestTests.test_content_hash_mismatch) ... ok
+test_deterministic_read_only (test_review.ManifestTests.test_deterministic_read_only) ... ok
+test_duplicate_path_rejected (test_review.ManifestTests.test_duplicate_path_rejected) ... ok
+test_effective_group_declarations_change (test_review.ManifestTests.test_effective_group_declarations_change) ... ok
+test_empty_inventory_not_success (test_review.ManifestTests.test_empty_inventory_not_success) ... ok
+test_geo_change_needs_review (test_review.ManifestTests.test_geo_change_needs_review) ... ok
+test_geo_unknown_not_certified (test_review.ManifestTests.test_geo_unknown_not_certified) ... ok
+test_metadata_loss (test_review.ManifestTests.test_metadata_loss) ... ok
+test_missing_content (test_review.ManifestTests.test_missing_content) ... ok
+test_missing_owner (test_review.ManifestTests.test_missing_owner) ... ok
+test_path_traversal_rejected (test_review.ManifestTests.test_path_traversal_rejected) ... ok
+test_same_hash_different_size (test_review.ManifestTests.test_same_hash_different_size) ... ok
+test_unexpected_content (test_review.ManifestTests.test_unexpected_content) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.002s
+
+OK

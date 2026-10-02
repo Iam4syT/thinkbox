@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-30",
+  "executor": "assistant",
+  "candidate_independent_run": false,
+  "mode": "offline_synthetic",
+  "python_version": "3.12.14",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "source_sha256": {
+    "scripts/readiness.py": "5757fb5d493c56c46c82652464a4cce8e90f8dc4219d5ca29290137fabeaddfe",
+    "templates/readiness.json": "6ebb7fa256ee7745b1a16f11e3dc56dcb57a626468b31429a76b1c3f5e7b08b5",
+    "tests/test_readiness.py": "1f638cb6facaf7c5540e7a1a3470f43cdac8711a2ecf081fdec6bf8b8da34918"
+  },
+  "fixture_count": 5,
+  "behavioural_tests": 10,
+  "test_exit_code": 0,
+  "cli_exit_code": 0,
+  "cli_wall_seconds": 0.033306,
+  "malformed_cli_exit_code": 2,
+  "malformed_cli_new_output_created": false,
+  "result_states": {
+    "LAB-01": "ready_in_fixture",
+    "LAB-02": "investigate",
+    "LAB-03": "investigate",
+    "LAB-04": "investigate",
+    "LAB-05": "needs_evidence"
+  },
+  "mutation": "none",
+  "tenant_api_ai_steps": "unrun",
+  "production_business_outcomes": "unestablished",
+  "baseline": "same explicit rules applied manually; human time/error rate not measured",
+  "limitations": [
+    "small synthetic sample",
+    "not independently executed/explained by Bunamin",
+    "no actual tenant delivery or remediation",
+    "no AI integration or benefit measured"
+  ]
+}

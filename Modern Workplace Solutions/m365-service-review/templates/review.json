@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-09-30T08:00:00Z",
+  "services": [
+    {
+      "name": "Exchange Online",
+      "status": "ServiceDegradation"
+    },
+    {
+      "name": "SharePoint Online",
+      "status": "ServiceOperational"
+    },
+    {
+      "name": "Microsoft Teams",
+      "status": "ServiceOperational"
+    },
+    {
+      "name": "OneDrive for Business",
+      "status": "ServiceOperational"
+    }
+  ],
+  "usage": [
+    {
+      "service": "Microsoft Teams",
+      "active_users": 10,
+      "licensed_users": 100
+    }
+  ],
+  "storage": [
+    {
+      "name": "TeamSite-A",
+      "used_bytes": 95,
+      "allocated_bytes": 100,
+      "owner": null
+    }
+  ],
+  "audit_complete": true,
+  "audit_events": [
+    {
+      "action": "Synthetic external-share change",
+      "severity": "review"
+    }
+  ]
+}
