@@ -20,3 +20,14 @@ The project distinguishes between planned, configured, implemented, tested, and 
 - Added LAB.md with planned scope and acceptance criteria.
 - Added proposed ADR-001 for the control plane and provider adapters.
 - Updated EVALUATION.md with the lab-scope review result.
+
+### Foundation documentation alignment — 2026-10-02
+
+- Added CONTRIBUTIONS.md describing recorded engineering work.
+- Added DEMO SCRIPT.md for the current foundation demonstration.
+- Standardised current product naming to AFRIST Modern Workplace OS.
+- Updated the README, implementation guide and architecture overview
+  with professional product and engineering terminology.
+- Updated EVALUATION.md with the document additions and review status.
+- Retained non-production validation controls, planned capability
+  labels and third-party attribution requirements.

@@ -1,16 +1,18 @@
-# Modern Workplace OS
+# AFRIST Modern Workplace OS
 
 [![Platform](https://img.shields.io/badge/Platform-Microsoft%20365-0078D4?style=flat-square&logo=microsoft)](https://www.microsoft.com/microsoft-365)
 [![Architecture](https://img.shields.io/badge/Architecture-Cloud--Agnostic%20Control%20Plane-blueviolet?style=flat-square)](#)
 [![Compliance](https://img.shields.io/badge/Governance-Zero--Trust-green?style=flat-square)](#)
 
-> **M365 Landing Zone + AI-Enabled Workplace Control Plane: Reference Implementation, Architecture Blueprint, and End-to-End Novice Lab.**
+> **A Microsoft 365 foundation and workplace control plane for AFRIST Modern Workplace Solutions.**
 
 ---
 
 ## 1. Executive Overview
 
-**Modern Workplace OS** is an enterprise architecture reference implementation that establishes a secure, repeatable, and scalable modern workplace foundation. It pairs an enterprise **Microsoft 365 Landing Zone** with an **AI-Enabled Workplace Control Plane**, ensuring Zero-Trust identity governance, endpoint management, and secure Copilot readiness.
+**AFRIST Modern Workplace OS** is an engineering project for a secure, repeatable workplace foundation and a provider-neutral control plane. The planned solution connects identity, access, devices, collaboration and governance through employee lifecycle workflows, desired-state verification and auditable approvals. Microsoft 365 is the first intended provider.
+
+The current deliverable is a documented foundation: scope, acceptance criteria, an architecture proposal and evaluation records. Application capabilities and live integrations remain planned and unverified.
 
 ### Key Objectives:
 - **Zero-Trust Identity & Access Management:** Entra ID governance, Conditional Access policies, Privileged Identity Management (PIM), and automated lifecycle workflows.
@@ -22,10 +24,15 @@
 
 ## 2. Documentation
 
-### Guide Architecture & Syllabus:
-1. **Part I: README and Product Definition:** Business goals, persona definitions, architectural principles, and capability matrix.
-2. **Part II: Architecture & Design Decisions:** ADRs, identity boundaries, security controls, and adapter specifications.
-3. **Part III: Operations, Governance & Runbooks:** Telemetry, drift auditing, automated compliance scanning, and tenant lifecycle maintenance.
+### Engineering Documentation
+- [Implementation scope and acceptance criteria](LAB.md)
+- [Architecture](docs/architecture.md) and [proposed provider-adapter decision](docs/adr/ADR-001-control-plane-and-adapters.md)
+- [Recorded contributions](CONTRIBUTIONS.md)
+- [Demonstration walkthrough](DEMO%20SCRIPT.md)
+- [Evaluation results and limitations](EVALUATION.md)
+- [Change history](CHANGELOG.md)
+
+Technical documents marked Planned will be completed alongside their corresponding implementation and verification.
 
 ---
 
@@ -33,30 +40,43 @@
 
 ```text
 Modern Workplace Solutions/Workplace OS/
-└── README.md
+├── README.md
+├── LAB.md
+├── CONTRIBUTIONS.md
+├── DEMO SCRIPT.md
+├── EVALUATION.md
+├── CHANGELOG.md
+├── .env.example
+├── app/                  # API and frontend placeholders
+├── config/               # Configuration placeholders
+├── docs/                 # Technical documents and architecture decisions
+├── infra/                # Infrastructure placeholders
+└── scripts/              # Automation placeholders
 ```
 
 ---
 
 ## 4. Governance & Safety Notice
 
-Per repository project standards, all tenant configurations, credentials, API tokens, and private client data are maintained outside this public codebase. All lab scenarios use dedicated simulation or lab tenant environments.
+Per repository project standards, tenant-specific configurations, credentials, API tokens and private client data are maintained outside this public codebase. Validation uses dedicated non-production tenants, test identities and disposable devices where appropriate. Simulated results must be labelled explicitly.
 ---
 
 ## 5. Engineering Status
 
 ### Current phase
 
-Foundation — Lab 0: Project Workspace and Documentation.
+Foundation — Project Workspace and Documentation.
 
 ### Verified
 
-- GitHub project location established.
-- Initial project/product overview created.
+- Project repository location and documentation scaffold established.
+- Baseline documentation publication verified at commit `6dec95e`.
+- Implementation scope and architecture proposal committed locally at `be95575`.
 
 ### In Progress
 
-- Repository and documentation skeleton.
+- Foundation documentation completion and review.
+- Architecture decision acceptance.
 
 ### Planned / Not Yet Implemented
 
@@ -74,7 +94,7 @@ Foundation — Lab 0: Project Workspace and Documentation.
 - Purview governance
 - Drift detection and reconciliation
 - React workplace portal
-- AI assistance and approval controls
+- AI status explanations and approval controls
 - Automated testing
 - CI/CD
 - Hosted deployment
@@ -92,7 +112,7 @@ The project will progressively use:
 - Node.js LTS
 - PowerShell 7
 - Microsoft Graph PowerShell SDK
-- Microsoft 365 / Entra / Intune lab tenant
+- Microsoft 365 / Entra / Intune non-production tenant with appropriate licensing
 - Azure subscription for hosted components where required
 
 See the project documentation for the requirements of each implementation phase.
