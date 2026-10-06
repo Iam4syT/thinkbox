@@ -1,0 +1,62 @@
+[
+  {
+    "id": "DEMO-01",
+    "critical_service": true,
+    "workaround": false,
+    "users": 12,
+    "channel": "phone",
+    "summary": "Synthetic ward staff cannot open a test application",
+    "priority": "P1",
+    "state": "closed",
+    "owner": "analyst-demo",
+    "history": [
+      {
+        "state": "assigned",
+        "note": "Accepted synthetic case and confirmed impact",
+        "verified": false
+      },
+      {
+        "state": "escalated",
+        "note": "Synthetic specialist review needed",
+        "verified": false
+      },
+      {
+        "state": "resolved",
+        "note": "Synthetic retest passed",
+        "verified": true
+      },
+      {
+        "state": "closed",
+        "note": "Synthetic user confirms",
+        "verified": true
+      }
+    ],
+    "next_action": "Human confirms service impact, approved priority and escalation route"
+  },
+  {
+    "id": "DEMO-02",
+    "critical_service": false,
+    "workaround": true,
+    "users": 8,
+    "channel": "portal",
+    "summary": "Synthetic team cannot open a shared test folder",
+    "priority": "P2",
+    "state": "new",
+    "owner": null,
+    "history": [],
+    "next_action": "Human confirms service impact, approved priority and escalation route"
+  },
+  {
+    "id": "DEMO-03",
+    "critical_service": false,
+    "workaround": true,
+    "users": 1,
+    "channel": "in-person",
+    "summary": "Synthetic workstation peripheral query",
+    "priority": "P3",
+    "state": "new",
+    "owner": null,
+    "history": [],
+    "next_action": "Human confirms service impact, approved priority and escalation route"
+  }
+]

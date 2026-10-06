@@ -1,0 +1,78 @@
+[
+  {
+    "asset_alias": "DEMO-PC-01",
+    "observations": {
+      "asset_alias": "DEMO-PC-01",
+      "adapter_up": true,
+      "dns_ok": false,
+      "tcp_443_ok": false,
+      "app_ok": false,
+      "disk_free_percent": 30
+    },
+    "checks": [
+      "Record DNS failure; compare approved endpoint; escalate to network team",
+      "Record failed TCP test; inspect approved service status; no firewall change",
+      "Record application symptom and escalate with reproduction steps"
+    ],
+    "missing": [],
+    "state": "needs_review",
+    "limitations": "Observations are not a root-cause diagnosis. No auto-remediation or clinical judgement."
+  },
+  {
+    "asset_alias": "DEMO-PC-02",
+    "observations": {
+      "asset_alias": "DEMO-PC-02",
+      "adapter_up": true,
+      "dns_ok": true,
+      "tcp_443_ok": true,
+      "app_ok": true,
+      "disk_free_percent": 5
+    },
+    "checks": [
+      "Low free space; request approved cleanup; do not delete user files"
+    ],
+    "missing": [],
+    "state": "needs_review",
+    "limitations": "Observations are not a root-cause diagnosis. No auto-remediation or clinical judgement."
+  },
+  {
+    "asset_alias": "DEMO-PC-03",
+    "observations": {
+      "asset_alias": "DEMO-PC-03",
+      "adapter_up": true,
+      "dns_ok": true,
+      "tcp_443_ok": true,
+      "app_ok": true,
+      "disk_free_percent": 30
+    },
+    "checks": [
+      "No issue detected by these checks; confirm user task before closure"
+    ],
+    "missing": [],
+    "state": "checks_clear",
+    "limitations": "Observations are not a root-cause diagnosis. No auto-remediation or clinical judgement."
+  },
+  {
+    "asset_alias": "DEMO-PC-04",
+    "observations": {
+      "asset_alias": "DEMO-PC-04",
+      "adapter_up": null,
+      "dns_ok": null,
+      "tcp_443_ok": null,
+      "app_ok": null,
+      "disk_free_percent": null
+    },
+    "checks": [
+      "Collect missing observations: adapter_up, dns_ok, tcp_443_ok, app_ok, disk_free_percent"
+    ],
+    "missing": [
+      "adapter_up",
+      "dns_ok",
+      "tcp_443_ok",
+      "app_ok",
+      "disk_free_percent"
+    ],
+    "state": "needs_review",
+    "limitations": "Observations are not a root-cause diagnosis. No auto-remediation or clinical judgement."
+  }
+]

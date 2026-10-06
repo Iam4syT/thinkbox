@@ -1,0 +1,34 @@
+[
+  {
+    "asset_alias": "DEMO-PC-01",
+    "adapter_up": true,
+    "dns_ok": false,
+    "tcp_443_ok": false,
+    "app_ok": false,
+    "disk_free_percent": 30
+  },
+  {
+    "asset_alias": "DEMO-PC-02",
+    "adapter_up": true,
+    "dns_ok": true,
+    "tcp_443_ok": true,
+    "app_ok": true,
+    "disk_free_percent": 5
+  },
+  {
+    "asset_alias": "DEMO-PC-03",
+    "adapter_up": true,
+    "dns_ok": true,
+    "tcp_443_ok": true,
+    "app_ok": true,
+    "disk_free_percent": 30
+  },
+  {
+    "asset_alias": "DEMO-PC-04",
+    "adapter_up": null,
+    "dns_ok": null,
+    "tcp_443_ok": null,
+    "app_ok": null,
+    "disk_free_percent": null
+  }
+]

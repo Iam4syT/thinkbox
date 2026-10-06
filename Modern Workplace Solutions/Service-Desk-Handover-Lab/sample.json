@@ -1,0 +1,26 @@
+[
+  {
+    "id": "DEMO-01",
+    "critical_service": true,
+    "workaround": false,
+    "users": 12,
+    "channel": "phone",
+    "summary": "Synthetic ward staff cannot open a test application"
+  },
+  {
+    "id": "DEMO-02",
+    "critical_service": false,
+    "workaround": true,
+    "users": 8,
+    "channel": "portal",
+    "summary": "Synthetic team cannot open a shared test folder"
+  },
+  {
+    "id": "DEMO-03",
+    "critical_service": false,
+    "workaround": true,
+    "users": 1,
+    "channel": "in-person",
+    "summary": "Synthetic workstation peripheral query"
+  }
+]

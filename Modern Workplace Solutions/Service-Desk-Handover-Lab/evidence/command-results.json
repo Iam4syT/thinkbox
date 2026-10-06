@@ -1,0 +1,116 @@
+[
+  {
+    "command": [
+      "python3",
+      "-m",
+      "unittest",
+      "-v"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": "test_empty_summary (test_solution.Tests.test_empty_summary) ... ok\ntest_escalation_preserves_owner (test_solution.Tests.test_escalation_preserves_owner) ... ok\ntest_invalid_impact (test_solution.Tests.test_invalid_impact) ... ok\ntest_no_direct_closure (test_solution.Tests.test_no_direct_closure) ... ok\ntest_owner_required (test_solution.Tests.test_owner_required) ... ok\ntest_priority (test_solution.Tests.test_priority) ... ok\ntest_resolution_verification (test_solution.Tests.test_resolution_verification) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.000s\n\nOK\n"
+  },
+  {
+    "command": [
+      "python3",
+      "triage.py",
+      "triage",
+      "sample.json",
+      "output.json"
+    ],
+    "exit": 0,
+    "stdout": "[\n  {\n    \"id\": \"DEMO-01\",\n    \"critical_service\": true,\n    \"workaround\": false,\n    \"users\": 12,\n    \"channel\": \"phone\",\n    \"summary\": \"Synthetic ward staff cannot open a test application\",\n    \"priority\": \"P1\",\n    \"state\": \"new\",\n    \"owner\": null,\n    \"history\": [],\n    \"next_action\": \"Human confirms service impact, approved priority and escalation route\"\n  },\n  {\n    \"id\": \"DEMO-02\",\n    \"critical_service\": false,\n    \"workaround\": true,\n    \"users\": 8,\n    \"channel\": \"portal\",\n    \"summary\": \"Synthetic team cannot open a shared test folder\",\n    \"priority\": \"P2\",\n    \"state\": \"new\",\n    \"owner\": null,\n    \"history\": [],\n    \"next_action\": \"Human confirms service impact, approved priority and escalation route\"\n  },\n  {\n    \"id\": \"DEMO-03\",\n    \"critical_service\": false,\n    \"workaround\": true,\n    \"users\": 1,\n    \"channel\": \"in-person\",\n    \"summary\": \"Synthetic workstation peripheral query\",\n    \"priority\": \"P3\",\n    \"state\": \"new\",\n    \"owner\": null,\n    \"history\": [],\n    \"next_action\": \"Human confirms service impact, approved priority and escalation route\"\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "triage.py",
+      "update",
+      "output.json",
+      "DEMO-01",
+      "assigned",
+      "--owner",
+      "analyst-demo",
+      "--note",
+      "Accepted synthetic case and confirmed impact"
+    ],
+    "exit": 0,
+    "stdout": "[\n  {\n    \"id\": \"DEMO-01\",\n    \"critical_service\": true,\n    \"workaround\": false,\n    \"users\": 12,\n    \"channel\": \"phone\",\n    \"summary\": \"Synthetic ward staff cannot open a test application\",\n    \"priority\": \"P1\",\n    \"state\": \"assigned\",\n    \"owner\": \"analyst-demo\",\n    \"history\": [\n      {\n        \"state\": \"assigned\",\n        \"note\": \"Accepted synthetic case and confirmed impact\",\n        \"verified\": false\n      }\n    ],\n    \"next_action\": \"Human confirms service impact, approved priority and escalation route\"\n  },\n  {\n    \"id\": \"DEMO-02\",\n    \"critical_service\": false,\n    \"workaround\": true,\n    \"users\": 8,\n    \"channel\": \"portal\",\n    \"summary\": \"Synthetic team cannot open a shared test folder\",\n    \"priority\": \"P2\",\n    \"state\": \"new\",\n    \"owner\": null,\n    \"history\": [],\n    \"next_action\": \"Human confirms service impact, approved priority and escalation route\"\n  },\n  {\n    \"id\": \"DEMO-03\",\n    \"critical_service\": false,\n    \"workaround\": true,\n    \"users\": 1,\n    \"channel\": \"in-person\",\n    \"summary\": \"Synthetic workstation peripheral query\",\n    \"priority\": \"P3\",\n    \"state\": \"new\",\n    \"owner\": null,\n    \"history\": [],\n    \"next_action\": \"Human confirms service impact, approved priority and escalation route\"\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "triage.py",
+      "update",
+      "output.json",
+      "DEMO-01",
+      "escalated",
+      "--note",
+      "Synthetic specialist review needed"
+    ],
+    "exit": 0,
+    "stdout": "[\n  {\n    \"id\": \"DEMO-01\",\n    \"critical_service\": true,\n    \"workaround\": false,\n    \"users\": 12,\n    \"channel\": \"phone\",\n    \"summary\": \"Synthetic ward staff cannot open a test application\",\n    \"priority\": \"P1\",\n    \"state\": \"escalated\",\n    \"owner\": \"analyst-demo\",\n    \"history\": [\n      {\n        \"state\": \"assigned\",\n        \"note\": \"Accepted synthetic case and confirmed impact\",\n        \"verified\": false\n      },\n      {\n        \"state\": \"escalated\",\n        \"note\": \"Synthetic specialist review needed\",\n        \"verified\": false\n      }\n    ],\n    \"next_action\": \"Human confirms service impact, approved priority and escalation route\"\n  },\n  {\n    \"id\": \"DEMO-02\",\n    \"critical_service\": false,\n    \"workaround\": true,\n    \"users\": 8,\n    \"channel\": \"portal\",\n    \"summary\": \"Synthetic team cannot open a shared test folder\",\n    \"priority\": \"P2\",\n    \"state\": \"new\",\n    \"owner\": null,\n    \"history\": [],\n    \"next_action\": \"Human confirms service impact, approved priority and escalation route\"\n  },\n  {\n    \"id\": \"DEMO-03\",\n    \"critical_service\": false,\n    \"workaround\": true,\n    \"users\": 1,\n    \"channel\": \"in-person\",\n    \"summary\": \"Synthetic workstation peripheral query\",\n    \"priority\": \"P3\",\n    \"state\": \"new\",\n    \"owner\": null,\n    \"history\": [],\n    \"next_action\": \"Human confirms service impact, approved priority and escalation route\"\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "triage.py",
+      "update",
+      "output.json",
+      "DEMO-01",
+      "resolved",
+      "--note",
+      "Fixed"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"<project>/triage.py\", line 43, in <module>\n    if __name__=='__main__': main()\n                             ^^^^^^\n  File \"<project>/triage.py\", line 40, in main\n    records=[transition(x,a.state,a.note,a.owner,a.verified) if x['id']==a.id else x for x in records]\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<project>/triage.py\", line 23, in transition\n    if state in ['resolved','closed'] and not verified: raise ValueError('explicit user verification required')\n                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: explicit user verification required\n"
+  },
+  {
+    "command": [
+      "python3",
+      "triage.py",
+      "update",
+      "output.json",
+      "DEMO-01",
+      "resolved",
+      "--note",
+      "Synthetic retest passed",
+      "--verified"
+    ],
+    "exit": 0,
+    "stdout": "[\n  {\n    \"id\": \"DEMO-01\",\n    \"critical_service\": true,\n    \"workaround\": false,\n    \"users\": 12,\n    \"channel\": \"phone\",\n    \"summary\": \"Synthetic ward staff cannot open a test application\",\n    \"priority\": \"P1\",\n    \"state\": \"resolved\",\n    \"owner\": \"analyst-demo\",\n    \"history\": [\n      {\n        \"state\": \"assigned\",\n        \"note\": \"Accepted synthetic case and confirmed impact\",\n        \"verified\": false\n      },\n      {\n        \"state\": \"escalated\",\n        \"note\": \"Synthetic specialist review needed\",\n        \"verified\": false\n      },\n      {\n        \"state\": \"resolved\",\n        \"note\": \"Synthetic retest passed\",\n        \"verified\": true\n      }\n    ],\n    \"next_action\": \"Human confirms service impact, approved priority and escalation route\"\n  },\n  {\n    \"id\": \"DEMO-02\",\n    \"critical_service\": false,\n    \"workaround\": true,\n    \"users\": 8,\n    \"channel\": \"portal\",\n    \"summary\": \"Synthetic team cannot open a shared test folder\",\n    \"priority\": \"P2\",\n    \"state\": \"new\",\n    \"owner\": null,\n    \"history\": [],\n    \"next_action\": \"Human confirms service impact, approved priority and escalation route\"\n  },\n  {\n    \"id\": \"DEMO-03\",\n    \"critical_service\": false,\n    \"workaround\": true,\n    \"users\": 1,\n    \"channel\": \"in-person\",\n    \"summary\": \"Synthetic workstation peripheral query\",\n    \"priority\": \"P3\",\n    \"state\": \"new\",\n    \"owner\": null,\n    \"history\": [],\n    \"next_action\": \"Human confirms service impact, approved priority and escalation route\"\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "triage.py",
+      "update",
+      "output.json",
+      "DEMO-01",
+      "closed",
+      "--note",
+      "Synthetic user confirms",
+      "--verified"
+    ],
+    "exit": 0,
+    "stdout": "[\n  {\n    \"id\": \"DEMO-01\",\n    \"critical_service\": true,\n    \"workaround\": false,\n    \"users\": 12,\n    \"channel\": \"phone\",\n    \"summary\": \"Synthetic ward staff cannot open a test application\",\n    \"priority\": \"P1\",\n    \"state\": \"closed\",\n    \"owner\": \"analyst-demo\",\n    \"history\": [\n      {\n        \"state\": \"assigned\",\n        \"note\": \"Accepted synthetic case and confirmed impact\",\n        \"verified\": false\n      },\n      {\n        \"state\": \"escalated\",\n        \"note\": \"Synthetic specialist review needed\",\n        \"verified\": false\n      },\n      {\n        \"state\": \"resolved\",\n        \"note\": \"Synthetic retest passed\",\n        \"verified\": true\n      },\n      {\n        \"state\": \"closed\",\n        \"note\": \"Synthetic user confirms\",\n        \"verified\": true\n      }\n    ],\n    \"next_action\": \"Human confirms service impact, approved priority and escalation route\"\n  },\n  {\n    \"id\": \"DEMO-02\",\n    \"critical_service\": false,\n    \"workaround\": true,\n    \"users\": 8,\n    \"channel\": \"portal\",\n    \"summary\": \"Synthetic team cannot open a shared test folder\",\n    \"priority\": \"P2\",\n    \"state\": \"new\",\n    \"owner\": null,\n    \"history\": [],\n    \"next_action\": \"Human confirms service impact, approved priority and escalation route\"\n  },\n  {\n    \"id\": \"DEMO-03\",\n    \"critical_service\": false,\n    \"workaround\": true,\n    \"users\": 1,\n    \"channel\": \"in-person\",\n    \"summary\": \"Synthetic workstation peripheral query\",\n    \"priority\": \"P3\",\n    \"state\": \"new\",\n    \"owner\": null,\n    \"history\": [],\n    \"next_action\": \"Human confirms service impact, approved priority and escalation route\"\n  }\n]\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "triage.py",
+      "triage",
+      "broken.json",
+      "output.json"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"<project>/triage.py\", line 43, in <module>\n    if __name__=='__main__': main()\n                             ^^^^^^\n  File \"<project>/triage.py\", line 35, in main\n    if len({x['id'] for x in records}) != len(records): raise ValueError('duplicate id')\n                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: duplicate id\n"
+  }
+]
