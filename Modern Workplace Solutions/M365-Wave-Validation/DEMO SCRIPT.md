@@ -1,0 +1,1 @@
+Run sample flags; replace one flag with false and explain HOLD; remove one field and explain REVIEW; use a string instead of a boolean and explain INVALID. Explain why evidence provenance and human approval still matter. Then show tenant lab steps as unrun.

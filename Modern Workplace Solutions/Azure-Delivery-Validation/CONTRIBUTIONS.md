@@ -1,0 +1,1 @@
+Assistant prepared source, fixtures and lab instructions. Automated local fixture checks are observed; Bunamin has not independently operated this new lab. No live cloud integration or client commissioning is claimed.

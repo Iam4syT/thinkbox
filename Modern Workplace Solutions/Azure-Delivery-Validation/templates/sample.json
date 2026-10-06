@@ -1,0 +1,8 @@
+{
+  "https_only": true,
+  "anonymous_access_disabled": true,
+  "network_scope_verified": true,
+  "least_privilege_verified": true,
+  "recovery_verified": true,
+  "monitoring_verified": true
+}

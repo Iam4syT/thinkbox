@@ -1,0 +1,1 @@
+Reviewer gathers permitted evidence -> local JSON booleans -> strict checker -> CHECKS_PASS, HOLD, REVIEW or INVALID -> human decision. No API, credentials or live permissions. CHECKS_PASS proves only listed supplied flags; it is never authorisation to deploy or cut over.

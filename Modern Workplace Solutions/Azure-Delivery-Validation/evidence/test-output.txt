@@ -1,0 +1,11 @@
+test_complete (test_check.EvidenceChecks.test_complete) ... ok
+test_failed_each_check (test_check.EvidenceChecks.test_failed_each_check) ... ok
+test_missing_is_not_pass (test_check.EvidenceChecks.test_missing_is_not_pass) ... ok
+test_null_rejected (test_check.EvidenceChecks.test_null_rejected) ... ok
+test_string_true_rejected (test_check.EvidenceChecks.test_string_true_rejected) ... ok
+test_wrong_shape (test_check.EvidenceChecks.test_wrong_shape) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.000s
+
+OK
