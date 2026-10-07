@@ -1,0 +1,12 @@
+{
+  "status": "READY",
+  "review": []
+}
+
+Failure/review fixture:
+{
+  "status": "REVIEW",
+  "review": [
+    "network"
+  ]
+}

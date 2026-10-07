@@ -1,0 +1,14 @@
+{
+  "status": "COMPLETE",
+  "missing": [],
+  "route": "ROUTINE REVIEW"
+}
+
+Failure/review fixture:
+{
+  "status": "INCOMPLETE",
+  "missing": [
+    "next_owner"
+  ],
+  "route": "SECURITY ESCALATION"
+}

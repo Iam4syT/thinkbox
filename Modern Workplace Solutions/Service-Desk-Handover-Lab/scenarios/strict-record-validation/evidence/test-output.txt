@@ -1,0 +1,13 @@
+test_extra (test_behaviour.Behaviour.test_extra) ... ok
+test_failed_or_security (test_behaviour.Behaviour.test_failed_or_security) ... ok
+test_invalid_status_or_string_boolean (test_behaviour.Behaviour.test_invalid_status_or_string_boolean) ... ok
+test_missing (test_behaviour.Behaviour.test_missing) ... ok
+test_non_object (test_behaviour.Behaviour.test_non_object) ... ok
+test_pending_or_missing_security (test_behaviour.Behaviour.test_pending_or_missing_security) ... ok
+test_valid (test_behaviour.Behaviour.test_valid) ... ok
+test_wrong_type (test_behaviour.Behaviour.test_wrong_type) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.000s
+
+OK

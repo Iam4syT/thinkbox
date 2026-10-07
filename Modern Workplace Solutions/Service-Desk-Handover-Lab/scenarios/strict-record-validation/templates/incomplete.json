@@ -1,0 +1,10 @@
+{
+  "impact": "Synthetic impact",
+  "symptoms": "Synthetic symptoms",
+  "checks": "Synthetic checks",
+  "result": "Synthetic result",
+  "next_owner": "",
+  "next_action": "Synthetic next_action",
+  "user_update": "Synthetic user_update",
+  "security_incident": true
+}

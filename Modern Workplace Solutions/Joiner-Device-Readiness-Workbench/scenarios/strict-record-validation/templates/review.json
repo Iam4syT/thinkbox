@@ -1,0 +1,7 @@
+{
+  "os": "pass",
+  "account": "pass",
+  "network": "fail",
+  "software": "pass",
+  "peripheral": "pass"
+}

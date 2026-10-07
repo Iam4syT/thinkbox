@@ -22,3 +22,6 @@ The intended user is a workplace support engineer repeating readiness or handove
 See [LAB.md](LAB.md), [evaluation](EVALUATION.md), [demo](DEMO%20SCRIPT.md), [architecture](docs/architecture.md) and [test evidence](evidence/test-output.txt).
 
 Read [contribution details](CONTRIBUTIONS.md) and [machine-readable evaluation](evidence/evaluation.json). Source commit is recorded in Git history.
+
+## Additional strict record-validation scenario
+See [strict-record-validation](scenarios/strict-record-validation/README.md) for an isolated synthetic schema/checklist exercise with explicit invalid-input handling. Existing workflow remains unchanged.
