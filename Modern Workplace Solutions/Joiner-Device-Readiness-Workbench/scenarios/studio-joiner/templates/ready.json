@@ -1,0 +1,10 @@
+{
+  "request_id": "LAB-001",
+  "approval": true,
+  "account_signin": true,
+  "mail": true,
+  "sharepoint_access": true,
+  "device_check": true,
+  "app_check": true,
+  "handover_review": true
+}

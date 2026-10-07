@@ -1,0 +1,13 @@
+test_absent (test_behaviour.Checks.test_absent) ... ok
+test_each_missing_check_blocks (test_behaviour.Checks.test_each_missing_check_blocks) ... ok
+test_empty_id (test_behaviour.Checks.test_empty_id) ... ok
+test_normal (test_behaviour.Checks.test_normal) ... ok
+test_not_object (test_behaviour.Checks.test_not_object) ... ok
+test_numeric_bool (test_behaviour.Checks.test_numeric_bool) ... ok
+test_string_bool (test_behaviour.Checks.test_string_bool) ... ok
+test_unexpected (test_behaviour.Checks.test_unexpected) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.000s
+
+OK

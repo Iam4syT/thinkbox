@@ -1,0 +1,17 @@
+[
+  {
+    "id": "AUDIO",
+    "title": "Audio selection",
+    "steps": "Check the selected microphone and speaker; ask the remote participant to verify."
+  },
+  {
+    "id": "CAMERA",
+    "title": "Camera check",
+    "steps": "Check the camera source and privacy cover; verify remote receipt."
+  },
+  {
+    "id": "SHARE",
+    "title": "Screen share",
+    "steps": "Share only a harmless test window; ask the remote participant to read a line."
+  }
+]

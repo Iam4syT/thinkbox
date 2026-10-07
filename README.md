@@ -23,6 +23,9 @@ These projects show the direction of my work. Their current scope includes simul
 - [Workspace Governance Engine](./Modern%20Workplace%20Solutions/Workspace-Governance-Engine): Microsoft Graph governance scripts and operational documentation.
 - [Tenant Guard](./Modern%20Workplace%20Solutions/tenant-guard): identity, endpoint and configuration-check demonstrations.
 ---
+
+- [Meeting readiness knowledge lab](./Modern%20Workplace%20Solutions/Meeting-Readiness-Knowledge-Lab): synthetic source-cited support-card search; live meeting and AI extensions remain unrun.
+
 ## AI Projects
 
 - [SmartLifeCycle Ops](./AI%20Projects/SmartLifeCycle-Ops): endpoint workflow and model pipeline.

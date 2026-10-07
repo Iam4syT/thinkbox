@@ -1,0 +1,13 @@
+test_bad_type (test_behaviour.Checks.test_bad_type) ... ok
+test_blank (test_behaviour.Checks.test_blank) ... ok
+test_cited_match (test_behaviour.Checks.test_cited_match) ... ok
+test_duplicate (test_behaviour.Checks.test_duplicate) ... ok
+test_extra_field (test_behaviour.Checks.test_extra_field) ... ok
+test_missing_field (test_behaviour.Checks.test_missing_field) ... ok
+test_restricted (test_behaviour.Checks.test_restricted) ... ok
+test_unknown (test_behaviour.Checks.test_unknown) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.000s
+
+OK
