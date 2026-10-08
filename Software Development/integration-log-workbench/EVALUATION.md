@@ -1,0 +1,4 @@
+# Evaluation — 8 October 2026
+Executed by Codex, Python 3.12.14, Darwin arm64. Command: python -m unittest discover -s tests -v. Actual result: 9 tests passed. Demo command: python src/main.py ; exit 0. See evidence/tests.txt and evidence/demo.json.
+Baseline: manual inspection of six authored JSON log rows. Target: supplied normal and fault cases behave as documented. Method: behavioural checks cover tenant isolation, parameter binding, retry deduplication, authentication/throttling/server faults, ingestion gaps and malformed/empty input.
+Scope: authored examples and unit cases, not a held-out real-world sample. No measured speed, cost, SLA, CSAT or business result. No Cloudflare/Vercel/AWS/CMS or actual DNS traffic executed. No failures in this final test run; deliberate rejection cases passed. Personal reproduction by Bunamin pending. Next: run the lab and explain one failure without assistance; then evaluate unseen permitted cases.

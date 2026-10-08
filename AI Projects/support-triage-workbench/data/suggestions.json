@@ -1,0 +1,12 @@
+{
+  "t1": {
+    "route": "auth",
+    "citation": "KB-auth",
+    "action": "draft_only"
+  },
+  "t2": {
+    "route": "rate",
+    "citation": "invented",
+    "action": "draft_only"
+  }
+}

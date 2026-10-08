@@ -1,0 +1,67 @@
+[
+  {
+    "id": "t1",
+    "route": "auth",
+    "citation": "KB-auth",
+    "human_review": true,
+    "external_actions": false,
+    "ai_status": "simulated suggestion accepted for review",
+    "handoff": {
+      "owner": "unassigned human",
+      "next_check": "verify scope, impact and request IDs; then assign an owner",
+      "status": "draft only; do not claim resolution"
+    }
+  },
+  {
+    "id": "t2",
+    "route": "rate",
+    "citation": "KB-rate",
+    "human_review": true,
+    "external_actions": false,
+    "ai_status": "simulated suggestion rejected; rules fallback",
+    "handoff": {
+      "owner": "unassigned human",
+      "next_check": "verify scope, impact and request IDs; then assign an owner",
+      "status": "draft only; do not claim resolution"
+    }
+  },
+  {
+    "id": "t3",
+    "route": "incident",
+    "citation": "KB-incident",
+    "human_review": true,
+    "external_actions": false,
+    "ai_status": "not used",
+    "handoff": {
+      "owner": "unassigned human",
+      "next_check": "verify scope, impact and request IDs; then assign an owner",
+      "status": "draft only; do not claim resolution"
+    }
+  },
+  {
+    "id": "t4",
+    "route": "unknown",
+    "citation": null,
+    "human_review": true,
+    "external_actions": false,
+    "ai_status": "not used",
+    "handoff": {
+      "owner": "unassigned human",
+      "next_check": "verify scope, impact and request IDs; then assign an owner",
+      "status": "draft only; do not claim resolution"
+    }
+  },
+  {
+    "id": "t5",
+    "route": "unknown",
+    "citation": null,
+    "human_review": true,
+    "external_actions": false,
+    "ai_status": "not used",
+    "handoff": {
+      "owner": "unassigned human",
+      "next_check": "verify scope, impact and request IDs; then assign an owner",
+      "status": "draft only; do not claim resolution"
+    }
+  }
+]

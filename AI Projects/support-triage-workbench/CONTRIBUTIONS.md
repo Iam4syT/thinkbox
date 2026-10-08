@@ -1,0 +1,2 @@
+# Contribution and provenance
+Codex created this small original source, fixture, tests and guide during application preparation. Bunamin supplied the career direction and authorised scoped project publication; his own execution/explanation is still pending. Do not claim independent authorship or professional delivery from assistant execution. Python standard library and official HTTP reference informed the design. No third-party code copied; repository licence applies. No employer commission or private customer data.

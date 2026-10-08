@@ -1,0 +1,14 @@
+test_auth_fault (test_behaviour.DiagnosisTests.test_auth_fault) ... ok
+test_duplicate_retry (test_behaviour.DiagnosisTests.test_duplicate_retry) ... ok
+test_empty (test_behaviour.DiagnosisTests.test_empty) ... ok
+test_ingestion_gap (test_behaviour.DiagnosisTests.test_ingestion_gap) ... ok
+test_invalid_input (test_behaviour.DiagnosisTests.test_invalid_input) ... ok
+test_parameter_binding (test_behaviour.DiagnosisTests.test_parameter_binding) ... ok
+test_rate_fault (test_behaviour.DiagnosisTests.test_rate_fault) ... ok
+test_server_fault (test_behaviour.DiagnosisTests.test_server_fault) ... ok
+test_tenant_isolation (test_behaviour.DiagnosisTests.test_tenant_isolation) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.007s
+
+OK

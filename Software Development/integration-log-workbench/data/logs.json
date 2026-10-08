@@ -1,0 +1,38 @@
+[
+  {
+    "tenant": "demo-a",
+    "request_id": "0",
+    "status": 200,
+    "accepted": 1
+  },
+  {
+    "tenant": "demo-a",
+    "request_id": "1",
+    "status": 200,
+    "accepted": 0
+  },
+  {
+    "tenant": "demo-a",
+    "request_id": "2",
+    "status": 401,
+    "accepted": 0
+  },
+  {
+    "tenant": "demo-a",
+    "request_id": "3",
+    "status": 429,
+    "accepted": 0
+  },
+  {
+    "tenant": "demo-a",
+    "request_id": "4",
+    "status": 503,
+    "accepted": 0
+  },
+  {
+    "tenant": "demo-b",
+    "request_id": "b1",
+    "status": 200,
+    "accepted": 1
+  }
+]

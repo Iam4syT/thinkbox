@@ -1,0 +1,15 @@
+test_accept_review_only (test_behaviour.TriageTests.test_accept_review_only) ... ok
+test_auth (test_behaviour.TriageTests.test_auth) ... ok
+test_bad_input (test_behaviour.TriageTests.test_bad_input) ... ok
+test_citation_failure (test_behaviour.TriageTests.test_citation_failure) ... ok
+test_hostile_ticket (test_behaviour.TriageTests.test_hostile_ticket) ... ok
+test_incident_priority (test_behaviour.TriageTests.test_incident_priority) ... ok
+test_no_external_action (test_behaviour.TriageTests.test_no_external_action) ... ok
+test_rate (test_behaviour.TriageTests.test_rate) ... ok
+test_unknown (test_behaviour.TriageTests.test_unknown) ... ok
+test_unsafe_action (test_behaviour.TriageTests.test_unsafe_action) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.000s
+
+OK

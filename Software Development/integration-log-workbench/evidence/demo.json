@@ -1,0 +1,17 @@
+{
+  "tenant": "demo-a",
+  "counts": {
+    "200": 2,
+    "401": 1,
+    "429": 1,
+    "503": 1
+  },
+  "unaccepted_success": 1,
+  "findings": [
+    "Authentication refused: check permitted credentials, not a blind retry.",
+    "Throttled: inspect Retry-After; retry with a bounded backoff.",
+    "Server error: record request ID and time, then escalate if persistent.",
+    "HTTP success but downstream acceptance unknown: inspect ingestion evidence."
+  ],
+  "scope": "synthetic offline fixture; not a live integration"
+}
