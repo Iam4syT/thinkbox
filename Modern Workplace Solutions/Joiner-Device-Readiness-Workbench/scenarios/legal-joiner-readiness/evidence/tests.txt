@@ -1,0 +1,13 @@
+test_all_missing (test_readiness.Readiness.test_all_missing) ... ok
+test_blank (test_readiness.Readiness.test_blank) ... ok
+test_case (test_readiness.Readiness.test_case) ... ok
+test_false (test_readiness.Readiness.test_false) ... ok
+test_good (test_readiness.Readiness.test_good) ... ok
+test_missing_device (test_readiness.Readiness.test_missing_device) ... ok
+test_no_promotion (test_readiness.Readiness.test_no_promotion) ... ok
+test_unknown (test_readiness.Readiness.test_unknown) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.000s
+
+OK

@@ -1,0 +1,13 @@
+test_boundary (test_triage.Triage.test_boundary) ... ok
+test_invalid (test_triage.Triage.test_invalid) ... ok
+test_no_auto_close (test_triage.Triage.test_no_auto_close) ... ok
+test_normal (test_triage.Triage.test_normal) ... ok
+test_outage (test_triage.Triage.test_outage) ... ok
+test_security_first (test_triage.Triage.test_security_first) ... ok
+test_unknown (test_triage.Triage.test_unknown) ... ok
+test_urgent (test_triage.Triage.test_urgent) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.000s
+
+OK

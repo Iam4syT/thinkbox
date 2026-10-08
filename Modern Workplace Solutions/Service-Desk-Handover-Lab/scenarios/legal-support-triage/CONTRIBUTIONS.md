@@ -1,0 +1,1 @@
+Drafted and tested with Codex assistance on 8 October 2026. Bunamin has not yet independently reproduced this version. Original project code; Microsoft documentation informs the unrun lab steps. This is a synthetic learning demo, with no employer commission or live integration.

@@ -1,0 +1,6 @@
+id,kind,suspected_exposure,service_wide,urgent_event,minutes_open,target_minutes,user_retested
+LAB-T01,document,no,no,no,10,30,no
+LAB-T02,meeting,no,no,yes,5,30,no
+LAB-T03,document,yes,no,no,2,30,no
+LAB-T04,vpn,no,yes,no,4,30,no
+LAB-T05,print,no,no,no,30,30,yes

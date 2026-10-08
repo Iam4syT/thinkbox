@@ -6,3 +6,6 @@ See [LAB.md](LAB.md) for steps, [EVALUATION.md](EVALUATION.md) for actual fixtur
 
 ## Additional strict record-validation scenario
 See [strict-record-validation](scenarios/strict-record-validation/README.md) for an isolated synthetic schema/checklist exercise with explicit invalid-input handling. Existing workflow remains unchanged.
+
+## Legal workplace learning scenario
+See [legal-support-triage](scenarios/legal-support-triage/README.md) for a separate synthetic exercise. Its tenant and hardware steps remain unrun.

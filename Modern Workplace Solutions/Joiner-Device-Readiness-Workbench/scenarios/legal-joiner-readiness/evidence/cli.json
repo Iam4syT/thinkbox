@@ -1,0 +1,23 @@
+[
+  {
+    "id": "LAB-J01",
+    "status": "READY",
+    "missing": []
+  },
+  {
+    "id": "LAB-J02",
+    "status": "HOLD",
+    "missing": [
+      "device_enrolled",
+      "compliant",
+      "handover"
+    ]
+  },
+  {
+    "id": "LAB-J03",
+    "status": "HOLD",
+    "missing": [
+      "approved"
+    ]
+  }
+]

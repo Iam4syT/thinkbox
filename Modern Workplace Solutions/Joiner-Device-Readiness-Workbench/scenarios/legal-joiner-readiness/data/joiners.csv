@@ -1,0 +1,4 @@
+id,approved,account,license,mfa,device_enrolled,compliant,app_test,asset_record,handover
+LAB-J01,yes,yes,yes,yes,yes,yes,yes,yes,yes
+LAB-J02,yes,yes,yes,yes,no,no,yes,yes,no
+LAB-J03,no,yes,yes,yes,yes,yes,yes,yes,yes

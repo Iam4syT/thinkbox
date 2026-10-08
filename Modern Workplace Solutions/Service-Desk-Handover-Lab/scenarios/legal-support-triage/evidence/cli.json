@@ -1,0 +1,32 @@
+[
+  {
+    "id": "LAB-T01",
+    "route": "FIRST LINE",
+    "reason": "Use approved checks for this category",
+    "closure": "KEEP OPEN"
+  },
+  {
+    "id": "LAB-T02",
+    "route": "URGENT REVIEW",
+    "reason": "Time-sensitive event; agree priority and fallback with owner",
+    "closure": "KEEP OPEN"
+  },
+  {
+    "id": "LAB-T03",
+    "route": "SECURITY",
+    "reason": "Suspected data exposure; approved security process first",
+    "closure": "KEEP OPEN"
+  },
+  {
+    "id": "LAB-T04",
+    "route": "INCIDENT",
+    "reason": "Possible shared outage; check service health and incident lead",
+    "closure": "KEEP OPEN"
+  },
+  {
+    "id": "LAB-T05",
+    "route": "ESCALATE",
+    "reason": "Target reached; specialist handoff needed",
+    "closure": "CONFIRM"
+  }
+]

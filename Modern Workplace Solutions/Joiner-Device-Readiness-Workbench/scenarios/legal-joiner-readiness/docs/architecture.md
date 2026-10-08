@@ -1,0 +1,1 @@
+CSV sample → local Python rules → JSON report → human review. No API, tenant credentials, network calls, account creation, device action or automatic ticket closure. Input is a self-reported snapshot; the checker cannot verify its truth. Real integration would need authoritative data, approvals, auditing and safe failure handling.
