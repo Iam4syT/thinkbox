@@ -1,0 +1,62 @@
+{
+  "tickets": [
+    {
+      "id": "T1",
+      "service": "Email",
+      "symptom": "sign-in",
+      "status": "resolved",
+      "sensitive": false
+    },
+    {
+      "id": "T2",
+      "service": "Email",
+      "symptom": "sign-in",
+      "status": "resolved",
+      "sensitive": false
+    },
+    {
+      "id": "T3",
+      "service": "Teaching portal",
+      "symptom": "access",
+      "status": "resolved",
+      "sensitive": false
+    },
+    {
+      "id": "T4",
+      "service": "Teaching portal",
+      "symptom": "access",
+      "status": "open",
+      "sensitive": false
+    },
+    {
+      "id": "T5",
+      "service": "Restricted",
+      "symptom": "restricted",
+      "status": "resolved",
+      "sensitive": true
+    }
+  ],
+  "articles": [
+    {
+      "id": "KB1",
+      "service": "Email",
+      "symptom": "sign-in",
+      "approved": true,
+      "valid_until": "2026-10-08"
+    },
+    {
+      "id": "KB2",
+      "service": "Teaching portal",
+      "symptom": "access",
+      "approved": true,
+      "valid_until": "2026-10-07"
+    },
+    {
+      "id": "KB3",
+      "service": "Teaching portal",
+      "symptom": "access",
+      "approved": false,
+      "valid_until": "2027-01-01"
+    }
+  ]
+}

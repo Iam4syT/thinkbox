@@ -1,0 +1,2 @@
+# Contributions
+Bunamin supplied the career goal and authorised scoped project publication. Codex selected this bounded design, authored code and documentation, and ran fixture tests. Bunamin's personal execution, code changes and independent explanation are not yet recorded. No former employer, RM or customer system supplied these records. This demo does not prove independent production delivery. Standard Python libraries are used; no third-party source was copied.

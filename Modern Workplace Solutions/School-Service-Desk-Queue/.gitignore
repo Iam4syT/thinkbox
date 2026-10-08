@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+data/broken.*
+evidence/broken.json
+evidence/later.json

@@ -1,0 +1,2 @@
+# Five-minute walkthrough plan
+Open the dummy input. Explain one rule in your own words. Run all tests, then run python3 src/queue_check.py data/requests.csv evidence/result.json. Compare the report with the LAB answer key. Introduce the first LAB failure in a copy, show the error, explain why the old output cannot prove a fresh run, then repair and rerun. Finish with one production limit and the next personal learning question. Duration is a proposed slot, not a measured recording. No video recorded.

@@ -1,0 +1,10 @@
+test_bad_inputs (test_queue.QueueTests.test_bad_inputs) ... ok
+test_failed_run_preserves_previous_output (test_queue.QueueTests.test_failed_run_preserves_previous_output) ... ok
+test_major_requires_both (test_queue.QueueTests.test_major_requires_both) ... ok
+test_order (test_queue.QueueTests.test_order) ... ok
+test_thresholds (test_queue.QueueTests.test_thresholds) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.025s
+
+OK

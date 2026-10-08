@@ -1,0 +1,6 @@
+id,service,impact,urgency,age_minutes
+R001,Teaching portal,school,urgent,30
+R002,Email,group,normal,119
+R003,Teaching portal,single,normal,480
+R004,Email,single,urgent,121
+R005,File access,single,normal,10

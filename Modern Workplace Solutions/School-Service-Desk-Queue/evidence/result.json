@@ -1,0 +1,47 @@
+[
+  {
+    "id": "R001",
+    "service": "Teaching portal",
+    "priority": 1,
+    "age_minutes": 30,
+    "target_minutes": 30,
+    "overdue": true,
+    "major_review": true
+  },
+  {
+    "id": "R004",
+    "service": "Email",
+    "priority": 2,
+    "age_minutes": 121,
+    "target_minutes": 120,
+    "overdue": true,
+    "major_review": false
+  },
+  {
+    "id": "R002",
+    "service": "Email",
+    "priority": 2,
+    "age_minutes": 119,
+    "target_minutes": 120,
+    "overdue": false,
+    "major_review": false
+  },
+  {
+    "id": "R003",
+    "service": "Teaching portal",
+    "priority": 3,
+    "age_minutes": 480,
+    "target_minutes": 480,
+    "overdue": true,
+    "major_review": false
+  },
+  {
+    "id": "R005",
+    "service": "File access",
+    "priority": 3,
+    "age_minutes": 10,
+    "target_minutes": 480,
+    "overdue": false,
+    "major_review": false
+  }
+]

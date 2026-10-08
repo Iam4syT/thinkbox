@@ -1,0 +1,24 @@
+{
+  "as_of": "2026-10-08",
+  "excluded_sensitive": 1,
+  "groups": [
+    {
+      "service": "Email",
+      "symptom": "sign-in",
+      "resolved_count": 2,
+      "recurring": true,
+      "article_ids": [
+        "KB1"
+      ],
+      "needs_review": false
+    },
+    {
+      "service": "Teaching portal",
+      "symptom": "access",
+      "resolved_count": 1,
+      "recurring": false,
+      "article_ids": [],
+      "needs_review": true
+    }
+  ]
+}

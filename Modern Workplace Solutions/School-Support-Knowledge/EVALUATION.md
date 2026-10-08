@@ -1,0 +1,4 @@
+# Evaluation
+Baseline: manually apply the documented rules to the dummy input. Target: exact expected values and safe invalid-input behaviour. Inputs: five tickets/requests; knowledge variant also has three article records. This is a small designed fixture, not a real service sample.
+Observed 8 October 2026, Codex: 8 test methods passed. Tests include boundary values, exclusion or major flags, duplicate rejection and failed-run preservation of the previous output. [Raw test result](evidence/tests.txt), [actual report](evidence/result.json), [environment and source fingerprints](evidence/RUN.md).
+Normal fixture ran successfully. No claim of all possible-input correctness, measured latency, cost saving, service outcome or Bunamin's personal completion. Direct services used: none. No live API or tenant testing. Next: Bunamin repeats the lab, captures a changed-input result and explains its limitations.
