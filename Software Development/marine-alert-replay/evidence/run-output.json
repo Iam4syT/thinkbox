@@ -1,0 +1,37 @@
+[
+  {
+    "recommendation": "REVIEW",
+    "reason": "within teaching limits",
+    "actuation": false,
+    "id": "normal",
+    "matches_expected": true
+  },
+  {
+    "recommendation": "HOLD",
+    "reason": "stale input",
+    "actuation": false,
+    "id": "stale",
+    "matches_expected": true
+  },
+  {
+    "recommendation": "HOLD",
+    "reason": "teaching limit exceeded",
+    "actuation": false,
+    "id": "hot",
+    "matches_expected": true
+  },
+  {
+    "recommendation": "HOLD",
+    "reason": "teaching limit exceeded",
+    "actuation": false,
+    "id": "fast",
+    "matches_expected": true
+  },
+  {
+    "recommendation": "HOLD",
+    "reason": "invalid input",
+    "actuation": false,
+    "id": "missing",
+    "matches_expected": true
+  }
+]

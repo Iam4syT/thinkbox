@@ -1,0 +1,36 @@
+[
+  {
+    "id": "normal",
+    "age_seconds": 1,
+    "temperature_c": 60,
+    "speed_knots": 8,
+    "expected": "REVIEW"
+  },
+  {
+    "id": "stale",
+    "age_seconds": 6,
+    "temperature_c": 60,
+    "speed_knots": 8,
+    "expected": "HOLD"
+  },
+  {
+    "id": "hot",
+    "age_seconds": 1,
+    "temperature_c": 81,
+    "speed_knots": 8,
+    "expected": "HOLD"
+  },
+  {
+    "id": "fast",
+    "age_seconds": 1,
+    "temperature_c": 60,
+    "speed_knots": 13,
+    "expected": "HOLD"
+  },
+  {
+    "id": "missing",
+    "age_seconds": 1,
+    "temperature_c": 60,
+    "expected": "HOLD"
+  }
+]

@@ -1,0 +1,13 @@
+test_boundaries (test_behaviour.Behaviour.test_boundaries) ... ok
+test_heat (test_behaviour.Behaviour.test_heat) ... ok
+test_invalid (test_behaviour.Behaviour.test_invalid) ... ok
+test_no_actuation (test_behaviour.Behaviour.test_no_actuation) ... ok
+test_nominal (test_behaviour.Behaviour.test_nominal) ... ok
+test_replay (test_behaviour.Behaviour.test_replay) ... ok
+test_speed (test_behaviour.Behaviour.test_speed) ... ok
+test_stale (test_behaviour.Behaviour.test_stale) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK

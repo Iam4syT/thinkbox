@@ -1,0 +1,13 @@
+test_bad_header (test_behaviour.Behaviour.test_bad_header) ... ok
+test_baseline_and_split (test_behaviour.Behaviour.test_baseline_and_split) ... ok
+test_future_does_not_change_fit (test_behaviour.Behaviour.test_future_does_not_change_fit) ... ok
+test_negative (test_behaviour.Behaviour.test_negative) ... ok
+test_nonfinite (test_behaviour.Behaviour.test_nonfinite) ... ok
+test_order (test_behaviour.Behaviour.test_order) ... ok
+test_short (test_behaviour.Behaviour.test_short) ... ok
+test_valid_file (test_behaviour.Behaviour.test_valid_file) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.005s
+
+OK
