@@ -1,0 +1,3 @@
+# Architecture and operational handover
+
+Local user reads synthetic JSON → standard-library input validation → deterministic counts/completeness → output JSON → human review. No network, secrets, identity service or clinical rule. Read-only input; write access to chosen output directory. A failed input does not overwrite output, so a prior report may be stale. Use a fresh output path and check execution result. References are labels and cannot authenticate evidence. Real deployment requires access control, provenance, monitoring and approved operational/clinical ownership. No AI improves the current explicit-rule slice demonstrably.

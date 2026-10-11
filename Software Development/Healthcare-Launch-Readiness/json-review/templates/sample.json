@@ -1,0 +1,21 @@
+{
+  "launch_id": "DEMO-REFERRAL",
+  "checks": {
+    "training": {
+      "status": "passed",
+      "evidence": "synthetic-training-note"
+    },
+    "support_owner": {
+      "status": "passed",
+      "evidence": "synthetic-support_owner-note"
+    },
+    "rollback": {
+      "status": "passed",
+      "evidence": "synthetic-rollback-note"
+    },
+    "test_evidence": {
+      "status": "passed",
+      "evidence": "synthetic-test_evidence-note"
+    }
+  }
+}

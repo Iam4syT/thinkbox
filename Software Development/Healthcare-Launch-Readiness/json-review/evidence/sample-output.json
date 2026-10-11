@@ -1,0 +1,6 @@
+{
+  "launch_id": "DEMO-REFERRAL",
+  "decision": "ready-for-human-review",
+  "missing_or_failed": [],
+  "boundary": "References are not authenticated; authorised humans verify evidence and decide go-live"
+}

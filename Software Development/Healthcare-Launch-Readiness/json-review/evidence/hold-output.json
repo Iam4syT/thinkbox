@@ -1,0 +1,8 @@
+{
+  "launch_id": "DEMO-REFERRAL",
+  "decision": "hold",
+  "missing_or_failed": [
+    "rollback"
+  ],
+  "boundary": "References are not authenticated; authorised humans verify evidence and decide go-live"
+}

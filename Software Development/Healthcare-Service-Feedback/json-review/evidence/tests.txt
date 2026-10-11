@@ -1,0 +1,13 @@
+test_bool_not_hours (test_analyse.Tests.test_bool_not_hours) ... ok
+test_boundary_not_overdue (test_analyse.Tests.test_boundary_not_overdue) ... ok
+test_duplicates_rejected (test_analyse.Tests.test_duplicates_rejected) ... ok
+test_empty (test_analyse.Tests.test_empty) ... ok
+test_negative_rejected (test_analyse.Tests.test_negative_rejected) ... ok
+test_nonlist (test_analyse.Tests.test_nonlist) ... ok
+test_overdue_and_safety_review (test_analyse.Tests.test_overdue_and_safety_review) ... ok
+test_unknown_review (test_analyse.Tests.test_unknown_review) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.000s
+
+OK

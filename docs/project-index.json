@@ -162,6 +162,30 @@
       "deps": "python-dotenv==1.2.3\nopenai==2.54.0",
       "proof": "evidence/solar-evaluation.json",
       "note": "Local calculations, menu and solar demo work without an API key. python src/main.py opens the menu; optional AI explanation requires a configured key."
+    },
+    {
+      "path": "Software Development/Healthcare-Service-Feedback/json-review",
+      "title": "Healthcare support feedback review",
+      "problem": "Find recurring support themes and cases needing human review.",
+      "cap": "Offline validated JSON input and explicit review rules",
+      "source": "scripts/analyse.py",
+      "limit": "Synthetic learning demo. No vendor integration, clinical decision or production release. Codex built and tested; Bunamin personal reproduction pending.",
+      "run": "python3 -m unittest discover -s scripts -p \"test_*.py\" -v\npython3 scripts/analyse.py --input templates/sample.json --output output/result.json",
+      "deps": "",
+      "proof": "evidence/sample-output.json",
+      "note": "Eight behavioural checks; inspect normal and failure paths. No measured time or hiring benefit."
+    },
+    {
+      "path": "Software Development/Healthcare-Launch-Readiness/json-review",
+      "title": "Healthcare launch evidence review",
+      "problem": "Hold incomplete launch checklists for human review.",
+      "cap": "Offline validated JSON input and explicit review rules",
+      "source": "scripts/check_launch.py",
+      "limit": "Synthetic learning demo. No vendor integration, clinical decision or production release. Codex built and tested; Bunamin personal reproduction pending.",
+      "run": "python3 -m unittest discover -s scripts -p \"test_*.py\" -v\npython3 scripts/check_launch.py --input templates/sample.json --output output/result.json",
+      "deps": "",
+      "proof": "evidence/sample-output.json",
+      "note": "Eight behavioural checks; inspect normal and failure paths. No measured time or hiring benefit."
     }
   ]
 }

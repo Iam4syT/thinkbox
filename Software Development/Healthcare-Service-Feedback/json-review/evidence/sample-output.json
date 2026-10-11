@@ -1,0 +1,18 @@
+{
+  "ticket_count": 6,
+  "themes": {
+    "access": 2,
+    "referral": 2,
+    "report": 1,
+    "unknown": 1
+  },
+  "overdue_ids": [
+    "T2",
+    "T4"
+  ],
+  "human_review_ids": [
+    "T2",
+    "T5"
+  ],
+  "boundary": "Human reviews all recommendations; local targets are illustrative, not vendor SLAs"
+}
