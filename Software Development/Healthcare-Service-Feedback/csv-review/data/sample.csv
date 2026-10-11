@@ -1,0 +1,5 @@
+id,category,impact,evidence,owner,status
+S001,access,single,synthetic error reproduction,analyst,open
+S002,workflow,multiple,,analyst,open
+S003,report,safety,synthetic discrepancy,,open
+S004,access,single,synthetic access check,analyst,closed

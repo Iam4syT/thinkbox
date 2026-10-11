@@ -1,0 +1,13 @@
+test_blank_id_rejected (test_launch.Tests.test_blank_id_rejected) ... ok
+test_complete_review_only (test_launch.Tests.test_complete_review_only) ... ok
+test_failed_holds (test_launch.Tests.test_failed_holds) ... ok
+test_input_shape_rejected (test_launch.Tests.test_input_shape_rejected) ... ok
+test_missing_check_rejected (test_launch.Tests.test_missing_check_rejected) ... ok
+test_missing_reference_holds (test_launch.Tests.test_missing_reference_holds) ... ok
+test_pending_holds (test_launch.Tests.test_pending_holds) ... ok
+test_unknown_status_rejected (test_launch.Tests.test_unknown_status_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK

@@ -1,0 +1,5 @@
+check,status,evidence,owner,rollback
+access,pass,synthetic test A,analyst,restore prior access settings
+workflow,unrun,,analyst,restore prior workflow version
+reporting,pass,synthetic report comparison,analyst,restore prior report version
+communications,pass,synthetic handover note,analyst,withdraw launch notice

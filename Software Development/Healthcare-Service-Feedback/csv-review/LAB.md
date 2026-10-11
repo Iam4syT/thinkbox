@@ -1,0 +1,45 @@
+# Healthcare support case review
+## A Outcome and state
+Turn synthetic support cases into a review list and a recurring-category report, while keeping safety concerns and missing evidence visible. Codex-built local scaffold; evaluation performed separately below. Bunamin’s personal reproduction is pending. No live system steps have been run.
+## B Company context
+TPP’s advert connects customer issues, analysis and user feedback. The proposed repeated case-review task is an inference from those duties, not a known TPP internal process. SystmOne is the healthcare product context; this tool has no access to it.
+Public sources checked 11 October 2026: https://tpp-careers.com/roles/service-analyst/ and https://tpp-uk.com/products/. Launch context also uses the 3 September 2026 case study https://tpp-uk.com/news/using-systmone-protocol-automation-to-cut-referral-errors/.
+## C Requirement mapping
+Customer support, solving complex issues, insights/analysis/feedback and collaboration. Builds on professional case handling while practising product-oriented evidence capture and reporting.
+## D Gap mapping
+Professional customer support remains the foundation. This exercises new healthcare-product review methods only. Python/CSV are local practice tools; TPP’s advertised stack does not specify them. No SystmOne, NHS administration, ISO audit or production AI capability is gained merely by receiving this guide.
+## E Repeated use
+A support analyst could use the first report daily; a launch coordinator could use the second at each change. The intended benefit is fewer overlooked review items. Frequency and usefulness at TPP are hypotheses. Test usefulness with a human reviewer; no workplace saving is claimed.
+## F Architecture and security
+Local operator → synthetic CSV → Python validation/rules → JSON report → human reviewer. The local account needs read access to data and write access to output. No authentication service, cloud, API, secrets or patient records. No network traffic or automatic changes. Output evidence strings are labels; the tool cannot prove their content. AI is omitted because explicit completeness/count rules are sufficient. An AI summary is an optional later comparison only.
+## G Prerequisites and budget
+Python 3.11 or later, a text editor and this project folder. No packages, tenant, SystmOne licence or subscription. Estimated learning time 60–120 minutes per demo; not measured work duration. Existing computer required; £0 additional service cost for the local run. A later real SystmOne environment requires employer-authorised access, training, safe test data and review. It remains unrun.
+## H Granular lab steps
+### Step 1 Open an isolated local copy
+Start with the downloaded project folder. In a terminal enter cd "/absolute/path/to/Healthcare-Service-Feedback/csv-review" using its actual location, then python3 --version. Expect version 3.11 or later. Verify src/main.py, data/sample.csv and tests/test_behaviour.py exist. If the command is absent, select an installed Python 3.11+ runtime before continuing; do not alter a work computer without permission.
+### Step 2 Inspect the data and permissions
+Start in the project folder. Open data/sample.csv in a text editor. Compare its first line with FIELDS in src/main.py. Read every record; all are synthetic. Confirm you can read the file and create output in this folder. Recover from permission errors by moving the local copy to a writable personal folder. Never paste real clinical or employer case data.
+### Step 3 Record the manual baseline
+Start with the unchanged sample. Write the expected result in a local notes file before running code. Manually read four rows and count each category. Expected counts: access 2, workflow 1, report 1. The automated report must reproduce these counts and identify S002 missing evidence and S003 safety/owner actions. No time-saving measurement performed. Verify your notes contain the expected count or decision and the reason. If your result differs, reread the fields before modifying rules.
+### Step 4 Run the behaviour checks
+Start with source and test files unchanged. Run python3 -m unittest discover -s tests -v. Expect 8 tests and OK. Verify every named case passes; preserve the terminal output as evidence. If a test fails, read the failing assertion, inspect the affected rule and fix that rule; do not delete a failing test to obtain OK.
+### Step 5 Produce the report
+Start in the project root. Run python3 src/main.py --input data/sample.csv --output output/report.json. Expect JSON in the terminal and the output file. output/report.json must have case_count 4 and category_counts access 2, workflow 1, report 1. S002 must request reproduction evidence; S003 must include immediate escalation and owner assignment. The report must say automatic_resolution false. Open the file and compare it with Step 3. On file/schema errors confirm the working directory, filename, header and row widths; rerun without overwriting the original sample.
+### Step 6 Break and recover
+Start with the normal report retained. Copy sample.csv to data/fault.csv. Change S004 to S001, then run python3 src/main.py --input data/fault.csv --output output/fault.json. Expect ValueError for duplicate case id and no fresh report. Restore S004 and rerun; expect the normal four-case report. A previous report is not proof that a failed run succeeded. Save the error or HOLD result and the restored successful run. If the expected failure is absent, check that --input points to fault.csv and that the mutation was saved; correct the validator before continuing.
+### Step 7 Close the review gaps
+Start with the sample preserved. Copy sample.csv to data/reviewed.csv. On S002 enter synthetic reproduction note in evidence; on S003 set owner to safety reviewer. Run python3 src/main.py --input data/reviewed.csv --output output/reviewed.json. Missing-evidence and owner actions disappear; the safety escalation must remain. Recording evidence does not mean the issue is resolved. Inspect output/reviewed.json and compare changed actions with the normal report. If unrelated actions vanish, compare the CSV copies and the rules. Record who would review the real evidence; do not invent completion or approvals.
+### Step 8 Write a handover and clean up
+Start with both reports and test output. Create local notes covering the recurring task, baseline, normal result, failure, recovery, limit and next test. Use DEMO SCRIPT.md to rehearse a two-minute walkthrough. Verify another local operator can repeat Steps 1–7. Remove only output/report.json, output/fault.json, output/reviewed.json, data/fault.csv and data/reviewed.csv created for this run when no longer needed. Preserve source, sample and sanitised evidence. No tenant rollback is needed because no tenant was changed.
+## I Break and fix
+Step 6 is the deliberate fault. Step 7 is a separate completeness correction. Never use a changed fixture to claim a real incident has been fixed. See tests/test_behaviour.py for additional failure cases.
+## J Acceptance and evaluation
+Eight behaviour checks must pass, counts must match the manual baseline, duplicates/unknown categories must be rejected, safety escalation must survive the correction, and closed cases without evidence must be flagged. Human judgement sets actual urgency and resolution. Compare to the manual baseline before discussing usefulness. Record test count, fixture count, runtime and failures in EVALUATION.md. Rules tested on tiny synthetic samples cannot establish general accuracy, clinical safety or hiring success.
+## K Evidence to retain
+Source, sample CSV, both reports, actual test output, architecture explanation, this guide, a handover note and a personal demo recording if later made. READMEs and evidence files must credit Codex. Screenshots/video have not been produced by this run. No private application material in public copies.
+## L Interview story
+Explain the need for consistent case evidence, why clear rules were sufficient, a missing-evidence and duplicate-ID failure, the checks used, and the limit that the report cannot diagnose or repair SystmOne. Useful operational value is a hypothesis until real supervised use. Say who authored and ran the scaffold. Add your own decisions and tests only after you have performed and explained them.
+## M Conditional CV and LinkedIn wording
+Use only after Bunamin personally completes and evidences the lab: “Adapted and tested a local Python review tool using synthetic healthcare support data, checked failure cases and documented where human review is required.” Replace this generic wording with your actual contribution and result. Do not add it to the current CV yet.
+## N Optional extension
+Have a second reviewer independently mark ten new synthetic cases/checklists before running the tool. Keep those inputs separate from development fixtures and inspect disagreements. If testing AI summaries later, use synthetic text and compare factual omissions, false statements, reviewer usefulness, latency and cost with the current rules. No paid API or live system is required by this guide.

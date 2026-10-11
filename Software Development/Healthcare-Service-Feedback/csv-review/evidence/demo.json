@@ -1,0 +1,40 @@
+{
+  "case_count": 4,
+  "category_counts": {
+    "access": 2,
+    "workflow": 1,
+    "report": 1
+  },
+  "cases": [
+    {
+      "id": "S001",
+      "category": "access",
+      "review": [
+        "ready for human investigation"
+      ]
+    },
+    {
+      "id": "S002",
+      "category": "workflow",
+      "review": [
+        "request reproduction evidence"
+      ]
+    },
+    {
+      "id": "S003",
+      "category": "report",
+      "review": [
+        "escalate immediately under local safety procedure",
+        "assign a responsible reviewer"
+      ]
+    },
+    {
+      "id": "S004",
+      "category": "access",
+      "review": [
+        "ready for human investigation"
+      ]
+    }
+  ],
+  "automatic_resolution": false
+}
