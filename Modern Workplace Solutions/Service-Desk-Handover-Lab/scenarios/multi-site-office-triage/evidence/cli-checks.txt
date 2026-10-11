@@ -1,0 +1,2 @@
+Duplicate ID rejected with exit 2; existing result bytes preserved. Valid repeat output matches the first output byte-for-byte.
+Duplicate id

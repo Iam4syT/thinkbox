@@ -28,3 +28,6 @@ See [strict-record-validation](scenarios/strict-record-validation/README.md) for
 
 ## Legal workplace learning scenario
 See [legal-joiner-readiness](scenarios/legal-joiner-readiness/README.md) for a separate synthetic exercise. Its tenant and hardware steps remain unrun.
+
+## Additional office learning scenario
+See [Access and peripheral readiness](scenarios/access-peripheral-readiness/README.md). Offline tests are recorded; learner and physical device stages remain unrun.

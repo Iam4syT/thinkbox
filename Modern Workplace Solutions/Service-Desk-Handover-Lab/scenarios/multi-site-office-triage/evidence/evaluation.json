@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-11",
+  "python": "3.12.14",
+  "actor": "Codex",
+  "tests": 12,
+  "tests_passed": 12,
+  "records": 4,
+  "scope": "synthetic offline",
+  "windows": "unrun",
+  "learner": "unrun",
+  "latency_ms": null,
+  "cost_gbp": 0
+}

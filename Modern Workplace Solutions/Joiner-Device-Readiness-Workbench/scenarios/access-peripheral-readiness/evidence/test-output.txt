@@ -1,0 +1,17 @@
+test_deterministic (test_solution.Checks.test_deterministic) ... ok
+test_disabled (test_solution.Checks.test_disabled) ... ok
+test_missing_approval (test_solution.Checks.test_missing_approval) ... ok
+test_missing_peripheral (test_solution.Checks.test_missing_peripheral) ... ok
+test_no_mutation (test_solution.Checks.test_no_mutation) ... ok
+test_not_live_permission (test_solution.Checks.test_not_live_permission) ... ok
+test_privilege (test_solution.Checks.test_privilege) ... ok
+test_ready (test_solution.Checks.test_ready) ... ok
+test_reject_duplicate (test_solution.Checks.test_reject_duplicate) ... ok
+test_reject_empty (test_solution.Checks.test_reject_empty) ... ok
+test_reject_missing_asset (test_solution.Checks.test_reject_missing_asset) ... ok
+test_reject_string_approval (test_solution.Checks.test_reject_string_approval) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.004s
+
+OK

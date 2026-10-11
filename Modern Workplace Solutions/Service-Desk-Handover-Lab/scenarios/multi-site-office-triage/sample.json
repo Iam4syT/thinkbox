@@ -1,0 +1,46 @@
+[
+  {
+    "id": "OFF-01",
+    "site": "office-a",
+    "category": "mail",
+    "summary": "Desktop mail will not open",
+    "owner": "analyst-a",
+    "users": 1,
+    "critical": false,
+    "workaround": true,
+    "security_concern": false
+  },
+  {
+    "id": "OFF-02",
+    "site": "office-b",
+    "category": "printing",
+    "summary": "Shared printer unavailable",
+    "owner": "analyst-b",
+    "users": 8,
+    "critical": false,
+    "workaround": false,
+    "security_concern": false
+  },
+  {
+    "id": "OFF-03",
+    "site": "office-a",
+    "category": "access",
+    "summary": "Unexpected forwarding alert",
+    "owner": "analyst-a",
+    "users": 1,
+    "critical": false,
+    "workaround": true,
+    "security_concern": true
+  },
+  {
+    "id": "OFF-04",
+    "site": "office-c",
+    "category": "mail",
+    "summary": "Time-sensitive team service unavailable",
+    "owner": "analyst-c",
+    "users": 2,
+    "critical": true,
+    "workaround": false,
+    "security_concern": false
+  }
+]

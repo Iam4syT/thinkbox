@@ -1,0 +1,67 @@
+[
+  {
+    "id": "READY-01",
+    "user": "learner-1",
+    "asset": "lab-device-1",
+    "group": "OfficeReaders",
+    "reviewer": "reviewer-demo",
+    "approved": true,
+    "enabled": true,
+    "privileged": false,
+    "sign_in_test": true,
+    "app_test": true,
+    "peripheral_test": true
+  },
+  {
+    "id": "READY-02",
+    "user": "learner-2",
+    "asset": "lab-device-2",
+    "group": "OfficeReaders",
+    "reviewer": "reviewer-demo",
+    "approved": false,
+    "enabled": true,
+    "privileged": false,
+    "sign_in_test": true,
+    "app_test": true,
+    "peripheral_test": true
+  },
+  {
+    "id": "READY-03",
+    "user": "learner-3",
+    "asset": "lab-device-3",
+    "group": "OfficeReaders",
+    "reviewer": "reviewer-demo",
+    "approved": true,
+    "enabled": false,
+    "privileged": false,
+    "sign_in_test": true,
+    "app_test": true,
+    "peripheral_test": true
+  },
+  {
+    "id": "READY-04",
+    "user": "learner-4",
+    "asset": "lab-device-4",
+    "group": "OfficeReaders",
+    "reviewer": "reviewer-demo",
+    "approved": true,
+    "enabled": true,
+    "privileged": true,
+    "sign_in_test": true,
+    "app_test": true,
+    "peripheral_test": true
+  },
+  {
+    "id": "READY-05",
+    "user": "learner-5",
+    "asset": "lab-device-5",
+    "group": "OfficeReaders",
+    "reviewer": "reviewer-demo",
+    "approved": true,
+    "enabled": true,
+    "privileged": false,
+    "sign_in_test": true,
+    "app_test": true,
+    "peripheral_test": false
+  }
+]

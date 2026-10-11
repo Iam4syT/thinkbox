@@ -1,0 +1,2 @@
+# Access and peripheral readiness: learning case
+Problem: make a recurring review understandable. Action: Codex built an isolated scenario at the learner’s request. Technology: Python standard library, fictional JSON and behavioural tests. Observed change: twelve tests passed and the sample produced reviewable local output. This verifies the exercise, not real service benefit. Next step: learner repeats, changes one fixture and explains a failed input.

@@ -1,0 +1,60 @@
+[
+  {
+    "id": "READY-01",
+    "asset": "lab-device-1",
+    "user": "learner-1",
+    "reviewer": "reviewer-demo",
+    "findings": [],
+    "status": "review_ready",
+    "mode": "dry_run",
+    "next_action": "Human must compare declared checks with permitted real evidence"
+  },
+  {
+    "id": "READY-02",
+    "asset": "lab-device-2",
+    "user": "learner-2",
+    "reviewer": "reviewer-demo",
+    "findings": [
+      "Missing approval"
+    ],
+    "status": "hold",
+    "mode": "dry_run",
+    "next_action": "Human must compare declared checks with permitted real evidence"
+  },
+  {
+    "id": "READY-03",
+    "asset": "lab-device-3",
+    "user": "learner-3",
+    "reviewer": "reviewer-demo",
+    "findings": [
+      "Account disabled; verify reason before action"
+    ],
+    "status": "hold",
+    "mode": "dry_run",
+    "next_action": "Human must compare declared checks with permitted real evidence"
+  },
+  {
+    "id": "READY-04",
+    "asset": "lab-device-4",
+    "user": "learner-4",
+    "reviewer": "reviewer-demo",
+    "findings": [
+      "Privilege request needs separate specialist approval"
+    ],
+    "status": "hold",
+    "mode": "dry_run",
+    "next_action": "Human must compare declared checks with permitted real evidence"
+  },
+  {
+    "id": "READY-05",
+    "asset": "lab-device-5",
+    "user": "learner-5",
+    "reviewer": "reviewer-demo",
+    "findings": [
+      "Unverified peripheral_test"
+    ],
+    "status": "hold",
+    "mode": "dry_run",
+    "next_action": "Human must compare declared checks with permitted real evidence"
+  }
+]

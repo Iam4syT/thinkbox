@@ -1,0 +1,17 @@
+test_boundary (test_solution.Checks.test_boundary) ... ok
+test_deterministic (test_solution.Checks.test_deterministic) ... ok
+test_no_input_mutation (test_solution.Checks.test_no_input_mutation) ... ok
+test_owner_and_no_auto_close (test_solution.Checks.test_owner_and_no_auto_close) ... ok
+test_policy_and_order (test_solution.Checks.test_policy_and_order) ... ok
+test_reject_boolean_count (test_solution.Checks.test_reject_boolean_count) ... ok
+test_reject_duplicate (test_solution.Checks.test_reject_duplicate) ... ok
+test_reject_empty (test_solution.Checks.test_reject_empty) ... ok
+test_reject_missing_field (test_solution.Checks.test_reject_missing_field) ... ok
+test_reject_unknown_category (test_solution.Checks.test_reject_unknown_category) ... ok
+test_repeat_signal (test_solution.Checks.test_repeat_signal) ... ok
+test_security_overrides_workaround (test_solution.Checks.test_security_overrides_workaround) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.004s
+
+OK

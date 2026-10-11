@@ -7,3 +7,5 @@ Codex created an offline learning prototype, fixtures, granular lab and behaviou
 Added an isolated offline scenario with eight passing behaviour checks, including invalid/missing inputs. Windows/physical/tenant work remains unrun. No production integration or learner-independence claim.
 
 8 October 2026 Added isolated legal-support-triage scenario, source, fixtures, eight passing local tests and granular guide. No live integration or learner reproduction claimed.
+
+11 October 2026: added isolated multi-site-office-triage with twelve passing behavioural tests and two successful CLI checks. Preserved existing scenarios. No live or learner completion inferred.

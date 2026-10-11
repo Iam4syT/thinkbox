@@ -1,0 +1,53 @@
+{
+  "tickets": [
+    {
+      "id": "OFF-03",
+      "priority": "P1",
+      "owner": "analyst-a",
+      "site": "office-a",
+      "category": "access",
+      "next_action": "Security review; preserve evidence, do not change settings",
+      "diagnostic_check": "Confirm identity and approved access; record sign-in error; do not ask for passwords",
+      "user_update": "Explain next check and agree next update",
+      "state": "open"
+    },
+    {
+      "id": "OFF-04",
+      "priority": "P1",
+      "owner": "analyst-c",
+      "site": "office-c",
+      "category": "mail",
+      "next_action": "Specialist escalation with confirmed impact",
+      "diagnostic_check": "Record scope and error; test permitted web access; escalate beyond authority",
+      "user_update": "Explain next check and agree next update",
+      "state": "open"
+    },
+    {
+      "id": "OFF-02",
+      "priority": "P2",
+      "owner": "analyst-b",
+      "site": "office-b",
+      "category": "printing",
+      "next_action": "Service desk investigation and user update",
+      "diagnostic_check": "Check power/cable/selected queue and harmless test page on authorised device",
+      "user_update": "Explain next check and agree next update",
+      "state": "open"
+    },
+    {
+      "id": "OFF-01",
+      "priority": "P3",
+      "owner": "analyst-a",
+      "site": "office-a",
+      "category": "mail",
+      "next_action": "Service desk investigation and user update",
+      "diagnostic_check": "Record scope and error; test permitted web access; escalate beyond authority",
+      "user_update": "Explain next check and agree next update",
+      "state": "open"
+    }
+  ],
+  "repeat_categories": {
+    "mail": 2
+  },
+  "policy": "Illustrative only; not an employer SLA",
+  "mode": "offline_advisory"
+}

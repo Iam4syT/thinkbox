@@ -9,3 +9,6 @@ See [strict-record-validation](scenarios/strict-record-validation/README.md) for
 
 ## Legal workplace learning scenario
 See [legal-support-triage](scenarios/legal-support-triage/README.md) for a separate synthetic exercise. Its tenant and hardware steps remain unrun.
+
+## Additional office learning scenario
+See [Multi-site office ticket diagnosis](scenarios/multi-site-office-triage/README.md). Offline tests are recorded; learner and physical device stages remain unrun.
