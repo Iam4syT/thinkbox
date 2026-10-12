@@ -1,0 +1,26 @@
+[
+  {
+    "serial": "DEMO-MAC-01",
+    "os": "macOS",
+    "owner": "demo-01",
+    "managed": true,
+    "encrypted": true,
+    "patched": true
+  },
+  {
+    "serial": "DEMO-IOS-02",
+    "os": "iOS",
+    "owner": "",
+    "managed": false,
+    "encrypted": true,
+    "patched": false
+  },
+  {
+    "serial": "DEMO-WIN-03",
+    "os": "Windows",
+    "owner": "demo-03",
+    "managed": true,
+    "encrypted": true,
+    "patched": true
+  }
+]

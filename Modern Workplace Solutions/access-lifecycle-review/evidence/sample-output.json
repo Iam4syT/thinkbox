@@ -1,0 +1,28 @@
+[
+  {
+    "id": "demo-01",
+    "add": [
+      "it-tools"
+    ],
+    "remove": [],
+    "action": "review",
+    "requires_approval": true
+  },
+  {
+    "id": "demo-02",
+    "add": [],
+    "remove": [
+      "all-staff",
+      "support-tools"
+    ],
+    "action": "review",
+    "requires_approval": true
+  },
+  {
+    "id": "demo-03",
+    "add": [],
+    "remove": [],
+    "action": "no-change",
+    "requires_approval": true
+  }
+]

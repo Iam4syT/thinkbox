@@ -1,0 +1,13 @@
+test_bad_boolean (test_behaviour.Behaviour.test_bad_boolean) ... ok
+test_duplicate (test_behaviour.Behaviour.test_duplicate) ... ok
+test_input_preserved (test_behaviour.Behaviour.test_input_preserved) ... ok
+test_joiner (test_behaviour.Behaviour.test_joiner) ... ok
+test_leaver (test_behaviour.Behaviour.test_leaver) ... ok
+test_mover (test_behaviour.Behaviour.test_mover) ... ok
+test_no_change (test_behaviour.Behaviour.test_no_change) ... ok
+test_unknown (test_behaviour.Behaviour.test_unknown) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.000s
+
+OK

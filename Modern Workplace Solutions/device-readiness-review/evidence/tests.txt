@@ -1,0 +1,13 @@
+test_boolean (test_behaviour.Behaviour.test_boolean) ... ok
+test_duplicate (test_behaviour.Behaviour.test_duplicate) ... ok
+test_no_mutation (test_behaviour.Behaviour.test_no_mutation) ... ok
+test_os (test_behaviour.Behaviour.test_os) ... ok
+test_owner (test_behaviour.Behaviour.test_owner) ... ok
+test_patch (test_behaviour.Behaviour.test_patch) ... ok
+test_ready (test_behaviour.Behaviour.test_ready) ... ok
+test_unmanaged (test_behaviour.Behaviour.test_unmanaged) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.000s
+
+OK

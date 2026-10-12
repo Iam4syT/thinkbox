@@ -1,0 +1,27 @@
+[
+  {
+    "serial": "DEMO-MAC-01",
+    "os": "macOS",
+    "status": "ready-for-human-check",
+    "issues": [],
+    "ticket_required": false
+  },
+  {
+    "serial": "DEMO-IOS-02",
+    "os": "iOS",
+    "status": "review",
+    "issues": [
+      "owner-unrecorded",
+      "managed-check-required",
+      "patched-check-required"
+    ],
+    "ticket_required": true
+  },
+  {
+    "serial": "DEMO-WIN-03",
+    "os": "Windows",
+    "status": "ready-for-human-check",
+    "issues": [],
+    "ticket_required": false
+  }
+]
