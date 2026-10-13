@@ -1,0 +1,24 @@
+{
+  "token": "DEMO-CASE-17",
+  "allowed_mailboxes": [
+    "a@example.invalid",
+    "b@example.invalid"
+  ],
+  "items": [
+    {
+      "id": "e1",
+      "mailbox": "a@example.invalid",
+      "subject": "DEMO-CASE-17 test"
+    },
+    {
+      "id": "e2",
+      "mailbox": "outside@example.invalid",
+      "subject": "DEMO-CASE-17 excluded"
+    },
+    {
+      "id": "e3",
+      "mailbox": "b@example.invalid",
+      "subject": "Control"
+    }
+  ]
+}

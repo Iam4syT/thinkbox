@@ -1,0 +1,25 @@
+[
+  {
+    "id": "m1",
+    "review_required": false,
+    "reasons": [],
+    "settings_changed": false
+  },
+  {
+    "id": "m2",
+    "review_required": true,
+    "reasons": [
+      "status-failed",
+      "smtp-not-in-aliases"
+    ],
+    "settings_changed": false
+  },
+  {
+    "id": "m3",
+    "review_required": true,
+    "reasons": [
+      "status-pending"
+    ],
+    "settings_changed": false
+  }
+]

@@ -1,0 +1,12 @@
+test_case (test_review.Behaviour.test_case) ... ok
+test_duplicate (test_review.Behaviour.test_duplicate) ... ok
+test_empty_query (test_review.Behaviour.test_empty_query) ... ok
+test_empty_scope (test_review.Behaviour.test_empty_scope) ... ok
+test_hash_changes (test_review.Behaviour.test_hash_changes) ... ok
+test_scoped (test_review.Behaviour.test_scoped) ... ok
+test_unchanged (test_review.Behaviour.test_unchanged) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK

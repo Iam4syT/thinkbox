@@ -1,0 +1,12 @@
+test_duplicate (test_review.Behaviour.test_duplicate) ... ok
+test_mismatch (test_review.Behaviour.test_mismatch) ... ok
+test_missing (test_review.Behaviour.test_missing) ... ok
+test_normal (test_review.Behaviour.test_normal) ... ok
+test_pending_not_failure (test_review.Behaviour.test_pending_not_failure) ... ok
+test_read_only (test_review.Behaviour.test_read_only) ... ok
+test_unknown (test_review.Behaviour.test_unknown) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.002s
+
+OK

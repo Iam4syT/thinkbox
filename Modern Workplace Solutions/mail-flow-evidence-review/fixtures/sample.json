@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "id": "m1",
+      "status": "Delivered",
+      "smtp": "a@example.invalid",
+      "aliases": [
+        "a@example.invalid"
+      ]
+    },
+    {
+      "id": "m2",
+      "status": "Failed",
+      "smtp": "b@example.invalid",
+      "aliases": [
+        "old@example.invalid"
+      ]
+    },
+    {
+      "id": "m3",
+      "status": "Pending",
+      "smtp": "c@example.invalid",
+      "aliases": [
+        "c@example.invalid"
+      ]
+    }
+  ]
+}
