@@ -1,0 +1,9 @@
+{
+  "app": "SupportNote",
+  "version": "1.0.0",
+  "pilot": [
+    "LAB-WIN01"
+  ],
+  "mode": "offline contract only",
+  "native_validated": false
+}

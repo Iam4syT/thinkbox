@@ -1,0 +1,12 @@
+test_absent_not_detected (test_pilot.PilotTests.test_absent_not_detected) ... ok
+test_bad_architecture_rejected (test_pilot.PilotTests.test_bad_architecture_rejected) ... ok
+test_broad_assignment_rejected (test_pilot.PilotTests.test_broad_assignment_rejected) ... ok
+test_duplicate_target_rejected (test_pilot.PilotTests.test_duplicate_target_rejected) ... ok
+test_missing_uninstall_rejected (test_pilot.PilotTests.test_missing_uninstall_rejected) ... ok
+test_valid (test_pilot.PilotTests.test_valid) ... ok
+test_wrong_version_not_detected (test_pilot.PilotTests.test_wrong_version_not_detected) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK

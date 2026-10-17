@@ -1,0 +1,25 @@
+{
+  "mode": "offline synthetic triage",
+  "groups": [
+    {
+      "host": "LAB-WIN01",
+      "provider": "WorkplaceLab",
+      "event_id": 1001,
+      "count": 2,
+      "owner": "service desk",
+      "action": "investigate within authority",
+      "urgent": false
+    },
+    {
+      "host": "LAB-WIN01",
+      "provider": "UnknownLabProvider",
+      "event_id": 99,
+      "count": 1,
+      "owner": "specialist review",
+      "action": "escalate with scope and evidence; no automatic fix",
+      "urgent": true
+    }
+  ],
+  "excluded": 2,
+  "remediation_performed": false
+}

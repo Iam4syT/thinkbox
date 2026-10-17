@@ -1,0 +1,11 @@
+{
+  "app": "SupportNote",
+  "version": "1.0.0",
+  "architecture": "x64",
+  "pilot": [
+    "LAB-WIN01"
+  ],
+  "install": "install.cmd",
+  "uninstall": "uninstall.cmd",
+  "detection": "detect.ps1"
+}

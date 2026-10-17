@@ -1,0 +1,14 @@
+test_duplicate_rejected (test_triage.TriageTests.test_duplicate_rejected) ... ok
+test_future_rejected (test_triage.TriageTests.test_future_rejected) ... ok
+test_invalid_severity_rejected (test_triage.TriageTests.test_invalid_severity_rejected) ... ok
+test_missing_field_rejected (test_triage.TriageTests.test_missing_field_rejected) ... ok
+test_missing_timezone_rejected (test_triage.TriageTests.test_missing_timezone_rejected) ... ok
+test_no_auto_fix (test_triage.TriageTests.test_no_auto_fix) ... ok
+test_old_information_excluded (test_triage.TriageTests.test_old_information_excluded) ... ok
+test_repeat_grouped (test_triage.TriageTests.test_repeat_grouped) ... ok
+test_unknown_critical_escalated (test_triage.TriageTests.test_unknown_critical_escalated) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK
