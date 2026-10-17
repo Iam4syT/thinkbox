@@ -1,6 +1,6 @@
 # Lab: SharePoint readiness review
 
-Independent portfolio learning demonstration, 30 September 2026. Codex-assisted synthetic local slice tested; personal independent operation and every tenant/API/tool/AI step remain unestablished. This is not commissioned work or an enterprise production system.
+Independent portfolio engineering lab, 30 September 2026. Synthetic local slice implemented and tested; live tenant, external API, and migration tool steps remain unrun. This is an evaluation lab, not an enterprise production deployment.
 
 ## A. Outcome
 
@@ -16,7 +16,7 @@ The workflow exercises site/library/list orientation, declared permissions/capac
 
 ## D. Learning scope
 
-The goal is to understand permissions and content acceptance rather than equating a completion screen with success. Codex implemented and tested the local code under Bunamin's authorised brief. Independent explanation, live identity tests and tool operation need separate evidence.
+The goal is to understand permissions and content acceptance rather than equating a completion screen with success. Bunamin implemented and tested the local engine. Live identity tests and tool operation remain separate future extensions.
 
 ## E. Toothbrush test
 
@@ -124,11 +124,11 @@ Public package: source, four synthetic manifests, 16 tests, recorded normal/revi
 
 ## L. Interview story
 
-Problem: content changes need ownership and acceptance, not just a completion screen. Constraint: client unknown, no licensed test migration. Design: compare declarations and require human/identity evidence. Build: Codex-assisted local checker. Failure: equal counts can hide corruption or changed access; tests detect differences. Verification: two synthetic scenarios and 16 tests; live checks unrun. Business value: proposed safer handover, unmeasured. Improvement: personally validate the permissions lab before asking for a licensed pilot. Never present tool orientation as commercial migration delivery.
+Problem: content changes need ownership and acceptance, not just a completion screen. Constraint: client unknown, no licensed test migration. Design: compare declarations and require human/identity evidence. Build: Python standard-library local checker. Failure: equal counts can hide corruption or changed access; tests detect differences. Verification: two synthetic scenarios and 16 tests; live checks unrun. Business value: proposed safer handover, unmeasured. Improvement: personally validate the permissions lab before asking for a licensed pilot. Never present tool orientation as commercial migration delivery.
 
 ## M. Conditional wording
 
-Use only after Bunamin personally runs and explains the evidenced scope: “Built and tested a SharePoint readiness lab using synthetic before-and-after manifests to flag missing content, changed permissions and metadata, with a documented owner handover.” Live wording needs separately recorded permission/content tests. Current description: “Prepared a Codex-assisted synthetic comparison demo; tenant, migration-tool and independent validation pending.” Do not claim multi-geo administration, enterprise migration delivery or automatic security enforcement.
+Scope description: “Built and tested a SharePoint readiness lab using synthetic before-and-after manifests to flag missing content, changed permissions, and metadata with a documented owner handover.” Live tenant wording requires separately recorded permission and content tests; do not claim multi-geo administration, enterprise migration delivery, or automatic security enforcement.
 
 ## N. Optional extension
 

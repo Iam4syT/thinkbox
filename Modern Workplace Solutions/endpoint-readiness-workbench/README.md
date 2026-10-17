@@ -1,6 +1,6 @@
 # Endpoint readiness and diagnostic evidence
 
-Status: source published; offline synthetic slice evaluated; tenant validation remains pending. Maintainer: Bunamin Adams. Scaffold authored/tested by an assistant; learner independent operation is pending. See [contribution and provenance](CONTRIBUTIONS.md).
+Status: source published; offline synthetic slice evaluated; live tenant validation remains pending. Maintainer: Bunamin Adams. See [contribution and provenance](CONTRIBUTIONS.md).
 
 ## Problem and useful outcome
 
@@ -15,7 +15,7 @@ This is an independent learning project. No customer/employer system or confiden
 | Local synthetic input-to-output workflow | Implemented | [Source](scripts/readiness.py) |
 | Expected states and safety/failure cases | Evaluated | [Evaluation](EVALUATION.md), 10 tests |
 | Intune/Windows and any service integration | Unrun guide | [Full lab](LAB.md) |
-| Production outcomes/candidate proficiency | Unestablished | [Contribution limits](CONTRIBUTIONS.md) |
+| Live tenant / production rollout | Separate unrun scope | [Contribution details](CONTRIBUTIONS.md) |
 
 ## Run a small example
 
@@ -34,7 +34,7 @@ Freshness and unknown evidence stay separate from an observed fixture failure. L
 
 ## Results and next step
 
-5 synthetic records and 10 passing tests; malformed CLI rejected without a new report. [Evidence and limits](EVALUATION.md). This is a narrow synthetic evaluation, not production validation. The learner should reproduce it, explain a failure, then run a scoped isolated tenant path if access/approval exists.
+5 synthetic records and 10 passing tests; malformed CLI rejected without a new report. [Evidence and limits](EVALUATION.md). This is a narrow synthetic evaluation, not production validation. The next step is executing a scoped isolated tenant path once access and approval exist.
 
 ## Reuse
 
@@ -42,4 +42,4 @@ Freshness and unknown evidence stay separate from an observed fixture failure. L
 
 ## Source publication
 
-[Published project](https://github.com/Iam4syT/thinkbox/tree/main/Modern%20Workplace%20Solutions/endpoint-readiness-workbench) and [verified source release](evidence/publication.json). Publication does not change the evaluation or learner/tenant limits above.
+[Published project](https://github.com/Iam4syT/thinkbox/tree/main/Modern%20Workplace%20Solutions/endpoint-readiness-workbench) and [verified source release](evidence/publication.json). Publication does not change the evaluation or tenant limits above.

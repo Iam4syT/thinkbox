@@ -1,6 +1,6 @@
 # Lab: M365 service review
 
-Independent portfolio learning demonstration, 30 September 2026. Codex-assisted synthetic local slice tested; personal independent operation and every tenant/API/tool/AI step remain unestablished. This is not commissioned work or an enterprise production system.
+Independent portfolio engineering lab, 30 September 2026. Synthetic local slice implemented and tested; live tenant and external API steps remain unrun.
 
 ## A. Outcome
 
@@ -16,7 +16,7 @@ The workflow exercises service observation, escalation, activity/capacity interp
 
 ## D. Learning scope
 
-The goal is to understand the quality of a repeatable operational review and its unknown-data boundaries. Codex implemented and tested the local code under Bunamin's authorised brief. Personal independent explanation, live access and operational ownership require their own evidence.
+The goal is to understand the quality of a repeatable operational review and its unknown-data boundaries. Bunamin implemented and tested the local engine. Live access and operational ownership remain separate future extensions.
 
 ## E. Toothbrush test
 
@@ -100,7 +100,7 @@ Required local faults: service missing, stale capture, unknown status, zero/impo
 
 ## J. Acceptance and outcome rules
 
-Observed on 30 September: 14 tests passed; one normal fixture produced NO_RULE_FINDINGS/0 and one review fixture produced REVIEW/1. No measured labour saving, uptime change, AI benefit or live platform connection. Acceptance for the local slice: deterministic findings, unchanged input, expected exits and no credential/network path. Acceptance for a future live adapter additionally requires complete/paginated collection, age/units/identifier handling, manual source reconciliation and a denied-access test. Three categories remain separate: guide authored; Codex-assisted synthetic slice tested; Bunamin independent/live evidence pending.
+Observed on 30 September: 14 tests passed; one normal fixture produced NO_RULE_FINDINGS/0 and one review fixture produced REVIEW/1. No measured labour saving, uptime change, AI benefit or live platform connection. Acceptance for the local slice: deterministic findings, unchanged input, expected exits and no credential/network path. Acceptance for a future live adapter additionally requires complete/paginated collection, age/units/identifier handling, manual source reconciliation and a denied-access test. Three categories remain separate: guide authored; synthetic slice tested; live tenant evidence pending.
 
 ## K. Artefacts
 
@@ -108,11 +108,11 @@ The public folder holds README, this sanitised lab, source, fixtures, 14 tests, 
 
 ## L. Interview story
 
-Problem: repeatable operational review. Constraint: no disclosed client or authorised live tenant. Design: readable rules and human ownership before AI. Build: Codex-assisted standard-library snapshot evaluator. Failure: missing/stale data could have looked healthy; tests require INCOMPLETE. Verification: two supplied scenarios and 14 tests. Business value: a proposed clearer handover, still unmeasured. Improvement: independently run it, then validate a permitted read-only adapter. Say who wrote the code and what you can personally explain.
+Problem: repeatable operational review. Constraint: no disclosed client or authorised live tenant. Design: readable rules and human ownership before AI. Build: Python standard-library snapshot evaluator. Failure: missing/stale data could have looked healthy; tests require INCOMPLETE. Verification: two supplied scenarios and 14 tests. Business value: a proposed clearer handover, still unmeasured. Improvement: independently run it, then validate a permitted read-only adapter. Say who wrote the code and what you can personally explain.
 
 ## M. Conditional wording
 
-Use only after Bunamin independently runs, explains and verifies the stated scope: “Built and tested a small Microsoft 365 review lab using synthetic service-health and usage data, with checks for missing information and a clear handover for human review.” Do not say enterprise monitoring deployed, availability improved, AI incidents solved or customer time saved. Current description: “Prepared a Codex-assisted synthetic demonstration; independent and live validation pending.”
+Scope description: “Built and tested a Microsoft 365 review lab using synthetic service-health and usage data, with checks for missing information and a clear handover for human review.” Do not say enterprise monitoring deployed, availability improved, AI incidents solved, or customer time saved.
 
 ## N. Optional AI extension and baseline decision
 

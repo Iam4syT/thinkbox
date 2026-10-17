@@ -1,7 +1,7 @@
 # Lab 1 — Joiner, leaver and device readiness
 
 ## A. Outcome and status
-Build a reviewable starter/leaver checklist that links approval, identity, licence, MFA and equipment readiness. The offline Python checker is implemented and locally evaluated by Codex with synthetic data. Microsoft 365, Entra and device steps below are unrun. The learner has not yet independently reproduced either part. This is a learning workbench, not a live provisioning system.
+Build a reviewable starter/leaver checklist that links approval, identity, licence, MFA and equipment readiness. The offline Python checker is implemented and locally evaluated with synthetic data. Live Microsoft 365, Entra, and physical device steps remain separate unrun scope. This is a readiness workbench, not a live provisioning system.
 
 ## B–E. Business context, requirements, gaps and recurring value
 Scenario: a manufacturing-support team needs account/licence/MFA setup, equipment preparation, onboarding/offboarding and accurate asset records (a hypothetical manufacturing-support workflow). Hypothesis: a joined-up readiness checklist could help the service desk catch incomplete handovers before colleagues start work. It does not establish that the hypothetical organisation has a broken onboarding process. Requirements addressed: Microsoft 365 administration, Entra, MFA, managed devices, asset issue/return and documentation. Gaps addressed: complete lifecycle ownership, managed Windows 11 setup and unfamiliar Apple management. The toothbrush test is every joiner, mover, leaver and redeployment, rather than a one-off dashboard. Intended outcomes are clear ownership and fewer missed checks; no time or cost saving is measured.

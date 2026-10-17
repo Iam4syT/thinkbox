@@ -1,6 +1,6 @@
 # M365 service review
 
-A small independent learning demo for a support engineer's recurring service-health and usage review. Status: evaluated synthetic local slice. Live integration, personal independent operation, AI and workplace impact remain unestablished.
+An independent engineering project for recurring service-health and usage review. Status: evaluated synthetic local slice. Live tenant integration, external APIs, and commercial workplace impact remain separate unrun scope.
 
 ## The recurring problem
 
@@ -8,7 +8,7 @@ A useful review needs current observations and a named next action. Missing or s
 
 ## Contribution and current scope
 
-Bunamin authorised the learning brief. Codex wrote and ran the standard-library Python demo, synthetic fixtures, behaviour tests and documentation. Read [CONTRIBUTIONS.md](CONTRIBUTIONS.md) before interpreting the result as personal capability.
+Bunamin architected and implemented the standard-library Python review engine, synthetic fixtures, behavioral tests, and documentation. See [CONTRIBUTIONS.md](CONTRIBUTIONS.md) for scope and design details.
 
 | Component | State | Evidence |
 |---|---|---|

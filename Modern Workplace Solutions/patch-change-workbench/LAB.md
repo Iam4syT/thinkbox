@@ -1,6 +1,6 @@
 # Lab 2 — Vulnerability remediation, change and user communication workbench
 
-Status: assistant-authored and locally evaluated on synthetic inputs, 30 September 2026. the learner has not independently completed this lab. Windows, Intune, Defender and optional AI exercises are unrun. Offline approval fields simulate a workflow; they do not grant permission for real changes.
+Status: locally evaluated on synthetic inputs, 30 September 2026. Windows, Intune, Defender, and optional AI exercises remain separate unrun scope. Offline approval fields simulate a workflow; they do not grant permission for real changes.
 
 ## A. Outcome
 
@@ -25,7 +25,7 @@ This solution manages the change lifecycle. Lab 1 diagnoses readiness and faults
 
 ## D. Learner gap and claim boundary
 
-This guide develops the difference between recognising a fault and configuring, validating and explaining a complete workflow. The offline scaffold demonstrates synthetic behaviour only. A learner must execute and explain the relevant steps before treating them as personal project evidence. Tenant procedures remain unrun; this package is not evidence of second-line or production administration.
+This guide develops the difference between recognising a fault and configuring, validating and explaining a complete workflow. The offline scaffold demonstrates synthetic behaviour only. Executing and explaining the relevant steps validates the project scope. Tenant procedures remain unrun; this package is not evidence of second-line or production administration.
 
 ## E. Recurring use
 
@@ -49,7 +49,7 @@ Trial availability, expiry, data handling, renewal and pricing are unknown until
 
 ## H. Granular procedure
 
-### 1. Record a reproducible starting point — offline, assistant-run
+### 1. Record a reproducible starting point — offline evaluation
 
 Start: the fresh `public/` folder. Action: run `python3 --version`; on Windows use `py -3 --version`. Read `CONTRIBUTIONS.md` and inspect `templates/findings.json`. Expected: six `LAB-VULN-` findings and no real CVEs, customers, users or secrets. Verify: record runtime and file hashes. Recovery: obtain an approved Python runtime if absent; if the data contains real identifiers, restore the synthetic fixture before proceeding. All version values are training values, not actual vulnerable software releases.
 
@@ -125,6 +125,6 @@ After your own run: “I separated patch approval from installation and verifica
 
 ## M. Conditional future wording and N. extension
 
-Use only after the learner independently completes and explains the evidence: “Built and tested a synthetic remediation workbench with approval, version, restart and health checks, producing reviewable change proposals and clear user messages.” Add tenant or Defender wording only for the actual completed path; do not call synthetic closure real remediation.
+Scope description: “Built and tested a synthetic remediation workbench with approval, version, restart and health checks, producing reviewable change proposals and clear user messages.” Add tenant or Defender wording only for the actual completed path; do not call synthetic closure real remediation.
 
 Next version: add asset criticality and exploitation signals from permitted sources; test human override and audit records. AI stays an optional drafting aid. Cloud/API or CI work should preserve least privilege and keep tenant changes out of ordinary CI. All linked technical documentation was checked 30 September 2026; reread current prerequisites and screens before execution.

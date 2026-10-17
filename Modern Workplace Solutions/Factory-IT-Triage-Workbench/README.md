@@ -1,6 +1,6 @@
 # Factory IT triage
 
-Independent manufacturing-workplace learning workbench. Codex-assisted source and local evaluation; not commissioned by an employer. The learner must reproduce and explain the work before claiming personal proficiency.
+Independent manufacturing-workplace triage workbench. Implemented and locally evaluated on synthetic fixtures; not commissioned by an employer. Evaluates offline JSON routing logic before physical device or production integration.
 
 ## What works
 

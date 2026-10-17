@@ -10,4 +10,4 @@ Read [the generated result](evidence/readiness-result.json), [test output](evide
 
 Implemented: deterministic local checks and report/message proposals. Simulated: inventories, faults, vulnerabilities, approvals and verification. Planned/unrun: all Windows VM, Intune, M365, Defender and optional AI work. Synthetic fault labels and software versions are not real Microsoft errors/CVEs.
 
-Limitations: a small designed sample does not establish unseen-case accuracy, candidate proficiency, production administration, security improvement or workplace impact. No live identity, permissions, integrations, patch install, user study or AI comparison was evaluated. Next step: the learner reproduces the local run, explains a failure and then executes one authorised isolated tenant path while retaining evidence.
+Limitations: a small designed sample does not establish unseen-case accuracy, live production administration, or unmeasured workplace impact. No live identity, permissions, integrations, patch install, user study or AI comparison was evaluated. Next step: executing an authorised isolated tenant path while retaining evidence.

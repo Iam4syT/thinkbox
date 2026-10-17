@@ -112,3 +112,65 @@ Merge revision: f7e4f633d9e8635463ad634712f2bc45dcb04de5
   checker's required-document coverage.
 - No application or live tenant tests were run.
 - Publication remains pending at this review checkpoint.
+
+## Development harness foundation — 2026-10-13
+
+Scope: AFRIST Modern Workplace OS local development process.
+Source revision before edits: `c90e9f314b41594879cf35e3be214404003908be`.
+Environment: Codex desktop, macOS, project working directory; host-supplied
+workspace-write access, restricted network access and automatic escalation review.
+Checks used the bundled Python runtime at
+`/Users/4syt/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3`.
+This records the supplied session controls, not an independent sandbox audit.
+
+### Starting evidence and applied work
+
+- Read the shared project standard, root and project AGENTS.md, project-tutor
+  skill, README, LAB, CONTRIBUTIONS, existing evaluation/change history,
+  architecture proposal and planned test document.
+- Inspected the project tree and shared checker. Application folders remain
+  placeholders. No application dependency manifests or test suite were present.
+- Reviewed relevant text from Day_1_v3.pdf, including context engineering,
+  harness components, the development loop and evaluation practices. Visually
+  inspected pages 15, 17, 27, 28, 30 and 44, including Figures 4 and 7.
+- Checked official Codex harness, instruction-discovery and configuration
+  documentation. The source links are in README section 7.
+- Extended the existing project AGENTS.md; retained its tutoring instructions
+  and the existing project-tutor skill. The user's explicit request authorised
+  this bounded local configuration and documentation work.
+- Saved the applied process and its limits in README section 7, with a task
+  brief, development-state record, behaviour rubric and local checker.
+- Existing `.env.example` changes and other existing `.agents/` content were
+  not edited. No model defaults, runtime permissions or global settings changed.
+
+### Actual check results
+
+- `python3 -B scripts/check_harness.py`, using the bundled executable above:
+  exit 0; 22 Markdown files, 1 Python source, 16 local links, no errors.
+- Temporary public-source fixture validation using the checker's `check()`
+  function: exit 0. The clean fixture passed; removing CONTRIBUTIONS.md was
+  rejected; missing, wrong-case and outside-project links were rejected;
+  invalid Python syntax was rejected; the restored fixture passed. Temporary
+  fixtures were deleted. These tests validate the checker, not agent behaviour.
+- `git diff --check`: exit 0, no whitespace errors in tracked changes.
+- `python3 -B ../../scripts/check_repository.py`, using the bundled executable:
+  exit 1; 85 Python sources and 218 local links checked. Its only reported
+  errors were missing CONTRIBUTIONS.md and CHANGELOG.md in the separate
+  Enterprise-Copilot-Governance-Ops project. No syntax or local-link errors
+  were reported. The shared project index still omits Workplace OS, so the
+  new local checker supplies this project's foundation-file coverage.
+
+### Status and limits
+
+- Configured locally: project harness instructions, task brief, state record,
+  manual quality check and behaviour evaluation rubric.
+- Tested: local checker, its failure-detection fixtures and scoped whitespace.
+- Verified within this scope: foundation files and checked local file links
+  are present; the checker detects the tested defects.
+- Pending: owner review, fresh-chat instruction loading and all eight behaviour
+  scenarios. No full behaviour-suite pass or overall reliability claim is made.
+- No automatic hook, CI gate, secret scanner, persistent trace service, cost
+  meter or model routing was installed. Host permission enforcement was not
+  tested by attempting prohibited actions.
+- No application tests, live tenant checks, deployment, commit or publication
+  occurred. Product acceptance criteria remain unchecked; ADR-001 remains Proposed.

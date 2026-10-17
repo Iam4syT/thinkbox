@@ -37,3 +37,18 @@ The project distinguishes between planned, configured, implemented, tested, and 
 - Merged shared repository updates while preserving the local
   Workplace OS documentation commits.
 - Recorded the verified merge revision and repository-check limitations.
+
+### Development harness foundation — 2026-10-13
+
+- Added concise development harness rules to the existing project AGENTS.md,
+  retaining the owner's one-step tutoring workflow.
+- Added README section 7 explaining the existing context, the attached guide's
+  application, the development loop, exact local checks and evidence limits.
+- Added a task-brief template, current development-state record and a behaviour
+  evaluation rubric with eight scenarios awaiting execution.
+- Added a local foundation checker for required documents, local file links and
+  Python syntax. Verified it against clean and deliberately broken fixtures.
+- Recorded the passing local checks and the shared checker's two unrelated
+  missing-document failures in EVALUATION.md.
+- Preserved prior configuration and skill edits. Runtime settings, application
+  implementation, tenant integrations and publication remain unchanged/unverified.

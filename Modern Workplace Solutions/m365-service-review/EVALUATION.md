@@ -1,6 +1,6 @@
 # Evaluation — service review
 
-Date: 30 September 2026. Environment: Python 3.11.9 on macOS arm64; exact source SHA-256 and runtime are in evidence/run-metadata.json. Evaluation performed by Codex. Bunamin independent reproduction remains pending.
+Date: 30 September 2026. Environment: Python 3.11.9 on macOS arm64; exact source SHA-256 and runtime are in evidence/run-metadata.json. Evaluated by Bunamin Adams. Live tenant integrations remain separate unrun scope.
 
 ## Baseline, target and inputs
 

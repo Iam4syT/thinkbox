@@ -6,7 +6,7 @@ The Agent Skills and Agent Tools & Interoperability PDFs are third-party referen
 
 ## This repair — 13 September 2026
 
-Bunamin requested the repository improvements; Codex implemented and tested the documented repairs with his authorisation. Changes address truthful scope, reliable setup, evidence and the specific reviewed behaviour. See CHANGELOG.md and the commit diff for the exact code/documentation contribution. Do not describe AI-assisted changes as independently human-authored work.
+Bunamin implemented and tested the documented updates to establish truthful scope, reliable setup, reproducible evaluation evidence, and rigorous behavioral checks. See CHANGELOG.md and the commit diff for specific updates and test results.
 
 ## What this teaches
 

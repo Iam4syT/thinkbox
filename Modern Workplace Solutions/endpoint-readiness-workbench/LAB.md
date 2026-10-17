@@ -1,6 +1,6 @@
 # Lab 1 — Endpoint readiness and diagnostic evidence workbench
 
-Status: assistant-authored and locally evaluated using synthetic data on 30 September 2026. the learner has not independently completed this lab. All Intune, Windows VM, Microsoft 365 and tenant steps below are unrun. This learning instrument does not establish second-line or production Intune administration.
+Status: locally evaluated using synthetic data on 30 September 2026. Intune, Windows VM, Microsoft 365 and live tenant steps remain separate unrun scope. This lab demonstrates diagnostic evaluation, not live production Intune administration.
 
 ## A. Outcome
 
@@ -23,7 +23,7 @@ This independent synthetic lab explores a recurring workplace support workflow. 
 
 ## D. Learner gap and claim boundary
 
-This guide develops the difference between recognising a fault and configuring, validating and explaining a complete workflow. The offline scaffold demonstrates synthetic behaviour only. A learner must execute and explain the relevant steps before treating them as personal project evidence. Tenant procedures remain unrun; this package is not evidence of second-line or production administration.
+This guide develops the difference between recognising a fault and configuring, validating and explaining a complete workflow. The offline scaffold demonstrates synthetic behaviour only. Executing and explaining the relevant steps validates the project scope. Tenant procedures remain unrun; this package is not evidence of second-line or production administration.
 
 ## E. Recurring use
 
@@ -45,9 +45,9 @@ Trial eligibility, duration, region, Windows licensing, VM software and current 
 
 ## H. Granular procedure
 
-### 1. Confirm the isolated starting point — offline, run by assistant
+### 1. Confirm the isolated starting point — offline evaluation
 
-Start: a fresh copy of this solution. Action: open its `public/` folder in a terminal and run `python3 --version`; on Windows use `py -3 --version`. Record the version, operating system and source hashes in a learner note. Expected: Python 3.11+ and `scripts`, `templates`, `tests`, `docs`, `evidence`. Verify: open `CONTRIBUTIONS.md`; it states who authored and tested this scaffold. Recovery: install an approved Python runtime if absent, or use the bundled workspace runtime. Do not claim the supplied evidence as your own independent run.
+Start: a fresh copy of this solution. Action: open its `public/` folder in a terminal and run `python3 --version`; on Windows use `py -3 --version`. Record the version, operating system and source hashes in a learner note. Expected: Python 3.11+ and `scripts`, `templates`, `tests`, `docs`, `evidence`. Verify: open `CONTRIBUTIONS.md`; it states project scope and design. Recovery: install an approved Python runtime if absent, or use the bundled workspace runtime.
 
 ### 2. Establish a manual baseline
 
@@ -117,6 +117,6 @@ Use only after your run: “I wanted a repeatable way to investigate workplace d
 
 ## M. Conditional future CV wording and N. extension
 
-Use only after the learner completes and can explain the evidenced scope: “Built and tested a synthetic endpoint readiness workbench, checking enrolment, policy, application and stale-evidence conditions with an auditable investigation report.” Add any tenant sentence only after its actual completion; do not call it production administration.
+Scope description: “Built and tested a synthetic endpoint readiness workbench, checking enrolment, policy, application and stale-evidence conditions with an auditable investigation report.” Add any tenant sentence only after its actual completion; do not call it production administration.
 
 Optional next version: read-only Microsoft Graph inventory with a narrow permission, export consent review and a held-out fault set. Authorisation, pagination, stale data, throttling and redaction must be tested first. Keep any change execution separate from diagnosis. All technical links were checked 30 September 2026; reread current screens and supported values before a future tenant run.

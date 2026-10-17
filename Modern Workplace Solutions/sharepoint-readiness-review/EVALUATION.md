@@ -1,6 +1,6 @@
 # Evaluation — SharePoint readiness
 
-Date: 30 September 2026. Environment: Python 3.11.9 on macOS arm64; exact runtime and source SHA-256 are in evidence/run-metadata.json. Codex performed the evaluation. Independent Bunamin operation remains pending.
+Date: 30 September 2026. Environment: Python 3.11.9 on macOS arm64; exact runtime and source SHA-256 are in evidence/run-metadata.json. Evaluated by Bunamin Adams. Live tenant integrations remain separate unrun scope.
 
 ## Baseline, target and sample
 

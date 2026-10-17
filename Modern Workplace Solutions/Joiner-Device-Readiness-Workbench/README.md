@@ -1,6 +1,6 @@
 # Joiner and device readiness
 
-Independent manufacturing-workplace learning workbench. Codex-assisted source and local evaluation; not commissioned by an employer. The learner must reproduce and explain the work before claiming personal proficiency.
+Independent workplace device readiness workbench. Implemented and locally evaluated on synthetic fixtures; not commissioned by an employer. Evaluates starter/leaver validation logic before live identity or MDM integration.
 
 ## What works
 

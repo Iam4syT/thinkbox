@@ -39,7 +39,7 @@ The repaired examples passed the local checks below. Results describe the tested
 - Maven CLI dependency access initially failed inside the sandbox; approved download/cache access succeeded.
 - Outdated JavaScript dependencies were updated; final audit reported zero known vulnerabilities.
 
-Tests use fixtures, synthetic inputs and mocked providers. No live tenant, paid model, production workload, social publishing or JavaFX GUI was exercised. Dependency audits and a targeted disclosure scan do not certify security. A successful local check does not establish a business result or Bunamin’s independent mastery; the demo walkthrough and explanation remain part of learning.
+Tests use fixtures, synthetic inputs and mocked providers. No live tenant, paid model, production workload, social publishing or JavaFX GUI was exercised. Dependency audits and a targeted disclosure scan do not certify security. A successful local check does not establish a production business result or replace full tenant integration; the demo walkthrough and architectural explanation validate the implemented scope.
 
 ## Hosted follow-up
 
