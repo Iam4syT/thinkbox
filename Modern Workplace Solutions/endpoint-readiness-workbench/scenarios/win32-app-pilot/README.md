@@ -2,7 +2,7 @@
 
 Test a small package contract before a limited Windows deployment and removal.
 
-Independent workplace learning scenario. Offline Python fixture workflow implemented and evaluated by Codex; native Windows/Intune operations and learner reproduction remain unrun. No employer system, personal data or commercial outcome.
+Independent workplace learning scenario. Offline Python fixture workflow implemented and evaluated with AI assistance; native Windows/Intune operations and learner reproduction remain unrun. No employer system, personal data or commercial outcome.
 
 ## Run
 Python 3.11 or later; standard library only. From this folder run `python3 scripts/pilot.py templates/package.json` and `python3 -m unittest discover -s tests -v`. On Windows use `py -3` instead of `python3`.
