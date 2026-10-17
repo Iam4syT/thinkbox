@@ -1,6 +1,6 @@
 # Access lifecycle review with an Okta practice path
 
-Status: local Python slice evaluated by Codex; native product/device path unrun; Bunamin reproduction pending.
+Status: local Python slice evaluated; native product and device path remain separate unrun scope.
 
 ## A. Outcome
 Review proposed access changes before anyone applies them.
@@ -116,7 +116,7 @@ Duplicate identity/serial rejection and repair; malformed booleans and unknown c
 Eight passing local behavioural tests, output matches the three synthetic records, no input mutation and no real changes. Native completion requires real permitted product/device logs and a demonstrated failure/repair. Local tests cannot satisfy that requirement.
 
 ## K. Artefacts and actual evaluation
-scripts/review.py, templates/sample.json, tests, evidence/sample-output.json, evidence/tests.txt and narrative files. Codex authored and ran the local slice. Bunamin’s independent reproduction, native integration and workplace outcome remain pending. No baseline timing or savings measured.
+scripts/review.py, templates/sample.json, tests, evidence/sample-output.json, evidence/tests.txt and narrative files. Bunamin authored and evaluated the local slice. Native integration and commercial workplace outcome remain separate unrun scope.
 
 ## L. Interview story
 Explain recurring need → limited dummy data → rule choice → one result → rejected input → repair → verified scope. Explain why a ready report is not proof of live access/device readiness. State what you personally changed or checked.

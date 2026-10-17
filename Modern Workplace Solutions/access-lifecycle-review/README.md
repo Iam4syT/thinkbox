@@ -1,6 +1,6 @@
 # Access lifecycle review with an Okta practice path
 
-Independent synthetic workplace learning tool, not a client system. Source/checks generated and run by Codex; personal reproduction and native integration pending. Python standard library only.
+Independent synthetic workplace governance tool, not a client system. Evaluated on local synthetic fixtures; live tenant and native directory integration remain separate unrun scope. Python standard library only.
 
 From this folder: python3 scripts/review.py templates/sample.json
 Then: python3 -m unittest discover -s tests -v

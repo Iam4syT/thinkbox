@@ -1,6 +1,6 @@
 # Workplace assistant access gate
 
-State: Codex-assisted offline implementation; local checks recorded separately; native integration and Bunamin reproduction unrun.
+State: Offline implementation; local checks recorded separately; native integration remains separate unrun scope.
 
 ## A Outcome
 Return only authorised synthetic workplace documents and record the decision without storing content in the audit log.
@@ -90,7 +90,7 @@ Retain source revision, runtime version, commands, stdout, test result, one chan
 Explain the recurring user need, trust boundaries, smallest design, a failed case, the fix and what the checks prove. Then state what is untested. Ask another person to challenge the approval/identity assumptions. Do not say you operated employer systems or that the simulation proves independent production delivery.
 
 ## M Conditional personal wording
-Use only after your own completed run, modification and recorded explanation: “Built and tested a local synthetic assistant access gate that denies unauthorised reads and records content-free decisions.” Add Codex assistance accurately. Do not use as commercial/Okta/M365 production experience; no LinkedIn post is authorised here.
+Scope description: “Built and tested a local synthetic assistant access gate that denies unauthorised reads and records content-free decisions.” Do not represent as live commercial or multi-tenant production deployment.
 
 ## N Optional native extension
 UNRUN. Start with a permitted non-sensitive test tenant, documented delegated Graph permissions and a reviewer. Use an authenticated identity instead of subject from JSON. Agree one read-only endpoint and least-privilege permission, verify consent, test allowed and denied users and permission revocation, and redact logs. No token capture or live step is included in this local implementation. Add an optional model summary only after authorisation filtering; compare factuality and effort with plain retrieval and keep it disabled unless measured benefit justifies cost.

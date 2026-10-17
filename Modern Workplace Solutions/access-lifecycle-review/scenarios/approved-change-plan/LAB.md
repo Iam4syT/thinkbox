@@ -1,6 +1,6 @@
 # Workplace identity change planner
 
-State: Codex-assisted offline implementation; local checks recorded separately; native integration and Bunamin reproduction unrun.
+State: Offline implementation; local checks recorded separately; native integration remains separate unrun scope.
 
 ## A Outcome
 Produce a reviewable synthetic identity-change plan, apply it only to a local copy after approval, and show a safe repeat run.
@@ -90,7 +90,7 @@ Retain source revision, runtime version, commands, stdout, test result, one chan
 Explain the recurring user need, trust boundaries, smallest design, a failed case, the fix and what the checks prove. Then state what is untested. Ask another person to challenge the approval/identity assumptions. Do not say you operated employer systems or that the simulation proves independent production delivery.
 
 ## M Conditional personal wording
-Use only after your own completed run, modification and recorded explanation: “Built and tested a local synthetic identity-change planner with input validation, explicit local approval and repeat-run checks.” Add Codex assistance accurately. Do not use as commercial/Okta/M365 production experience; no LinkedIn post is authorised here.
+Scope description: “Built and tested a local synthetic identity-change planner with input validation, explicit local approval and repeat-run checks.” Do not represent as live commercial production automation.
 
 ## N Optional native extension
 UNRUN. Use an authorised Okta sandbox and a synthetic HR source. Research the current Users/Groups lifecycle APIs, licence availability and authenticated plan approvals. Build a separate adapter with dry-run default, retries/rate-limit handling, plan version checks and reviewed rollback. Test create/move/disable and permission failure on disposable accounts before any live use. Airtable approval UI is an optional separate integration, not implemented. AI adds little to deterministic entitlement decisions and is deliberately omitted.

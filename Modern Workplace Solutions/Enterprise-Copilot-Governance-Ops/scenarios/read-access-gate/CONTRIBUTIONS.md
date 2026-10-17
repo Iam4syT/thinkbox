@@ -1,1 +1,1 @@
-Codex authored this small synthetic learning exercise during an assisted career project. Bunamin has not yet independently reproduced or explained the implementation. No employer systems or data were used.
+Bunamin Adams designed, implemented, and verified this synthetic assistant read-access gate scenario. No live employer systems or confidential data were used.
