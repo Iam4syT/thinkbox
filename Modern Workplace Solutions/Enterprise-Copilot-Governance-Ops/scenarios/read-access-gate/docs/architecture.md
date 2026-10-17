@@ -1,0 +1,1 @@
+Synthetic JSON input → validation → deterministic decision → local evidence file. No outbound connections, provider SDK, login, model call or live write. Not a security boundary for hostile local callers.

@@ -1,0 +1,20 @@
+{
+  "mover": {
+    "enabled": true,
+    "groups": [
+      "research"
+    ]
+  },
+  "leaver": {
+    "enabled": true,
+    "groups": [
+      "research"
+    ]
+  },
+  "external": {
+    "enabled": true,
+    "groups": [
+      "operations"
+    ]
+  }
+}

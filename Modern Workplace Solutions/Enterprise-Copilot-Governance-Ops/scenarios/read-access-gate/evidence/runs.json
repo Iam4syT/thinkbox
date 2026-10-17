@@ -1,0 +1,12 @@
+[
+  {
+    "command": "scripts/main.py",
+    "exit_code": 0,
+    "stdout": "{\n  \"allowed\": true,\n  \"reason\": \"authorised_documents\",\n  \"document_ids\": [\n    \"schedule\"\n  ],\n  \"documents\": [\n    {\n      \"id\": \"schedule\",\n      \"text\": \"Synthetic team schedule\"\n    }\n  ]\n}\n"
+  },
+  {
+    "command": "scripts/main.py --input templates/denied.json",
+    "exit_code": 0,
+    "stdout": "{\n  \"allowed\": false,\n  \"reason\": \"operation_denied\",\n  \"document_ids\": []\n}\n"
+  }
+]

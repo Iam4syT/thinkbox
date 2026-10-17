@@ -1,0 +1,12 @@
+[
+  {
+    "command": "scripts/main.py",
+    "exit_code": 0,
+    "stdout": "{\n  \"approved\": false,\n  \"mode\": \"local_simulation\",\n  \"changes\": [\n    {\n      \"id\": \"joiner\",\n      \"action\": \"create\",\n      \"groups\": [\n        \"research\"\n      ]\n    },\n    {\n      \"id\": \"mover\",\n      \"action\": \"reconcile\",\n      \"groups\": [\n        \"operations\"\n      ]\n    },\n    {\n      \"id\": \"leaver\",\n      \"action\": \"disable\",\n      \"groups\": []\n    }\n  ]\n}\n"
+  },
+  {
+    "command": "scripts/main.py --approve-local",
+    "exit_code": 0,
+    "stdout": "{\n  \"approved\": true,\n  \"mode\": \"local_simulation\",\n  \"changes\": [\n    {\n      \"id\": \"joiner\",\n      \"action\": \"create\",\n      \"groups\": [\n        \"research\"\n      ]\n    },\n    {\n      \"id\": \"mover\",\n      \"action\": \"reconcile\",\n      \"groups\": [\n        \"operations\"\n      ]\n    },\n    {\n      \"id\": \"leaver\",\n      \"action\": \"disable\",\n      \"groups\": []\n    }\n  ]\n}\n"
+  }
+]

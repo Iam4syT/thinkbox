@@ -1,0 +1,16 @@
+[
+  {
+    "id": "joiner",
+    "state": "active",
+    "team": "research"
+  },
+  {
+    "id": "mover",
+    "state": "active",
+    "team": "operations"
+  },
+  {
+    "id": "leaver",
+    "state": "left"
+  }
+]

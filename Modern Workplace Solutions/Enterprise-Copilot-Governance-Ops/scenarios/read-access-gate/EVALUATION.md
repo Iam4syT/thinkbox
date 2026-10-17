@@ -1,0 +1,2 @@
+# Evaluation
+17 October 2026. Codex ran Python 3.12.14 on the local macOS workspace. 9 unittest methods passed. Normal and denied-operation CLI paths returned expected synthetic output. See evidence/tests.txt and evidence/runs.json. Manual baseline is described in LAB.md; no timing, cost-saving or workplace-effect comparison was measured. No live provider, tenant, model or API called. Bunamin reproduction and personal explanation remain pending. Small synthetic test sets do not establish comprehensive security or production readiness.

@@ -1,0 +1,14 @@
+test_allowed (test_main.AccessTests.test_allowed) ... ok
+test_missing_identity (test_main.AccessTests.test_missing_identity) ... ok
+test_missing_readers_denied (test_main.AccessTests.test_missing_readers_denied) ... ok
+test_no_consent (test_main.AccessTests.test_no_consent) ... ok
+test_other_identity (test_main.AccessTests.test_other_identity) ... ok
+test_prompt_text_cannot_grant (test_main.AccessTests.test_prompt_text_cannot_grant) ... ok
+test_string_consent_denied (test_main.AccessTests.test_string_consent_denied) ... ok
+test_unclassified_denied (test_main.AccessTests.test_unclassified_denied) ... ok
+test_write_denied (test_main.AccessTests.test_write_denied) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.000s
+
+OK

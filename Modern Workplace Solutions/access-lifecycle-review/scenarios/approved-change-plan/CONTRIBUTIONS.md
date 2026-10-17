@@ -1,0 +1,1 @@
+Codex authored this small synthetic learning exercise during an assisted career project. Bunamin has not yet independently reproduced or explained the implementation. No employer systems or data were used.

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "schedule",
+    "text": "Synthetic team schedule",
+    "classification": "internal",
+    "readers": [
+      "learner"
+    ]
+  },
+  {
+    "id": "restricted",
+    "text": "Synthetic restricted note",
+    "classification": "restricted",
+    "readers": [
+      "learner"
+    ]
+  },
+  {
+    "id": "other",
+    "text": "Synthetic other team",
+    "classification": "internal",
+    "readers": [
+      "other"
+    ]
+  }
+]

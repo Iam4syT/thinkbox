@@ -1,0 +1,25 @@
+{
+  "approved": true,
+  "mode": "local_simulation",
+  "changes": [
+    {
+      "id": "joiner",
+      "action": "create",
+      "groups": [
+        "research"
+      ]
+    },
+    {
+      "id": "mover",
+      "action": "reconcile",
+      "groups": [
+        "operations"
+      ]
+    },
+    {
+      "id": "leaver",
+      "action": "disable",
+      "groups": []
+    }
+  ]
+}
