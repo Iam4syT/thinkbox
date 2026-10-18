@@ -1,0 +1,10 @@
+{
+  "status": "REVIEW",
+  "findings": [
+    {
+      "id": "request-001",
+      "result": "EXPIRED"
+    }
+  ],
+  "tenant_enforcement": false
+}

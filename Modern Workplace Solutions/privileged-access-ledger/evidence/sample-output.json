@@ -1,0 +1,10 @@
+{
+  "status": "EVIDENCE_PASS",
+  "findings": [
+    {
+      "id": "request-001",
+      "result": "EVIDENCE_PASS"
+    }
+  ],
+  "tenant_enforcement": false
+}

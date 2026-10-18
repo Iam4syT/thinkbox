@@ -1,0 +1,17 @@
+{
+  "onprem": [
+    {
+      "id": "local-001",
+      "smtp": "person@example.invalid",
+      "enabled": true
+    }
+  ],
+  "cloud": [
+    {
+      "id": "cloud-001",
+      "smtp": "person@example.invalid",
+      "enabled": true,
+      "synced": true
+    }
+  ]
+}

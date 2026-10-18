@@ -1,0 +1,16 @@
+{
+  "now": "2026-10-18T13:00:00Z",
+  "requests": [
+    {
+      "id": "request-001",
+      "role": "User Administrator",
+      "requester": "test-user",
+      "approver": "test-approver",
+      "eligible": true,
+      "approved": true,
+      "mfa": true,
+      "start": "2026-10-18T12:00:00Z",
+      "end": "2026-10-18T13:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+test_bad_boolean (test_check.Behaviour.test_bad_boolean) ... ok
+test_expiry_boundary (test_check.Behaviour.test_expiry_boundary) ... ok
+test_global_admin (test_check.Behaviour.test_global_admin) ... ok
+test_long_duration (test_check.Behaviour.test_long_duration) ... ok
+test_no_approval (test_check.Behaviour.test_no_approval) ... ok
+test_no_mfa (test_check.Behaviour.test_no_mfa) ... ok
+test_no_timezone (test_check.Behaviour.test_no_timezone) ... ok
+test_normal (test_check.Behaviour.test_normal) ... ok
+test_not_started (test_check.Behaviour.test_not_started) ... ok
+test_self_approval (test_check.Behaviour.test_self_approval) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.001s
+
+OK

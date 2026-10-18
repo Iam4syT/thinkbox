@@ -1,0 +1,10 @@
+{
+  "status": "REVIEW",
+  "findings": [
+    {
+      "id": "local-001",
+      "result": "AMBIGUOUS"
+    }
+  ],
+  "writes_performed": 0
+}

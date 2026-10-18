@@ -1,0 +1,1 @@
+Independent proof-of-concept. Source and documentation prepared with AI assistance and checked through local automated tests. These results establish the package behaviour; they do not establish that its owner independently rebuilt it or operated production identity services. No third-party implementation code copied.

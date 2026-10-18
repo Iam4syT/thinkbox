@@ -1,0 +1,10 @@
+{
+  "status": "CHECKS_PASS",
+  "findings": [
+    {
+      "id": "local-001",
+      "result": "CHECKS_PASS"
+    }
+  ],
+  "writes_performed": 0
+}
