@@ -1,0 +1,10 @@
+test_authorised_document (test_behaviour.AccessTests.test_authorised_document) ... ok
+test_baseline_difference (test_behaviour.AccessTests.test_baseline_difference) ... ok
+test_invalid_role_fails (test_behaviour.AccessTests.test_invalid_role_fails) ... ok
+test_unauthorised_and_injection (test_behaviour.AccessTests.test_unauthorised_and_injection) ... ok
+test_unknown_and_empty (test_behaviour.AccessTests.test_unknown_and_empty) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK

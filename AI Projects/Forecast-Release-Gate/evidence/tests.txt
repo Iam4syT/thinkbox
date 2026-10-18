@@ -1,0 +1,11 @@
+test_constant_feature_rejected (test_behaviour.ForecastTests.test_constant_feature_rejected) ... ok
+test_fit_and_holdout (test_behaviour.ForecastTests.test_fit_and_holdout) ... ok
+test_non_finite_rejected (test_behaviour.ForecastTests.test_non_finite_rejected) ... ok
+test_reversed_dates_rejected (test_behaviour.ForecastTests.test_reversed_dates_rejected) ... ok
+test_shift_holds_release (test_behaviour.ForecastTests.test_shift_holds_release) ... ok
+test_split_and_lengths (test_behaviour.ForecastTests.test_split_and_lengths) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.000s
+
+OK

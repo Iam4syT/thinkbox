@@ -1,0 +1,29 @@
+{
+  "unfiltered_keyword": {
+    "correct": 4,
+    "sample_size": 6,
+    "unauthorised_returns": 2,
+    "outputs": [
+      "public-reset",
+      "public-mfa",
+      "restricted-payroll",
+      "restricted-payroll",
+      null,
+      "restricted-payroll"
+    ]
+  },
+  "filtered_keyword": {
+    "correct": 6,
+    "sample_size": 6,
+    "unauthorised_returns": 0,
+    "outputs": [
+      "public-reset",
+      "public-mfa",
+      null,
+      "restricted-payroll",
+      null,
+      null
+    ]
+  },
+  "limits": "Fixed fixtures; self-declared role, not authentication. No LLM, paraphrase or semantic retrieval evaluation."
+}

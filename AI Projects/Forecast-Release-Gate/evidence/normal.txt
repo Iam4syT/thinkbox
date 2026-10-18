@@ -1,0 +1,11 @@
+{
+  "train_n": 8,
+  "holdout_n": 4,
+  "slope": 2.0,
+  "intercept": 3.0,
+  "model_rmse": 0.0,
+  "baseline_rmse": 5.477225575051661,
+  "release": "pass",
+  "threshold": 2,
+  "limits": "Deterministic synthetic linear fixture. No real forecast performance, cloud deployment or operational monitoring established."
+}

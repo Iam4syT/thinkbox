@@ -1,0 +1,2 @@
+# Contributions and scope
+Independent synthetic engineering demonstration. The implementation and evaluation were prepared with AI assistance. Personal review, independent rebuild and operational use must be recorded separately before making a personal capability claim. No client systems, private records or live services are used. The current evaluation is an automated local run, not a customer outcome.

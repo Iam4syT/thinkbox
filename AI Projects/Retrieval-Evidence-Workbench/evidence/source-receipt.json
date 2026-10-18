@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-18",
+  "runtime": "3.13.13",
+  "source_hashes": {
+    "main.py": "9c04a112faccbf3048a738797574ab7429afb4e63e4181004d2015f2c5a40d8c",
+    "tests/test_behaviour.py": "40af6e5f15ec7b0bacd66a13689924404c7cb65e795e00544b00c8c1a26e3425"
+  },
+  "runner": "automated assistant run",
+  "personal_execution_observed": false
+}
