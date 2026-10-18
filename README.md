@@ -24,7 +24,6 @@ These projects show the direction of my work. Their current scope includes simul
 - [Tenant Guard](./Modern%20Workplace%20Solutions/tenant-guard): identity, endpoint and configuration-check demonstrations.
 ---
 
-- [Meeting readiness knowledge lab](./Modern%20Workplace%20Solutions/Meeting-Readiness-Knowledge-Lab): synthetic source-cited support-card search; live meeting and AI extensions remain unrun.
 
 ## AI Projects
 
