@@ -1,0 +1,30 @@
+[
+  {
+    "id": "T001",
+    "priority": "P1",
+    "route": "M365 support",
+    "review_due": true,
+    "action": "Human review; no automatic remediation"
+  },
+  {
+    "id": "T002",
+    "priority": "P2",
+    "route": "Access team",
+    "review_due": false,
+    "action": "Human review; no automatic remediation"
+  },
+  {
+    "id": "T003",
+    "priority": "P3",
+    "route": "Device team",
+    "review_due": true,
+    "action": "Human review; no automatic remediation"
+  },
+  {
+    "id": "T004",
+    "priority": "P3",
+    "route": "Human triage",
+    "review_due": false,
+    "action": "Human review; no automatic remediation"
+  }
+]

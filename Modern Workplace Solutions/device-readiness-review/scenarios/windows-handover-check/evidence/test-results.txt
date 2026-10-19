@@ -1,0 +1,13 @@
+test_bad_schema_rejected (test_behaviour.Behaviour.test_bad_schema_rejected) ... ok
+test_bad_value_rejected (test_behaviour.Behaviour.test_bad_value_rejected) ... ok
+test_boundary_or_unknown (test_behaviour.Behaviour.test_boundary_or_unknown) ... ok
+test_duplicate_rejected (test_behaviour.Behaviour.test_duplicate_rejected) ... ok
+test_expected (test_behaviour.Behaviour.test_expected) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+
+Invalid CLI exit=2
+Input rejected: expected yes/no/unknown

@@ -9,3 +9,6 @@ Added an isolated offline scenario with eight passing behaviour checks, includin
 8 October 2026 Added isolated legal-support-triage scenario, source, fixtures, eight passing local tests and granular guide. No live integration or learner reproduction claimed.
 
 11 October 2026: added isolated multi-site-office-triage with twelve passing behavioural tests and two successful CLI checks. Preserved existing scenarios. No live or learner completion inferred.
+
+## 19 October 2026
+Added isolated csv-triage-ledger scenario; four synthetic records, five behavioural checks and CLI invalid-input rejection passed locally. Existing product source unchanged. Live integrations and learner rebuild remain unrun.

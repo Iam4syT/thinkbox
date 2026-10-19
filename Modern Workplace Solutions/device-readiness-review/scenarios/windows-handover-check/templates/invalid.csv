@@ -1,0 +1,5 @@
+asset,approved,encrypted,patched,m365_test,owner_recorded
+L001,TRUE,yes,yes,yes,yes
+L002,no,yes,yes,yes,yes
+L003,yes,unknown,no,yes,yes
+L004,yes,yes,yes,no,no

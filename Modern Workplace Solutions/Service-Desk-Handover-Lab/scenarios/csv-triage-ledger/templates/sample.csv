@@ -1,0 +1,5 @@
+id,service,impact,urgency,age_minutes
+T001,m365,many,high,15
+T002,identity,one,high,59
+T003,device,one,normal,241
+T004,unknown,one,normal,0

@@ -1,0 +1,34 @@
+[
+  {
+    "asset": "L001",
+    "status": "CHECKLIST_COMPLETE",
+    "missing": [],
+    "action": "Human confirms evidence before handover; no automatic changes"
+  },
+  {
+    "asset": "L002",
+    "status": "REVIEW",
+    "missing": [
+      "approved"
+    ],
+    "action": "Human confirms evidence before handover; no automatic changes"
+  },
+  {
+    "asset": "L003",
+    "status": "REVIEW",
+    "missing": [
+      "encrypted",
+      "patched"
+    ],
+    "action": "Human confirms evidence before handover; no automatic changes"
+  },
+  {
+    "asset": "L004",
+    "status": "REVIEW",
+    "missing": [
+      "m365_test",
+      "owner_recorded"
+    ],
+    "action": "Human confirms evidence before handover; no automatic changes"
+  }
+]

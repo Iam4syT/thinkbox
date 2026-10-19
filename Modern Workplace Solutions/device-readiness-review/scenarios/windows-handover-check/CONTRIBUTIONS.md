@@ -1,0 +1,2 @@
+# Contribution and scope
+This scenario adds explicit local rules, synthetic fixtures, behavioural checks and a novice guide. Recorded automated checks were run during preparation; independent learner rebuild and live Microsoft/device use are not established. No client deployment, measured workplace saving or production integration is claimed. No third-party code copied; Python standard library only.

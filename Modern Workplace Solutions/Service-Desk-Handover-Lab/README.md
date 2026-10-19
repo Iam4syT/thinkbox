@@ -12,3 +12,6 @@ See [legal-support-triage](scenarios/legal-support-triage/README.md) for a separ
 
 ## Additional office learning scenario
 See [Multi-site office ticket diagnosis](scenarios/multi-site-office-triage/README.md). Offline tests are recorded; learner and physical device stages remain unrun.
+
+## Additional CSV learning scenario
+See [csv-triage-ledger](scenarios/csv-triage-ledger/README.md) for a synthetic read-only checklist with explicit schema rejection and human review.
