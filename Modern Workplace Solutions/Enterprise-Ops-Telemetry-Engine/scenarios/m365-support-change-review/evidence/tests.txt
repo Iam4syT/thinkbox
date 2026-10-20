@@ -1,0 +1,13 @@
+test_all_pass_needs_human (test_main.Checks.test_all_pass_needs_human) ... ok
+test_bad_evidence (test_main.Checks.test_bad_evidence) ... ok
+test_bad_service (test_main.Checks.test_bad_service) ... ok
+test_failed_positive_holds (test_main.Checks.test_failed_positive_holds) ... ok
+test_failed_rollback (test_main.Checks.test_failed_rollback) ... ok
+test_no_duplicate_inflation (test_main.Checks.test_no_duplicate_inflation) ... ok
+test_recurring_group (test_main.Checks.test_recurring_group) ... ok
+test_unknown_negative_holds (test_main.Checks.test_unknown_negative_holds) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.000s
+
+OK

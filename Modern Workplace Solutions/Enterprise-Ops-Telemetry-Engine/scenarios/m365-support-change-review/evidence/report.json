@@ -1,0 +1,14 @@
+{
+  "recurring": [
+    {
+      "service": "Copilot",
+      "symptom": "missing_app",
+      "count": 2
+    }
+  ],
+  "change_status": "hold",
+  "unresolved": [
+    "negative_test"
+  ],
+  "deployment_authorised": false
+}

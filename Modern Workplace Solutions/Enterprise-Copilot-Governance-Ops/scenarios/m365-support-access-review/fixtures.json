@@ -1,0 +1,42 @@
+[
+  {
+    "id": "A",
+    "licence": "yes",
+    "service_health": "healthy",
+    "access": "scoped",
+    "label": "confidential",
+    "encrypted": false
+  },
+  {
+    "id": "B",
+    "licence": "yes",
+    "service_health": "healthy",
+    "access": "broad",
+    "label": "confidential",
+    "encrypted": false
+  },
+  {
+    "id": "C",
+    "licence": "unknown",
+    "service_health": "unknown",
+    "access": "unknown",
+    "label": "unknown",
+    "encrypted": "unknown"
+  },
+  {
+    "id": "D",
+    "licence": "no",
+    "service_health": "healthy",
+    "access": "scoped",
+    "label": "public",
+    "encrypted": false
+  },
+  {
+    "id": "E",
+    "licence": "yes",
+    "service_health": "incident",
+    "access": "scoped",
+    "label": "public",
+    "encrypted": false
+  }
+]

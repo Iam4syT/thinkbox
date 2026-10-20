@@ -1,0 +1,25 @@
+{
+  "tickets": [
+    {
+      "id": "T1",
+      "service": "Copilot",
+      "symptom": "missing_app"
+    },
+    {
+      "id": "T2",
+      "service": "Copilot",
+      "symptom": "missing_app"
+    },
+    {
+      "id": "T3",
+      "service": "SharePoint",
+      "symptom": "access_denied"
+    }
+  ],
+  "change": {
+    "approved": "pass",
+    "positive_test": "pass",
+    "negative_test": "unknown",
+    "rollback_test": "pass"
+  }
+}

@@ -1,0 +1,45 @@
+[
+  {
+    "id": "A",
+    "status": "no_flag_in_model",
+    "reasons": [],
+    "label_is_not_enforcement": true,
+    "authorises_change": false
+  },
+  {
+    "id": "B",
+    "status": "review_required",
+    "reasons": [
+      "review_oversharing"
+    ],
+    "label_is_not_enforcement": true,
+    "authorises_change": false
+  },
+  {
+    "id": "C",
+    "status": "review_required",
+    "reasons": [
+      "collect_evidence"
+    ],
+    "label_is_not_enforcement": false,
+    "authorises_change": false
+  },
+  {
+    "id": "D",
+    "status": "review_required",
+    "reasons": [
+      "check_licence"
+    ],
+    "label_is_not_enforcement": false,
+    "authorises_change": false
+  },
+  {
+    "id": "E",
+    "status": "review_required",
+    "reasons": [
+      "check_service_incident"
+    ],
+    "label_is_not_enforcement": false,
+    "authorises_change": false
+  }
+]
