@@ -1,0 +1,37 @@
+{
+  "mode": "synthetic offline",
+  "window_days": 30,
+  "findings": [
+    {
+      "cohort": "Office-A",
+      "service": "Teams",
+      "state": "review",
+      "active_rate_percent": 60.0,
+      "previous_rate_percent": 50.0,
+      "change_percentage_points": 10.0,
+      "next_action": "Check data age, role needs and colleague feedback; no automatic licence action"
+    },
+    {
+      "cohort": "Office-B",
+      "service": "SharePoint",
+      "state": "review",
+      "active_rate_percent": 40.0,
+      "previous_rate_percent": 60.0,
+      "change_percentage_points": -20.0,
+      "next_action": "Check data age, role needs and colleague feedback; no automatic licence action"
+    },
+    {
+      "cohort": "Small-group",
+      "service": "Teams",
+      "state": "suppressed",
+      "reason": "Small or zero cohort; no rates or counts exported"
+    },
+    {
+      "cohort": "No-licences",
+      "service": "Teams",
+      "state": "suppressed",
+      "reason": "Small or zero cohort; no rates or counts exported"
+    }
+  ],
+  "limit": "Usage is not productivity or licence eligibility"
+}

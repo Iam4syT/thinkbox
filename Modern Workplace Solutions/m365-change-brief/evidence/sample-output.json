@@ -1,0 +1,37 @@
+{
+  "mode": "synthetic offline",
+  "as_of": "2026-10-25",
+  "queue": [
+    {
+      "id": "DEMO-2",
+      "service": "SharePoint",
+      "summary": "Example guidance refresh",
+      "due": "2026-10-20",
+      "owner": "Knowledge-owner",
+      "impact": "low",
+      "urgency": "overdue",
+      "review": "approval recorded; recheck source and audience before manual communication"
+    },
+    {
+      "id": "DEMO-1",
+      "service": "Teams",
+      "summary": "Example meeting-policy change",
+      "due": "2026-10-29",
+      "owner": "Service-owner",
+      "impact": "high",
+      "urgency": "due soon",
+      "review": "owner approval needed"
+    },
+    {
+      "id": "DEMO-3",
+      "service": "Exchange",
+      "summary": "Example release review",
+      "due": "2026-11-20",
+      "owner": "Messaging-owner",
+      "impact": "low",
+      "urgency": "scheduled",
+      "review": "owner approval needed"
+    }
+  ],
+  "limit": "Recorded approval is fixture data; no email, tenant change or real approval occurs"
+}

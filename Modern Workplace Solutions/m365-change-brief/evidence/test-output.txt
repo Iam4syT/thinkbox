@@ -1,0 +1,12 @@
+test_approval_boundary (test_behaviour.Behaviour.test_approval_boundary) ... ok
+test_bad_date (test_behaviour.Behaviour.test_bad_date) ... ok
+test_due_soon (test_behaviour.Behaviour.test_due_soon) ... ok
+test_duplicate (test_behaviour.Behaviour.test_duplicate) ... ok
+test_missing_owner (test_behaviour.Behaviour.test_missing_owner) ... ok
+test_overdue (test_behaviour.Behaviour.test_overdue) ... ok
+test_unknown_status (test_behaviour.Behaviour.test_unknown_status) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.000s
+
+OK

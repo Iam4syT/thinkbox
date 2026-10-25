@@ -1,0 +1,12 @@
+test_duplicate (test_behaviour.Behaviour.test_duplicate) ... ok
+test_mismatched_window (test_behaviour.Behaviour.test_mismatched_window) ... ok
+test_negative (test_behaviour.Behaviour.test_negative) ... ok
+test_overcount (test_behaviour.Behaviour.test_overcount) ... ok
+test_rate (test_behaviour.Behaviour.test_rate) ... ok
+test_small_prior (test_behaviour.Behaviour.test_small_prior) ... ok
+test_zero (test_behaviour.Behaviour.test_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.000s
+
+OK
