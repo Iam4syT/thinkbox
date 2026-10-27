@@ -1,0 +1,16 @@
+test_authority (test_review.Behaviour.test_authority) ... ok
+test_complete_still_human (test_review.Behaviour.test_complete_still_human) ... ok
+test_duplicate (test_review.Behaviour.test_duplicate) ... ok
+test_empty (test_review.Behaviour.test_empty) ... ok
+test_identity_missing (test_review.Behaviour.test_identity_missing) ... ok
+test_missing_field (test_review.Behaviour.test_missing_field) ... ok
+test_nonrecord (test_review.Behaviour.test_nonrecord) ... ok
+test_owner_preserved (test_review.Behaviour.test_owner_preserved) ... ok
+test_sanitisation (test_review.Behaviour.test_sanitisation) ... ok
+test_source_unchanged (test_review.Behaviour.test_source_unchanged) ... ok
+test_tenant_boundary (test_review.Behaviour.test_tenant_boundary) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.001s
+
+OK

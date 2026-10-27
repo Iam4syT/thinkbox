@@ -12,3 +12,6 @@ Added an isolated offline scenario with eight passing behaviour checks, includin
 
 ## 19 October 2026
 Added isolated csv-triage-ledger scenario; four synthetic records, five behavioural checks and CLI invalid-input rejection passed locally. Existing product source unchanged. Live integrations and learner rebuild remain unrun.
+
+## 27 October 2026 partner scenario
+Added scenarios/partner-escalation-review with fixture validation, tests and documented limits. Existing root behaviour unchanged.

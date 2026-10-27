@@ -1,0 +1,15 @@
+test_authority_not_truthy (test_review.Behaviour.test_authority_not_truthy) ... ok
+test_bad_status (test_review.Behaviour.test_bad_status) ... ok
+test_delivered_not_closed (test_review.Behaviour.test_delivered_not_closed) ... ok
+test_duplicate (test_review.Behaviour.test_duplicate) ... ok
+test_each_status (test_review.Behaviour.test_each_status) ... ok
+test_empty (test_review.Behaviour.test_empty) ... ok
+test_identity_missing (test_review.Behaviour.test_identity_missing) ... ok
+test_no_authority (test_review.Behaviour.test_no_authority) ... ok
+test_nonrecord (test_review.Behaviour.test_nonrecord) ... ok
+test_source_unchanged (test_review.Behaviour.test_source_unchanged) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.001s
+
+OK

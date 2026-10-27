@@ -1,0 +1,25 @@
+[
+  {
+    "id": "ESC-01",
+    "review_state": "human_review",
+    "reasons": [],
+    "owner": "demo-analyst",
+    "case_closed": false,
+    "access_granted": false
+  },
+  {
+    "id": "ESC-02",
+    "review_state": "hold",
+    "reasons": [
+      "Evidence belongs to another tenant",
+      "Access authorisation unconfirmed",
+      "Missing history",
+      "Missing configuration",
+      "Missing checks",
+      "Missing next_action"
+    ],
+    "owner": "demo-analyst",
+    "case_closed": false,
+    "access_granted": false
+  }
+]

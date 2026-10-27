@@ -1,0 +1,34 @@
+[
+  {
+    "id": "MAIL-01",
+    "tenant": "demo-a",
+    "trace_status": "Delivered",
+    "impact": "One test mailbox",
+    "observed_at": "2026-10-27T10:00:00Z",
+    "access_authorised": true
+  },
+  {
+    "id": "MAIL-02",
+    "tenant": "demo-a",
+    "trace_status": "Failed",
+    "impact": "One test mailbox",
+    "observed_at": "2026-10-27T10:01:00Z",
+    "access_authorised": true
+  },
+  {
+    "id": "MAIL-03",
+    "tenant": "demo-b",
+    "trace_status": "Deferred",
+    "impact": "One test mailbox",
+    "observed_at": "2026-10-27T10:02:00Z",
+    "access_authorised": true
+  },
+  {
+    "id": "MAIL-04",
+    "tenant": "demo-b",
+    "trace_status": "Unknown",
+    "impact": "One test mailbox",
+    "observed_at": "2026-10-27T10:03:00Z",
+    "access_authorised": false
+  }
+]

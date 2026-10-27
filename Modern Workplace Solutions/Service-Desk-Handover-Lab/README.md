@@ -15,3 +15,6 @@ See [Multi-site office ticket diagnosis](scenarios/multi-site-office-triage/READ
 
 ## Additional CSV learning scenario
 See [csv-triage-ledger](scenarios/csv-triage-ledger/README.md) for a synthetic read-only checklist with explicit schema rejection and human review.
+
+## Partner evidence learning scenario
+See [partner-escalation-review](scenarios/partner-escalation-review/README.md) for a separate synthetic evidence-review exercise with explicit authority and human-review boundaries. Native integration and learner completion remain unrun.

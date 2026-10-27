@@ -1,0 +1,24 @@
+[
+  {
+    "id": "ESC-01",
+    "tenant": "demo-a",
+    "evidence_tenant": "demo-a",
+    "impact": "Test mailbox delay",
+    "history": "Trace inspected",
+    "configuration": "No change proposed",
+    "checks": "Synthetic delayed status reviewed",
+    "next_action": "Specialist review",
+    "owner": "demo-analyst",
+    "access_authorised": true,
+    "sanitised": true
+  },
+  {
+    "id": "ESC-02",
+    "tenant": "demo-b",
+    "evidence_tenant": "demo-a",
+    "impact": "Test sign-in failure",
+    "owner": "demo-analyst",
+    "access_authorised": false,
+    "sanitised": true
+  }
+]

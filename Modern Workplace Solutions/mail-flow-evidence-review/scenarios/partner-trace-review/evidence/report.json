@@ -1,0 +1,34 @@
+[
+  {
+    "id": "MAIL-01",
+    "tenant": "demo-a",
+    "status": "Delivered",
+    "next_action": "Check recipient experience; delivered is not proof of inbox visibility",
+    "human_review_required": true,
+    "setting_changed": false
+  },
+  {
+    "id": "MAIL-02",
+    "tenant": "demo-a",
+    "status": "Failed",
+    "next_action": "Inspect failure detail and authorised next diagnostic",
+    "human_review_required": true,
+    "setting_changed": false
+  },
+  {
+    "id": "MAIL-03",
+    "tenant": "demo-b",
+    "status": "Deferred",
+    "next_action": "Inspect delay detail and recheck within agreed interval",
+    "human_review_required": true,
+    "setting_changed": false
+  },
+  {
+    "id": "MAIL-04",
+    "tenant": "demo-b",
+    "status": "Unknown",
+    "next_action": "Stop tenant diagnostics; obtain approved access or administrator-provided evidence",
+    "human_review_required": true,
+    "setting_changed": false
+  }
+]
