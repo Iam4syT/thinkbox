@@ -1,0 +1,48 @@
+[
+  {
+    "id": "DEVICE-01",
+    "state": "review_failure",
+    "failed": [
+      "power_ok"
+    ],
+    "missing": [
+      "task_ok",
+      "user_confirmed"
+    ],
+    "closed": false,
+    "next": "Human reviews scope, original task and user confirmation; no repair is automated."
+  },
+  {
+    "id": "DEVICE-02",
+    "state": "collect_evidence",
+    "failed": [],
+    "missing": [
+      "os_ok",
+      "user_confirmed"
+    ],
+    "closed": false,
+    "next": "Human reviews scope, original task and user confirmation; no repair is automated."
+  },
+  {
+    "id": "DEVICE-03",
+    "state": "ready_for_human_closure",
+    "failed": [],
+    "missing": [],
+    "closed": false,
+    "next": "Human reviews scope, original task and user confirmation; no repair is automated."
+  },
+  {
+    "id": "DEVICE-04",
+    "state": "review_failure",
+    "failed": [
+      "power_ok",
+      "user_confirmed"
+    ],
+    "missing": [
+      "peripheral_ok",
+      "task_ok"
+    ],
+    "closed": false,
+    "next": "Human reviews scope, original task and user confirmation; no repair is automated."
+  }
+]

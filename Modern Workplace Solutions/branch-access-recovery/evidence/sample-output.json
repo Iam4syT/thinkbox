@@ -1,0 +1,60 @@
+[
+  {
+    "id": "BRANCH-01",
+    "state": "check_link",
+    "failed": [
+      "link_ok",
+      "dns_ok"
+    ],
+    "missing": [
+      "tcp445_ok",
+      "authorised_user_ok"
+    ],
+    "root_cause_confirmed": false,
+    "changed": false
+  },
+  {
+    "id": "BRANCH-02",
+    "state": "check_dns",
+    "failed": [
+      "dns_ok"
+    ],
+    "missing": [
+      "tcp445_ok",
+      "authorised_user_ok"
+    ],
+    "root_cause_confirmed": false,
+    "changed": false
+  },
+  {
+    "id": "BRANCH-03",
+    "state": "check_identity_permissions",
+    "failed": [
+      "authorised_user_ok"
+    ],
+    "missing": [],
+    "root_cause_confirmed": false,
+    "changed": false
+  },
+  {
+    "id": "BRANCH-04",
+    "state": "access_exposure_review",
+    "failed": [
+      "link_ok",
+      "unauthorised_denied"
+    ],
+    "missing": [],
+    "root_cause_confirmed": false,
+    "changed": false
+  },
+  {
+    "id": "BRANCH-05",
+    "state": "collect_evidence",
+    "failed": [],
+    "missing": [
+      "dns_ok"
+    ],
+    "root_cause_confirmed": false,
+    "changed": false
+  }
+]

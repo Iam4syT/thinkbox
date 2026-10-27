@@ -1,0 +1,34 @@
+[
+  {
+    "id": "DEVICE-01",
+    "power_ok": false,
+    "peripheral_ok": true,
+    "os_ok": true,
+    "task_ok": null,
+    "user_confirmed": null
+  },
+  {
+    "id": "DEVICE-02",
+    "power_ok": true,
+    "peripheral_ok": true,
+    "os_ok": null,
+    "task_ok": true,
+    "user_confirmed": null
+  },
+  {
+    "id": "DEVICE-03",
+    "power_ok": true,
+    "peripheral_ok": true,
+    "os_ok": true,
+    "task_ok": true,
+    "user_confirmed": true
+  },
+  {
+    "id": "DEVICE-04",
+    "power_ok": false,
+    "peripheral_ok": null,
+    "os_ok": true,
+    "task_ok": null,
+    "user_confirmed": false
+  }
+]

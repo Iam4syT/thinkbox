@@ -1,0 +1,42 @@
+[
+  {
+    "id": "BRANCH-01",
+    "link_ok": false,
+    "dns_ok": false,
+    "tcp445_ok": null,
+    "authorised_user_ok": null,
+    "unauthorised_denied": true
+  },
+  {
+    "id": "BRANCH-02",
+    "link_ok": true,
+    "dns_ok": false,
+    "tcp445_ok": null,
+    "authorised_user_ok": null,
+    "unauthorised_denied": true
+  },
+  {
+    "id": "BRANCH-03",
+    "link_ok": true,
+    "dns_ok": true,
+    "tcp445_ok": true,
+    "authorised_user_ok": false,
+    "unauthorised_denied": true
+  },
+  {
+    "id": "BRANCH-04",
+    "link_ok": false,
+    "dns_ok": true,
+    "tcp445_ok": true,
+    "authorised_user_ok": true,
+    "unauthorised_denied": false
+  },
+  {
+    "id": "BRANCH-05",
+    "link_ok": true,
+    "dns_ok": null,
+    "tcp445_ok": true,
+    "authorised_user_ok": true,
+    "unauthorised_denied": true
+  }
+]
