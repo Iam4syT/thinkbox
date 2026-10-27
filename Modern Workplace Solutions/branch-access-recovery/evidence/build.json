@@ -3,7 +3,7 @@
   "scope": "offline synthetic only",
   "python": "3.12.14",
   "source_sha256": "4d83d3aaf10549ce5e253add9a0935bed5755a6ba7fe9d03e28ad7659bd89ae2",
-  "lab_sha256": "48ab424abd89fafb2ac451e9037863f8880c20d240530b4792c0ff0ea503809a",
+  "lab_sha256": "2437eaac020c59a0f89fb9ffbc4e34002bf3594cfccef7892395ba097f37d4ab",
   "real_device_vm_steps": "unrun",
   "candidate_independent_rebuild": "pending"
 }
