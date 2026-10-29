@@ -1,0 +1,2 @@
+# Two-minute walkthrough
+Show the fictional need and manual baseline. Run `python3 scripts/readiness.py templates/sample.json`. Explain one review item and one thing the tool cannot establish. Copy the input and demonstrate the documented invalid-input failure; restore it and rerun. Show test evidence. Finish with the native/personal verification still required; do not call this production experience.

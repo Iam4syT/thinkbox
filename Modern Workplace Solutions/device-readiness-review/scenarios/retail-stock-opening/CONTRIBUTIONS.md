@@ -1,0 +1,2 @@
+# Contribution and scope
+Maintained by Bunamin Adams as an AI-assisted learning asset. Implementation and local checks used an assisted workflow; personal independent rebuilding and native product/device work remain pending. No commissioned employer work, commercial deployment or clinical outcome. Source is new for this isolated scenario; existing parent attribution/licence remains unchanged. Use the Thinkbox repository licence.

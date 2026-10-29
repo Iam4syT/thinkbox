@@ -1,0 +1,26 @@
+{
+  "tickets": [
+    {
+      "id": "DEMO-01",
+      "impact": 1,
+      "urgency": 1,
+      "state": "open",
+      "owner": "Desk team",
+      "next_update": "2026-11-01T10:00:00Z",
+      "resolution": "",
+      "verification": "",
+      "user_confirmed": null
+    },
+    {
+      "id": "DEMO-02",
+      "impact": 3,
+      "urgency": 2,
+      "state": "resolved",
+      "owner": "Desk team",
+      "next_update": "Review tomorrow",
+      "resolution": "Recreated test account access",
+      "verification": "",
+      "user_confirmed": null
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+# Evaluation — 29 October 2026
+11 of 11 local synthetic behaviour tests passed; normal example completed. See [test log](evidence/tests.txt), [example output](evidence/normal.json) and [runtime/source fingerprints](evidence/evaluation.json). Normal path, invalid inputs and material missing-evidence cases checked. Baseline is a manual checklist for the same explicit rules; no timed comparison was performed. Native ServiceNow, physical device checks, Bunamin independent rebuilding and business outcomes remain unrun/unmeasured. No production reliability or security guarantee.

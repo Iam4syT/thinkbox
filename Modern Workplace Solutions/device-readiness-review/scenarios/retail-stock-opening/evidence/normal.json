@@ -1,0 +1,15 @@
+{
+  "status": "review_required",
+  "available": {
+    "DEMO-LAPTOP": 2,
+    "DEMO-DOCK": 4
+  },
+  "shortages": {
+    "DEMO-LAPTOP": 1
+  },
+  "pending_checks": [
+    "device_test",
+    "owner_signoff"
+  ],
+  "limits": "Fictional reported checks only; no stock reservation, purchase, physical test, network change or opening approval."
+}

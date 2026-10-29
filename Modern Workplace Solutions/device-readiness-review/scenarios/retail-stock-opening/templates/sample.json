@@ -1,0 +1,26 @@
+{
+  "stock": [
+    {
+      "sku": "DEMO-LAPTOP",
+      "on_hand": 5,
+      "reserved": 2,
+      "quarantined": 1
+    },
+    {
+      "sku": "DEMO-DOCK",
+      "on_hand": 4,
+      "reserved": 0,
+      "quarantined": 0
+    }
+  ],
+  "demand": {
+    "DEMO-LAPTOP": 3,
+    "DEMO-DOCK": 2
+  },
+  "checks": {
+    "network_test": true,
+    "device_test": null,
+    "licence_review": true,
+    "owner_signoff": false
+  }
+}

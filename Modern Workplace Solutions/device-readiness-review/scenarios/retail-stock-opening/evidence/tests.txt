@@ -1,0 +1,16 @@
+test_bool_quantity (test_review.StockTests.test_bool_quantity) ... ok
+test_complete (test_review.StockTests.test_complete) ... ok
+test_duplicate (test_review.StockTests.test_duplicate) ... ok
+test_missing_check (test_review.StockTests.test_missing_check) ... ok
+test_negative (test_review.StockTests.test_negative) ... ok
+test_overallocated (test_review.StockTests.test_overallocated) ... ok
+test_pending_checks (test_review.StockTests.test_pending_checks) ... ok
+test_reservations_and_shortage (test_review.StockTests.test_reservations_and_shortage) ... ok
+test_string_check (test_review.StockTests.test_string_check) ... ok
+test_unknown_sku (test_review.StockTests.test_unknown_sku) ... ok
+test_zero_demand (test_review.StockTests.test_zero_demand) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.001s
+
+OK

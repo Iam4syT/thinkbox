@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-29",
+  "runtime": "3.11.9",
+  "command": "python3 -m unittest discover -s tests -v",
+  "tests": 11,
+  "passed": 11,
+  "failed": 0,
+  "source_sha256": {
+    "scripts/incident.py": "00cff23784ef35bdca4358cdaa0ea9c27c12783f4ac81a0e51d488848414877f",
+    "tests/test_review.py": "510ba20e2c5a06600612449857dea3390988955c1a071b4c4c5d1b7281e9630d",
+    "templates/sample.json": "2df8ae170499dbbb1fab3f4178995360cd14774e30a4c0db463bbac4cb1e82a1"
+  },
+  "basis": "Local tool-run; Bunamin independent reproduction and native/physical steps unrun",
+  "business_gain": null
+}

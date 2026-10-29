@@ -1,0 +1,20 @@
+{
+  "tickets": [
+    {
+      "id": "DEMO-01",
+      "illustrative_priority": 1,
+      "review_items": [],
+      "status": "documented_for_review"
+    },
+    {
+      "id": "DEMO-02",
+      "illustrative_priority": 4,
+      "review_items": [
+        "verification",
+        "user_confirmation_pending"
+      ],
+      "status": "review"
+    }
+  ],
+  "limits": "Illustrative priority matrix only. No SLA clock, user authentication, native update or automatic closure. Human applies actual policy."
+}
