@@ -1,7 +1,7 @@
 # Stock allocation and store-opening readiness lab
 
 ## A Outcome and honest status
-Stock availability at each allocation and readiness checks before each store opening/change. Local read-only learning exercise with fictional data; the evaluated Python slice is separate from native ServiceNow and physical work, which remain unrun. Bunamin has not independently reproduced this new lab. Planning budget:60–90 minutes offline plus a separate reviewed sandbox session, estimate not measured time.
+Stock availability at each allocation and readiness checks before each store opening/change. Local read-only learning exercise with fictional data; the evaluated Python slice is separate from native ServiceNow and physical work, which remain unrun. Bunamin has not independently reproduced this new lab. Planning budget: 60–90 minutes offline plus a separate reviewed sandbox session, estimate not measured time.
 
 ## B Public need and scenario basis
 The official Boots Hearingcare service-desk advert names stock levels, system testing, projects and infrastructure for new store openings. Sonova’s 23 March 2026 strategy and 18 May 2026 retail outlook support a local-service/store-readiness context. The specific fictional faults and inventory are learning hypotheses, not reports of company problems. Its 14 October product news does not establish AI work in this role.
@@ -19,12 +19,12 @@ An analyst can repeat this at each allocation, receipt, return and opening revie
 Fictional JSON → strict Python input checks → deterministic report → human review. No network call, authentication, API token, external model, native write or purchase. Whoever can edit the input can change reported checks; this is not an approval system. Keep real colleague and patient records out. AI is unnecessary for these explicit checks; an optional explanation assistant would need a quality/privacy evaluation and cannot approve actions. No AI advantage claimed.
 
 ## G Prerequisites and cost
-Python 3.11+, terminal, text editor and a copy of this exact scenario. Standard library only, no pip installation. Local marginal service cost£0 excluding equipment/time. A native extension needs an authorised sandbox, applicable ServiceNow permissions/plugins/licences and approved spare equipment, safe test network and a competent reviewer. Availability and cost unknown; no spend or new account authorised. Stop native work if these are unavailable.
+Python 3.11+, terminal, text editor and a copy of this exact scenario. Standard library only, no pip installation. Local marginal service cost £0 excluding equipment/time. A native extension needs an authorised sandbox, applicable ServiceNow permissions/plugins/licences and approved spare equipment, safe test network and a competent reviewer. Availability and cost unknown; no spend or new account authorised. Stop native work if these are unavailable.
 
 ## H Granular implementation
 
 ### Step 1 — Open the stock scenario
-Starting state/action: From a clean Thinkbox clone open "Modern Workplace Solutions/device-readiness-review/scenarios/retail-stock-opening" or its supplied public folder. Run python 3 --version (Windows py --version).
+Starting state/action: From a clean Thinkbox clone open "Modern Workplace Solutions/device-readiness-review/scenarios/retail-stock-opening" or its supplied public folder. Run python3 --version (Windows py --version).
 Expected result: Python 3.11+; scripts/readiness.py, templates/sample.json and tests present.
 Verification/recovery: Check path and checkout if files are missing; no pip packages or cloud account required.
 
@@ -39,7 +39,7 @@ Expected result: Manual available values 2 and 4; laptop shortage 1.
 Verification/recovery: Do not count reserved or broken stock as available. A spreadsheet or paper checklist is the simpler baseline.
 
 ### Step 4 — Run readiness review
-Starting state/action: Run python 3 scripts/readiness.py templates/sample.json.
+Starting state/action: Run python3 scripts/readiness.py templates/sample.json.
 Expected result: review_required; laptop shortage 1; device_test and owner_signoff pending.
 Verification/recovery: Compare manual arithmetic and all four check states. The output never reserves stock or approves opening.
 
@@ -64,7 +64,7 @@ Expected result: Over-allocation is rejected; unknown SKU becomes a shortage 2 r
 Verification/recovery: Correct the source record only after physical count/supplier review in a real workflow. Save failed inputs for learning.
 
 ### Step 9 — Run acceptance tests
-Starting state/action: Run python 3 -m unittest discover -s tests -v.
+Starting state/action: Run python3 -m unittest discover -s tests -v.
 Expected result: 11 tests pass, including quarantine/reservation arithmetic, unknown/failed checks, duplicates and invalid quantities.
 Verification/recovery: Keep the error/output if anything fails; do not count a skipped test as passed.
 

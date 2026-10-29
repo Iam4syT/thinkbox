@@ -1,7 +1,7 @@
 # Incident quality and safe handover lab
 
 ## A Outcome and honest status
-Daily incident logging, prioritisation, evidence and next-update handovers. Local read-only learning exercise with fictional data; the evaluated Python slice is separate from native ServiceNow and physical work, which remain unrun. Bunamin has not independently reproduced this new lab. Planning budget:60–90 minutes offline plus a separate reviewed sandbox session, estimate not measured time.
+Daily incident logging, prioritisation, evidence and next-update handovers. Local read-only learning exercise with fictional data; the evaluated Python slice is separate from native ServiceNow and physical work, which remain unrun. Bunamin has not independently reproduced this new lab. Planning budget: 60–90 minutes offline plus a separate reviewed sandbox session, estimate not measured time.
 
 ## B Public need and scenario basis
 The official Boots Hearingcare service-desk advert names ServiceNow records, resolution notes, prioritisation and stakeholder updates. Sonova’s 23 March 2026 strategy and 18 May 2026 retail outlook support a local-service/store-readiness context. The specific fictional faults and inventory are learning hypotheses, not reports of company problems. Its 14 October product news does not establish AI work in this role.
@@ -19,17 +19,17 @@ An analyst can repeat this at every handover and resolution review. The aim is f
 Fictional JSON → strict Python input checks → deterministic report → human review. No network call, authentication, API token, external model, native write or purchase. Whoever can edit the input can change reported checks; this is not an approval system. Keep real colleague and patient records out. AI is unnecessary for these explicit checks; an optional explanation assistant would need a quality/privacy evaluation and cannot approve actions. No AI advantage claimed.
 
 ## G Prerequisites and cost
-Python 3.11+, terminal, text editor and a copy of this exact scenario. Standard library only, no pip installation. Local marginal service cost£0 excluding equipment/time. A native extension needs an authorised sandbox, applicable ServiceNow permissions/plugins/licences and test callers. Availability and cost unknown; no spend or new account authorised. Stop native work if these are unavailable.
+Python 3.11+, terminal, text editor and a copy of this exact scenario. Standard library only, no pip installation. Local marginal service cost £0 excluding equipment/time. A native extension needs an authorised sandbox, applicable ServiceNow permissions/plugins/licences and test callers. Availability and cost unknown; no spend or new account authorised. Stop native work if these are unavailable.
 
 ## H Granular implementation
 
 ### Step 1 — Open a clean copy
-Starting state/action: In a new terminal folder run git clone https://github.com/Iam 4 syT/thinkbox.git, then cd "thinkbox/Modern Workplace Solutions/Service-Desk-Handover-Lab/scenarios/retail-incident-quality". For a downloaded local package open its public folder.
+Starting state/action: In a new terminal folder run git clone https://github.com/Iam4syT/thinkbox.git, then cd "thinkbox/Modern Workplace Solutions/Service-Desk-Handover-Lab/scenarios/retail-incident-quality". For a downloaded local package open its public folder.
 Expected result: scripts/incident.py, templates/sample.json and tests/test_review.py exist.
 Verification/recovery: List files with ls (Windows dir). If absent, check revision and path; do not install the parent dependencies.
 
 ### Step 2 — Check runtime and boundaries
-Starting state/action: Run python 3 --version (Windows py --version, substituting py in later commands). Read README and CONTRIBUTIONS.
+Starting state/action: Run python3 --version (Windows py --version, substituting py in later commands). Read README and CONTRIBUTIONS.
 Expected result: Python 3.11 or later; no account, network integration or secrets required.
 Verification/recovery: If unavailable use an approved Python installation; do not change a work device without permission.
 
@@ -39,7 +39,7 @@ Expected result: DEMO-01 priority 1; DEMO-02 priority 4. Second ticket lacks ver
 Verification/recovery: This is an illustrative matrix, not Sonova policy. Do not infer contractual response deadlines.
 
 ### Step 4 — Run the complete example
-Starting state/action: Run python 3 scripts/incident.py templates/sample.json.
+Starting state/action: Run python3 scripts/incident.py templates/sample.json.
 Expected result: Two reports; first documented_for_review, second review. Neither record is closed or changed.
 Verification/recovery: Compare every output with the manual baseline. If different preserve input/output and check file contents.
 
@@ -64,7 +64,7 @@ Expected result: Input error and exit 2 for the boolean; normal report after cor
 Verification/recovery: Read the error rather than deleting validation. JSON true is not an integer impact.
 
 ### Step 9 — Run acceptance tests
-Starting state/action: Run python 3 -m unittest discover -s tests -v.
+Starting state/action: Run python3 -m unittest discover -s tests -v.
 Expected result: 11 tests pass across normal path, invalid input, missing evidence and duplicates.
 Verification/recovery: If any fails save the failure and explain before editing; a guide does not prove you ran it.
 
