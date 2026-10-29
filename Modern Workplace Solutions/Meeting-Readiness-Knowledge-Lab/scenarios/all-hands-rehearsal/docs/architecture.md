@@ -1,0 +1,1 @@
+Fictional observation record → strict schema → explicit rules → report → human review. No live integrations or writes. Unknown is not a pass. No AI is needed for this bounded decision. Evidence freshness and real-world approval need a later adapter and review.

@@ -1,0 +1,11 @@
+{
+  "asset_id": "DEMO-MAC-01",
+  "owner": "Example Reviewer",
+  "checks": {
+    "identity_confirmed": "pass",
+    "asset_matched": "pass",
+    "enrolment_reviewed": "pass",
+    "encryption_checked": "pass",
+    "handover_tested": "pass"
+  }
+}

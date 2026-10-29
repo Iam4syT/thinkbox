@@ -1,0 +1,11 @@
+{
+  "event_id": "DEMO-ALLHANDS-01",
+  "owner": "Example Reviewer",
+  "checks": {
+    "microphone_tested": "pass",
+    "camera_tested": "pass",
+    "display_tested": "pass",
+    "remote_audio_tested": "pass",
+    "backup_rehearsed": "pass"
+  }
+}

@@ -1,0 +1,1 @@
+Explain the fictional user task. Run the normal input. Change one check to unknown, then fail; show review then hold. Remove owner and show visible input failure. Restore input. Open evaluation and explain why reported observations do not establish real equipment state. End with the supervised native verification plan.

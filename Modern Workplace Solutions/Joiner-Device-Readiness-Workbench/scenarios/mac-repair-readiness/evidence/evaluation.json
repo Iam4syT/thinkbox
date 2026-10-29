@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-29",
+  "runtime": "3.11.9 (v3.11.9:de54cf5be3, Apr  2 2024, 07:12:50) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "actor": "local automated tool run",
+  "tests": 12,
+  "passed": 12,
+  "source_sha256": "e88838189493d2f21e68e9aab467c8d5b20b7c3241865210f05a4f33bfa9e38c",
+  "candidate_independent_run": false,
+  "native_steps": "unrun",
+  "baseline": "manual checklist; equivalence tested against explicit rules, no timing comparison",
+  "upstream_revision": "87ae2118ee28ea85df71f7b59b145905e802eeb8"
+}

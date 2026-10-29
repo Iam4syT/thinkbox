@@ -1,0 +1,1 @@
+Independent AI-assisted implementation and local tool-run evaluation. Maintained by Bunamin Adams; own independent rebuild and native operation remain unrun. No prior professional capability, client work or individual unaided authorship is claimed. Existing repository attribution/licence retained.
