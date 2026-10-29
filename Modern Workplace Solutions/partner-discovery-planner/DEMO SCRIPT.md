@@ -1,0 +1,2 @@
+# Two minute demonstration
+Open the fictional input and explain the repeated user task. Run `python3 scripts/planner.py templates/customer.json` and read its limits. Show one review/failure case from LAB.md. Explain why the report needs a human decision. Open EVALUATION.md and distinguish actual local checks from unrun tenant/customer work. End with the next pilot question, without claiming achieved savings or deployment.

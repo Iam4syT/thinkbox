@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "owner_approved": true,
+    "licence_checked": true,
+    "baseline_defined": true
+  },
+  "records": [
+    {
+      "id": "handbook",
+      "classification": "Internal Only",
+      "access_groups": [
+        "All-Employees"
+      ]
+    },
+    {
+      "id": "finance",
+      "classification": "Confidential",
+      "access_groups": [
+        "Finance-Execs"
+      ]
+    }
+  ]
+}

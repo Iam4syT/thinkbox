@@ -1,0 +1,2 @@
+# Contribution and scope
+This independent learning project is maintained by Bunamin Adams using an AI-assisted development workflow. Personal workshop delivery and independent rebuilding need separate evidence. Existing parent policy and repository notices retain their attribution. The present evaluation is a local tool-run check, not a live customer outcome or proof of personal production capability. Code follows the repository licence; fictional fixtures are included for repeatable practice.

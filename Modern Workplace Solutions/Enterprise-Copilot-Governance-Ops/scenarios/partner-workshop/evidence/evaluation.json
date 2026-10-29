@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-29",
+  "runtime": "3.12.14",
+  "baseline_revision": "328226a9f61bce1fee6e5252779aea5b2f47c0b5",
+  "command": "python3 -m unittest discover -s tests -v",
+  "tests": 12,
+  "passed": 12,
+  "failed": 0,
+  "source_sha256": {
+    "main.py": "69e7872e1c32699bb37b65c9a9cfa6d6bb0163b7b76bf0f29dc31f99de5e57dc",
+    "tests/test_workshop.py": "64dff207ee3390982600ae5a59b94822c211421595e482751a76a28aceca15ab"
+  },
+  "execution_basis": "local tool-run; independent learning exercise; personal rebuild and native tenant steps unrun",
+  "limitations": [
+    "Synthetic cases, no real tenant or customer data",
+    "No measured customer saving, production readiness or realised ROI"
+  ]
+}

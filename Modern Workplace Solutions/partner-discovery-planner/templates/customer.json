@@ -1,0 +1,9 @@
+{
+  "seats": 10,
+  "workflow": "collaboration",
+  "readiness": "reviewed",
+  "minutes_per_week": 15,
+  "hourly_value": 20,
+  "monthly_licence": 10,
+  "setup_cost": 200
+}

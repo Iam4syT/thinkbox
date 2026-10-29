@@ -1,0 +1,9 @@
+{
+  "decision": "pilot_candidate",
+  "option": "Teams and SharePoint workflow",
+  "illustrative_annual_capacity_value": 2600.0,
+  "illustrative_first_year_cost": 1400,
+  "illustrative_net_value": 1200.0,
+  "assumptions": "All prices and time benefits are fictional inputs. Capacity value is not cash savings or achieved ROI.",
+  "next_step": "Validate user need, permissions, licence entitlement, pilot quality and baseline with customer; human approves."
+}

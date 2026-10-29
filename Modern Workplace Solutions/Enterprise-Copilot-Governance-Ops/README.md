@@ -98,3 +98,7 @@ This technical repository mirrors real-world delivery standards across four core
 ## 6. License
 
 Distributed under the **MIT License**.
+
+## Partner workshop scenario
+
+The isolated [partner workshop](scenarios/partner-workshop/README.md) adds a synthetic readiness conversation around the existing metadata policy. It runs without the parent plotting dependencies and does not change existing entry points.

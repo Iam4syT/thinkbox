@@ -1,0 +1,17 @@
+{
+  "status": "bounded_demo_candidate",
+  "records": [
+    {
+      "id": "handbook",
+      "decision": "allowed",
+      "reason": "No exposure under this limited metadata policy"
+    },
+    {
+      "id": "finance",
+      "decision": "allowed",
+      "reason": "No exposure under this limited metadata policy"
+    }
+  ],
+  "limits": "Metadata policy only. No real identities, retrieval, AI generation, tenant integration or automatic access changes.",
+  "next_step": "Owner reviews actual access and baseline; run a permitted pilot and measure quality before any value claim."
+}

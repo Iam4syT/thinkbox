@@ -1,0 +1,2 @@
+# Architecture and decision boundary
+Fictional local JSON → input checks → explicit calculation or metadata policy → JSON report → human review. No network call, authentication token, tenant write or AI generation exists. Public fixtures contain no real customer information. An owner must verify actual access, entitlement and baseline before a native pilot. The simple baseline is a manual worksheet; no AI benefit has been measured.

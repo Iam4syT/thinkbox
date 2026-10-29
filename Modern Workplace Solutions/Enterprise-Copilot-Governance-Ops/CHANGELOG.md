@@ -18,3 +18,7 @@
 
 - Designed live Microsoft 365 tenant integration blueprint and Entra ID zero-trust app registration architecture.
 - Cleaned and aligned project documentation and verified local evaluation suites.
+
+## 29 October 2026
+
+Added an isolated partner-workshop scenario with explicit owner/licence/baseline review states, 12 passing local tests and a complete learning guide. Existing policy and entry points remain unchanged. No live Microsoft integration or customer outcome is claimed.
