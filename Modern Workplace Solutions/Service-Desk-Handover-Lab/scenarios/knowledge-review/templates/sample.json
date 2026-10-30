@@ -1,0 +1,42 @@
+[
+  {
+    "id": "KB001",
+    "owner": "Service desk reviewer",
+    "symptom": "Demo app unavailable",
+    "safe_steps": "Check status and collect a synthetic error code",
+    "verification": "Ask user to retry and record the result",
+    "escalation": "Route to the named demo application team",
+    "reviewed": true,
+    "review_due": "2026-11-30"
+  },
+  {
+    "id": "KB002",
+    "owner": "Service desk reviewer",
+    "symptom": "Demo app unavailable",
+    "safe_steps": "Check status and collect a synthetic error code",
+    "verification": "",
+    "escalation": "Route to the named demo application team",
+    "reviewed": true,
+    "review_due": "2026-11-30"
+  },
+  {
+    "id": "KB003",
+    "owner": "Service desk reviewer",
+    "symptom": "Demo app unavailable",
+    "safe_steps": "Check status and collect a synthetic error code",
+    "verification": "Ask user to retry and record the result",
+    "escalation": "Route to the named demo application team",
+    "reviewed": false,
+    "review_due": "2026-11-30"
+  },
+  {
+    "id": "KB004",
+    "owner": "Service desk reviewer",
+    "symptom": "Demo app unavailable",
+    "safe_steps": "Check status and collect a synthetic error code",
+    "verification": "Ask user to retry and record the result",
+    "escalation": "Route to the named demo application team",
+    "reviewed": true,
+    "review_due": "2026-10-01"
+  }
+]

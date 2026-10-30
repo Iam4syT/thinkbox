@@ -1,0 +1,22 @@
+[
+  {
+    "id": "INC001",
+    "priority": "P1",
+    "action": "escalate"
+  },
+  {
+    "id": "INC002",
+    "priority": "P3",
+    "action": "investigate"
+  },
+  {
+    "id": "INC003",
+    "priority": "P1",
+    "action": "follow_up"
+  },
+  {
+    "id": "INC004",
+    "priority": "P1",
+    "action": "close"
+  }
+]

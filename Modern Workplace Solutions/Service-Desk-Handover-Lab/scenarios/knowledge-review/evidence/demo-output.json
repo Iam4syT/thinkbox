@@ -1,0 +1,28 @@
+[
+  {
+    "id": "KB001",
+    "status": "ready",
+    "reasons": []
+  },
+  {
+    "id": "KB002",
+    "status": "hold",
+    "reasons": [
+      "verification"
+    ]
+  },
+  {
+    "id": "KB003",
+    "status": "hold",
+    "reasons": [
+      "approval"
+    ]
+  },
+  {
+    "id": "KB004",
+    "status": "hold",
+    "reasons": [
+      "overdue"
+    ]
+  }
+]

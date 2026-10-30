@@ -1,0 +1,42 @@
+[
+  {
+    "id": "INC001",
+    "impact": "organisation",
+    "urgency": "high",
+    "age_hours": 1,
+    "status": "open",
+    "outside_scope": true,
+    "user_confirmed": false,
+    "followup_done": false
+  },
+  {
+    "id": "INC002",
+    "impact": "single",
+    "urgency": "normal",
+    "age_hours": 1,
+    "status": "open",
+    "outside_scope": false,
+    "user_confirmed": false,
+    "followup_done": false
+  },
+  {
+    "id": "INC003",
+    "impact": "organisation",
+    "urgency": "high",
+    "age_hours": 1,
+    "status": "resolved",
+    "outside_scope": false,
+    "user_confirmed": false,
+    "followup_done": false
+  },
+  {
+    "id": "INC004",
+    "impact": "organisation",
+    "urgency": "high",
+    "age_hours": 1,
+    "status": "resolved",
+    "outside_scope": true,
+    "user_confirmed": true,
+    "followup_done": true
+  }
+]

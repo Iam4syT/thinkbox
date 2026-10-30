@@ -1,0 +1,15 @@
+test_boolean_age (test_behaviour.Behaviour.test_boolean_age) ... ok
+test_confirmed_close (test_behaviour.Behaviour.test_confirmed_close) ... ok
+test_duplicates (test_behaviour.Behaviour.test_duplicates) ... ok
+test_elapsed_boundary (test_behaviour.Behaviour.test_elapsed_boundary) ... ok
+test_escalation_scope (test_behaviour.Behaviour.test_escalation_scope) ... ok
+test_invalid_impact (test_behaviour.Behaviour.test_invalid_impact) ... ok
+test_negative_age (test_behaviour.Behaviour.test_negative_age) ... ok
+test_no_premature_close (test_behaviour.Behaviour.test_no_premature_close) ... ok
+test_single_normal (test_behaviour.Behaviour.test_single_normal) ... ok
+test_urgent_org (test_behaviour.Behaviour.test_urgent_org) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.000s
+
+OK

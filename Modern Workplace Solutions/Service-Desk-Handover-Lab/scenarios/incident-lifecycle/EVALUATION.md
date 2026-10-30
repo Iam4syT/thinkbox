@@ -1,0 +1,4 @@
+# Local evaluation
+29 October 2026, macOS arm64, bundled Python 3.12.14. Automated local run by the development assistant; maintainer independent run pending.
+Baseline: manual reading of four synthetic records; manual time, error rate and workplace benefit unmeasured. Target: expected action/hold decisions and rejected invalid inputs. Sample: 10 behavioural test methods plus4 demonstration records. Actual result: 10 tests pass, demo exit 0. See evidence files; no external integration or human usability test.
+Security/scope limits: no credentials or service mutation. Schema validation is basic, not a hardened untrusted-data service. Production would need approved policies, authenticated roles, retention, auditing, integration tests and operational ownership. No percentage/time saving claimed.

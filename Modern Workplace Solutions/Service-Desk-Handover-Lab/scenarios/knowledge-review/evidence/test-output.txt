@@ -1,0 +1,15 @@
+test_bad_date (test_behaviour.Behaviour.test_bad_date) ... ok
+test_bad_review_type (test_behaviour.Behaviour.test_bad_review_type) ... ok
+test_due_today (test_behaviour.Behaviour.test_due_today) ... ok
+test_duplicates (test_behaviour.Behaviour.test_duplicates) ... ok
+test_invalid_shape (test_behaviour.Behaviour.test_invalid_shape) ... ok
+test_missing_owner (test_behaviour.Behaviour.test_missing_owner) ... ok
+test_missing_verification (test_behaviour.Behaviour.test_missing_verification) ... ok
+test_no_approval (test_behaviour.Behaviour.test_no_approval) ... ok
+test_overdue (test_behaviour.Behaviour.test_overdue) ... ok
+test_ready (test_behaviour.Behaviour.test_ready) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.000s
+
+OK
