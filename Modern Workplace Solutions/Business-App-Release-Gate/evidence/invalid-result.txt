@@ -1,0 +1,2 @@
+Exit 2
+INVALID INPUT: Checks must be JSON true, false or null: functional_test

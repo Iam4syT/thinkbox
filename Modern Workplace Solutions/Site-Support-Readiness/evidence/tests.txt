@@ -1,0 +1,14 @@
+test_all_true_needs_human (test_behaviour.Behaviour.test_all_true_needs_human) ... ok
+test_duplicate_rejected (test_behaviour.Behaviour.test_duplicate_rejected) ... ok
+test_each_false_holds (test_behaviour.Behaviour.test_each_false_holds) ... ok
+test_each_missing_needs_review (test_behaviour.Behaviour.test_each_missing_needs_review) ... ok
+test_each_null_needs_review (test_behaviour.Behaviour.test_each_null_needs_review) ... ok
+test_empty_rejected (test_behaviour.Behaviour.test_empty_rejected) ... ok
+test_failure_takes_priority_over_missing (test_behaviour.Behaviour.test_failure_takes_priority_over_missing) ... ok
+test_string_true_rejected (test_behaviour.Behaviour.test_string_true_rejected) ... ok
+test_unknown_field_rejected (test_behaviour.Behaviour.test_unknown_field_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.000s
+
+OK

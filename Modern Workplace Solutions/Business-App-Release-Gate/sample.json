@@ -1,0 +1,22 @@
+[
+  {
+    "id": "DEMO-01",
+    "functional_test": true,
+    "access_test": true,
+    "rollback_test": true,
+    "reviewer_approved": true
+  },
+  {
+    "id": "DEMO-02",
+    "functional_test": false,
+    "access_test": true,
+    "rollback_test": true,
+    "reviewer_approved": true
+  },
+  {
+    "id": "DEMO-03",
+    "functional_test": true,
+    "rollback_test": true,
+    "reviewer_approved": true
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "DEMO-01",
+    "device_checked": true,
+    "access_checked": true,
+    "security_checked": true,
+    "handover_checked": true
+  },
+  {
+    "id": "DEMO-02",
+    "device_checked": false,
+    "access_checked": true,
+    "security_checked": true,
+    "handover_checked": true
+  },
+  {
+    "id": "DEMO-03",
+    "device_checked": true,
+    "security_checked": true,
+    "handover_checked": true
+  }
+]

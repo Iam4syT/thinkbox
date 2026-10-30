@@ -1,0 +1,24 @@
+[
+  {
+    "id": "DEMO-01",
+    "status": "READY_FOR_HUMAN_REVIEW",
+    "failed": [],
+    "unknown": []
+  },
+  {
+    "id": "DEMO-02",
+    "status": "HOLD",
+    "failed": [
+      "functional_test"
+    ],
+    "unknown": []
+  },
+  {
+    "id": "DEMO-03",
+    "status": "REVIEW",
+    "failed": [],
+    "unknown": [
+      "access_test"
+    ]
+  }
+]
