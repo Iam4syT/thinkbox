@@ -1,0 +1,12 @@
+{
+  "status": "REVIEW_SOURCES",
+  "results": [
+    {
+      "id": "PUBLIC",
+      "chunk": 1,
+      "source": "synthetic/public-policy",
+      "quote": "Retention policies require review by the records owner. Check the current policy before action.",
+      "score": 1
+    }
+  ]
+}

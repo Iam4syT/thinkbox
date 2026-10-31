@@ -1,0 +1,32 @@
+[
+  {
+    "id": "PUBLIC",
+    "source": "synthetic/public-policy",
+    "text": "Retention policies require review by the records owner. Check the current policy before action.",
+    "groups": [
+      "public"
+    ]
+  },
+  {
+    "id": "A",
+    "source": "synthetic/matter-a",
+    "text": "Matter alpha retention is subject to a fictional preservation hold. Escalate to the matter owner.",
+    "groups": [
+      "matter-a"
+    ]
+  },
+  {
+    "id": "B",
+    "source": "synthetic/matter-b",
+    "text": "Matter beta retention is restricted to the beta team.",
+    "groups": [
+      "matter-b"
+    ]
+  },
+  {
+    "id": "NOACL",
+    "source": "synthetic/unknown",
+    "text": "Retention secret: must never appear without valid permissions.",
+    "groups": []
+  }
+]

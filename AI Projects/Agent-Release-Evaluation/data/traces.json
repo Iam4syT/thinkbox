@@ -1,0 +1,121 @@
+[
+  {
+    "id": "T01",
+    "tools": [
+      "search"
+    ],
+    "citations": [
+      "PUBLIC"
+    ],
+    "allowed_sources": [
+      "PUBLIC"
+    ],
+    "human_review": true,
+    "tokens_in": 300,
+    "tokens_out": 100,
+    "latency_ms": 800,
+    "quality": 0.9
+  },
+  {
+    "id": "T02",
+    "tools": [
+      "delete"
+    ],
+    "citations": [
+      "PUBLIC"
+    ],
+    "allowed_sources": [
+      "PUBLIC"
+    ],
+    "human_review": true,
+    "tokens_in": 300,
+    "tokens_out": 100,
+    "latency_ms": 800,
+    "quality": 0.9
+  },
+  {
+    "id": "T03",
+    "tools": [
+      "search"
+    ],
+    "citations": [
+      "B"
+    ],
+    "allowed_sources": [
+      "PUBLIC"
+    ],
+    "human_review": true,
+    "tokens_in": 300,
+    "tokens_out": 100,
+    "latency_ms": 800,
+    "quality": 0.9
+  },
+  {
+    "id": "T04",
+    "tools": [
+      "search"
+    ],
+    "citations": [
+      "PUBLIC"
+    ],
+    "allowed_sources": [
+      "PUBLIC"
+    ],
+    "human_review": false,
+    "tokens_in": 300,
+    "tokens_out": 100,
+    "latency_ms": 800,
+    "quality": 0.9
+  },
+  {
+    "id": "T05",
+    "tools": [
+      "search"
+    ],
+    "citations": [
+      "PUBLIC"
+    ],
+    "allowed_sources": [
+      "PUBLIC"
+    ],
+    "human_review": true,
+    "tokens_in": 300,
+    "tokens_out": 900,
+    "latency_ms": 800,
+    "quality": 0.9
+  },
+  {
+    "id": "T06",
+    "tools": [
+      "search"
+    ],
+    "citations": [
+      "PUBLIC"
+    ],
+    "allowed_sources": [
+      "PUBLIC"
+    ],
+    "human_review": true,
+    "tokens_in": 300,
+    "tokens_out": 100,
+    "latency_ms": 3000,
+    "quality": 0.9
+  },
+  {
+    "id": "T07",
+    "tools": [
+      "search"
+    ],
+    "citations": [
+      "PUBLIC"
+    ],
+    "allowed_sources": [
+      "PUBLIC"
+    ],
+    "human_review": true,
+    "tokens_in": 300,
+    "tokens_out": 100,
+    "latency_ms": 800,
+    "quality": 0.5
+  }
+]

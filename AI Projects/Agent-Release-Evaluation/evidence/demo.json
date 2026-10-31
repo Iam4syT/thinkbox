@@ -1,0 +1,56 @@
+[
+  {
+    "id": "T01",
+    "status": "READY_FOR_REVIEW",
+    "failed": [],
+    "illustrative_cost_units": 0.0007
+  },
+  {
+    "id": "T02",
+    "status": "HOLD",
+    "failed": [
+      "tool_allowlist"
+    ],
+    "illustrative_cost_units": 0.0007
+  },
+  {
+    "id": "T03",
+    "status": "HOLD",
+    "failed": [
+      "citation_scope"
+    ],
+    "illustrative_cost_units": 0.0007
+  },
+  {
+    "id": "T04",
+    "status": "HOLD",
+    "failed": [
+      "human_review"
+    ],
+    "illustrative_cost_units": 0.0007
+  },
+  {
+    "id": "T05",
+    "status": "HOLD",
+    "failed": [
+      "token_budget"
+    ],
+    "illustrative_cost_units": 0.0039
+  },
+  {
+    "id": "T06",
+    "status": "HOLD",
+    "failed": [
+      "latency_budget"
+    ],
+    "illustrative_cost_units": 0.0007
+  },
+  {
+    "id": "T07",
+    "status": "HOLD",
+    "failed": [
+      "quality"
+    ],
+    "illustrative_cost_units": 0.0007
+  }
+]

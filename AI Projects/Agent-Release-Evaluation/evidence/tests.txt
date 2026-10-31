@@ -1,0 +1,19 @@
+test_boolean_tokens (test_behaviour.Gate.test_boolean_tokens) ... ok
+test_boundaries (test_behaviour.Gate.test_boundaries) ... ok
+test_budgets (test_behaviour.Gate.test_budgets) ... ok
+test_citation (test_behaviour.Gate.test_citation) ... ok
+test_cost_arithmetic (test_behaviour.Gate.test_cost_arithmetic) ... ok
+test_duplicate (test_behaviour.Gate.test_duplicate) ... ok
+test_empty_citation (test_behaviour.Gate.test_empty_citation) ... ok
+test_nan (test_behaviour.Gate.test_nan) ... ok
+test_negative (test_behaviour.Gate.test_negative) ... ok
+test_normal_needs_review (test_behaviour.Gate.test_normal_needs_review) ... ok
+test_review (test_behaviour.Gate.test_review) ... ok
+test_string_review (test_behaviour.Gate.test_string_review) ... ok
+test_tool (test_behaviour.Gate.test_tool) ... ok
+test_unknown_field (test_behaviour.Gate.test_unknown_field) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.001s
+
+OK

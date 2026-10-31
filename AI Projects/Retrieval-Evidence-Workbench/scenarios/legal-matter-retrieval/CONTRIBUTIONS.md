@@ -1,0 +1,2 @@
+# Contributions and scope
+Independent synthetic learning package maintained by Bunamin Adams. The implementation and automated evaluation were prepared with AI assistance. Personal design, code changes, own runs and independent rebuild are unverified until recorded separately. No client use, live LLM, Azure deployment or MCP transport is claimed. Provided outputs are automated local fixture checks, not human capability or real business outcomes.
