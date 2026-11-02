@@ -1,0 +1,1 @@
+Show the normal command and exact expected result in LAB.md, trigger the documented failure, explain the boundary and show test output. Finish with the next experiment that could change the decision. Personal live demonstration remains pending.

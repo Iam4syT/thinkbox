@@ -1,0 +1,17 @@
+{
+  "scope": "synthetic_local_only",
+  "train_n": 10,
+  "test_n": 6,
+  "slope": 2.0,
+  "intercept": 10.0,
+  "model_mae": 0.0,
+  "baseline_mae": 16.0,
+  "group_mae": {
+    "a": 0.0,
+    "b": 0.0
+  },
+  "group_gap": 0.0,
+  "reasons": [],
+  "decision": "review",
+  "input_sha256": "e6264b239633804d43c9250b7e8d57c2f4c7ce7803c98b003314c5615fd7a7d0"
+}

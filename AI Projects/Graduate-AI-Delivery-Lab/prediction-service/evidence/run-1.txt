@@ -1,0 +1,1 @@
+HTTP integration attempt2November2026: PermissionError [Errno1] Operation not permitted while binding127.0.0.1. Zero integration methods ran. Full private traceback retained outside public export.

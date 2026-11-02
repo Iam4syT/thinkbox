@@ -1,0 +1,15 @@
+test_constant_train (test_evaluation.EvaluationTests.test_constant_train) ... ok
+test_fingerprint_changes (test_evaluation.EvaluationTests.test_fingerprint_changes) ... ok
+test_group_failure (test_evaluation.EvaluationTests.test_group_failure) ... ok
+test_missing_group (test_evaluation.EvaluationTests.test_missing_group) ... ok
+test_nan_and_bool (test_evaluation.EvaluationTests.test_nan_and_bool) ... ok
+test_no_target_leakage (test_evaluation.EvaluationTests.test_no_target_leakage) ... ok
+test_normal (test_evaluation.EvaluationTests.test_normal) ... ok
+test_order (test_evaluation.EvaluationTests.test_order) ... ok
+test_schema (test_evaluation.EvaluationTests.test_schema) ... ok
+test_small_split (test_evaluation.EvaluationTests.test_small_split) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.000s
+
+OK

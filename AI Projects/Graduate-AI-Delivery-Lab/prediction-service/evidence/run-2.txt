@@ -1,0 +1,16 @@
+test_bounds (test_offline.OfflineContractTests.test_bounds) ... ok
+test_duplicates (test_offline.OfflineContractTests.test_duplicates) ... ok
+test_extra_field (test_offline.OfflineContractTests.test_extra_field) ... ok
+test_health (test_offline.OfflineContractTests.test_health) ... ok
+test_missing (test_offline.OfflineContractTests.test_missing) ... ok
+test_no_echo (test_offline.OfflineContractTests.test_no_echo) ... ok
+test_nonfinite_coefficient (test_offline.OfflineContractTests.test_nonfinite_coefficient) ... ok
+test_prediction (test_offline.OfflineContractTests.test_prediction) ... ok
+test_unknown (test_offline.OfflineContractTests.test_unknown) ... ok
+test_wrong_version (test_offline.OfflineContractTests.test_wrong_version) ... ok
+setUpClass (test_service.ServiceTests) ... skipped 'Loopback socket blocked by host permissions: [Errno 1] Operation not permitted'
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.003s
+
+OK (skipped=1)

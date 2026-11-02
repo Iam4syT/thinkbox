@@ -1,0 +1,20 @@
+{
+  "scope": "synthetic_local_only",
+  "train_n": 10,
+  "test_n": 6,
+  "slope": 2.0,
+  "intercept": 10.0,
+  "model_mae": 10.0,
+  "baseline_mae": 26.0,
+  "group_mae": {
+    "a": 0.0,
+    "b": 20.0
+  },
+  "group_gap": 20.0,
+  "reasons": [
+    "overall_error",
+    "group_error_gap"
+  ],
+  "decision": "hold",
+  "input_sha256": "2432cec3d662d804f2efd40e62a62254fc140d7360ed563441fc68a33a749f28"
+}
