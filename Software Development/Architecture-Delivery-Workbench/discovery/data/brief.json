@@ -1,0 +1,11 @@
+{
+  "data_classification": "synthetic",
+  "retention_days": 30,
+  "availability_target": "Lab only; no service level promised",
+  "dependency_owner": "Example service owner",
+  "requirements": [
+    {"id":"R1","owner":"Example service owner","need":"Record a request once","acceptance":"Retry with the same key creates no duplicate"},
+    {"id":"R2","owner":"Example security reviewer","need":"Reject unauthorised writes","acceptance":"Wrong token returns 401 and no row is added"},
+    {"id":"R3","owner":"Example support lead","need":"Hand over unresolved constraints","acceptance":"Missing retention or dependency owner appears as an open question"}
+  ]
+}
