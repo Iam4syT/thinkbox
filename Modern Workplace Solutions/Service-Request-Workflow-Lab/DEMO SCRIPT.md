@@ -1,0 +1,1 @@
+Open LAB.md. State the synthetic user need and which technology is simulated. Run the demo, inspect expected output, run all tests and show one deliberate denied operation or rollback. Explain why the failure matters. Show the unrun native checklist. Finish by identifying the exact personal change and new failure test still needed. Do not claim client use or achieved savings.

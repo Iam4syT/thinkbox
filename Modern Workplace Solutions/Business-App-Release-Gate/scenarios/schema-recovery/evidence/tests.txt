@@ -1,0 +1,13 @@
+test_backup_restore (test_release.Tests.test_backup_restore) ... ok
+test_duplicate_release_fails_without_corruption (test_release.Tests.test_duplicate_release_fails_without_corruption) ... ok
+test_failure_preserves_data (test_release.Tests.test_failure_preserves_data) ... ok
+test_failure_rolls_back_schema (test_release.Tests.test_failure_rolls_back_schema) ... ok
+test_parameterised_lookup (test_release.Tests.test_parameterised_lookup) ... ok
+test_retry_after_failure (test_release.Tests.test_retry_after_failure) ... ok
+test_schema_change (test_release.Tests.test_schema_change) ... ok
+test_values_preserved (test_release.Tests.test_values_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.002s
+
+OK

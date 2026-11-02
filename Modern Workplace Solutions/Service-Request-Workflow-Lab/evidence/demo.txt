@@ -1,0 +1,9 @@
+{
+  "SYN-001": {
+    "id": "SYN-001",
+    "owner": "operator-a",
+    "summary": "Test account cannot open training site",
+    "status": "Triaged",
+    "version": 2
+  }
+}

@@ -1,0 +1,14 @@
+test_duplicate (test_workflow.Tests.test_duplicate) ... ok
+test_missing_owner (test_workflow.Tests.test_missing_owner) ... ok
+test_missing_summary (test_workflow.Tests.test_missing_summary) ... ok
+test_normal_lifecycle (test_workflow.Tests.test_normal_lifecycle) ... ok
+test_skip_triage (test_workflow.Tests.test_skip_triage) ... ok
+test_snapshot_is_detached (test_workflow.Tests.test_snapshot_is_detached) ... ok
+test_stale_update (test_workflow.Tests.test_stale_update) ... ok
+test_unauthorised (test_workflow.Tests.test_unauthorised) ... ok
+test_unknown_request (test_workflow.Tests.test_unknown_request) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.000s
+
+OK

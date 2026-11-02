@@ -1,0 +1,2 @@
+Injected failure rolled back: True
+Successful release: ('SYN-1', 'New', 'operator-a')

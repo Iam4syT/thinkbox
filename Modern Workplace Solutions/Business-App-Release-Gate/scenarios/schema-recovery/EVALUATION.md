@@ -1,0 +1,2 @@
+# Evaluation
+2 November 2026. Python 3.11.9, local synthetic data, no network. Test exit code 0; demo exit code 0. See evidence/tests.txt and evidence/demo.txt for actual results. Eight transaction and recovery tests exercised normal and failure paths. No native tenant, SQL Server, Dynamics 365, production workload, cloud cost or latency measured. No human productivity baseline collected. The suite checks local behaviour only. It does not establish a full authenticated service or Bunamin's independent rebuild. Native and personal checks remain pending.
