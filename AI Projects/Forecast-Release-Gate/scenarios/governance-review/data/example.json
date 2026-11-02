@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "model_id": "synthetic-kpi-v1",
+  "model_mae_ms": 0,
+  "baseline_mae_ms": 9,
+  "test_n": 8,
+  "data_scope": "synthetic",
+  "privacy_review": true,
+  "rollback_plan": true
+}

@@ -1,0 +1,7 @@
+{
+  "model_id": "synthetic-kpi-v1",
+  "decision": "await_human_review",
+  "reasons": [],
+  "input_sha256": "5cdd5b65d4f4041394513166808aea847c42dc36dff2bb73159340d5d49e6feb",
+  "deployment_performed": false
+}

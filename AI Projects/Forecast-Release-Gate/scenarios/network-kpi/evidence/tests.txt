@@ -1,0 +1,14 @@
+test_baseline_and_fit (test_kpi.KPI.test_baseline_and_fit) ... ok
+test_constant (test_kpi.KPI.test_constant) ... ok
+test_duplicate_time (test_kpi.KPI.test_duplicate_time) ... ok
+test_negative (test_kpi.KPI.test_negative) ... ok
+test_nonfinite (test_kpi.KPI.test_nonfinite) ... ok
+test_schema (test_kpi.KPI.test_schema) ... ok
+test_shift_holds (test_kpi.KPI.test_shift_holds) ... ok
+test_splits (test_kpi.KPI.test_splits) ... ok
+test_targets_do_not_leak (test_kpi.KPI.test_targets_do_not_leak) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK

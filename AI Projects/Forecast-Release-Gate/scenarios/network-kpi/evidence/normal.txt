@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "model_id": "synthetic-kpi-v1",
+  "train_n": 16,
+  "test_n": 8,
+  "slope": 2.0,
+  "intercept": 10.0,
+  "model_mae_ms": 0.0,
+  "baseline_mae_ms": 9.0,
+  "review": "eligible_for_review",
+  "scope": "synthetic_local_only"
+}

@@ -1,0 +1,11 @@
+{
+  "model_id": "synthetic-kpi-v1",
+  "decision": "hold",
+  "reasons": [
+    "does_not_beat_baseline",
+    "absolute_error_limit",
+    "privacy_review_missing"
+  ],
+  "input_sha256": "3fce34eccb2af9413ec3e35e893eb604345164360adc3809fb6176760c2274fc",
+  "deployment_performed": false
+}
