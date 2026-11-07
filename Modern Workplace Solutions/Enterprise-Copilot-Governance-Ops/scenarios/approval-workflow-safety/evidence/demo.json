@@ -1,0 +1,21 @@
+{
+  "result": {
+    "status": "complete",
+    "replayed": false
+  },
+  "audit": [
+    {
+      "key": "demo-1",
+      "event": "submitted"
+    },
+    {
+      "key": "demo-1",
+      "event": "approved"
+    },
+    {
+      "key": "demo-1",
+      "event": "complete",
+      "response_code": 200
+    }
+  ]
+}

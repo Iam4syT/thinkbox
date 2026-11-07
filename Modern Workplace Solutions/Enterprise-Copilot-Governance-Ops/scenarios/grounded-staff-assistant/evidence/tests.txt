@@ -1,0 +1,15 @@
+test_empty_question (test_assistant.AssistantTests.test_empty_question) ... ok
+test_empty_role (test_assistant.AssistantTests.test_empty_role) ... ok
+test_hr_answer (test_assistant.AssistantTests.test_hr_answer) ... ok
+test_no_visible_private_citation (test_assistant.AssistantTests.test_no_visible_private_citation) ... ok
+test_revoke_access (test_assistant.AssistantTests.test_revoke_access) ... ok
+test_staff_answer (test_assistant.AssistantTests.test_staff_answer) ... ok
+test_staff_cannot_see_payroll (test_assistant.AssistantTests.test_staff_cannot_see_payroll) ... ok
+test_unknown_question (test_assistant.AssistantTests.test_unknown_question) ... ok
+test_unknown_role (test_assistant.AssistantTests.test_unknown_role) ... ok
+test_unreviewed_excluded (test_assistant.AssistantTests.test_unreviewed_excluded) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.000s
+
+OK

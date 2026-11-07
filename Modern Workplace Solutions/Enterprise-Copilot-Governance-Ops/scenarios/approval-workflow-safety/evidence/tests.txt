@@ -1,0 +1,17 @@
+test_403_stops (test_workflow.WorkflowTests.test_403_stops) ... ok
+test_429_records_delay (test_workflow.WorkflowTests.test_429_records_delay) ... ok
+test_bounded_retries (test_workflow.WorkflowTests.test_bounded_retries) ... ok
+test_duplicate_dispatch (test_workflow.WorkflowTests.test_duplicate_dispatch) ... ok
+test_duplicate_submit (test_workflow.WorkflowTests.test_duplicate_submit) ... ok
+test_malformed_delay (test_workflow.WorkflowTests.test_malformed_delay) ... ok
+test_no_unapproved_write (test_workflow.WorkflowTests.test_no_unapproved_write) ... ok
+test_reject_blocks (test_workflow.WorkflowTests.test_reject_blocks) ... ok
+test_repeat_decision (test_workflow.WorkflowTests.test_repeat_decision) ... ok
+test_self_approval (test_workflow.WorkflowTests.test_self_approval) ... ok
+test_success (test_workflow.WorkflowTests.test_success) ... ok
+test_wrong_approver (test_workflow.WorkflowTests.test_wrong_approver) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.001s
+
+OK
