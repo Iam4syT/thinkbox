@@ -1,0 +1,2 @@
+# Architecture and handover
+An operator supplies synthetic JSON. A strict schema rejects malformed fields before a report. Deterministic checks produce findings for a human. No component contacts a tenant or changes a device. Supplied booleans are observations, not verified proof. For production, require authenticated authorisation, data minimisation, timestamps, audit storage, error monitoring and an approved escalation process. No production integration is implemented.

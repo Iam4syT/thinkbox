@@ -1,0 +1,2 @@
+# Contribution and provenance
+This is a new independent scenario in the existing Thinkbox learning collection. No third-party source code or real customer data was copied. Automated development assistance was used; the maintainer must review, explain and personally reproduce the work before presenting it as evidence of independent engineering. Local fixture execution does not establish learner or workplace execution. Root repository licensing applies; public documentation references are attributed in LAB.md.

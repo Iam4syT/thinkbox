@@ -1,0 +1,36 @@
+7 November 2026
+Python 3.11.9 Darwin arm64
+Source review.py SHA-256: 15f725edd896dcc36f2f8d6c402bcf0b2a737962ae5adc61166bfefd5982beff
+Test command: python3 -m unittest -v
+Exit 0
+test_dns_failure (test_review.NetworkChecks.test_dns_failure) ... ok
+test_extra_field (test_review.NetworkChecks.test_extra_field) ... ok
+test_invalid_ip (test_review.NetworkChecks.test_invalid_ip) ... ok
+test_link_local (test_review.NetworkChecks.test_link_local) ... ok
+test_missing_field (test_review.NetworkChecks.test_missing_field) ... ok
+test_no_auto_approval (test_review.NetworkChecks.test_no_auto_approval) ... ok
+test_no_mutation (test_review.NetworkChecks.test_no_mutation) ... ok
+test_null_dns (test_review.NetworkChecks.test_null_dns) ... ok
+test_string_false (test_review.NetworkChecks.test_string_false) ... ok
+test_unknown_not_pass (test_review.NetworkChecks.test_unknown_not_pass) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.001s
+
+OK
+
+Demo exit 0
+{
+  "device": "DEMO-PC-01",
+  "status": "needs review",
+  "findings": [
+    "link-local address: inspect DHCP and link",
+    "gateway missing",
+    "dns_ok failed: investigate",
+    "tcp443_ok failed: investigate",
+    "physical_check not observed",
+    "patch_review not observed"
+  ],
+  "approved_for_deployment": false,
+  "human_review": true
+}

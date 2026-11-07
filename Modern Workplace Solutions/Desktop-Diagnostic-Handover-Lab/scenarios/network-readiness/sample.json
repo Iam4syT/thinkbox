@@ -1,0 +1,9 @@
+{
+  "device": "DEMO-PC-01",
+  "ipv4": "169.254.12.34",
+  "gateway": "0.0.0.0",
+  "dns_ok": false,
+  "tcp443_ok": false,
+  "physical_check": null,
+  "patch_review": null
+}
