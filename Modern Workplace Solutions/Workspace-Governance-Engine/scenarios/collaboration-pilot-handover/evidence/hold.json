@@ -1,0 +1,12 @@
+{
+  "decision": "HOLD",
+  "checks": {
+    "baseline": "pass",
+    "allowed_access": "pass",
+    "denied_access": "unknown",
+    "sharing": "pass",
+    "sync": "pass",
+    "rollback": "pass",
+    "handover": "fail"
+  }
+}

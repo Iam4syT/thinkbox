@@ -1,0 +1,12 @@
+{
+  "decision": "READY_FOR_REVIEW",
+  "checks": {
+    "baseline": "pass",
+    "allowed_access": "pass",
+    "denied_access": "pass",
+    "sharing": "pass",
+    "sync": "pass",
+    "rollback": "pass",
+    "handover": "pass"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "decision": "READY_FOR_REVIEW",
+  "checks": {
+    "baseline": "pass",
+    "mx": "pass",
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "inbound": "pass",
+    "outbound": "pass",
+    "rollback": "pass"
+  }
+}

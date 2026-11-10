@@ -1,0 +1,9 @@
+{
+  "baseline": "pass",
+  "mx": "pass",
+  "spf": "pass",
+  "dkim": "pass",
+  "dmarc": "pass",
+  "inbound": "pass",
+  "rollback": "fail"
+}

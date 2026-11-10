@@ -1,0 +1,13 @@
+{
+  "decision": "HOLD",
+  "checks": {
+    "baseline": "pass",
+    "mx": "pass",
+    "spf": "pass",
+    "dkim": "pass",
+    "dmarc": "pass",
+    "inbound": "pass",
+    "outbound": "unknown",
+    "rollback": "fail"
+  }
+}
