@@ -1,0 +1,24 @@
+{
+  "clauses": {
+    "C1": "The service begins on Monday.",
+    "C2": "Send written notice. Keep a copy. Send written notice."
+  },
+  "proposals": [
+    {
+      "clause": "C1",
+      "quote": "begins on Monday"
+    },
+    {
+      "clause": "C2",
+      "quote": "Send written notice."
+    },
+    {
+      "clause": "C9",
+      "quote": "five days"
+    },
+    {
+      "clause": "C1",
+      "quote": "begins on Friday"
+    }
+  ]
+}
