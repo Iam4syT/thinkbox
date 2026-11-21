@@ -1,0 +1,5 @@
+Original two rows → C1: READY FOR TRAINING REVIEW / C2: REVISE ANSWER (exit 0)
+Changed review input → C1: HOLD / C2: REVISE ANSWER (exit 0)
+Duplicate ID → Invalid input: Duplicate ID: C1 (exit 1)
+Invalid flag → Invalid input: Check flags must be true or false. (exit 1)
+Missing reviewer → C1: HOLD / C2: REVISE ANSWER (exit 0)

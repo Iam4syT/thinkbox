@@ -1,0 +1,24 @@
+[
+  {
+    "id": "C1",
+    "task": "find the filing deadline",
+    "source": "Fictional rule A, v1: File the weekly report on Friday.",
+    "reference": "Friday",
+    "answer": "Friday",
+    "reviewer": "peer A",
+    "approved_data": true,
+    "fairness_checked": true,
+    "prompt": "Using only rule A, return the filing day in one word. If the rule omits the day, answer Unknown."
+  },
+  {
+    "id": "C2",
+    "task": "find the filing deadline",
+    "source": "Fictional rule A, v1: File the weekly report on Friday.",
+    "reference": "Friday",
+    "answer": "Thursday",
+    "reviewer": "peer B",
+    "approved_data": true,
+    "fairness_checked": true,
+    "prompt": "Using only rule A, return the filing day in one word. If the rule omits the day, answer Unknown."
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "P1",
+    "purpose": "summarise fictional guidance",
+    "users": "service team",
+    "logic": "summarise",
+    "benefit": "faster lookup",
+    "support": "desk",
+    "owner": "service owner",
+    "data": "approved",
+    "tested": true,
+    "needed": true
+  },
+  {
+    "id": "P2",
+    "purpose": "draft notes",
+    "users": "staff",
+    "logic": "draft",
+    "benefit": "less retyping",
+    "support": "desk",
+    "owner": "operations",
+    "data": "unverified",
+    "tested": true,
+    "needed": true
+  }
+]
